@@ -7,7 +7,7 @@ en_subtitle: "Where 14 billion dollars go up in smoke to process AI's own digita
 date:       2026-02-17 21:00:00
 author:     "Frederico Doido"
 header-img: "img/burn-rate-apocalypse.png"
-category:   infrastructure
+category:   noticias
 en_content: |
   # Burn Rate is the Latency of Failure
 

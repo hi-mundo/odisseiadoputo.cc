@@ -5,7 +5,7 @@ subtitle:   "Como o cinema pegou uma obra-prima do trauma e a transformou em um 
 date:       2026-02-17 21:45:00
 author:     "Frederico Doido"
 header-img: "img/silent-hill-disaster.png"
-category:   cultura-pop
+category:   jogos
 ---
 
 # O Incidente: Anatomia de um Cadáver

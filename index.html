@@ -17,9 +17,21 @@ description: "Blog de nerdola: tech, código, jogos, filmes e o que der na telha
 
 <div id="post-list">
 {% for post in paginator.posts %}
-{% comment %} Tags no front matter (ex: tags: [codigo]). Sem tags = usa "codigo" se tiver category (posts antigos). {% endcomment %}
+{% comment %}
+  Filtro: data-tags deve ser um dos codigo, noticias, jogos, filmes (ou vários separados por espaço).
+  Preferência: tags no front matter (tags: [jogos, filmes]). Se não tiver tags, deriva da category.
+{% endcomment %}
 {% assign post_tag_str = post.tags | join: ' ' | downcase %}
-{% if post_tag_str == '' and post.categories.size > 0 %}{% assign post_tag_str = 'codigo' %}{% endif %}
+{% if post_tag_str == '' and post.categories.size > 0 %}
+  {% assign cat = post.categories[0] | downcase %}
+  {% if cat == 'jogos' or cat == 'filmes' or cat == 'noticias' or cat == 'codigo' %}
+    {% assign post_tag_str = cat %}
+  {% else %}
+    {% comment %} infrastructure, dev, etc. → codigo {% endcomment %}
+    {% assign post_tag_str = 'codigo' %}
+  {% endif %}
+{% endif %}
+{% if post_tag_str == '' %}{% assign post_tag_str = 'codigo' %}{% endif %}
 <div class="post-preview" data-tags="{{ post_tag_str }}">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">{{ post.title }}</h2>
