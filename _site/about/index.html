@@ -62,7 +62,6 @@
         <!-- Navigation -->
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
     <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
@@ -70,24 +69,29 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">A odisseia do puto</a>
+            <a class="navbar-brand" href="/">
+                <img src="/img/logo.png" alt="A odisseia do puto" class="navbar-logo" />
+                <span class="navbar-brand-text">A odisseia do puto</span>
+            </a>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
+                <li class="lang-switcher">
+                    <span class="lang-label">Idioma:</span>
+                    <button type="button" class="lang-btn lang-btn-pt" data-lang="pt" aria-pressed="true">PT</button>
+                    <button type="button" class="lang-btn lang-btn-en" data-lang="en" aria-pressed="false">EN</button>
+                </li>
                 
 				
                 <li>
-                    <a href="/about/">Sobre</a>
+                    <a href="/about/" data-pt="Sobre" data-en="About">Sobre</a>
                 </li>
 				
                 
             </ul>
         </div>
-        <!-- /.navbar-collapse -->
     </div>
-    <!-- /.container -->
 </nav>
 
         <!-- Page Header -->
@@ -105,8 +109,8 @@
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
+<!-- Main Content (home, sobre, etc.) — centralizado -->
+<div class="container page-main">
 	<div class="row">
 		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 			<p><strong>A odisseia do puto</strong> é um blog de nerdola: tecnologia, desenvolvimento e o que der na telha — escrito por quem está na linha de frente.</p>
@@ -126,12 +130,12 @@
 <div class="about-team">
   <section class="about-person">
     <h3>Raimundo Pessoa</h3>
-    <p class="role">Engenheiro de software sênior</p>
-    <p>Desenvolve e arquiteta sistemas no dia a dia e gosta de traduzir isso em texto: tutoriais, experiências e opinião técnica.</p>
+    <p class="role">Engenheiro de software</p>
+    <p>Ajuda nas pautas e no que der na telha — geralmente o nerdola da dupla.</p>
   </section>
   <section class="about-person">
-    <h3>Frederico Doido</h3>
-    <p class="role">Editor e redator com foco em tecnologia</p>
+    <h3>Frederico "Doido"</h3>
+    <p class="role">Escritor sanguinário</p>
     <p>Escreve e edita os posts do blog, com foco em clareza e em conteúdo que faça sentido para quem programa e para quem quer entender tecnologia.</p>
   </section>
 </div>
@@ -175,6 +179,7 @@
     <script src="/js/fog.js"></script>
     <script src="/js/filter.js"></script>
     <script src="/js/inject-ads.js"></script>
+    <script src="/js/lang-switcher.js"></script>
 </body>
 
 </html>
