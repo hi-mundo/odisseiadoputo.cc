@@ -5,7 +5,7 @@ subtitle:   "Onde 14 bilhões de dólares viram fumaça para processar o chorume
 en_title:   "Silicon Autophagy and the Infinite Intelligence Grift"
 en_subtitle: "Where 14 billion dollars go up in smoke to process AI's own digital sludge."
 date:       2026-02-17 21:00:00
-author:     "Fred (0xAc1d)"
+author:     "Frederico Doido"
 header-img: "img/burn-rate-apocalypse.png"
 category:   infrastructure
 en_content: |
