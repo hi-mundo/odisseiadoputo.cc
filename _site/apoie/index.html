@@ -44,6 +44,16 @@
 
 
 
+    <script>
+        // Check for reading mode preference immediately to avoid flash of unstyled content
+        if (localStorage.getItem('odisseia_read_mode') === 'true') {
+            document.documentElement.classList.add('reading-mode');
+            // We also add to body when DOM is ready in case documentElement isn't enough for some styles
+            document.addEventListener('DOMContentLoaded', function () {
+                document.body.classList.add('reading-mode');
+            });
+        }
+    </script>
     
 
 </head>
@@ -59,11 +69,11 @@
     </div>
 
     <div id="site-wrap" class="site-wrap">
-        <!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -71,41 +81,33 @@
             </button>
             <a class="navbar-brand" href="/">
                 <img src="/img/logo.png" alt="A odisseia do puto" class="navbar-logo" />
-                <span class="navbar-brand-text">A odisseia do puto</span>
             </a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
+                <li class="mode-switcher-li">
+                    <span class="mode-label">Modo:</span>
+                    <button id="mode-toggle" class="mode-btn" title="Alternar Modo Leitura">
+                        <span class="mode-icon-2003">💾 2003</span>
+                        <span class="mode-icon-read" style="display:none;">📖 Ler</span>
+                    </button>
+                </li>
                 <li class="lang-switcher">
                     <span class="lang-label" data-pt="Idioma:" data-en="Language:">Idioma:</span>
                     <button type="button" class="lang-btn lang-btn-pt" data-lang="pt" aria-pressed="true">PT</button>
                     <button type="button" class="lang-btn lang-btn-en" data-lang="en" aria-pressed="false">EN</button>
                 </li>
-                
-				
                 <li>
                     <a href="/about/" data-pt="Sobre" data-en="About">Sobre</a>
                 </li>
-				
-                
-				
                 <li>
-                    <a href="/apoie/" data-pt="Apoie" data-en="Apoie">Apoie</a>
+                    <a href="/apoie/" data-pt="Apoie" data-en="Support">Apoie</a>
                 </li>
-				
-                
-				
-                <li>
-                    <a href="/" data-pt="A odisseia do puto" data-en="The Odyssey of the Puto">A odisseia do puto</a>
-                </li>
-				
-                
             </ul>
         </div>
     </div>
 </nav>
-
         <!-- Page Header (home = mais robusto). PT/EN via .has-en + .lang-pt / .lang-en -->
 <header class="intro-header ">
     <div class="container">
@@ -141,32 +143,41 @@
   <h2>Odiamos ads, mas precisamos pagar as contas</h2>
   <p>Principalmente as do <strong>Frederico</strong>.</p>
 
-  <p>Mudamos de ideia sobre a monetização. Poluir sua visão com banners piscantes não é o nosso estilo. Por isso,
-    removemos tudo.</p>
+  <p>Mudamos de ideia sobre a monetização. Poluir sua visão com banners piscantes é coisa de site corporativo. A
+    Odisseia é limpa.</p>
 
-  <h3>Como funciona agora?</h3>
+  <h3>A Regra do Jogo</h3>
 
-  <p><strong>Newsletter Paga (A Odisseia Premium):</strong></p>
-  <ul>
-    <li>Duas edições por semana com todo nosso cuidado.</li>
-    <li>Conteúdos atualizados, profundos e revisados.</li>
-    <li>Acesso direto à mente dos criadores.</li>
-  </ul>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0;">
+    <div
+      style="border: 1px solid var(--border-soft); padding: 1.5rem; border-radius: 4px; background: rgba(0,221,112,0.02);">
+      <h4 style="margin-top: 0; color: var(--accent);">Newsletter Premium</h4>
+      <p style="font-size: 0.9rem; margin-bottom: 0;">Receba tudo <strong>na hora</strong>.</p>
+      <ul style="font-size: 0.9rem; padding-left: 1.2rem; margin-top: 0.5rem;">
+        <li>Conteúdo fresco, duas vezes na semana.</li>
+        <li>Análises profundas e revisadas.</li>
+        <li>Acesso direto aos autores.</li>
+      </ul>
+    </div>
 
-  <p><strong>Aqui no Site:</strong></p>
-  <ul>
-    <li>Conteúdos mais antigos.</li>
-    <li>Sem revisão de qualidade criteriosa.</li>
-    <li>Pouco aprofundado (o "chorume" do dia a dia).</li>
-  </ul>
-
-  <p>Se você quer o melhor conteúdo, direto na fonte, assine nossa newsletter.</p>
-
-  <div style="text-align: center; margin-top: 2rem; margin-bottom: 2rem; display: flex; justify-content: center;">
-    <iframe src="https://odisseiadoputo.substack.com/embed" width="480" height="320"
-      style="border: 1px solid var(--border-soft); background: var(--bg-card); max-width: 100%; border-radius: 4px;"
-      frameborder="0" scrolling="no"></iframe>
+    <div style="border: 1px dotted var(--border-soft); padding: 1.5rem; border-radius: 4px; opacity: 0.8;">
+      <h4 style="margin-top: 0; color: var(--text-muted);">Apenas o Site</h4>
+      <p style="font-size: 0.9rem; margin-bottom: 0;">Receba com <strong>atraso</strong>.</p>
+      <ul style="font-size: 0.9rem; padding-left: 1.2rem; margin-top: 0.5rem; color: var(--text-muted);">
+        <li>Conteúdo liberado semanas depois.</li>
+        <li>Sem notificações de novidades.</li>
+        <li>Você depende de lembrar de voltar aqui.</li>
+      </ul>
+    </div>
   </div>
+
+  <p>Se você quer estar na vanguarda e não ler notícias velhas, assine a newsletter.</p>
+
+  <div class="substack-embed-container">
+    <iframe src="https://odisseiadoputo.substack.com/embed" width="480" height="320" frameborder="0"
+      scrolling="no"></iframe>
+  </div>
+
   <p style="text-align: center; margin-top: 1rem; font-size: 0.8em; color: var(--text-muted);">Junte-se à resistência.
   </p>
 </div>
@@ -182,12 +193,16 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <p class="footer-naas has-en">
-                    <span class="lang-pt"><span class="naas-prompt">$</span> Filiado ao <a href="https://nerdasservice.com" target="_blank" rel="noopener">Nerd as a Service</a> — SRE &amp; Platform Engineering sob demanda.</span>
-                    <span class="lang-en"><span class="naas-prompt">$</span> Affiliated with <a href="https://nerdasservice.com" target="_blank" rel="noopener">Nerd as a Service</a> — SRE &amp; Platform Engineering on demand.</span>
+                    <span class="lang-pt"><span class="naas-prompt">$</span> um projeto de <a href="https://himundo.com"
+                            target="_blank" rel="noopener">_hi.mundo!</a></span>
+                    <span class="lang-en"><span class="naas-prompt">$</span> a <a href="https://himundo.com"
+                            target="_blank" rel="noopener">_hi.mundo!</a> project</span>
                 </p>
                 <p class="footer-contact has-en">
-                    <span class="lang-pt"><a href="mailto:contato@odisseiadoputo.cc">contato@odisseiadoputo.cc</a></span>
-                    <span class="lang-en"><a href="mailto:contato@odisseiadoputo.cc">contato@odisseiadoputo.cc</a></span>
+                    <span class="lang-pt"><a
+                            href="mailto:contato@odisseiadoputo.cc">contato@odisseiadoputo.cc</a></span>
+                    <span class="lang-en"><a
+                            href="mailto:contato@odisseiadoputo.cc">contato@odisseiadoputo.cc</a></span>
                 </p>
             </div>
         </div>
@@ -195,14 +210,13 @@
 </footer>
 
 <!-- jQuery -->
-<script src="/js/jquery.min.js "></script>
+<script src=" /js/jquery.min.js "></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="/js/bootstrap.min.js "></script>
+<script src=" /js/bootstrap.min.js "></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="/js/clean-blog.min.js "></script>
-
+<script src=" /js/clean-blog.min.js "></script>
     </div>
 
     <!-- CRT overlay: por cima do conteúdo (position: fixed, z-index alto) -->
@@ -210,10 +224,11 @@
     <div class="crt-flicker" aria-hidden="true"></div>
 
 
-    <script src="/js/fog.js"></script>
-    <script src="/js/filter.js"></script>
+    <script src=" /js/fog.js"></script>
+    <script src=" /js/filter.js"></script>
 
-    <script src="/js/lang-switcher.js"></script>
+    <script src=" /js/lang-switcher.js"></script>
+    <script src=" /js/mode-switcher.js"></script>
 </body>
 
 </html>
