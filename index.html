@@ -1,45 +1,56 @@
 ---
 layout: page
-description: "Blog de nerdola: tech, código, jogos, filmes e o que der na telha. Mastigamos a informação e viramos seu hub — com liberdade poética para o chorume."
+title: "A odisseia do puto"
+en_title: "The Odyssey of the Puto"
+description: "Blog de nerdola: tech, código, notícias, pop e o que der na telha. Mastigamos a informação e viramos seu hub — com liberdade poética para o chorume."
+en_description: "Nerd blog: tech, code, news, pop and whatever comes to mind. We digest the info and become your hub — with poetic freedom for the sludge."
 ---
 
-<!-- Filtro burro por tipo de post (client-side) -->
-<nav class="filter-tags" aria-label="Filtrar por tipo de post">
-  <span class="filter-tags-label">Ver:</span>
+<!-- Filtro por tipo de post (PT/EN) -->
+<nav class="filter-tags has-en" aria-label="Filtrar por tipo de post">
+  <span class="filter-tags-label has-en">
+    <span class="lang-pt">// Ver:</span>
+    <span class="lang-en">// View:</span>
+  </span>
   <div class="filter-tags-buttons">
-    <button type="button" class="filter-tag is-active" data-filter="all" aria-pressed="true">Todos</button>
-    <button type="button" class="filter-tag" data-filter="codigo" aria-pressed="false">Código</button>
-    <button type="button" class="filter-tag" data-filter="noticias" aria-pressed="false">Notícias</button>
-    <button type="button" class="filter-tag" data-filter="jogos" aria-pressed="false">Jogos</button>
-    <button type="button" class="filter-tag" data-filter="filmes" aria-pressed="false">Filmes</button>
+    <button type="button" class="filter-tag is-active" data-filter="all" aria-pressed="true"><span class="lang-pt">Todos</span><span class="lang-en">All</span></button>
+    <button type="button" class="filter-tag" data-filter="codigo" aria-pressed="false"><span class="lang-pt">Código</span><span class="lang-en">Code</span></button>
+    <button type="button" class="filter-tag" data-filter="noticias" aria-pressed="false"><span class="lang-pt">Notícias</span><span class="lang-en">News</span></button>
+    <button type="button" class="filter-tag" data-filter="pop" aria-pressed="false"><span class="lang-pt">Pop</span><span class="lang-en">Pop</span></button>
   </div>
 </nav>
 
 <div id="post-list">
 {% for post in paginator.posts %}
-{% comment %}
-  Filtro: data-tags deve ser um dos codigo, noticias, jogos, filmes (ou vários separados por espaço).
-  Preferência: tags no front matter (tags: [jogos, filmes]). Se não tiver tags, deriva da category.
-{% endcomment %}
 {% assign post_tag_str = post.tags | join: ' ' | downcase %}
 {% if post_tag_str == '' and post.categories.size > 0 %}
   {% assign cat = post.categories[0] | downcase %}
-  {% if cat == 'jogos' or cat == 'filmes' or cat == 'noticias' or cat == 'codigo' %}
+  {% if cat == 'jogos' or cat == 'filmes' %}
+    {% assign post_tag_str = 'pop' %}
+  {% elsif cat == 'noticias' or cat == 'codigo' or cat == 'pop' %}
     {% assign post_tag_str = cat %}
   {% else %}
-    {% comment %} infrastructure, dev, etc. → codigo {% endcomment %}
     {% assign post_tag_str = 'codigo' %}
   {% endif %}
 {% endif %}
 {% if post_tag_str == '' %}{% assign post_tag_str = 'codigo' %}{% endif %}
 <div class="post-preview" data-tags="{{ post_tag_str }}">
     <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">{{ post.title }}</h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">{{ post.subtitle }}</h3>
+        <h2 class="post-title has-en">
+            <span class="lang-pt">{{ post.title }}</span>
+            <span class="lang-en">{{ post.en_title | default: post.title }}</span>
+        </h2>
+        {% if post.subtitle or post.en_subtitle %}
+        <h3 class="post-subtitle has-en">
+            <span class="lang-pt">{{ post.subtitle }}</span>
+            <span class="lang-en">{{ post.en_subtitle | default: post.subtitle }}</span>
+        </h3>
         {% endif %}
     </a>
-    <p class="post-meta">Postado por {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} em {{ post.date | date: site.date_format }}</p>
+    <p class="post-meta has-en">
+      <span class="lang-pt">Postado por {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} em {{ post.date | date: site.date_format }}</span>
+      <span class="lang-en">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%m/%d/%Y" }}</span>
+    </p>
 </div>
 <hr class="post-sep">
 {% endfor %}
@@ -47,15 +58,15 @@ description: "Blog de nerdola: tech, código, jogos, filmes e o que der na telha
 
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}
-<ul class="pager">
+<ul class="pager has-en">
     {% if paginator.previous_page %}
     <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Novos Posts</a>
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span class="lang-pt">&larr; Novos Posts</span><span class="lang-en">&larr; Newer Posts</span></a>
     </li>
     {% endif %}
     {% if paginator.next_page %}
     <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Posts Antigos &rarr;</a>
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span class="lang-pt">Posts Antigos &rarr;</span><span class="lang-en">Older Posts &rarr;</span></a>
     </li>
     {% endif %}
 </ul>

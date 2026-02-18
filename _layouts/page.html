@@ -2,15 +2,24 @@
 layout: default
 ---
 
-<!-- Page Header -->
-<header class="intro-header">
+<!-- Page Header (home = mais robusto). PT/EN via .has-en + .lang-pt / .lang-en -->
+<header class="intro-header {% if page.url == '/' or page.url == '' or page.url == '/index.html' %}intro-header--home{% endif %}">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
-                    <hr class="small">
-                    <span class="subheading">{{ page.description }}</span>
+                <div class="site-heading {% if page.en_title or page.en_description %}has-en{% endif %}">
+                    <div class="lang-pt">
+                        <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+                        <hr class="small">
+                        <span class="subheading">{{ page.description }}</span>
+                    </div>
+                    {% if page.en_title or page.en_description %}
+                    <div class="lang-en">
+                        <h1>{{ page.en_title | default: page.title | default: site.title }}</h1>
+                        <hr class="small">
+                        <span class="subheading">{{ page.en_description | default: page.description }}</span>
+                    </div>
+                    {% endif %}
                 </div>
             </div>
         </div>

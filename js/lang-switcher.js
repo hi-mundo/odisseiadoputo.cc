@@ -40,13 +40,13 @@
   }
 
   function updateNavLabels(lang) {
-    document.querySelectorAll('.navbar-nav a[data-en]').forEach(function (a) {
-      var en = a.getAttribute('data-en');
-      var pt = a.getAttribute('data-pt');
+    document.querySelectorAll('[data-pt][data-en]').forEach(function (el) {
+      var en = el.getAttribute('data-en');
+      var pt = el.getAttribute('data-pt');
       if (lang === 'en' && en) {
-        a.textContent = en;
+        el.textContent = en;
       } else if (pt) {
-        a.textContent = pt;
+        el.textContent = pt;
       }
     });
   }

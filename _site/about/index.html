@@ -78,7 +78,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li class="lang-switcher">
-                    <span class="lang-label">Idioma:</span>
+                    <span class="lang-label" data-pt="Idioma:" data-en="Language:">Idioma:</span>
                     <button type="button" class="lang-btn lang-btn-pt" data-lang="pt" aria-pressed="true">PT</button>
                     <button type="button" class="lang-btn lang-btn-en" data-lang="en" aria-pressed="false">EN</button>
                 </li>
@@ -89,20 +89,35 @@
                 </li>
 				
                 
+				
+                <li>
+                    <a href="/" data-pt="A odisseia do puto" data-en="The Odyssey of the Puto">A odisseia do puto</a>
+                </li>
+				
+                
             </ul>
         </div>
     </div>
 </nav>
 
-        <!-- Page Header -->
-<header class="intro-header">
+        <!-- Page Header (home = mais robusto). PT/EN via .has-en + .lang-pt / .lang-en -->
+<header class="intro-header ">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>Sobre</h1>
-                    <hr class="small">
-                    <span class="subheading">Quem faz a Odisseia do Puto</span>
+                <div class="site-heading has-en">
+                    <div class="lang-pt">
+                        <h1>Sobre</h1>
+                        <hr class="small">
+                        <span class="subheading">Quem faz a Odisseia do Puto</span>
+                    </div>
+                    
+                    <div class="lang-en">
+                        <h1>About</h1>
+                        <hr class="small">
+                        <span class="subheading">Who runs The Odyssey of the Puto</span>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -113,40 +128,89 @@
 <div class="container page-main">
 	<div class="row">
 		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-			<p><strong>A odisseia do puto</strong> é um blog de nerdola: tecnologia, desenvolvimento e o que der na telha — escrito por quem está na linha de frente.</p>
+			<div class="about-content has-en">
+  <div class="lang-pt">
+    <p><strong>A odisseia do puto</strong> é um blog de nerdola: tecnologia, desenvolvimento e o que der na telha — escrito por quem está na linha de frente.</p>
 
-<section class="about-tags">
-  <h3>O que você vai encontrar aqui</h3>
-  <p>No topo da home tem um filtro por tipo de post. A gente agrupa assim:</p>
-  <ul>
-    <li><strong>Código</strong> — dev, DevOps, SRE, arquitetura de software, tutoriais e opinião técnica.</li>
-    <li><strong>Notícias</strong> — comentários sobre notícias do mundo tech.</li>
-    <li><strong>Jogos</strong> — comentários sobre jogos.</li>
-    <li><strong>Filmes</strong> — comentários sobre filmes (muitas vezes ruins).</li>
-  </ul>
-  <p>Ou seja: um pouco de cada canto do cardápio nerd. Nos posts, use no front matter <code>tags: [codigo]</code>, <code>tags: [noticias]</code>, <code>tags: [jogos]</code> ou <code>tags: [filmes]</code> (ou mais de uma) para o filtro da home funcionar.</p>
-</section>
+    <section class="about-puto-joke">
+      <h3>O que significa puto?</h3>
+      <p>Na versão formal: <strong>P</strong>lataforma <strong>U</strong>tilitária <strong>T</strong>eórica e <strong>O</strong>riginal. Na versão de quem já viveu: imagine como você se sentiria numa war room por 12 horas tentando resolver um problema causado por um dev que se empolgou demais com a bíblia do Uncle Bob.</p>
+    </section>
 
-<div class="about-team">
-  <section class="about-person">
-    <h3>Raimundo Pessoa</h3>
-    <p class="role">Engenheiro de software</p>
-    <p>Ajuda nas pautas e no que der na telha — geralmente o nerdola da dupla.</p>
-  </section>
-  <section class="about-person">
-    <h3>Frederico "Doido"</h3>
-    <p class="role">Escritor sanguinário</p>
-    <p>Escreve e edita os posts do blog, com foco em clareza e em conteúdo que faça sentido para quem programa e para quem quer entender tecnologia.</p>
-  </section>
+    <section class="about-tags">
+      <h3>O que você vai encontrar aqui</h3>
+      <p>No topo da home tem um filtro por tipo de post. A gente agrupa assim:</p>
+      <ul>
+        <li><strong>Código</strong> — dev, DevOps, SRE, arquitetura de software, tutoriais e opinião técnica.</li>
+        <li><strong>Notícias</strong> — comentários sobre notícias do mundo tech.</li>
+        <li><strong>Pop</strong> — jogos, filmes, séries e cultura pop em geral.</li>
+      </ul>
+      <p>Ou seja: um pouco de cada canto do cardápio nerd. Nos posts, use no front matter <code>tags: [codigo]</code>, <code>tags: [noticias]</code> ou <code>tags: [pop]</code> (ou mais de uma) para o filtro da home funcionar.</p>
+    </section>
+
+    <div class="about-team">
+      <section class="about-person">
+        <h3>Raimundo Pessoa</h3>
+        <p class="role">Engenheiro de software</p>
+        <p>Ajuda nas pautas e no que der na telha — geralmente o nerdola da dupla.</p>
+      </section>
+      <section class="about-person">
+        <h3>Frederico "Doido"</h3>
+        <p class="role">Escritor sanguinário</p>
+        <p>Gosta de cultura pop e sabe fazer um hello world. Formado em segurança da informação, preferiu ir para o lado de divulgador científico. Não posta LinkedIn nem vida pessoal junto ao blog — prefere escrever como anônimo, sem medo de dar opinião. Notamos isso na forma dele escrever.</p>
+      </section>
+    </div>
+
+    <section class="about-subscription">
+      <h3>Versão grátis e versão paga</h3>
+      <p>O site é gratuito e sempre terá conteúdo aberto. Na <strong>versão grátis</strong> a gente exibe anúncios — é assim que a gente paga as contas e mantém o blog no ar.</p>
+      <p>Se preferir <strong>ler sem ads</strong> e ainda receber tudo no email: por <strong>R$ 20/mês</strong> você assina a newsletter paga. O conteúdo é enviado direto na sua caixa de entrada, em formato de newsletter, sempre atualizado, sem precisar entrar no site atrás de post novo. Quem assina apoia o blog e lê com mais conforto.</p>
+    </section>
+
+    <p class="about-footer">Dois putos, uma odisseia. Este blog é <strong>filiado ao <a href="https://nerdasservice.com" target="_blank" rel="noopener">Nerd as a Service</a></strong> — SRE &amp; Platform Engineering sob demanda. Se quiser falar com a gente, use os links do rodapé.</p>
+  </div>
+
+  <div class="lang-en">
+    <p><strong>The Odyssey of the Puto</strong> is a nerd blog: tech, development, and whatever comes to mind — written by people on the front line.</p>
+
+    <section class="about-puto-joke">
+      <h3>What does “puto” mean?</h3>
+      <p>Formal version: <strong>P</strong>latform <strong>U</strong>tilitarian <strong>T</strong>heoretical and <strong>O</strong>riginal. The version for anyone who’s been there: imagine being in a war room for 12 hours fixing a problem caused by a dev who got too excited about Uncle Bob’s bible.</p>
+    </section>
+
+    <section class="about-tags">
+      <h3>What you’ll find here</h3>
+      <p>On the home page there’s a filter by post type. We group posts like this:</p>
+      <ul>
+        <li><strong>Code</strong> — dev, DevOps, SRE, software architecture, tutorials and technical opinion.</li>
+        <li><strong>News</strong> — commentary on tech news.</li>
+        <li><strong>Pop</strong> — games, movies, series and pop culture in general.</li>
+      </ul>
+      <p>In short: a bit of everything from the nerd menu. In posts, use <code>tags: [codigo]</code>, <code>tags: [noticias]</code> or <code>tags: [pop]</code> in the front matter (or more than one) for the home filter to work.</p>
+    </section>
+
+    <div class="about-team">
+      <section class="about-person">
+        <h3>Raimundo Pessoa</h3>
+        <p class="role">Software engineer</p>
+        <p>Helps with topics and whatever comes up — usually the nerd of the duo.</p>
+      </section>
+      <section class="about-person">
+        <h3>Frederico "Doido"</h3>
+        <p class="role">Bloodthirsty writer</p>
+        <p>Loves pop culture and can do a hello world. Trained in information security, he chose to go the science communicator route. He doesn’t mix LinkedIn or personal life with the blog — he’d rather write as an anonymous voice, without fear of giving his opinion. You can tell from how he writes.</p>
+      </section>
+    </div>
+
+    <section class="about-subscription">
+      <h3>Free and paid version</h3>
+      <p>The site is free and will always have open content. On the <strong>free version</strong> we show ads — that’s how we pay the bills and keep the blog running.</p>
+      <p>If you’d rather <strong>read without ads</strong> and get everything by email: for <strong>R$ 20/month</strong> you can subscribe to the paid newsletter. Content is sent straight to your inbox, in newsletter form, always up to date, so you don’t have to hunt for new posts. Subscribers support the blog and read in comfort.</p>
+    </section>
+
+    <p class="about-footer">Two putos, one odyssey. This blog is <strong>affiliated with <a href="https://nerdasservice.com" target="_blank" rel="noopener">Nerd as a Service</a></strong> — SRE &amp; Platform Engineering on demand. If you want to get in touch, use the footer links.</p>
+  </div>
 </div>
-
-<section class="about-subscription">
-  <h3>Versão grátis e versão paga</h3>
-  <p>O site é gratuito e sempre terá conteúdo aberto. Na <strong>versão grátis</strong> a gente exibe anúncios — é assim que a gente paga as contas e mantém o blog no ar.</p>
-  <p>Se preferir <strong>ler sem ads</strong> e ainda receber tudo no email: por <strong>R$ 20/mês</strong> você assina a newsletter paga. O conteúdo é enviado direto na sua caixa de entrada, em formato de newsletter, sempre atualizado, sem precisar entrar no site atrás de post novo. Quem assina apoia o blog e lê com mais conforto.</p>
-</section>
-
-<p class="about-footer">Dois putos, uma odisseia. Se quiser falar com a gente, use os links do rodapé.</p>
 
 		</div>
 	</div>
@@ -159,7 +223,14 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p class="copyright text-muted">A odisseia do puto — Raimundo Pessoa & Frederico Doido</p>
+                <p class="footer-naas has-en">
+                    <span class="lang-pt"><span class="naas-prompt">$</span> Filiado ao <a href="https://nerdasservice.com" target="_blank" rel="noopener">Nerd as a Service</a> — SRE &amp; Platform Engineering sob demanda.</span>
+                    <span class="lang-en"><span class="naas-prompt">$</span> Affiliated with <a href="https://nerdasservice.com" target="_blank" rel="noopener">Nerd as a Service</a> — SRE &amp; Platform Engineering on demand.</span>
+                </p>
+                <p class="footer-contact has-en">
+                    <span class="lang-pt"><a href="mailto:contato@odisseiadoputo.cc">contato@odisseiadoputo.cc</a></span>
+                    <span class="lang-en"><a href="mailto:contato@odisseiadoputo.cc">contato@odisseiadoputo.cc</a></span>
+                </p>
             </div>
         </div>
     </div>

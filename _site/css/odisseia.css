@@ -1,18 +1,22 @@
-/* A odisseia do puto — tema preto, branco e verde, design focado em leitura */
+/* A odisseia do puto — dark cyberpunk: preto, neon verde, grid, glow */
 
 :root {
-  --bg: #0a0a0a;
-  --bg-card: #111;
-  --text: #e8e8e8;
-  --text-muted: #999;
-  --accent: #00cc66;
-  --accent-soft: #00a050;
-  --accent-bright: #33ff99;
-  --accent-dim: #0d2818;
-  --border: #00cc66;
-  --border-soft: #1a3d2e;
+  --bg: #050508;
+  --bg-card: #0c0c0f;
+  --text: #e4e4e8;
+  --text-muted: #7a7a8a;
+  --accent: #00dd70;
+  --accent-soft: #00aa55;
+  --accent-bright: #00ff88;
+  --accent-dim: #0a1a12;
+  --border: #00dd70;
+  --border-soft: #1a2e22;
   --reading-width: 65ch;
   --reading-line-height: 1.75;
+  /* Neon / cyberpunk */
+  --glow: 0 0 12px rgba(0, 221, 112, 0.4), 0 0 24px rgba(0, 221, 112, 0.2);
+  --glow-strong: 0 0 16px rgba(0, 255, 136, 0.5), 0 0 32px rgba(0, 221, 112, 0.25);
+  --font-mono: ui-monospace, "Cascadia Code", "SF Mono", "Fira Code", Consolas, monospace;
 }
 
 /* ---- Fundo estático + fog ---- */
@@ -34,6 +38,11 @@ body {
   z-index: 0;
   pointer-events: none;
   overflow: hidden;
+  /* Grid sutil cyberpunk */
+  background-image:
+    linear-gradient(rgba(0, 80, 50, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 80, 50, 0.03) 1px, transparent 1px);
+  background-size: 48px 48px;
 }
 
 .fog-layer {
@@ -41,11 +50,11 @@ body {
   inset: -20%;
   background: radial-gradient(
     ellipse 80% 60% at 50% 40%,
-    rgba(0, 60, 30, 0.25) 0%,
-    rgba(0, 40, 20, 0.12) 40%,
+    rgba(0, 90, 50, 0.2) 0%,
+    rgba(0, 50, 30, 0.08) 40%,
     transparent 70%
   );
-  opacity: 0.45;
+  opacity: 0.5;
   will-change: transform, opacity;
   transition: opacity 0.5s ease;
 }
@@ -100,10 +109,13 @@ body {
 
 a {
   color: var(--accent-bright) !important;
+  text-shadow: 0 0 20px transparent;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
 }
 a:hover, a:focus {
-  color: var(--accent) !important;
+  color: var(--accent-bright) !important;
   text-decoration: underline !important;
+  text-shadow: var(--glow);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -113,10 +125,11 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 0.25em;
 }
 
-/* Navbar — sempre fundo escuro, estilo 2003 */
+/* Navbar — dark cyberpunk: borda com glow */
 .navbar-custom {
   background: var(--bg-card) !important;
   border-bottom: 2px solid var(--border) !important;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4), 0 1px 0 var(--border);
   position: fixed;
   top: 0;
   left: 0;
@@ -321,6 +334,7 @@ article.reading-content .container [class*="col-"] {
 .page-main .about-team,
 .page-main .about-tags,
 .page-main .about-subscription,
+.page-main .about-puto-joke,
 .page-main .about-footer {
   max-width: 100%;
 }
@@ -337,11 +351,12 @@ article.reading-content .container [class*="col-"] {
   }
 }
 
-/* Header das páginas e posts — próximo do conteúdo, faixa verde */
+/* Header das páginas e posts — borda neon */
 .intro-header {
   background: var(--bg) !important;
   background-image: none !important;
-  border-bottom: 3px solid var(--border);
+  border-bottom: 2px solid var(--border);
+  box-shadow: 0 4px 32px rgba(0, 221, 112, 0.08);
   margin-bottom: 1.25rem;
 }
 .intro-header .site-heading,
@@ -375,6 +390,51 @@ article.reading-content .container [class*="col-"] {
 .intro-header .post-heading .meta {
   color: var(--text-muted) !important;
 }
+
+/* Home: header robusto e simples (cyberpunk) */
+.intro-header--home {
+  border-bottom-width: 2px;
+  box-shadow: 0 6px 40px rgba(0, 221, 112, 0.12), 0 1px 0 var(--border);
+}
+.intro-header--home .site-heading {
+  padding: 3.5rem 0 2.5rem;
+  text-align: center;
+}
+.intro-header--home .site-heading h1 {
+  font-family: var(--font-mono) !important;
+  font-size: 1.85rem !important;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--text) !important;
+  text-shadow: 0 0 30px rgba(0, 221, 112, 0.15);
+}
+.intro-header--home .site-heading .subheading {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  color: var(--text-muted) !important;
+  margin-top: 0.75rem;
+  line-height: 1.5;
+  max-width: 36em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.intro-header--home hr.small {
+  box-shadow: var(--glow);
+  border-width: 2px;
+  max-width: 64px;
+  margin: 0.5rem auto 0;
+}
+@media (min-width: 768px) {
+  .intro-header--home .site-heading {
+    padding: 4.5rem 0 3rem;
+  }
+  .intro-header--home .site-heading h1 {
+    font-size: 2.25rem !important;
+  }
+  .intro-header--home .site-heading .subheading {
+    font-size: 1rem;
+  }
+}
 .intro-header .post-heading .subheading {
   font-size: 1rem !important;
   font-weight: 500;
@@ -404,6 +464,7 @@ article.reading-content .container [class*="col-"] {
 hr.small {
   border-color: var(--accent) !important;
   max-width: 80px;
+  box-shadow: var(--glow);
 }
 
 /* Conteúdo principal */
@@ -480,6 +541,7 @@ article blockquote, .post-body blockquote {
 blockquote {
   color: var(--text-muted) !important;
   border-left: 4px solid var(--accent);
+  box-shadow: 4px 0 20px rgba(0, 221, 112, 0.08);
   background: var(--bg-card);
   padding: 1rem 1.5rem;
   margin: 1.5rem 0;
@@ -496,6 +558,7 @@ blockquote {
   display: block;
   font-size: 0.8rem;
   color: var(--text-muted);
+  font-family: var(--font-mono);
   margin-bottom: 0.5rem;
 }
 
@@ -526,6 +589,7 @@ blockquote {
   background: var(--accent);
   color: var(--bg);
   border-color: var(--accent);
+  box-shadow: var(--glow);
 }
 
 /* Lista de posts na home */
@@ -537,11 +601,15 @@ blockquote {
   color: var(--text) !important;
 }
 .post-preview > a:hover {
-  color: var(--accent) !important;
+  color: var(--accent-bright) !important;
   text-decoration: none !important;
+}
+.post-preview > a:hover .post-title {
+  text-shadow: var(--glow);
 }
 .post-preview > a > .post-title {
   color: var(--text) !important;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
 }
 .post-preview > .post-meta {
   color: var(--text-muted) !important;
@@ -570,9 +638,10 @@ blockquote {
   border-color: var(--border-soft) !important;
 }
 
-/* Footer */
+/* Footer — borda neon */
 footer {
   border-top: 2px solid var(--border);
+  box-shadow: 0 -4px 24px rgba(0, 221, 112, 0.06);
   background: var(--bg-card) !important;
   padding: 2rem 0;
 }
@@ -595,6 +664,36 @@ footer .fa-circle {
 footer .fa-inverse {
   color: var(--bg) !important;
 }
+/* Filiado ao Nerd as a Service — estilo terminal (identidade NaaS) */
+.footer-naas {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-muted) !important;
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+}
+.footer-naas a {
+  color: var(--accent) !important;
+}
+.footer-naas a:hover {
+  color: var(--accent-bright) !important;
+}
+.naas-prompt {
+  color: var(--accent);
+  margin-right: 0.25em;
+}
+.footer-contact {
+  font-size: 0.85rem;
+  color: var(--text-muted) !important;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+.footer-contact a {
+  color: var(--accent) !important;
+}
+.footer-contact a:hover {
+  color: var(--accent-bright) !important;
+}
 
 /* Share */
 ul.share li a {
@@ -605,6 +704,24 @@ ul.share li a:hover {
 }
 
 /* Sobre */
+.about-puto-joke {
+  margin: 1.5rem 0;
+  padding: 1.25rem 1.25rem 1.25rem 1.5rem;
+  border-left: 4px solid var(--accent);
+  background: var(--bg-card);
+  box-shadow: 4px 0 20px rgba(0, 221, 112, 0.06);
+}
+.about-puto-joke h3 {
+  color: var(--accent) !important;
+  border: none;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.about-puto-joke p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.9875rem;
+}
 .about-team {
   display: grid;
   gap: 2rem;
@@ -871,7 +988,8 @@ code { color: var(--accent-bright); background: var(--bg-card); padding: 0.2em 0
   }
   .about-person,
   .about-tags,
-  .about-subscription {
+  .about-subscription,
+  .about-puto-joke {
     padding: 1rem;
     min-width: 0;
   }
