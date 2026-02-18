@@ -26,18 +26,26 @@
     return arr[Math.floor(Math.random() * arr.length)];
   }
 
+  function escapeAttr(s) {
+    if (!s) return '';
+    var div = document.createElement('div');
+    div.textContent = s;
+    return div.innerHTML.replace(/"/g, '&quot;');
+  }
+
   function createAdNode() {
     var intro = pick(INTROS);
     var joke = pick(JOKES);
-    var html = '<aside class="ad-tv ad-tv-injected" role="complementary" aria-label="Espaço publicitário">' +
+    var client = (typeof window !== 'undefined' && window.ADSENSE_CLIENT) ? String(window.ADSENSE_CLIENT) : '';
+    var slot = (typeof window !== 'undefined' && window.ADSENSE_SLOT) ? String(window.ADSENSE_SLOT) : '';
+    var hasAd = slot && client;
+    var screenContent = hasAd
+      ? '<ins class="adsbygoogle ad-unit-tevisao" style="display:block" data-ad-client="' + escapeAttr(client) + '" data-ad-slot="' + escapeAttr(slot) + '" data-ad-format="rectangle" data-full-width-responsive="false"></ins>'
+      : '<div class="ad-tv-placeholder"><span class="ad-tv-label">Publicidade</span><span class="ad-tv-size">300 &times; 250</span></div>';
+    var html = '<aside class="ad-tv ad-tv-injected" role="complementary" aria-label="Espaço publicitário" data-ad-placement="tevisao">' +
       '<p class="ad-tv-intro">' + escapeHtml(intro) + '</p>' +
       '<div class="ad-tv-frame">' +
-        '<div class="ad-tv-screen">' +
-          '<div class="ad-tv-placeholder">' +
-            '<span class="ad-tv-label">Publicidade</span>' +
-            '<span class="ad-tv-size">300 &times; 250</span>' +
-          '</div>' +
-        '</div>' +
+        '<div class="ad-tv-screen" data-ad-container="tevisao">' + screenContent + '</div>' +
         '<div class="ad-tv-stand"></div>' +
         '<p class="ad-tv-joke">' + escapeHtml(joke) + '</p>' +
       '</div>' +
@@ -46,6 +54,12 @@
     wrap.className = 'ad-tv-wrap';
     wrap.innerHTML = html;
     return wrap.firstElementChild;
+  }
+
+  function pushAdSense() {
+    try {
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    } catch (e) {}
   }
 
   function escapeHtml(s) {
@@ -135,13 +149,16 @@
   function run() {
     if (document.getElementById('post-list') && document.querySelector('#post-list .post-preview')) {
       injectInHome();
+      pushAdSense();
       return;
     }
     if (document.querySelector('article.reading-content')) {
       injectInPost();
+      pushAdSense();
       return;
     }
     injectInPage();
+    pushAdSense();
   }
 
   if (document.readyState === 'loading') {

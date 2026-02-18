@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Blog de nerdola: tech, código, jogos, filmes e o que der na telha. Mastigamos a informação e viramos seu hub — com liberdade poética para o chorume.">
+    <meta name="description" content="Blog de nerdola: tech, código, notícias, pop e o que der na telha. Mastigamos a informação e viramos seu hub — com liberdade poética para o chorume.">
 
     <title>A Autofagia do Silício e o Estelionato da Inteligência Infinita - A odisseia do puto</title>
 
@@ -40,8 +40,8 @@
 
     <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="A odisseia do puto" />
 
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3228626608941163"
+    <!-- Google AdSense — anúncios só dentro das tevisões (ad-tv-screen) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9374424266642240"
          crossorigin="anonymous"></script>
 
     
@@ -50,6 +50,7 @@
 
 
 <body>
+    <script>window.ADSENSE_CLIENT="ca-pub-9374424266642240";window.ADSENSE_SLOT="";</script>
     <!-- Fundo estático com efeito fog (fixo; conteúdo rola por cima) -->
     <div id="fog-bg" class="fog-bg" aria-hidden="true">
         <div class="fog-layer fog-layer-1"></div>
@@ -86,6 +87,12 @@
 				
                 <li>
                     <a href="/about/" data-pt="Sobre" data-en="About">Sobre</a>
+                </li>
+				
+                
+				
+                <li>
+                    <a href="/apoie/" data-pt="Esmola" data-en="Esmola">Esmola</a>
                 </li>
 				
                 
@@ -315,9 +322,20 @@
 
     </div>
 
+    <!-- CRT overlay: por cima do conteúdo (position: fixed, z-index alto) -->
+    <div class="scanline" aria-hidden="true"></div>
+    <div class="crt-flicker" aria-hidden="true"></div>
+
+    <!-- Botão Esmola: redireciona para a URL configurada (ex.: página com ad na tevisão). -->
+<a href="#" class="esmola-button" id="esmola-button" aria-label="Esmola para o projeto">
+  <span class="esmola-button-emoji" aria-hidden="true">🐷</span>
+  <span class="esmola-button-label">Esmola</span>
+</a>
+
     <script src="/js/fog.js"></script>
     <script src="/js/filter.js"></script>
     <script src="/js/inject-ads.js"></script>
+    <script src="/js/ad-init.js"></script>
     <script src="/js/lang-switcher.js"></script>
 </body>
 
