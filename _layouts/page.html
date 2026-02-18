@@ -26,10 +26,10 @@ layout: default
     </div>
 </header>
 
-<!-- Main Content (home, sobre, etc.) — centralizado -->
-<div class="container page-main">
+<!-- Main Content (home, sobre, etc.) — centralizado; Apoie usa largura maior para o grid de tevisões -->
+<div class="container page-main {% if page.permalink == '/apoie/' %}page-main--apoie{% endif %}">
 	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 {% if page.permalink == '/apoie/' %}col-apoie-full{% endif %}">
 			{{ content }}
 		</div>
 	</div>

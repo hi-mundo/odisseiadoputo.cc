@@ -1031,12 +1031,207 @@ ul.share li a:hover {
   }
 }
 
-/* Página Apoie: texto acima da tevisão */
+/* Página Apoie: Neo vendo a Matrix + grid de tevisões */
+.apoie-matrix {
+  text-align: center;
+  margin-bottom: 2rem;
+}
 .apoie-intro {
-  margin-bottom: 1.5rem;
+  margin: 0 0 0.35rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--accent) !important;
+  font-family: var(--font-mono);
+  text-shadow: 0 0 20px rgba(0, 221, 112, 0.2);
+}
+.apoie-sub {
+  margin: 0 0 1.25rem;
   color: var(--text-muted);
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.5;
+  max-width: 36em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.apoie-gif-wrap {
+  margin: 0 auto 0;
+  border: 2px solid var(--border-soft);
+  border-radius: 8px;
+  overflow: hidden;
+  display: inline-block;
+  box-shadow: var(--glow), inset 0 0 30px rgba(0, 40, 25, 0.2);
+  max-width: 100%;
+}
+.apoie-gif {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 320px;
+  vertical-align: middle;
+}
+
+/* Página Apoie: container mais largo para o grid de tevisões */
+.page-main--apoie,
+.page-main--apoie.container {
+  max-width: 1200px !important;
+}
+.col-apoie-full {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+/* Grid da página Apoie: muitas tevisões em vários tamanhos (grade densa) */
+.apoie-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(140px, 1fr));
+  grid-auto-rows: 150px;
+  grid-auto-flow: dense;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.apoie-grid .ad-tv {
+  margin: 0;
+  min-width: 0;
+  min-height: 0;
+}
+.apoie-grid .ad-tv-frame {
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.apoie-grid .ad-tv-intro {
+  margin-bottom: 0.35rem;
+  font-size: 0.7rem;
+}
+.apoie-grid .ad-tv-screen {
+  margin: 0 auto;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+.apoie-grid .ad-tv-joke {
+  margin-top: 0.25rem;
+  font-size: 0.6rem;
+}
+.apoie-grid .ad-tv-stand {
+  margin-top: 0;
+}
+
+/* Largura dupla (leaderboard 728x90) */
+.apoie-grid .ad-tv--728x90 {
+  grid-column: span 2;
+}
+/* Altura dupla (half page 300x600) */
+.apoie-grid .ad-tv--300x600 {
+  grid-row: span 2;
+}
+
+/* Tamanhos da tela (ad-tv-screen) por formato */
+.apoie-grid .ad-tv-screen--300x250 {
+  width: 100%;
+  max-width: 300px;
+  height: 250px;
+  min-height: 200px;
+}
+.apoie-grid .ad-tv-screen--336x280 {
+  width: 100%;
+  max-width: 336px;
+  height: 280px;
+  min-height: 220px;
+}
+.apoie-grid .ad-tv-screen--728x90 {
+  width: 100%;
+  max-width: 728px;
+  height: 90px;
+  min-height: 90px;
+}
+.apoie-grid .ad-tv-screen--300x600 {
+  width: 100%;
+  max-width: 300px;
+  height: 600px;
+  min-height: 400px;
+}
+.apoie-grid .ad-tv-screen--250x250 {
+  width: 100%;
+  max-width: 250px;
+  height: 250px;
+  min-height: 180px;
+}
+.apoie-grid .ad-tv-screen--320x100 {
+  width: 100%;
+  max-width: 320px;
+  height: 100px;
+  min-height: 100px;
+}
+.apoie-grid .ad-tv-screen--200x200 {
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  min-height: 150px;
+}
+.apoie-grid .ad-tv-screen--320x50 {
+  width: 100%;
+  max-width: 320px;
+  height: 50px;
+  min-height: 50px;
+}
+
+@media (max-width: 991px) {
+  .apoie-grid {
+    grid-template-columns: repeat(3, minmax(120px, 1fr));
+    grid-auto-rows: 130px;
+    gap: 0.75rem;
+  }
+  .apoie-grid .ad-tv--728x90 {
+    grid-column: span 3;
+  }
+  .apoie-grid .ad-tv-screen--728x90 {
+    max-width: 100%;
+    min-height: 70px;
+    height: 90px;
+  }
+  .apoie-grid .ad-tv-screen--300x600 {
+    min-height: 280px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 767px) {
+  .apoie-intro {
+    font-size: 1.25rem;
+  }
+  .apoie-sub {
+    font-size: 0.85rem;
+  }
+  .apoie-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 1rem;
+  }
+  .apoie-grid .ad-tv--728x90 {
+    grid-column: span 1;
+  }
+  .apoie-grid .ad-tv--300x600 {
+    grid-row: span 1;
+  }
+  .apoie-grid .ad-tv-screen {
+    max-width: 100% !important;
+  }
+  .apoie-grid .ad-tv-screen--300x250,
+  .apoie-grid .ad-tv-screen--336x280,
+  .apoie-grid .ad-tv-screen--250x250,
+  .apoie-grid .ad-tv-screen--200x200 {
+    height: 220px;
+    min-height: 180px;
+  }
+  .apoie-grid .ad-tv-screen--300x600 {
+    height: 320px;
+    min-height: 280px;
+  }
 }
 
 /* HR */
