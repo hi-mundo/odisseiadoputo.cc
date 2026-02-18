@@ -297,16 +297,21 @@ article.reading-content .container [class*="col-"] {
   display: block;
   box-sizing: border-box;
   flex-shrink: 0;
+  align-self: center; /* centraliza o bloco no flex (evita desalinhamento no Sobre) */
 }
 .site-wrap > .container .row,
 .container.page-main .row {
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 .site-wrap > .container [class*="col-"],
 .container.page-main [class*="col-"] {
-  width: 100%;
-  max-width: 100%;
+  width: 100% !important;
+  max-width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 .intro-header {
   align-self: stretch;
@@ -324,7 +329,8 @@ article.reading-content .container [class*="col-"] {
   .reading-content .container,
   article.reading-content .container,
   .intro-header .container,
-  .site-wrap > .container {
+  .site-wrap > .container,
+  .container.page-main {
     max-width: 100% !important;
     padding-left: 15px;
     padding-right: 15px;
