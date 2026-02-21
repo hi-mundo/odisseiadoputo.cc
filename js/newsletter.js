@@ -232,12 +232,13 @@
         var successEl = document.getElementById('nl-end-success');
         if (!form) return;
 
-        // Se já inscrito, esconde o bloco inteiro (EXCETO em Apoie e Sobre)
+        // Se já inscrito, esconde o bloco inteiro (EXCETO em Apoie, Sobre e Home)
         var currentUrl = window.location.pathname;
         var isApoie = currentUrl.indexOf('/apoie') !== -1;
         var isSobre = currentUrl.indexOf('/about') !== -1;
+        var isHome = currentUrl === '/' || currentUrl === '/index.html' || currentUrl.indexOf('/index.html') !== -1;
 
-        if (isSubscribed() && !isApoie && !isSobre) {
+        if (isSubscribed() && !isApoie && !isSobre && !isHome) {
             var block = document.getElementById('nl-end-block');
             if (block) block.style.display = 'none';
             return;
@@ -295,7 +296,8 @@
         var isPost = !!document.querySelector('.post-body');
         var isApoie = currentUrl.indexOf('/apoie') !== -1;
         var isSobre = currentUrl.indexOf('/about') !== -1;
-        var isSpecialPage = isApoie || isSobre;
+        var isHome = currentUrl === '/' || currentUrl === '/index.html' || currentUrl.indexOf('/index.html') !== -1;
+        var isSpecialPage = isApoie || isSobre || isHome;
 
         bindEndForm();
         bindModalClose();

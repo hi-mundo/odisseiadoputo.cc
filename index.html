@@ -8,6 +8,11 @@ en_description: "The blackhat of tech culture. Code, news and pop dissected with
 rooms — and live to tell the sludge."
 ---
 
+<!-- Newsletter na Home -->
+<div class="nl-home-wrap">
+  {% include newsletter.html %}
+</div>
+
 <!-- Filtro por tipo de post (PT/EN) -->
 <nav class="filter-tags has-en" aria-label="Filtrar por tipo de post">
   <span class="filter-tags-label has-en">
@@ -81,3 +86,5 @@ rooms — and live to tell the sludge."
   {% endif %}
 </ul>
 {% endif %}
+
+<script src="{{ " /js/newsletter.js" | prepend: site.baseurl }}"></script>
