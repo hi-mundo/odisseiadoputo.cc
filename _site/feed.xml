@@ -1,4 +1,87 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-02-21T04:58:46-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">A odisseia do puto</title><subtitle>Engenharia de software, cultura pop e caos. O hub definitivo para quem sobrevive a war rooms — sem onanismo intelectual.</subtitle><entry><title type="html">O Necrotério da Nostalgia: Silent Hill 2 e a Estética do Vazio</title><link href="http://localhost:4000/2026/02/17/necroterio-da-nostalgia-silent-hill-2-filme/" rel="alternate" type="text/html" title="O Necrotério da Nostalgia: Silent Hill 2 e a Estética do Vazio" /><published>2026-02-17T18:45:00-03:00</published><updated>2026-02-17T18:45:00-03:00</updated><id>http://localhost:4000/2026/02/17/necroterio-da-nostalgia-silent-hill-2-filme</id><content type="html" xml:base="http://localhost:4000/2026/02/17/necroterio-da-nostalgia-silent-hill-2-filme/"><![CDATA[<h1 id="o-incidente-anatomia-de-um-cadáver">O Incidente: Anatomia de um Cadáver</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-02-21T16:37:01-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">A odisseia do puto</title><subtitle>O blackhat da cultura tech. Código, notícias e pop dissecados com a acidez de quem sobrevive a war rooms — e sobrevive para contar o chorume.</subtitle><entry><title type="html">O EXCELENTÍSSIMO MANUAL PARA ENTRAR NA ÁREA TECH (OU QUALQUER ÁREA)</title><link href="http://localhost:4000/2026/02/21/manual-entrada-area-tech-playbook-carreira/" rel="alternate" type="text/html" title="O EXCELENTÍSSIMO MANUAL PARA ENTRAR NA ÁREA TECH (OU QUALQUER ÁREA)" /><published>2026-02-21T13:28:00-03:00</published><updated>2026-02-21T13:28:00-03:00</updated><id>http://localhost:4000/2026/02/21/manual-entrada-area-tech-playbook-carreira</id><content type="html" xml:base="http://localhost:4000/2026/02/21/manual-entrada-area-tech-playbook-carreira/"><![CDATA[<p>Esqueça a ilusão: você não vai faturar R$ 80 mil em duas semanas só porque comprou um curso de “<strong>Python do zero ao herói</strong>”. Se você caiu na lábia daquele influencer de sapatênis e sorriso de porcelana, seu problema não é a falta de <em>hard skills</em>; é a carência de uma surra de chinelo. A verdade dói, e machuca tanto quanto ver sua ex-namorada rindo no banco do carona do Celta prata do Jorge da prefeitura — aquele cara que te cumprimenta com um “e aí, campeão?” toda vez que você vai buscar o resto das suas coisas na casa dela. O Jorge, diferente de você, não caiu no conto do <em>reskilling</em> milagroso; ele tem um cargo concursado e ela diz que ele “passa segurança”. Este playbook é para quem quer parar de ser um <strong>preguiçoso mental</strong> e entender a mecânica real do jogo.</p>
+
+<p>Antes de qualquer coisa, entenda o conceito de <strong>Innovation Tokens</strong> (Fichas de Inovação). Cada empresa nasce com, no máximo, três fichas. Se você escolhe usar uma linguagem exótica, uma base de dados que só três pessoas na Estônia conhecem ou uma arquitetura de microserviços para um blog, você gastou uma ficha. Se gastar todas em <strong>infraestrutura inútil</strong>, não sobra nada para o que realmente importa: resolver o problema do cliente antes que o dinheiro acabe.</p>
+
+<p><img src="/img/innovation-tokens-risk.png" alt="" />
+<em>A economia finita de fichas de inovação em uma startup.</em></p>
+
+<h1 id="1-por-onde-eu-começo-bem-por-qualquer-lugar">1. POR ONDE EU COMEÇO? BEM… POR QUALQUER LUGAR!</h1>
+
+<p>A neurociência explica, mas os vendedores de curso omitem: seu cérebro em repouso é um sistema em <strong>entropia</strong>. Para sair da inércia, você precisa de um estímulo dopaminérgico inicial na sua <strong>Área Tegmental Ventral</strong> (VTA). Sinapses não são criadas assistindo vídeo em 2x; são criadas resolvendo problemas.
+Imagine que você quer construir uma torre tão alta que consiga ver os poros da lua. Você não começa pela cúpula; você começa garantindo o fluxo de pedra, energia, madeira e comida para os trabalhadores (estou jogando muito <em>Age of Empires</em>, releve).</p>
+
+<ul>
+  <li><strong>O Caos é Didático:</strong> O Gato Cheshire já dizia que para quem não sabe onde vai, qualquer caminho serve. Quer hackear o Wi-Fi da vizinha, quer criar seu próprio compilador ou fazer um <strong>CRM</strong> do zero? Vá. O importante é o estímulo inicial para tirar seu cérebro da <strong>necrose</strong>.</li>
+  <li><strong>A Precision of Beliefs:</strong> O aprendizado real é um processo de <strong>Inferencia Ativa</strong>. O cérebro não quer apenas “aprender”, ele quer minimizar o <strong>erro de predição</strong>. Se você só assiste aula, seu erro de predição é zero porque você não está sendo testado. A <strong>plasticidade sináptica</strong> exige o soco na cara do erro de compilação.</li>
+</ul>
+
+<h1 id="2-quando-souber-fazer-perguntas-corretas-você-está-pronto">2. QUANDO SOUBER FAZER PERGUNTAS CORRETAS, VOCÊ ESTÁ PRONTO</h1>
+
+<p>Neste estágio, você parou de brigar com a sintaxe. Você começa a estudar <strong>Orientação a Objetos</strong> (de verdade), coloca <strong>APIs</strong> simples no ar e faz conexões dinâmicas com bancos de dados. Você descobre a real utilidade dos <strong>Design Patterns</strong> e começa a brincar com <em>Dockerfile</em> ou até mesmo infraestruturas simples de <strong>Kubernetes</strong>, aplicando os novos conhecimentos em um ritmo que te permite escolher uma área. É o momento em que você sente que consegue conquistar o primeiro emprego e sente que finalmente o jogo começou.</p>
+
+<p>O segredo aqui é a transição da <strong>incompetência inconsciente</strong> para a consciente. Você finalmente percebe que não sabe porra nenhuma, e esse é o primeiro sinal de inteligência que você demonstrou desde que decidiu seguir aquele influencer de sapatênis.</p>
+
+<h1 id="3-o-pico-da-estupidez-o-estágio-do-júnior-iluminado">3. O PICO DA ESTUPIDEZ (O ESTÁGIO DO JÚNIOR “ILUMINADO”)</h1>
+
+<p>Depois de alguns meses como Júnior, você já faz bem mais que um “Hello World”. Você entrega tarefas, entende o fluxo de <em>deploy</em> e se sente o novo Einstein do código. Parabéns: você atingiu o <strong>Pico da Estupidez</strong> no <strong>Efeito Dunning-Kruger</strong>.</p>
+
+<ul>
+  <li><strong>Superioridade Ilusória:</strong> Quem menos sabe é quem tem mais confiança. Estudos mostram que quem está no quartil inferior de performance estima sua habilidade no 62º percentil. É uma <strong>distorção cognitiva</strong> causada pela falta de capacidade metacognitiva: você é tão ruim que nem consegue perceber o quão ruim você é.</li>
+  <li><strong>O Córtex Pré-Frontal Dorsolateral:</strong> Essa região é responsável pela autorreflexão. Em novatos, ela mal pisca quando eles cometem erros, o que impede a detecção de <strong>falhas lógicas</strong> óbvias.</li>
+  <li><strong>A Queda Necessária:</strong> O aprendizado real do próximo nível começa quando você percebe que não sabe porra nenhuma sobre <strong>escalabilidade</strong>. Se seu cérebro não parece uma geleia derretendo, você não está evoluindo; está apenas repetindo tarefas. Se você não está batendo em problemas novos, você estagnou.</li>
+</ul>
+
+<h1 id="4-ferramenta-é-só-ferramenta-o-salto-para-o-pleno">4. FERRAMENTA É SÓ FERRAMENTA (O SALTO PARA O PLENO)</h1>
+
+<p>Para virar Pleno, você precisa parar de ser um “especialista em martelo de cabo emborrachado”.</p>
+
+<ul>
+  <li><strong>Pornografia de Design Pattern:</strong> Não adianta enfiar microserviços se você tem 10 usuários. O <strong>Kubernetes</strong> virou o fetiche preferido para queimar dinheiro. Estima-se que até 30% dos gastos com nuvem sejam puro <strong>desperdício de recursos</strong> ociosos ou mal configurados.</li>
+  <li><strong>O Caso Prime Video:</strong> A Amazon (sim, a dona da porra toda) cortou custos em 90% ao migrar um serviço de monitoramento de microserviços/<em>serverless</em> para um <strong>Monolito</strong>. O problema? Eles estavam fazendo um “SELECT N+1 distribuído”, passando frames de vídeo pelo S3 e orquestrando com <strong>AWS Step Functions</strong> que cobrava por cada transição de estado. Ao colocar tudo em um único processo no <strong>ECS</strong>, a latência de rede virou chamada em memória e a conta bancária da Amazon agradeceu.</li>
+  <li><strong>Pragmatismo:</strong> Um martelo serve para pregar, mas também serve para bater no saco do Jorge. Só que o resultado será medíocre e você provavelmente será preso. Aprenda o que a arquitetura resolve (<strong>fundamentos</strong>), não a ferramenta da moda. Escolha “<strong>Tecnologia Chata</strong>” (<em>Boring Technology</em>) que tenha modos de falha conhecidos.</li>
+</ul>
+
+<h1 id="5-o-boleto-vence-o-discurso-o-desenrolado-vs-o-medíocre">5. O BOLETO VENCE O DISCURSO: O DESENROLADO VS. O MEDÍOCRE</h1>
+
+<p>Sobre salários: esse assunto varia MUITO. Prefiro não entrar nesse mérito para não criar falsas expectativas. O foco deve ser seu <strong>valor de mercado</strong>.</p>
+
+<ul>
+  <li><strong>O Medíocre:</strong> É o desenvolvedor “receita de bolo”. Ele espera a tarefa mastigada e entra em pânico se o erro não está sendo resolvido pelo “Gepetê”.</li>
+  <li><strong>O Desenrolado:</strong> É o perfil que as empresas brigam para manter. Ele sabe que a média de custo de <strong>downtime</strong> para grandes empresas em 2024 subiu para US$ 14,056 por minuto. Para algumas Fortune 500, esse valor passa de US$ 5 milhões por hora.</li>
+  <li><strong>A Matemática do P99:</strong> O desenrolado entende que se ele tem 10 microserviços e cada um tem um <strong>P99</strong> de 100ms, a probabilidade de o usuário final ter uma experiência de merda é de \(1 - 0.99^{10} \approx 0.095\). Ou seja, 10% dos seus usuários vão querer te matar porque o sistema parece uma carroça, mesmo que cada serviço individual pareça “saudável”.</li>
+</ul>
+
+<h1 id="6-comunicação-como-um-websocket-o-caminho-para-o-sênior">6. COMUNICAÇÃO COMO UM WEBSOCKET (O CAMINHO PARA O SÊNIOR)</h1>
+
+<p>Se você é um gênio técnico, mas não sabe falar com humanos, você é apenas um <strong>script caro</strong>. O Sênior é, acima de tudo, um <strong>comunicador cirúrgico</strong>.</p>
+
+<ul>
+  <li><strong>Baixa Latência e Backpressure:</strong> Trate sua conversa como um <em>Websocket</em>: troca de dados constante e bidirecional. Mas aprenda a aplicar <strong>Backpressure</strong>. Se o seu gerente está te inundando de demandas idiotas, você precisa sinalizar que o sistema (você) está sobrecarregado antes de entrar em <strong>deadlock</strong>.</li>
+  <li><strong>Arquétipos de Staff Engineer:</strong> No topo da cadeia, você não é apenas “programador”. Você pode ser um <strong>Tech Lead</strong> (guia a execução), um <strong>Architect</strong> (cuida de um domínio crítico), um <strong>Solver</strong> (o cara que jogam no meio do incêndio para resolver problemas cabeludos) ou um <strong>Right Hand</strong> (o braço direito do CTO que empresta autoridade para limpar a bagunça organizacional).</li>
+  <li><strong>O Poder do “Não”:</strong> Se te pedirem para “fazer um app de entrega com <strong>blockchain</strong>“, e você não perguntar “por que, caralho?“, você merece o fracasso.</li>
+</ul>
+
+<h1 id="checklist-para-não-ser-um-zé-ruela">CHECKLIST PARA NÃO SER UM ZÉ RUELA</h1>
+
+<ul>
+  <li>Parou de ver vídeo de “rotina de programador que toma café caro”? [User_Post]</li>
+  <li>Entendeu que o <strong>Kubernetes</strong> é uma nave espacial para ir na padaria em 90% dos casos?</li>
+  <li>Aceitou que você nunca vai parar de estudar fundamentos como <strong>RTO/RPO</strong> (<em>Recovery Time/Point Objective</em>)?</li>
+  <li>Consegue explicar por que a <strong>latência P99</strong> é mais importante que a média sem parecer que está tendo um derrame?</li>
+  <li>Já aceitou que a sua ex está, neste exato momento, ajudando o Jorge a escolher a cor do novo sofá deles (e o sofá é confortável pra caralho)?</li>
+</ul>
+
+<p>Se você terminou de ler e sentiu um soco no estômago, parabéns. A dor é o sinal de que seu cérebro ainda está vivo. Agora, para de <strong>onanismo intelectual</strong> com esse texto e vai quebrar alguma coisa.</p>
+
+<hr />
+
+<h3 id="referências-de-trincheira">Referências de Trincheira:</h3>
+
+<ul>
+  <li>https://boringtechnology.club/</li>
+  <li>https://aws.amazon.com/pt/blogs/hpc/prime-video-switched-from-serverless-to-ec2-and-ecs-to-save-90-cost/</li>
+  <li>https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect</li>
+</ul>]]></content><author><name>Frederico Doido</name></author><category term="noticias" /><summary type="html"><![CDATA[Esqueça a ilusão: você não vai faturar R$ 80 mil em duas semanas só porque comprou um curso de “Python do zero ao herói”. Se você caiu na lábia daquele influencer de sapatênis e sorriso de porcelana, seu problema não é a falta de hard skills; é a carência de uma surra de chinelo. A verdade dói, e machuca tanto quanto ver sua ex-namorada rindo no banco do carona do Celta prata do Jorge da prefeitura — aquele cara que te cumprimenta com um “e aí, campeão?” toda vez que você vai buscar o resto das suas coisas na casa dela. O Jorge, diferente de você, não caiu no conto do reskilling milagroso; ele tem um cargo concursado e ela diz que ele “passa segurança”. Este playbook é para quem quer parar de ser um preguiçoso mental e entender a mecânica real do jogo.]]></summary></entry><entry><title type="html">O Necrotério da Nostalgia: Silent Hill 2 e a Estética do Vazio</title><link href="http://localhost:4000/2026/02/17/necroterio-da-nostalgia-silent-hill-2-filme/" rel="alternate" type="text/html" title="O Necrotério da Nostalgia: Silent Hill 2 e a Estética do Vazio" /><published>2026-02-17T18:45:00-03:00</published><updated>2026-02-17T18:45:00-03:00</updated><id>http://localhost:4000/2026/02/17/necroterio-da-nostalgia-silent-hill-2-filme</id><content type="html" xml:base="http://localhost:4000/2026/02/17/necroterio-da-nostalgia-silent-hill-2-filme/"><![CDATA[<h1 id="o-incidente-anatomia-de-um-cadáver">O Incidente: Anatomia de um Cadáver</h1>
 <p>Se você achava que a indústria do entretenimento tinha aprendido a lição básica de “não mexe no que está quieto”, sinto informar: o lobby da mediocridade venceu de novo. O remake do jogo foi um sopro de vida, um trabalho estético fino que respeitou a atmosfera. Mas o filme? Puta que o pariu. É como ver um cirurgião bêbado tentando operar um relógio suíço com um machado de açougueiro.</p>
 
 <p>O que temos aqui é o puro suco do <strong>onanismo intelectual</strong> de diretor. Christopher Gans, que lá em 2006 ainda tinha algum tato, parece ter perdido completamente a bússola. Ele entrega um filme que visualmente tenta mimetizar o jogo — o que eu chamo de <strong>elegância cosmética</strong> — mas que, por dentro, é oco, sem alma e sem o peso dramático que fez de Silent Hill 2 um marco do terror psicológico.</p>

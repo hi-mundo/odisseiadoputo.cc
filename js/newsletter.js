@@ -232,8 +232,12 @@
         var successEl = document.getElementById('nl-end-success');
         if (!form) return;
 
-        // Se já inscrito, esconde o bloco inteiro
-        if (isSubscribed()) {
+        // Se já inscrito, esconde o bloco inteiro (EXCETO em Apoie e Sobre)
+        var currentUrl = window.location.pathname;
+        var isApoie = currentUrl.indexOf('/apoie') !== -1;
+        var isSobre = currentUrl.indexOf('/about') !== -1;
+
+        if (isSubscribed() && !isApoie && !isSobre) {
             var block = document.getElementById('nl-end-block');
             if (block) block.style.display = 'none';
             return;
@@ -290,29 +294,26 @@
         var currentUrl = window.location.pathname;
         var isPost = !!document.querySelector('.post-body');
         var isApoie = currentUrl.indexOf('/apoie') !== -1;
+        var isSobre = currentUrl.indexOf('/about') !== -1;
+        var isSpecialPage = isApoie || isSobre;
 
         bindEndForm();
         bindModalClose();
         bindModalForm();
 
-        // Modal só em posts, não na página apoie e só se não estiver em cooldown
-        if (isPost && !isSubscribed() && !isDismissed()) {
+        // Modal em posts OU páginas especiais (Sobre/Apoie)
+        // Se for página especial, ignora o isSubscribed (sempre mostra se não estiver em cooldown)
+        var shouldShowModal = (isPost && !isSubscribed()) || isSpecialPage;
+
+        if (shouldShowModal && !isDismissed()) {
             // Marca como visto ANTES de abrir (assim na próxima página já é repeat)
             var alreadySeen = getSeenPosts().indexOf(currentUrl) !== -1;
             markPostSeen(currentUrl);
 
             if (!alreadySeen) {
-                // Primeira vez nesse post: abre modal após delay
+                // Primeira vez nessa página: abre modal após delay
                 setTimeout(openModal, MODAL_DELAY_MS);
-            } else {
-                // Recarregou a mesma página: não mostra de novo
             }
-        }
-
-        // Na página apoie não tem modal, mas esconde o bloco se já inscrito
-        if (isApoie && isSubscribed()) {
-            var block = document.getElementById('nl-end-block');
-            if (block) block.style.display = 'none';
         }
     }
 
