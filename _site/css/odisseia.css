@@ -269,7 +269,6 @@ h6 {
   height: 52px;
   width: auto;
   display: block;
-  vertical-align: middle;
 }
 
 .navbar-custom .navbar-brand-text {
@@ -1291,7 +1290,6 @@ ul.share li a:hover {
   width: 100%;
   height: auto;
   max-width: 320px;
-  vertical-align: middle;
 }
 
 
