@@ -1022,32 +1022,57 @@ ul.share li a:hover {
   border: none;
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-size: 24px !important;
+  font-size: 20px !important;
 }
 
 .about-puto-joke p {
   margin: 0;
   color: var(--text-muted);
-  font-size: 20px;
-  line-height: 1.6;
+  font-size: 17px;
+  line-height: 1.5;
 }
 
 .about-team {
-  display: grid;
-  gap: 2rem;
-  margin: 2rem 0;
+  margin: 3rem 0;
+}
+
+.about-team h3 {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+  display: block;
 }
 
 .about-person {
-  padding: 1.5rem;
+  padding: 2rem;
   border: 1px solid var(--border-soft);
   background: var(--bg-card);
+  border-radius: 4px;
 }
 
 .about-person h3 {
+  font-family: var(--font-mono);
+  font-size: 24px !important;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
   color: var(--accent) !important;
-  border: none;
   margin-top: 0;
+  margin-bottom: 2rem;
+  border: none;
+  display: block;
+  font-weight: 800;
+}
+
+.about-person h4 {
+  color: var(--text) !important;
+  font-size: 20px !important;
+  border: none;
+  margin-top: 1.5rem;
+  margin-bottom: 0.4rem;
+  font-weight: 700;
 }
 
 .about-person .role {

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="O blackhat da cultura tech. Código, notícias e pop dissecados com a acidez de quem sobrevive a war rooms — e sobrevive para contar o chorume.">
+
+    <title>O Segfault da Civilização: A Insuficiência Múltipla de Órgãos da OpenAI - A odisseia do puto</title>
+
+    <link rel="canonical" href="http://localhost:4000/2026/02/21/segfault-civilizacao-openai-falencia-tecnica/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href=" /css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href=" /css/clean-blog.css">
+    <link rel="stylesheet" href=" /css/odisseia.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href=" /css/syntax.css">
+
+    <!-- Share CSS -->
+    <link rel="stylesheet" href=" /css/share.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link
+        href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="A odisseia do puto" />
+
+
+
+    <script>
+        // Check for reading mode preference immediately to avoid flash of unstyled content
+        if (localStorage.getItem('odisseia_read_mode') === 'true') {
+            document.documentElement.classList.add('reading-mode');
+            // We also add to body when DOM is ready in case documentElement isn't enough for some styles
+            document.addEventListener('DOMContentLoaded', function () {
+                document.body.classList.add('reading-mode');
+            });
+        }
+    </script>
+    
+
+</head>
+
+<body>
+
+    <!-- Fundo estático com efeito fog (fixo; conteúdo rola por cima) -->
+    <div id="fog-bg" class="fog-bg" aria-hidden="true">
+        <div class="fog-layer fog-layer-1"></div>
+        <div class="fog-layer fog-layer-2"></div>
+        <div class="fog-layer fog-layer-3"></div>
+        <div class="fog-vignette"></div>
+    </div>
+
+    <div id="site-wrap" class="site-wrap">
+        <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+                <img src="/img/logo.png" alt="A odisseia do puto" class="navbar-logo" />
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="mode-switcher-li">
+                    <span class="mode-label">Modo:</span>
+                    <button id="mode-toggle" class="mode-btn" title="Alternar Modo Leitura">
+                        <span class="mode-icon-2003">💾 2003</span>
+                        <span class="mode-icon-read" style="display:none;">📖 Ler</span>
+                    </button>
+                </li>
+                <li class="lang-switcher">
+                    <span class="lang-label" data-pt="Idioma:" data-en="Language:">Idioma:</span>
+                    <button type="button" class="lang-btn lang-btn-pt" data-lang="pt" aria-pressed="true">PT</button>
+                    <button type="button" class="lang-btn lang-btn-en" data-lang="en" aria-pressed="false">EN</button>
+                </li>
+                <li>
+                    <a href="/about/" data-pt="Sobre" data-en="About">Sobre</a>
+                </li>
+                <li>
+                    <a href="/apoie/" data-pt="Apoie" data-en="Support">Apoie</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+        <!-- Post Header: PT e EN -->
+<header class="intro-header">
+    <div class="intro-header-overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading ">
+                        <div class="lang-pt">
+                            <h1>O Segfault da Civilização: A Insuficiência Múltipla de Órgãos da OpenAI</h1>
+                            
+                            <h2 class="subheading">Como a bolha da IA sustenta o incesto algorítmico e o ecocídio hídrico através do centauro reverso</h2>
+                            
+                            <span class="meta">Postado por Frederico Doido em 21/02/2026</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content: PT e EN -->
+<article class="reading-content has-en">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+
+
+<nav class="share-nav" aria-label="Compartilhar">
+  <span class="share-label">Compartilhar:</span>
+  <ul class="share">
+    <li><a href="https://www.linkedin.com/sharing/share-offsite/?url=http%3A%2F%2Flocalhost%3A4000%2F2026%2F02%2F21%2Fsegfault-civilizacao-openai-falencia-tecnica%2F" rel="nofollow" target="_blank" title="Compartilhar no LinkedIn"><i class="fa fa-linkedin-square"></i></a></li>
+    <li><a href="https://twitter.com/intent/tweet?text=O+Segfault+da+Civiliza%C3%A7%C3%A3o%3A+A+Insufici%C3%AAncia+M%C3%BAltipla+de+%C3%93rg%C3%A3os+da+OpenAI&url=http%3A%2F%2Flocalhost%3A4000%2F2026%2F02%2F21%2Fsegfault-civilizacao-openai-falencia-tecnica%2F" rel="nofollow" target="_blank" title="Compartilhar no X (Twitter)"><i class="fa fa-twitter-square"></i></a></li>
+    <li><a href="https://www.reddit.com/submit?url=http%3A%2F%2Flocalhost%3A4000%2F2026%2F02%2F21%2Fsegfault-civilizacao-openai-falencia-tecnica%2F&title=O+Segfault+da+Civiliza%C3%A7%C3%A3o%3A+A+Insufici%C3%AAncia+M%C3%BAltipla+de+%C3%93rg%C3%A3os+da+OpenAI" rel="nofollow" target="_blank" title="Compartilhar no Reddit"><i class="fa fa-reddit"></i></a></li>
+    <li><a href="https://news.ycombinator.com/submitlink?u=http%3A%2F%2Flocalhost%3A4000%2F2026%2F02%2F21%2Fsegfault-civilizacao-openai-falencia-tecnica%2F&t=O+Segfault+da+Civiliza%C3%A7%C3%A3o%3A+A+Insufici%C3%AAncia+M%C3%BAltipla+de+%C3%93rg%C3%A3os+da+OpenAI" rel="nofollow" target="_blank" title="Enviar ao Hacker News"><i class="fa fa-hacker-news"></i></a></li>
+    <li><a href="#" class="share-copy-link" data-url="http://localhost:4000/2026/02/21/segfault-civilizacao-openai-falencia-tecnica/" title="Copiar link" aria-label="Copiar link"><i class="fa fa-link"></i></a></li>
+  </ul>
+</nav>
+<script>
+(function() {
+  var btn = document.querySelector('.share-copy-link');
+  if (!btn) return;
+  btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    var url = btn.getAttribute('data-url');
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(function() {
+        var i = btn.querySelector('i');
+        if (i) { i.className = 'fa fa-check'; setTimeout(function() { i.className = 'fa fa-link'; }, 1500); }
+      });
+    } else {
+      var ta = document.createElement('textarea');
+      ta.value = url;
+      ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+      var i = btn.querySelector('i');
+      if (i) { i.className = 'fa fa-check'; setTimeout(function() { i.className = 'fa fa-link'; }, 1500); }
+    }
+  });
+})();
+</script>
+
+
+                
+                <div class="post-body"><h3 id="abstract-executivo">Abstract Executivo</h3>
+
+<p>A OpenAI não está falhando por motivos de complexidade técnica inerente; está morrendo de um erro de <strong>design arquitetural primário</strong>: um <strong>segfault econômico</strong>. Seu modelo de negócios opera como um <em>loop</em> infinito de alta latência que tenta acessar um espaço de memória (rentabilidade infinita via AGI) para o qual o <strong>hardware</strong> real (capital, dados não sintéticos, infraestrutura sustentável) não concedeu permissão.</p>
+
+<p>O resultado é um quadro de insuficiência múltipla de órgãos: uma <em>startup</em> de <strong>US$ 157 bilhões</strong> que gasta <strong>US$ 2,25 para gerar US$ 1 em receita</strong>. Isso não é inovação disruptiva; é a maior orgia de acoplamento entre <em>hype</em> e dívida já vista, configurando um risco sistêmico que transcende o mercado de tecnologia.</p>
+
+<h1 id="1-metodologia-de-análise-premissas-e-dados-iniciais">1. Metodologia de Análise (Premissas e Dados Iniciais)</h1>
+
+<p>O presente estudo utiliza uma abordagem de <strong>dissecção de sistemas</strong> e <strong>auditoria de manifesto</strong>, tratando a empresa e seu ecossistema como uma arquitetura de <em>software</em> complexa, sujeita às leis inegociáveis da física, do <em>runtime</em> e da engenharia econômica.</p>
+
+<p><strong>Premissas Fundamentais (Fred’s Law):</strong></p>
+<ol>
+  <li><strong>Hardware</strong> não negocia.</li>
+  <li>Física vence opinião.</li>
+  <li>O boleto vence discurso.</li>
+  <li>Abstrações ruins são crimes hediondos.</li>
+</ol>
+
+<p>A análise de dados primários (<em>burn rate</em>, compromissos de infraestrutura, disparidade salarial) é confrontada com a <strong>performance de latência</strong> (ROI real vs. ROI prometido) do sistema. O objetivo é expor a <strong>Necrose</strong> do legado e a <strong>Vaidade Arquitetural</strong> em sua forma mais custosa.</p>
+
+<h1 id="2-revisão-da-literatura-contexto-técnico-e-econômico">2. Revisão da Literatura (Contexto Técnico e Econômico)</h1>
+
+<p>A trajetória da inteligência artificial generativa, liderada pela OpenAI, atingiu em 2026 um estágio que a ciência da computação descreve como um erro de segmentação crítico: o <strong>segfault</strong>. O <strong>segfault</strong> ocorre quando um programa tenta acessar uma zona de memória para a qual não tem permissão. Metaforicamente, a civilização tecnológica contemporânea está tentando processar um futuro de abundância cognitiva acessando recursos físicos, financeiros e humanos que a biosfera e a economia real não podem sustentar.</p>
+
+<p>O que observamos é um quadro de insuficiência múltipla de órgãos: o coração financeiro é insustentável; os pulmões estão contaminados por um <strong>incesto algorítmico</strong> de dados sintéticos; e o metabolismo da infraestrutura provoca um ecocídio hídrico e energético. No centro de tudo, o <strong>“Centauro Reverso”</strong> revela que a suposta autonomia da máquina é movida pelo calvário invisível de trabalhadores do Sul Global.</p>
+
+<p><img src="/img/data-autophagy-collapse.png" alt="" />
+<em>O ciclo de autofagia de dados levando ao colapso do modelo.</em></p>
+
+<h1 id="3-anatomia-da-falha-análise-causal-em-profundidade">3. Anatomia da Falha (Análise Causal em Profundidade)</h1>
+
+<p>A falha catastrófica da OpenAI reside em três domínios interdependentes de design arquitetural primário: <strong>Patologia do Capital</strong>, <strong>Incesto Tecnológico</strong> e <strong>Ecocídio de Silício</strong>.</p>
+
+<h3 id="31-patologia-do-capital-burn-rate-e-o-abismo-fiscal">3.1. Patologia do Capital: Burn Rate e o Abismo Fiscal</h3>
+
+<p>A saúde financeira da OpenAI em 2026 é um estudo de caso em dissonância cognitiva macroeconômica. O coração financeiro da empresa está em taquicardia induzida por dívidas, operando como um <strong>Buffer Overflow Fiscal</strong>.</p>
+
+<ul>
+  <li><strong>A Dívida Acumulada:</strong> As contas mostram um “buraco” de <strong>US$ 207 Bilhões</strong> em déficit de financiamento projetado até 2030.</li>
+  <li><strong>O Vencimento:</strong> A empresa enfrenta um <em>cash crunch</em> severo em 2026, com mais de <strong>US$ 80 Bilhões em compromissos diferidos</strong> vencendo este ano.</li>
+  <li><strong>O Burn Rate:</strong> O <em>burn rate</em> anualizado projeta-se em <strong>US$ 8 Bilhões</strong> (2025), saltando para <strong>US$ 40 Bilhões</strong> (2028).</li>
+</ul>
+
+<h3 id="32-incesto-tecnológico-o-colapso-de-modelo-e-a-exaustão-do-real">3.2. Incesto Tecnológico: O Colapso de Modelo e a Exaustão do Real</h3>
+
+<p>A falência qualitativa e técnica reside no <em>input</em>. Os pulmões do sistema — os dados humanos — estão sendo contaminados por um <strong>“incesto algorítmico”</strong> de dados sintéticos, levando ao <strong>Colapso de Modelo (Model Collapse)</strong>.</p>
+
+<p><strong>Evolução da Contaminação (Data Autophagy):</strong></p>
+<ul>
+  <li><strong>Geração n=0:</strong> Dados Humanos (Web Real), Máxima Diversidade.</li>
+  <li><strong>Geração n=5:</strong> 90% Sintético, Diversidade Reduzida, Alto Risco de Alucinação.</li>
+  <li><strong>Geração n=10:</strong> 100% Sintético, Mínima Diversidade (Memorização), Falha de Generalização.</li>
+</ul>
+
+<h3 id="33-ecocídio-de-silício-o-custo-hídrico-e-energético-do-stargate">3.3. Ecocídio de Silício: O Custo Hídrico e Energético do Stargate</h3>
+
+<p>O metabolismo da infraestrutura física é um Leviatã de silício e aço. O projeto <strong>“Stargate”</strong> (US$ 500 bilhões, 10 GW de capacidade projetada) é a prova de que <strong>Hardware</strong> não negocia.</p>
+
+<ul>
+  <li><strong>Consumo Hídrico:</strong> Um único <em>prompt</em> de 100 palavras no ChatGPT consome aproximadamente <strong>519 mililitros de água</strong>.</li>
+  <li><strong>Pegada Global:</strong> Pode atingir até <strong>764 bilhões de litros</strong> até o final de 2025.</li>
+</ul>
+
+<h1 id="4-análise-de-resultados-impacto-econômico-e-comportamental">4. Análise de Resultados (Impacto Econômico e Comportamental)</h1>
+
+<h3 id="41-o-centauro-reverso-necropolítica-e-o-calvário-do-clique">4.1. O Centauro Reverso: Necropolítica e o Calvário do Clique</h3>
+
+<p>O mito da autonomia da IA é sustentado por uma realidade laboral sombria. O <strong>“Centauro Reverso”</strong> é um sistema automatizado com um corpo humano invisível, centralizado no <strong>Reinforcement Learning from Human Feedback (RLHF)</strong>.</p>
+
+<p>A OpenAI contratou milhares de trabalhadores no Sul Global (Quênia) para rotular conteúdos tóxicos. Enquanto a taxa paga pela OpenAI à <em>vendor</em> é de <strong>US$ 12.50</strong>, o salário <em>take-home</em> do trabalhador é de <strong>US$ 1.32</strong>. Sem esses humanos no <em>loop</em>, o GPT-5 não passaria de um gerador de <em>slop</em> algorítmico.</p>
+
+<h3 id="42-o-vácuo-de-valor-a-bolha-do-roi-e-o-risco-sistêmico">4.2. O Vácuo de Valor: A Bolha do ROI e o Risco Sistêmico</h3>
+
+<p>A euforia inicial está sendo substituída por um ceticismo rigoroso baseado no <strong>Retorno sobre Investimento (ROI)</strong>. Apenas <strong>5% das empresas</strong> que implementaram IA viram benefícios mensuráveis.</p>
+
+<p>Adoção em Queda: Entre junho e agosto de 2025, a adoção caiu de <strong>14% para 12%</strong>. O custo de “alucinação” e a necessidade de supervisão humana constante tornam a automação mais cara do que manter o profissional qualificado.</p>
+
+<h1 id="5-lei-ignorada-post-mortem-de-princípios-de-engenharia">5. Lei Ignorada (Post-Mortem de Princípios de Engenharia)</h1>
+
+<p>A falha da OpenAI é uma violação de princípios primários de engenharia e economia.</p>
+<ul>
+  <li><strong>Lei da Conservação de Custos:</strong> A AGI é uma hipótese de lucro. O <em>burn rate</em> é um fato contábil.</li>
+  <li><strong>Lei da Entropia da Informação:</strong> A contaminação da fonte de dados demonstra a falha em governar o <em>input</em> primário do sistema.</li>
+  <li><strong>Lei da Materialidade:</strong> Ignorar a <strong>Escatologia de Runtime</strong> para sustentar a mística da AGI é a falha lógica final.</li>
+</ul>
+
+<h1 id="6-conclusão-e-implicações-operacionais-veredito">6. Conclusão e Implicações Operacionais (Veredito)</h1>
+
+<p>O <strong>“Segfault da Civilização”</strong> é um aviso de que o modelo atual de desenvolvimento da IA atingiu seus limites de segmentação. A insuficiência múltipla de órgãos é real: o capital é fictício, os dados são incestuosos, o trabalho é exploratório e o ambiente é sacrificado.</p>
+
+<p>Se o colapso ocorrer em 2026 ou 2027, o que restará será a infraestrutura. O <strong>segfault</strong> não é apenas técnico; é um erro de lógica na própria arquitetura do progresso humano no século XXI. <strong>A única verdade inegociável é o Core Dump de suas contas.</strong></p>
+
+<hr />
+
+<h3 id="referências-de-trincheira">Referências de Trincheira:</h3>
+
+<ul>
+  <li>OpenAI faces cash crunch in 2026 as bills come due - Pivot to AI: https://pivot-to-ai.com/2026/01/23/openai-faces-cash-crunch-in-2026-as-bills-come-due/</li>
+  <li>HSBC Warns OpenAI Faces Nearly $500B in Losses by 2030: https://m.economictimes.com/news/international/us/half-trillion-loss-hsbc-says-openai-facing-titanic-cash-burn-through-2030/articleshow/125789463.cms</li>
+  <li>The Curious Decline of Linguistic Diversity: Training Language Models on Synthetic Text: https://aclanthology.org/2024.findings-naacl.228.pdf</li>
+  <li>OpenAI Used Kenyan Workers on Less Than $2 Per Hour - TIME: https://time.com/6247678/openai-chatgpt-kenya-workers/</li>
+  <li>Goldman Sachs’ ‘AI Narrative Framework’: Five Key Controversies: https://www.goldmansachs.com/insights/top-of-mind/ai-in-a-bubble</li>
+</ul>
+</div>
+                
+
+                <!-- ===== NEWSLETTER: BLOCO NO FINAL DO POST ===== -->
+<aside class="nl-end-block" id="nl-end-block" aria-label="Newsletter">
+    <div class="nl-end-inner">
+        <span class="nl-end-icon" id="nl-end-icon">📬</span>
+        <div class="nl-end-text">
+            <strong class="nl-end-title" id="nl-end-title">Quer receber quentinho no email?</strong>
+            <span class="nl-end-desc" id="nl-end-desc">Cada novo post vai direto pra sua caixa. Sem precisar ficar
+                voltando aqui.</span>
+        </div>
+        <form class="nl-inline-form" id="nl-end-form" novalidate>
+            <input type="email" id="nl-end-email" class="nl-input" placeholder="seu@email.com" autocomplete="email"
+                required />
+            <button type="submit" class="nl-btn" id="nl-end-submit">
+                <span class="nl-btn-text">Entrar</span>
+                <span class="nl-btn-spinner" hidden></span>
+            </button>
+        </form>
+        <p class="nl-error" id="nl-end-error" hidden></p>
+        <p class="nl-inline-success" id="nl-end-success" hidden>
+            ✅ Tá dentro! O próximo post chega quentinho direto na sua caixa.
+        </p>
+    </div>
+</aside>
+
+<!-- ===== NEWSLETTER MODAL ===== -->
+<div id="nl-modal" class="nl-modal" role="dialog" aria-modal="true" aria-labelledby="nl-modal-title" hidden>
+    <div class="nl-modal-backdrop" id="nl-modal-backdrop"></div>
+    <div class="nl-modal-box">
+        <button class="nl-modal-close" id="nl-modal-close" aria-label="Fechar">&times;</button>
+        <div class="nl-modal-icon" id="nl-modal-icon">📬</div>
+        <h2 class="nl-modal-title" id="nl-modal-title"></h2>
+        <p class="nl-modal-desc" id="nl-modal-desc"></p>
+        <form class="nl-form" id="nl-modal-form" novalidate>
+            <div class="nl-input-row">
+                <input type="email" id="nl-modal-email" class="nl-input" placeholder="seu@email.com"
+                    autocomplete="email" required />
+                <button type="submit" class="nl-btn" id="nl-modal-submit">
+                    <span class="nl-btn-text">Entrar</span>
+                    <span class="nl-btn-spinner" hidden></span>
+                </button>
+            </div>
+            <p class="nl-error" id="nl-modal-error" hidden></p>
+        </form>
+        <button class="nl-dismiss" id="nl-modal-dismiss">Agora não</button>
+    </div>
+</div>
+
+<!-- ===== NEWSLETTER MODAL SUCESSO ===== -->
+<div id="nl-modal-success" class="nl-modal" role="dialog" aria-modal="true" hidden>
+    <div class="nl-modal-backdrop"></div>
+    <div class="nl-modal-box nl-modal-box--success">
+        <div class="nl-modal-icon">✅</div>
+        <h2 class="nl-modal-title">Tá dentro.</h2>
+        <p class="nl-modal-desc">Agora não precisa mais ficar acompanhando o site — o próximo post chega quentinho
+            direto na sua caixa.</p>
+        <button class="nl-btn nl-btn--full" id="nl-success-close">Fechar</button>
+    </div>
+</div>
+
+                <hr>
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2026/02/21/fim-nginx-ingress-necrose-arquitetural-gateway-api/"
+                            data-toggle="tooltip" data-placement="top" title="O Fim do NGINX Ingress Chega, Mas o Boleto Fica: A Necrose Arquitetural que Custa o Seu Cluster.">
+                            <span class="lang-pt">&larr; Post Anterior</span>
+                            <span class="lang-en">&larr; Previous Post</span>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+<hr>
+
+<script src=" /js/newsletter.js"></script>
+        <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <p class="footer-naas has-en">
+                    <span class="lang-pt"><span class="naas-prompt">$</span> um projeto de <a
+                            href="https://raimundopessoa.com" target="_blank" rel="noopener">_hi.mundo!</a></span>
+                    <span class="lang-en"><span class="naas-prompt">$</span> a <a href="https://raimundopessoa.com"
+                            target="_blank" rel="noopener">_hi.mundo!</a> project</span>
+                </p>
+                <p class="footer-contact has-en">
+                    <span class="lang-pt"><a
+                            href="mailto:contato@odisseiadoputo.cc">contato@odisseiadoputo.cc</a></span>
+                    <span class="lang-en"><a
+                            href="mailto:contato@odisseiadoputo.cc">contato@odisseiadoputo.cc</a></span>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src=" /js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src=" /js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src=" /js/clean-blog.min.js "></script>
+    </div>
+
+    <!-- CRT overlay: por cima do conteúdo (position: fixed, z-index alto) -->
+    <div class="scanline" aria-hidden="true"></div>
+    <div class="crt-flicker" aria-hidden="true"></div>
+
+
+    <script src=" /js/fog.js"></script>
+    <script src=" /js/filter.js"></script>
+
+    <script src=" /js/lang-switcher.js"></script>
+    <script src=" /js/mode-switcher.js"></script>
+</body>
+
+</html>

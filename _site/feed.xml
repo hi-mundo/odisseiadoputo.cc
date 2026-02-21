@@ -1,4 +1,185 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-02-21T16:37:01-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">A odisseia do puto</title><subtitle>O blackhat da cultura tech. Código, notícias e pop dissecados com a acidez de quem sobrevive a war rooms — e sobrevive para contar o chorume.</subtitle><entry><title type="html">O EXCELENTÍSSIMO MANUAL PARA ENTRAR NA ÁREA TECH (OU QUALQUER ÁREA)</title><link href="http://localhost:4000/2026/02/21/manual-entrada-area-tech-playbook-carreira/" rel="alternate" type="text/html" title="O EXCELENTÍSSIMO MANUAL PARA ENTRAR NA ÁREA TECH (OU QUALQUER ÁREA)" /><published>2026-02-21T13:28:00-03:00</published><updated>2026-02-21T13:28:00-03:00</updated><id>http://localhost:4000/2026/02/21/manual-entrada-area-tech-playbook-carreira</id><content type="html" xml:base="http://localhost:4000/2026/02/21/manual-entrada-area-tech-playbook-carreira/"><![CDATA[<p>Esqueça a ilusão: você não vai faturar R$ 80 mil em duas semanas só porque comprou um curso de “<strong>Python do zero ao herói</strong>”. Se você caiu na lábia daquele influencer de sapatênis e sorriso de porcelana, seu problema não é a falta de <em>hard skills</em>; é a carência de uma surra de chinelo. A verdade dói, e machuca tanto quanto ver sua ex-namorada rindo no banco do carona do Celta prata do Jorge da prefeitura — aquele cara que te cumprimenta com um “e aí, campeão?” toda vez que você vai buscar o resto das suas coisas na casa dela. O Jorge, diferente de você, não caiu no conto do <em>reskilling</em> milagroso; ele tem um cargo concursado e ela diz que ele “passa segurança”. Este playbook é para quem quer parar de ser um <strong>preguiçoso mental</strong> e entender a mecânica real do jogo.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-02-21T16:55:58-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">A odisseia do puto</title><subtitle>O blackhat da cultura tech. Código, notícias e pop dissecados com a acidez de quem sobrevive a war rooms — e sobrevive para contar o chorume.</subtitle><entry><title type="html">O Segfault da Civilização: A Insuficiência Múltipla de Órgãos da OpenAI</title><link href="http://localhost:4000/2026/02/21/segfault-civilizacao-openai-falencia-tecnica/" rel="alternate" type="text/html" title="O Segfault da Civilização: A Insuficiência Múltipla de Órgãos da OpenAI" /><published>2026-02-21T13:39:00-03:00</published><updated>2026-02-21T13:39:00-03:00</updated><id>http://localhost:4000/2026/02/21/segfault-civilizacao-openai-falencia-tecnica</id><content type="html" xml:base="http://localhost:4000/2026/02/21/segfault-civilizacao-openai-falencia-tecnica/"><![CDATA[<h3 id="abstract-executivo">Abstract Executivo</h3>
+
+<p>A OpenAI não está falhando por motivos de complexidade técnica inerente; está morrendo de um erro de <strong>design arquitetural primário</strong>: um <strong>segfault econômico</strong>. Seu modelo de negócios opera como um <em>loop</em> infinito de alta latência que tenta acessar um espaço de memória (rentabilidade infinita via AGI) para o qual o <strong>hardware</strong> real (capital, dados não sintéticos, infraestrutura sustentável) não concedeu permissão.</p>
+
+<p>O resultado é um quadro de insuficiência múltipla de órgãos: uma <em>startup</em> de <strong>US$ 157 bilhões</strong> que gasta <strong>US$ 2,25 para gerar US$ 1 em receita</strong>. Isso não é inovação disruptiva; é a maior orgia de acoplamento entre <em>hype</em> e dívida já vista, configurando um risco sistêmico que transcende o mercado de tecnologia.</p>
+
+<h1 id="1-metodologia-de-análise-premissas-e-dados-iniciais">1. Metodologia de Análise (Premissas e Dados Iniciais)</h1>
+
+<p>O presente estudo utiliza uma abordagem de <strong>dissecção de sistemas</strong> e <strong>auditoria de manifesto</strong>, tratando a empresa e seu ecossistema como uma arquitetura de <em>software</em> complexa, sujeita às leis inegociáveis da física, do <em>runtime</em> e da engenharia econômica.</p>
+
+<p><strong>Premissas Fundamentais (Fred’s Law):</strong></p>
+<ol>
+  <li><strong>Hardware</strong> não negocia.</li>
+  <li>Física vence opinião.</li>
+  <li>O boleto vence discurso.</li>
+  <li>Abstrações ruins são crimes hediondos.</li>
+</ol>
+
+<p>A análise de dados primários (<em>burn rate</em>, compromissos de infraestrutura, disparidade salarial) é confrontada com a <strong>performance de latência</strong> (ROI real vs. ROI prometido) do sistema. O objetivo é expor a <strong>Necrose</strong> do legado e a <strong>Vaidade Arquitetural</strong> em sua forma mais custosa.</p>
+
+<h1 id="2-revisão-da-literatura-contexto-técnico-e-econômico">2. Revisão da Literatura (Contexto Técnico e Econômico)</h1>
+
+<p>A trajetória da inteligência artificial generativa, liderada pela OpenAI, atingiu em 2026 um estágio que a ciência da computação descreve como um erro de segmentação crítico: o <strong>segfault</strong>. O <strong>segfault</strong> ocorre quando um programa tenta acessar uma zona de memória para a qual não tem permissão. Metaforicamente, a civilização tecnológica contemporânea está tentando processar um futuro de abundância cognitiva acessando recursos físicos, financeiros e humanos que a biosfera e a economia real não podem sustentar.</p>
+
+<p>O que observamos é um quadro de insuficiência múltipla de órgãos: o coração financeiro é insustentável; os pulmões estão contaminados por um <strong>incesto algorítmico</strong> de dados sintéticos; e o metabolismo da infraestrutura provoca um ecocídio hídrico e energético. No centro de tudo, o <strong>“Centauro Reverso”</strong> revela que a suposta autonomia da máquina é movida pelo calvário invisível de trabalhadores do Sul Global.</p>
+
+<p><img src="/img/data-autophagy-collapse.png" alt="" />
+<em>O ciclo de autofagia de dados levando ao colapso do modelo.</em></p>
+
+<h1 id="3-anatomia-da-falha-análise-causal-em-profundidade">3. Anatomia da Falha (Análise Causal em Profundidade)</h1>
+
+<p>A falha catastrófica da OpenAI reside em três domínios interdependentes de design arquitetural primário: <strong>Patologia do Capital</strong>, <strong>Incesto Tecnológico</strong> e <strong>Ecocídio de Silício</strong>.</p>
+
+<h3 id="31-patologia-do-capital-burn-rate-e-o-abismo-fiscal">3.1. Patologia do Capital: Burn Rate e o Abismo Fiscal</h3>
+
+<p>A saúde financeira da OpenAI em 2026 é um estudo de caso em dissonância cognitiva macroeconômica. O coração financeiro da empresa está em taquicardia induzida por dívidas, operando como um <strong>Buffer Overflow Fiscal</strong>.</p>
+
+<ul>
+  <li><strong>A Dívida Acumulada:</strong> As contas mostram um “buraco” de <strong>US$ 207 Bilhões</strong> em déficit de financiamento projetado até 2030.</li>
+  <li><strong>O Vencimento:</strong> A empresa enfrenta um <em>cash crunch</em> severo em 2026, com mais de <strong>US$ 80 Bilhões em compromissos diferidos</strong> vencendo este ano.</li>
+  <li><strong>O Burn Rate:</strong> O <em>burn rate</em> anualizado projeta-se em <strong>US$ 8 Bilhões</strong> (2025), saltando para <strong>US$ 40 Bilhões</strong> (2028).</li>
+</ul>
+
+<h3 id="32-incesto-tecnológico-o-colapso-de-modelo-e-a-exaustão-do-real">3.2. Incesto Tecnológico: O Colapso de Modelo e a Exaustão do Real</h3>
+
+<p>A falência qualitativa e técnica reside no <em>input</em>. Os pulmões do sistema — os dados humanos — estão sendo contaminados por um <strong>“incesto algorítmico”</strong> de dados sintéticos, levando ao <strong>Colapso de Modelo (Model Collapse)</strong>.</p>
+
+<p><strong>Evolução da Contaminação (Data Autophagy):</strong></p>
+<ul>
+  <li><strong>Geração n=0:</strong> Dados Humanos (Web Real), Máxima Diversidade.</li>
+  <li><strong>Geração n=5:</strong> 90% Sintético, Diversidade Reduzida, Alto Risco de Alucinação.</li>
+  <li><strong>Geração n=10:</strong> 100% Sintético, Mínima Diversidade (Memorização), Falha de Generalização.</li>
+</ul>
+
+<h3 id="33-ecocídio-de-silício-o-custo-hídrico-e-energético-do-stargate">3.3. Ecocídio de Silício: O Custo Hídrico e Energético do Stargate</h3>
+
+<p>O metabolismo da infraestrutura física é um Leviatã de silício e aço. O projeto <strong>“Stargate”</strong> (US$ 500 bilhões, 10 GW de capacidade projetada) é a prova de que <strong>Hardware</strong> não negocia.</p>
+
+<ul>
+  <li><strong>Consumo Hídrico:</strong> Um único <em>prompt</em> de 100 palavras no ChatGPT consome aproximadamente <strong>519 mililitros de água</strong>.</li>
+  <li><strong>Pegada Global:</strong> Pode atingir até <strong>764 bilhões de litros</strong> até o final de 2025.</li>
+</ul>
+
+<h1 id="4-análise-de-resultados-impacto-econômico-e-comportamental">4. Análise de Resultados (Impacto Econômico e Comportamental)</h1>
+
+<h3 id="41-o-centauro-reverso-necropolítica-e-o-calvário-do-clique">4.1. O Centauro Reverso: Necropolítica e o Calvário do Clique</h3>
+
+<p>O mito da autonomia da IA é sustentado por uma realidade laboral sombria. O <strong>“Centauro Reverso”</strong> é um sistema automatizado com um corpo humano invisível, centralizado no <strong>Reinforcement Learning from Human Feedback (RLHF)</strong>.</p>
+
+<p>A OpenAI contratou milhares de trabalhadores no Sul Global (Quênia) para rotular conteúdos tóxicos. Enquanto a taxa paga pela OpenAI à <em>vendor</em> é de <strong>US$ 12.50</strong>, o salário <em>take-home</em> do trabalhador é de <strong>US$ 1.32</strong>. Sem esses humanos no <em>loop</em>, o GPT-5 não passaria de um gerador de <em>slop</em> algorítmico.</p>
+
+<h3 id="42-o-vácuo-de-valor-a-bolha-do-roi-e-o-risco-sistêmico">4.2. O Vácuo de Valor: A Bolha do ROI e o Risco Sistêmico</h3>
+
+<p>A euforia inicial está sendo substituída por um ceticismo rigoroso baseado no <strong>Retorno sobre Investimento (ROI)</strong>. Apenas <strong>5% das empresas</strong> que implementaram IA viram benefícios mensuráveis.</p>
+
+<p>Adoção em Queda: Entre junho e agosto de 2025, a adoção caiu de <strong>14% para 12%</strong>. O custo de “alucinação” e a necessidade de supervisão humana constante tornam a automação mais cara do que manter o profissional qualificado.</p>
+
+<h1 id="5-lei-ignorada-post-mortem-de-princípios-de-engenharia">5. Lei Ignorada (Post-Mortem de Princípios de Engenharia)</h1>
+
+<p>A falha da OpenAI é uma violação de princípios primários de engenharia e economia.</p>
+<ul>
+  <li><strong>Lei da Conservação de Custos:</strong> A AGI é uma hipótese de lucro. O <em>burn rate</em> é um fato contábil.</li>
+  <li><strong>Lei da Entropia da Informação:</strong> A contaminação da fonte de dados demonstra a falha em governar o <em>input</em> primário do sistema.</li>
+  <li><strong>Lei da Materialidade:</strong> Ignorar a <strong>Escatologia de Runtime</strong> para sustentar a mística da AGI é a falha lógica final.</li>
+</ul>
+
+<h1 id="6-conclusão-e-implicações-operacionais-veredito">6. Conclusão e Implicações Operacionais (Veredito)</h1>
+
+<p>O <strong>“Segfault da Civilização”</strong> é um aviso de que o modelo atual de desenvolvimento da IA atingiu seus limites de segmentação. A insuficiência múltipla de órgãos é real: o capital é fictício, os dados são incestuosos, o trabalho é exploratório e o ambiente é sacrificado.</p>
+
+<p>Se o colapso ocorrer em 2026 ou 2027, o que restará será a infraestrutura. O <strong>segfault</strong> não é apenas técnico; é um erro de lógica na própria arquitetura do progresso humano no século XXI. <strong>A única verdade inegociável é o Core Dump de suas contas.</strong></p>
+
+<hr />
+
+<h3 id="referências-de-trincheira">Referências de Trincheira:</h3>
+
+<ul>
+  <li>OpenAI faces cash crunch in 2026 as bills come due - Pivot to AI: https://pivot-to-ai.com/2026/01/23/openai-faces-cash-crunch-in-2026-as-bills-come-due/</li>
+  <li>HSBC Warns OpenAI Faces Nearly $500B in Losses by 2030: https://m.economictimes.com/news/international/us/half-trillion-loss-hsbc-says-openai-facing-titanic-cash-burn-through-2030/articleshow/125789463.cms</li>
+  <li>The Curious Decline of Linguistic Diversity: Training Language Models on Synthetic Text: https://aclanthology.org/2024.findings-naacl.228.pdf</li>
+  <li>OpenAI Used Kenyan Workers on Less Than $2 Per Hour - TIME: https://time.com/6247678/openai-chatgpt-kenya-workers/</li>
+  <li>Goldman Sachs’ ‘AI Narrative Framework’: Five Key Controversies: https://www.goldmansachs.com/insights/top-of-mind/ai-in-a-bubble</li>
+</ul>]]></content><author><name>Frederico Doido</name></author><category term="noticias" /><summary type="html"><![CDATA[Abstract Executivo]]></summary></entry><entry><title type="html">O Fim do NGINX Ingress Chega, Mas o Boleto Fica: A Necrose Arquitetural que Custa o Seu Cluster.</title><link href="http://localhost:4000/2026/02/21/fim-nginx-ingress-necrose-arquitetural-gateway-api/" rel="alternate" type="text/html" title="O Fim do NGINX Ingress Chega, Mas o Boleto Fica: A Necrose Arquitetural que Custa o Seu Cluster." /><published>2026-02-21T13:36:00-03:00</published><updated>2026-02-21T13:36:00-03:00</updated><id>http://localhost:4000/2026/02/21/fim-nginx-ingress-necrose-arquitetural-gateway-api</id><content type="html" xml:base="http://localhost:4000/2026/02/21/fim-nginx-ingress-necrose-arquitetural-gateway-api/"><![CDATA[<p>O código legado é um agiota que não aceita renegociação; ele apenas espera o momento de maior vulnerabilidade para cobrar os juros acumulados em anos de negligência. A decisão do <strong>Kubernetes SIG Network</strong> e do <strong>Security Response Committee</strong> de aposentar o <strong>Ingress NGINX</strong> em março de 2026 é a execução de uma dívida técnica que a indústria tentou ignorar por uma década. Atualmente, aproximadamente 50% dos ambientes de nuvem dependem desse controlador, um Frankenstein de abstrações mantido por um ou dois heróis exaustos em suas horas vagas, enquanto corporações bilionárias tratam sua infraestrutura como um teatro de <em>Clean Code</em>. Este relatório disseca o colapso do modelo de “snippets” e a transição obrigatória para o <strong>Gateway API</strong>, onde a realidade do <em>runtime</em> finalmente vence o PowerPoint da arquitetura.</p>
+
+<p><code class="language-plaintext highlighter-rouge">server { listen 443; server_name “fim_da_era”; }</code></p>
+
+<p>A infraestrutura de rede do Kubernetes enfrenta sua maior purgação técnica. O anúncio da aposentadoria do <strong>Ingress NGINX</strong> encerra a era da flexibilidade suicida, onde a dependência de anotações de texto permitiu vetores de ataque catastróficos. O <strong>CVE-2025-1974</strong>, com pontuação <strong>CVSS</strong> de <em>fuckiiing</em> 9.8, provou que o modelo de “snippets” é um convite para execução remota de código (<strong>RCE</strong>) e sequestro total de segredos do cluster. Economicamente, o impacto é uma <strong>necrose financeira</strong>: o débito técnico ignorado pode reduzir o retorno sobre investimento (<strong>ROI</strong>) de iniciativas de modernização em até 29%, transformando margens de lucro em notas de rodapé de incidentes de segurança.</p>
+
+<p><img src="/img/cve-2025-1974-impact.png" alt="" />
+<em>O impacto devastador do IngressNightmare na segurança de clusters.</em></p>
+
+<p><code class="language-plaintext highlighter-rouge">upstream technical_debt { server “seu_legado:666”; }</code></p>
+
+<p>A análise de sistemas complexos exige um rigor que ignora a masturbação cerebral das reuniões de diretoria. A premissa é bruta: o código é a verdade única; tudo o que está acima dele é opinião não fundamentada ou marketing mal ensaiado. A metodologia aqui foca na identificação de mecanismos causais em falhas de segurança e na latência como a métrica suprema de valor comercial.</p>
+
+<p>Muitos clusters operam hoje sob o fenômeno da preguiça — promessas de estabilidade que carecem de <em>throughput</em> medido ou perfis de latência <strong>P99</strong> reais. Para sanar essa patologia, este relatório confronta o <em>throughput</em> de 180.000 requisições por segundo (<strong>RPS</strong>) com o custo real de memória e CPU.</p>
+
+<p><strong>Provocação para você:</strong> Qual é o impacto real no seu <strong>P99</strong> durante um <em>reload</em> massivo de <em>ConfigMap</em> quando o cluster ultrapassa os 500 objetos Ingress? Alguém mediu o <em>jitter</em> de rede ou o monitoramento é apenas decorativo? A ausência desse dado é o primeiro sintoma de uma engenharia preguiçosa que espera o desastre para agir.</p>
+
+<p><code class="language-plaintext highlighter-rouge">location ~* .vulnerability$ { deny all; # Tarde demais }</code></p>
+
+<p>O <strong>Ingress NGINX</strong> nasceu como um exemplo didático que a preguiça coletiva transformou em padrão de indústria. A especificação original da <strong>Ingress API</strong> era cronicamente anêmica, o que levou ao uso patológico de anotações — pares de chave-valor em strings que funcionam como uma API paralela e obscura. Mais de 75% dos objetos Ingress em uso utilizam pelo menos uma anotação, e 23% utilizam cinco ou mais, criando o que definimos como a “<strong>Armadilha do Templating</strong>”.</p>
+
+<p>O design é fundamentalmente inseguro por depender de:</p>
+
+<ul>
+  <li><strong>Injeção de Configuração:</strong> O uso de “snippets” permite injeção de diretivas NGINX, transformando o controlador em um interpretador de entradas não confiáveis.</li>
+  <li><strong>Débito Técnico Insuperável:</strong> A flexibilidade que outrora foi um benefício tornou-se um fardo que impossibilita a manutenção segura.</li>
+  <li><strong>Modelo de Reinicialização:</strong> A dependência de regeneração de arquivos e <em>reload</em> de processos causa picos de latência em ambientes altamente dinâmicos.</li>
+</ul>
+
+<p>O colapso “<strong>IngressNightmare</strong>” (<strong>CVE-2025-1974</strong>) é o veredito final: o atacante carrega uma biblioteca maliciosa (.so) via um POST grande, injeta a diretiva <em>ssl_engine</em> via anotação e, quando o controlador executa <code class="language-plaintext highlighter-rouge">nginx -t</code> para validar a configuração, o <em>takeover</em> do cluster é concluído. Tentar “limpar anotações” agora é como tentar vedar um buraco no submarino com o jubileu após a implosão ter começado.</p>
+
+<p><code class="language-plaintext highlighter-rouge">proxy_set_header X-Real-Cost $roi;</code></p>
+
+<p>A migração para o <strong>Gateway API</strong> não é uma escolha estética; é uma imposição da física econômica. O mercado recompensa a velocidade e pune a latência: cada 100ms de atraso custam 1% em vendas totais.</p>
+
+<p><strong>Comparativo de Performance (Dados de Fintech - 5.8M req/dia)</strong></p>
+
+<ul>
+  <li><strong>NGINX Ingress:</strong> Sustenta até 180.000 <strong>RPS</strong> com latência <strong>P99</strong> de 65ms. No entanto, a depuração de falhas 500 em microserviços complexos é descrita como um “inferno manual”, onde a falta de rastreamento nativo consome horas de engenharia.</li>
+  <li><strong>Istio Gateway:</strong> Apresenta uma queda inicial de 25% no <em>throughput</em> e latência <strong>P99</strong> de 95ms. Em contrapartida, reduz incidentes de implantação em 80% e corta o tempo de <em>troubleshooting</em> de horas para minutos.</li>
+  <li><strong>Cilium eBPF:</strong> Utiliza o <em>kernel</em> para contornar o processamento tradicional. Atinge latência <strong>P99</strong> de 0,8ms, um ganho de 33% sobre o <strong>Calico</strong> (1,2ms) e mais de 50% sobre o <strong>Flannel</strong> (1,8ms).</li>
+</ul>
+
+<p><strong>Provocação Técnica:</strong> Qual é o <em>overhead</em> real de CPU do seu plano de dados <strong>Envoy</strong> quando o <strong>mTLS</strong> está em modo ‘strict’ sob uma carga de 500k conexões simultâneas? Alguém no seu time sabe explicar o gráfico de consumo de memória ou o dimensionamento é baseado em “sentimento”?</p>
+
+<p>O débito técnico acumulado em redes legadas consome até 29% dos orçamentos de IA. Se a base da sua infraestrutura é uma necrose de anotações, sua iniciativa de IA é apenas uma forma cara de automatizar a geração de erros.</p>
+
+<p><code class="language-plaintext highlighter-rouge">return 410 “Gone”; # O Veredito Operacional</code></p>
+
+<p>Meu povo, o diagnóstico é de morte encefálica arquitetural. O <strong>Ingress NGINX</strong> parou de ser um ativo para se tornar uma responsabilidade civil e técnica que expõe sua organização ao “<strong>IngressNightmare</strong>”. Manter esse Frankenstein após março de 2026 é um convite formal para que qualquer ator de ameaça sequestre seus segredos de produção.</p>
+
+<p><strong>Implicações Operacionais Imediatas:</strong></p>
+
+<ol>
+  <li><strong>Auditoria de Existência:</strong> utilize <code class="language-plaintext highlighter-rouge">kubectl get pods -A -l app.kubernetes.io/name=ingress-nginx</code> para localizar os focos de infecção.</li>
+  <li><strong>Inventário de “Snippets”:</strong> Utilize de suas tarefas do <em>backlog</em> para auditar a complexidade das anotações que você jurou que removeria “no próximo sprint”.</li>
+</ol>
+
+<p><strong>Escolha do Sucessor:</strong></p>
+
+<ul>
+  <li><strong>Cilium:</strong> Para quem busca performance de <em>kernel</em> (<strong>P99</strong> de 0,8ms) e visibilidade via <strong>eBPF</strong>.</li>
+  <li><strong>Istio/Envoy:</strong> Para quem precisa de governança e <strong>mTLS</strong> automatizado, aceitando o custo de CPU em favor da sanidade operacional.</li>
+  <li><strong>NGINX Gateway Fabric:</strong> Destinado a quem mantém um apego emocional irracional ao engine NGINX, mas, ainda assim, reconhece a necessidade de aderir à especificação <strong>Gateway API</strong>. (Confesso: nem estava ciente de sua existência até pesquisar para este artigo.)</li>
+</ul>
+
+<p>O débito vence em março de 2026. Você pode pagar agora com uma migração estruturada ou pagar depois com o seu cargo após a próxima violação de dados. O código parou de negociar; a física do <em>runtime</em> não se importa com seu cronograma de feriados.</p>
+
+<hr />
+
+<h3 id="referências-de-trincheira">Referências de Trincheira:</h3>
+
+<ul>
+  <li>Ingress NGINX: Statement from the Kubernetes Steering and Security Response Committees: https://kubernetes.io/blog/2026/01/29/ingress-nginx-statement/</li>
+  <li>CVE-2025-1974: Critical Set of Vulnerabilities in Ingress NGINX: https://socprime.com/blog/cve-2025-1974-aka-ingress-nightmare/</li>
+  <li>IngressNightmare: Unauth RCE in Ingress NGINX (CVE-2025-1974): https://projectdiscovery.io/blog/ingressnightmare-unauth-rce-in-ingress-nginx</li>
+  <li>Why the Ingress NGINX Fork is Not a Security Strategy - Traefik Labs: https://traefik.io/blog/the-illusion-of-safety-why-the-ingress-nginx-fork-is-not-a-security-strategy</li>
+  <li>Kubernetes CNI 2025: Cilium vs Calico vs Flannel Performance: https://sanj.dev/post/cilium-calico-flannel-cni-performance-comparison</li>
+  <li>A practical approach to boosting your AI ROI - IBM: https://www.ibm.com/thought-leadership/institute-business-value/en-us/report/technical-debt-ai-roi</li>
+</ul>]]></content><author><name>Frederico Doido</name></author><category term="noticias" /><summary type="html"><![CDATA[O código legado é um agiota que não aceita renegociação; ele apenas espera o momento de maior vulnerabilidade para cobrar os juros acumulados em anos de negligência. A decisão do Kubernetes SIG Network e do Security Response Committee de aposentar o Ingress NGINX em março de 2026 é a execução de uma dívida técnica que a indústria tentou ignorar por uma década. Atualmente, aproximadamente 50% dos ambientes de nuvem dependem desse controlador, um Frankenstein de abstrações mantido por um ou dois heróis exaustos em suas horas vagas, enquanto corporações bilionárias tratam sua infraestrutura como um teatro de Clean Code. Este relatório disseca o colapso do modelo de “snippets” e a transição obrigatória para o Gateway API, onde a realidade do runtime finalmente vence o PowerPoint da arquitetura.]]></summary></entry><entry><title type="html">O EXCELENTÍSSIMO MANUAL PARA ENTRAR NA ÁREA TECH (OU QUALQUER ÁREA)</title><link href="http://localhost:4000/2026/02/21/manual-entrada-area-tech-playbook-carreira/" rel="alternate" type="text/html" title="O EXCELENTÍSSIMO MANUAL PARA ENTRAR NA ÁREA TECH (OU QUALQUER ÁREA)" /><published>2026-02-21T13:28:00-03:00</published><updated>2026-02-21T13:28:00-03:00</updated><id>http://localhost:4000/2026/02/21/manual-entrada-area-tech-playbook-carreira</id><content type="html" xml:base="http://localhost:4000/2026/02/21/manual-entrada-area-tech-playbook-carreira/"><![CDATA[<p>Esqueça a ilusão: você não vai faturar R$ 80 mil em duas semanas só porque comprou um curso de “<strong>Python do zero ao herói</strong>”. Se você caiu na lábia daquele influencer de sapatênis e sorriso de porcelana, seu problema não é a falta de <em>hard skills</em>; é a carência de uma surra de chinelo. A verdade dói, e machuca tanto quanto ver sua ex-namorada rindo no banco do carona do Celta prata do Jorge da prefeitura — aquele cara que te cumprimenta com um “e aí, campeão?” toda vez que você vai buscar o resto das suas coisas na casa dela. O Jorge, diferente de você, não caiu no conto do <em>reskilling</em> milagroso; ele tem um cargo concursado e ela diz que ele “passa segurança”. Este playbook é para quem quer parar de ser um <strong>preguiçoso mental</strong> e entender a mecânica real do jogo.</p>
 
 <p>Antes de qualquer coisa, entenda o conceito de <strong>Innovation Tokens</strong> (Fichas de Inovação). Cada empresa nasce com, no máximo, três fichas. Se você escolhe usar uma linguagem exótica, uma base de dados que só três pessoas na Estônia conhecem ou uma arquitetura de microserviços para um blog, você gastou uma ficha. Se gastar todas em <strong>infraestrutura inútil</strong>, não sobra nada para o que realmente importa: resolver o problema do cliente antes que o dinheiro acabe.</p>
 
