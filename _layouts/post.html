@@ -2,83 +2,101 @@
 layout: default
 comments: true
 ---
+{%- assign category_label = page.category | first | default: 'post' -%}
+{%- assign word_count = content | strip_html | number_of_words -%}
+{%- assign read_minutes = word_count | divided_by: 220 | plus: 1 -%}
 
-<!-- Post Header: PT e EN -->
-<header class="intro-header">
-    <div class="intro-header-overlay">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="post-heading {% if page.en_content %}has-en{% endif %}">
-                        <div class="lang-pt">
-                            <h1>{{ page.title }}</h1>
-                            {% if page.subtitle %}
-                            <h2 class="subheading">{{ page.subtitle }}</h2>
-                            {% endif %}
-                            <span class="meta">Postado por {% if page.author %}{{ page.author }}{% else %}{{ site.title
-                                }}{% endif %} em {{ page.date | date: site.date_format }}</span>
-                        </div>
-                        {% if page.en_content %}
-                        <div class="lang-en">
-                            <h1>{{ page.en_title | default: page.title }}</h1>
-                            {% if page.en_subtitle or page.subtitle %}
-                            <h2 class="subheading">{{ page.en_subtitle | default: page.subtitle }}</h2>
-                            {% endif %}
-                            <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title
-                                }}{% endif %} on {{ page.date | date: "%B %d, %Y" }}</span>
-                        </div>
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
-        </div>
+<article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+  <meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">
+  <meta itemprop="mainEntityOfPage" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
+
+  <header class="post-header">
+    <div class="post-header-inner">
+      <nav class="breadcrumb" aria-label="Trilha">
+        <a href="{{ site.baseurl }}/" data-pt="Início" data-en="Home">Início</a>
+        <span class="breadcrumb-sep" aria-hidden="true">/</span>
+        <span class="breadcrumb-current">{{ category_label | capitalize }}</span>
+      </nav>
+
+      <div class="lang-pt">
+        <h1 class="post-title" itemprop="headline">{{ page.title }}</h1>
+        {% if page.subtitle %}
+          <p class="post-deck" itemprop="description">{{ page.subtitle }}</p>
+        {% endif %}
+      </div>
+      {% if page.en_content %}
+      <div class="lang-en">
+        <h1 class="post-title">{{ page.en_title | default: page.title }}</h1>
+        {% if page.en_subtitle or page.subtitle %}
+          <p class="post-deck">{{ page.en_subtitle | default: page.subtitle }}</p>
+        {% endif %}
+      </div>
+      {% endif %}
+
+      <div class="post-meta" itemprop="author" itemscope itemtype="https://schema.org/Person">
+        <span class="post-meta-item post-meta-author">
+          <span class="lang-pt">Por <span itemprop="name">{% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}</span></span>
+          <span class="lang-en">By <span>{% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}</span></span>
+        </span>
+        <span class="post-meta-sep" aria-hidden="true">·</span>
+        <time class="post-meta-item post-meta-date" datetime="{{ page.date | date_to_xmlschema }}">
+          <span class="lang-pt">{{ page.date | date: site.date_format }}</span>
+          <span class="lang-en">{{ page.date | date: "%b %d, %Y" }}</span>
+        </time>
+        <span class="post-meta-sep" aria-hidden="true">·</span>
+        <span class="post-meta-item post-meta-read">
+          <span class="lang-pt">{{ read_minutes }} min de leitura</span>
+          <span class="lang-en">{{ read_minutes }} min read</span>
+        </span>
+        {% if page.category %}
+        <span class="post-meta-sep" aria-hidden="true">·</span>
+        <span class="post-meta-item post-meta-cat">
+          {% for cat in page.category %}<a href="{{ site.baseurl }}/#{{ cat | downcase }}" class="tag-pill">{{ cat }}</a>{% endfor %}
+        </span>
+        {% endif %}
+      </div>
     </div>
-</header>
 
-<!-- Post Content: PT e EN -->
-<article class="reading-content has-en">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                {% include share.html %}
+    {% include cover-src.html post=page %}
+    <figure class="post-hero">
+      <img src="{{ cover_src }}"
+           alt="{{ page.title }}"
+           itemprop="image"
+           loading="eager"
+           decoding="async"
+           onerror="this.onerror=null;this.src='{{ '/img/placeholder.svg' | prepend: site.baseurl }}';this.classList.add('is-placeholder');" />
+    </figure>
+  </header>
 
-                {% if page.en_content %}
-                <div class="lang-pt post-body">{{ content }}</div>
-                <div class="lang-en post-body">{{ page.en_content | markdownify }}</div>
-                {% else %}
-                <div class="post-body">{{ content }}</div>
-                {% endif %}
+  <div class="post-body-wrap">
+    {% include share.html %}
 
-                {% include newsletter.html %}
-
-                <hr>
-
-                <ul class="pager">
-                    {% if page.previous.url %}
-                    <li class="previous">
-                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}"
-                            data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">
-                            <span class="lang-pt">&larr; Post Anterior</span>
-                            <span class="lang-en">&larr; Previous Post</span>
-                        </a>
-                    </li>
-                    {% endif %}
-                    {% if page.next.url %}
-                    <li class="next">
-                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip"
-                            data-placement="top" title="{{ page.next.title }}">
-                            <span class="lang-pt">Próximo Post &rarr;</span>
-                            <span class="lang-en">Next Post &rarr;</span>
-                        </a>
-                    </li>
-                    {% endif %}
-                </ul>
-
-            </div>
-        </div>
+    <div class="post-body" itemprop="articleBody">
+      {% if page.en_content %}
+        <div class="lang-pt post-prose">{{ content }}</div>
+        <div class="lang-en post-prose">{{ page.en_content | markdownify }}</div>
+      {% else %}
+        <div class="post-prose">{{ content }}</div>
+      {% endif %}
     </div>
+
+    {% include newsletter.html %}
+
+    <nav class="post-pager" aria-label="Outros posts">
+      {% if page.previous.url %}
+      <a class="post-pager-item post-pager-prev" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}">
+        <span class="post-pager-dir" data-pt="Anterior" data-en="Previous">Anterior</span>
+        <span class="post-pager-title">{{ page.previous.title }}</span>
+      </a>
+      {% else %}<span></span>{% endif %}
+      {% if page.next.url %}
+      <a class="post-pager-item post-pager-next" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}">
+        <span class="post-pager-dir" data-pt="Próximo" data-en="Next">Próximo</span>
+        <span class="post-pager-title">{{ page.next.title }}</span>
+      </a>
+      {% else %}<span></span>{% endif %}
+    </nav>
+  </div>
 </article>
 
-<hr>
-
-<script src="{{ " /js/newsletter.js" | prepend: site.baseurl }}"></script>
+<script src="{{ '/js/newsletter.js' | prepend: site.baseurl }}" defer></script>

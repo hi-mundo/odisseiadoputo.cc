@@ -1,90 +1,147 @@
 ---
-layout: page
+layout: default
 title: "A odisseia do puto"
 en_title: "The Odyssey of the Puto"
-description: "O blackhat da cultura tech. Código, notícias e pop dissecados com a acidez de quem sobrevive a war rooms —
-e sobrevive para contar o chorume."
-en_description: "The blackhat of tech culture. Code, news and pop dissected with the acidity of those who survive war
-rooms — and live to tell the sludge."
+description: "O blackhat da cultura tech. Código, notícias e pop dissecados com a acidez de quem sobrevive a war rooms — e sobrevive para contar o chorume."
+en_description: "The blackhat of tech culture. Code, news and pop dissected with the acidity of those who survive war rooms — and live to tell the sludge."
 ---
 
-<!-- Newsletter na Home -->
-<div class="nl-home-wrap">
-  {% include newsletter.html %}
-</div>
-
-<!-- Filtro por tipo de post (PT/EN) -->
-<nav class="filter-tags has-en" aria-label="Filtrar por tipo de post">
-  <span class="filter-tags-label has-en">
-    <span class="lang-pt">// Ver:</span>
-    <span class="lang-en">// View:</span>
-  </span>
-  <div class="filter-tags-buttons">
-    <button type="button" class="filter-tag is-active" data-filter="all" aria-pressed="true"><span
-        class="lang-pt">Todos</span><span class="lang-en">All</span></button>
-    <button type="button" class="filter-tag" data-filter="codigo" aria-pressed="false"><span
-        class="lang-pt">Código</span><span class="lang-en">Code</span></button>
-    <button type="button" class="filter-tag" data-filter="noticias" aria-pressed="false"><span
-        class="lang-pt">Notícias</span><span class="lang-en">News</span></button>
-    <button type="button" class="filter-tag" data-filter="pop" aria-pressed="false"><span
-        class="lang-pt">Pop</span><span class="lang-en">Pop</span></button>
-  </div>
-</nav>
-
-<div id="post-list">
-  {% for post in paginator.posts %}
-  {% assign post_tag_str = post.tags | join: ' ' | downcase %}
-  {% if post_tag_str == '' and post.categories.size > 0 %}
-  {% assign cat = post.categories[0] | downcase %}
-  {% if cat == 'jogos' or cat == 'filmes' %}
-  {% assign post_tag_str = 'pop' %}
-  {% elsif cat == 'noticias' or cat == 'codigo' or cat == 'pop' %}
-  {% assign post_tag_str = cat %}
-  {% else %}
-  {% assign post_tag_str = 'codigo' %}
-  {% endif %}
-  {% endif %}
-  {% if post_tag_str == '' %}{% assign post_tag_str = 'codigo' %}{% endif %}
-  <div class="post-preview" data-tags="{{ post_tag_str }}">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-      <h2 class="post-title has-en">
-        <span class="lang-pt">{{ post.title }}</span>
-        <span class="lang-en">{{ post.en_title | default: post.title }}</span>
-      </h2>
-      {% if post.subtitle or post.en_subtitle %}
-      <h3 class="post-subtitle has-en">
-        <span class="lang-pt">{{ post.subtitle }}</span>
-        <span class="lang-en">{{ post.en_subtitle | default: post.subtitle }}</span>
-      </h3>
-      {% endif %}
-    </a>
-    <p class="post-meta has-en">
-      <span class="lang-pt">Postado por {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} em {{
-        post.date | date: site.date_format }}</span>
-      <span class="lang-en">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{
-        post.date | date: "%m/%d/%Y" }}</span>
+<section class="home-hero" aria-labelledby="home-hero-title">
+  <div class="home-hero-inner">
+    <p class="home-kicker">
+      <span class="lang-pt">// Tech, cultura e o chorume de quem está na linha de frente</span>
+      <span class="lang-en">// Tech, culture and the sludge from those on the front line</span>
     </p>
+    <h1 id="home-hero-title" class="home-title">
+      <span class="lang-pt">A odisseia do puto</span>
+      <span class="lang-en">The Odyssey of the Puto</span>
+    </h1>
+    <p class="home-lede">
+      <span class="lang-pt">O blackhat da cultura tech. Código, notícias e pop dissecados com acidez — por quem depura sistemas em produção às 3 da manhã.</span>
+      <span class="lang-en">The blackhat of tech culture. Code, news and pop dissected — by people who debug production at 3 AM.</span>
+    </p>
+    <div class="home-cta-row">
+      <a class="btn btn-primary" href="#latest" data-pt="Ler posts" data-en="Read posts">Ler posts</a>
+      <a class="btn btn-ghost" href="{{ site.baseurl }}/about/" data-pt="Sobre o blog" data-en="About the blog">Sobre o blog</a>
+    </div>
   </div>
-  <hr class="post-sep">
-  {% endfor %}
-</div>
+</section>
 
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager has-en">
-  {% if paginator.previous_page %}
-  <li class="previous">
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span
-        class="lang-pt">&larr; Novos Posts</span><span class="lang-en">&larr; Newer Posts</span></a>
-  </li>
-  {% endif %}
-  {% if paginator.next_page %}
-  <li class="next">
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><span class="lang-pt">Posts
-        Antigos &rarr;</span><span class="lang-en">Older Posts &rarr;</span></a>
-  </li>
-  {% endif %}
-</ul>
-{% endif %}
+<section class="home-newsletter" aria-label="Newsletter">
+  <div class="home-newsletter-inner">
+    {% include newsletter.html %}
+  </div>
+</section>
 
-<script src="{{ " /js/newsletter.js" | prepend: site.baseurl }}"></script>
+<section id="latest" class="home-feed">
+  <header class="home-feed-header">
+    <h2 class="home-feed-title">
+      <span class="lang-pt">Últimos posts</span>
+      <span class="lang-en">Latest posts</span>
+    </h2>
+
+    <nav class="filter-tags" aria-label="Filtrar por tipo de post">
+      <span class="filter-tags-label">
+        <span class="lang-pt">Filtrar:</span>
+        <span class="lang-en">Filter:</span>
+      </span>
+      <div class="filter-tags-buttons" role="tablist">
+        <button type="button" class="filter-tag is-active" data-filter="all" aria-pressed="true" role="tab">
+          <span class="lang-pt">Todos</span><span class="lang-en">All</span>
+        </button>
+        <button type="button" class="filter-tag" data-filter="codigo" aria-pressed="false" role="tab">
+          <span class="lang-pt">Código</span><span class="lang-en">Code</span>
+        </button>
+        <button type="button" class="filter-tag" data-filter="noticias" aria-pressed="false" role="tab">
+          <span class="lang-pt">Notícias</span><span class="lang-en">News</span>
+        </button>
+        <button type="button" class="filter-tag" data-filter="pop" aria-pressed="false" role="tab">
+          <span class="lang-pt">Pop</span><span class="lang-en">Pop</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <div id="post-list" class="post-grid">
+    {% for post in paginator.posts %}
+      {%- assign post_tag_str = post.tags | join: ' ' | downcase -%}
+      {%- if post_tag_str == '' and post.categories.size > 0 -%}
+        {%- assign cat = post.categories[0] | downcase -%}
+        {%- if cat == 'jogos' or cat == 'filmes' -%}
+          {%- assign post_tag_str = 'pop' -%}
+        {%- elsif cat == 'noticias' or cat == 'codigo' or cat == 'pop' -%}
+          {%- assign post_tag_str = cat -%}
+        {%- else -%}
+          {%- assign post_tag_str = 'codigo' -%}
+        {%- endif -%}
+      {%- endif -%}
+      {%- if post_tag_str == '' -%}{%- assign post_tag_str = 'codigo' -%}{%- endif -%}
+      {%- assign primary_tag = post_tag_str | split: ' ' | first -%}
+
+      <article class="post-card" data-tags="{{ post_tag_str }}"
+               itemscope itemtype="https://schema.org/BlogPosting">
+        <a class="post-card-link" href="{{ post.url | prepend: site.baseurl }}" itemprop="url">
+          {% include cover-src.html post=post %}
+          <div class="post-card-cover">
+            <img src="{{ cover_src }}"
+                 alt=""
+                 loading="lazy"
+                 decoding="async"
+                 itemprop="image"
+                 onerror="this.onerror=null;this.src='{{ '/img/placeholder.svg' | prepend: site.baseurl }}';this.classList.add('is-placeholder');" />
+          </div>
+          <div class="post-card-body">
+            <p class="post-card-kicker">
+              <span class="post-card-cat">{{ primary_tag | capitalize }}</span>
+              <span class="post-card-dot" aria-hidden="true">·</span>
+              <time class="post-card-date" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+                <span class="lang-pt">{{ post.date | date: site.date_format }}</span>
+                <span class="lang-en">{{ post.date | date: "%b %d, %Y" }}</span>
+              </time>
+            </p>
+            <h3 class="post-card-title" itemprop="headline">
+              <span class="lang-pt">{{ post.title }}</span>
+              <span class="lang-en">{{ post.en_title | default: post.title }}</span>
+            </h3>
+            {% if post.subtitle or post.en_subtitle %}
+            <p class="post-card-deck" itemprop="description">
+              <span class="lang-pt">{{ post.subtitle }}</span>
+              <span class="lang-en">{{ post.en_subtitle | default: post.subtitle }}</span>
+            </p>
+            {% endif %}
+            <p class="post-card-foot">
+              <span class="post-card-author">
+                <span class="lang-pt">Por {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %}</span>
+                <span class="lang-en">By {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %}</span>
+              </span>
+              <span class="post-card-read" data-pt="Ler →" data-en="Read →">Ler →</span>
+            </p>
+          </div>
+        </a>
+      </article>
+    {% endfor %}
+  </div>
+
+  {% if paginator.total_pages > 1 %}
+  <nav class="feed-pager" aria-label="Paginação">
+    {% if paginator.previous_page %}
+      <a class="feed-pager-item" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+        <span class="lang-pt">← Novos posts</span>
+        <span class="lang-en">← Newer posts</span>
+      </a>
+    {% endif %}
+    <span class="feed-pager-count">
+      <span class="lang-pt">Página {{ paginator.page }} de {{ paginator.total_pages }}</span>
+      <span class="lang-en">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    </span>
+    {% if paginator.next_page %}
+      <a class="feed-pager-item" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+        <span class="lang-pt">Posts antigos →</span>
+        <span class="lang-en">Older posts →</span>
+      </a>
+    {% endif %}
+  </nav>
+  {% endif %}
+</section>
+
+<script src="{{ '/js/newsletter.js' | prepend: site.baseurl }}" defer></script>

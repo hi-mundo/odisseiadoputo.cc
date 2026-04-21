@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" role="img" aria-label="A odisseia do puto">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"  stop-color="#18181c"/>
+      <stop offset="50%" stop-color="#121216"/>
+      <stop offset="100%" stop-color="#0a0a0d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%"  stop-color="#00dd70" stop-opacity="0.08"/>
+      <stop offset="60%" stop-color="#00dd70" stop-opacity="0.02"/>
+      <stop offset="100%" stop-color="#00dd70" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" x="0" y="0" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#ffffff" stroke-opacity="0.025" stroke-width="1"/>
+    </pattern>
+    <filter id="soften" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Base layers -->
+  <rect width="100%" height="100%" fill="url(#bg)"/>
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+  <ellipse cx="800" cy="450" rx="900" ry="500" fill="url(#glow)"/>
+
+  <!-- Logo centralizado, baixa opacidade, tingido de verde via blend -->
+  <g opacity="0.10" filter="url(#soften)">
+    <image href="/img/logo.png" x="620" y="360" width="360" height="180" preserveAspectRatio="xMidYMid meet"/>
+  </g>
+
+  <!-- Marca d'água tipográfica -->
+  <g font-family="'JetBrains Mono', ui-monospace, monospace" fill="#00dd70" fill-opacity="0.22">
+    <text x="60" y="840" font-size="22" letter-spacing="4">// a odisseia do puto</text>
+    <text x="1540" y="840" font-size="18" letter-spacing="3" text-anchor="end" fill="#ffffff" fill-opacity="0.18">404 · img not found</text>
+  </g>
+
+  <!-- Cantos ASCII decorativos -->
+  <g stroke="#00dd70" stroke-opacity="0.35" stroke-width="2" fill="none">
+    <path d="M40 40 L40 100 M40 40 L100 40"/>
+    <path d="M1560 40 L1560 100 M1560 40 L1500 40"/>
+    <path d="M40 860 L40 800 M40 860 L100 860"/>
+    <path d="M1560 860 L1560 800 M1560 860 L1500 860"/>
+  </g>
+</svg>

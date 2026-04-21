@@ -1,30 +1,40 @@
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 text-center">
-                <p class="footer-naas has-en">
-                    <span class="lang-pt"><span class="naas-prompt">$</span> um projeto de <a
-                            href="https://raimundopessoa.com" target="_blank" rel="noopener">_hi.mundo!</a></span>
-                    <span class="lang-en"><span class="naas-prompt">$</span> a <a href="https://raimundopessoa.com"
-                            target="_blank" rel="noopener">_hi.mundo!</a> project</span>
-                </p>
-                <p class="footer-contact has-en">
-                    <span class="lang-pt"><a
-                            href="mailto:contato@odisseiadoputo.cc">contato@odisseiadoputo.cc</a></span>
-                    <span class="lang-en"><a
-                            href="mailto:contato@odisseiadoputo.cc">contato@odisseiadoputo.cc</a></span>
-                </p>
-            </div>
-        </div>
+<footer class="site-footer" role="contentinfo">
+  <div class="site-footer-inner">
+    <div class="site-footer-col">
+      <p class="site-footer-brand">
+        <strong>A odisseia do puto</strong>
+      </p>
+      <p class="site-footer-tag has-en">
+        <span class="lang-pt">{{ site.description }}</span>
+        <span class="lang-en">The blackhat of tech culture. Code, news and pop dissected with the acidity of those who survive war rooms — and live to tell the sludge.</span>
+      </p>
     </div>
+
+    <div class="site-footer-col">
+      <h2 class="site-footer-label" data-pt="Navegar" data-en="Browse">Navegar</h2>
+      <ul class="site-footer-list">
+        <li><a href="{{ site.baseurl }}/" data-pt="Início" data-en="Home">Início</a></li>
+        <li><a href="{{ site.baseurl }}/about/" data-pt="Sobre" data-en="About">Sobre</a></li>
+        <li><a href="{{ site.baseurl }}/apoie/" data-pt="Apoie" data-en="Support">Apoie</a></li>
+        <li><a href="{{ site.baseurl }}/feed.xml" rel="alternate" type="application/atom+xml">RSS</a></li>
+      </ul>
+    </div>
+
+    <div class="site-footer-col">
+      <h2 class="site-footer-label" data-pt="Contato" data-en="Contact">Contato</h2>
+      <ul class="site-footer-list">
+        <li><a href="mailto:contato@odisseiadoputo.cc">contato@odisseiadoputo.cc</a></li>
+        <li><a href="https://odisseiadoputo.substack.com/" target="_blank" rel="noopener">Substack</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="site-footer-meta">
+    <p class="site-footer-credit has-en">
+      <span class="lang-pt">© {{ site.time | date: "%Y" }} · um projeto de
+        <a href="https://raimundopessoa.com" target="_blank" rel="noopener">_hi.mundo!</a></span>
+      <span class="lang-en">© {{ site.time | date: "%Y" }} · a
+        <a href="https://raimundopessoa.com" target="_blank" rel="noopener">_hi.mundo!</a> project</span>
+    </p>
+  </div>
 </footer>
-
-<!-- jQuery -->
-<script src="{{ " /js/jquery.min.js " | prepend: site.baseurl }}"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="{{ " /js/bootstrap.min.js " | prepend: site.baseurl }}"></script>
-
-<!-- Custom Theme JavaScript -->
-<script src="{{ " /js/clean-blog.min.js " | prepend: site.baseurl }}"></script>

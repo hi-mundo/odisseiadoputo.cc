@@ -1,148 +1,238 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" dir="ltr">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="O blackhat da cultura tech. Código, notícias e pop dissecados com a acidez de quem sobrevive a war rooms — e sobrevive para contar o chorume.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="color-scheme" content="dark">
 
-    <title>A odisseia do puto - A odisseia do puto</title>
+    <title>A odisseia do puto — O blackhat da cultura tech. Código, notícias e pop dissec...</title>
+
+    <meta name="description" content="O blackhat da cultura tech. Código, notícias e pop dissecados com a acidez de quem sobrevive a war rooms — e sobrevive para contar o chorume.">
+    <meta name="author" content="A odisseia do puto">
+    
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
     <link rel="canonical" href="https://odisseiadoputo.cc/">
 
+    <!-- Hreflang (bilíngue PT/EN servido na mesma URL via toggle) -->
+    <link rel="alternate" hreflang="pt-BR" href="https://odisseiadoputo.cc/">
+    <link rel="alternate" hreflang="en"    href="https://odisseiadoputo.cc/">
+    <link rel="alternate" hreflang="x-default" href="https://odisseiadoputo.cc/">
+
+    <!-- Open Graph -->
+    <meta property="og:type"        content="website">
+    <meta property="og:site_name"   content="A odisseia do puto">
+    <meta property="og:title"       content="A odisseia do puto">
+    <meta property="og:description" content="O blackhat da cultura tech. Código, notícias e pop dissecados com a acidez de quem sobrevive a war rooms — e sobrevive para contar o chorume.">
+    <meta property="og:url"         content="https://odisseiadoputo.cc/">
+    <meta property="og:image"       content="https://odisseiadoputo.cc/img/placeholder.svg">
+    <meta property="og:image:alt"   content="A odisseia do puto">
+    <meta property="og:locale"      content="pt_BR">
+    <meta property="og:locale:alternate" content="en_US">
+    
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card"        content="summary_large_image">
+    <meta name="twitter:title"       content="A odisseia do puto">
+    <meta name="twitter:description" content="O blackhat da cultura tech. Código, notícias e pop dissecados com a acidez de quem sobrevive a war rooms — e sobrevive para contar o chorume.">
+    <meta name="twitter:image"       content="https://odisseiadoputo.cc/img/placeholder.svg">
+    <meta name="twitter:image:alt"   content="A odisseia do puto">
+
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href=" /favicon.png">
-    <link rel="apple-touch-icon" href=" /favicon.png">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon"      href="/favicon.png">
 
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href=" /css/bootstrap.min.css">
+    <!-- RSS / Atom --><link type="application/atom+xml" rel="alternate" href="https://odisseiadoputo.cc/feed.xml" title="A odisseia do puto" /><!-- Fontes: Inter (UI) + Fraunces (editorial). Preconnect pra encurtar handshake. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=JetBrains+Mono:wght@400;500&display=swap">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href=" /css/clean-blog.css">
-    <link rel="stylesheet" href=" /css/odisseia.css">
+    <!-- CSS: stylesheet novo (odisseia.css) + syntax highlighting + share icons -->
+    <link rel="stylesheet" href="/css/odisseia.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/share.css">
 
-    <!-- Pygments Github CSS -->
-    <link rel="stylesheet" href=" /css/syntax.css">
-
-    <!-- Share CSS -->
-    <link rel="stylesheet" href=" /css/share.css">
-
-    <!-- Custom Fonts -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link
-        href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
-        rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <link type="application/atom+xml" rel="alternate" href="https://odisseiadoputo.cc/feed.xml" title="A odisseia do puto" />
-
-
-
+    <!-- Preferências salvas: aplica *antes* do body pra evitar FOUC -->
     <script>
-        // Check for reading mode preference immediately to avoid flash of unstyled content
-        if (localStorage.getItem('odisseia_read_mode') === 'true') {
-            document.documentElement.classList.add('reading-mode');
-            // We also add to body when DOM is ready in case documentElement isn't enough for some styles
-            document.addEventListener('DOMContentLoaded', function () {
-                document.body.classList.add('reading-mode');
-            });
-        }
+      (function () {
+        try {
+          var d = document.documentElement;
+          // Tema: default = editorial; opt-in = "2003" (CRT)
+          if (localStorage.getItem('odisseia_theme') === '2003') d.classList.add('theme-2003');
+          // Idioma: default = pt
+          var l = localStorage.getItem('siteLang') === 'en' ? 'en' : 'pt';
+          d.setAttribute('lang', l === 'en' ? 'en' : 'pt-BR');
+          if (l === 'en') d.classList.add('site-lang-en');
+        } catch (e) {}
+      })();
     </script>
+
+    <!-- JSON-LD structured data -->
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "A odisseia do puto",
+      "description": "O blackhat da cultura tech. Código, notícias e pop dissecados com a acidez de quem sobrevive a war rooms — e sobrevive para contar o chorume.",
+      "url": "https://odisseiadoputo.cc/",
+      "inLanguage": ["pt-BR", "en"],
+      "publisher": {
+        "@type": "Organization",
+        "name": "A odisseia do puto",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://odisseiadoputo.cc/favicon.png"
+        }
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "A odisseia do puto",
+      "url": "https://odisseiadoputo.cc/",
+      "inLanguage": ["pt-BR", "en"]
+    }
+    </script>
+    
+
+    <!-- Breadcrumb (para páginas internas além da home) -->
+    
+
     
 
 </head>
 
+
 <body>
+  <!-- Skip link (a11y) -->
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
 
-    <!-- Fundo estático com efeito fog (fixo; conteúdo rola por cima) -->
-    <div id="fog-bg" class="fog-bg" aria-hidden="true">
-        <div class="fog-layer fog-layer-1"></div>
-        <div class="fog-layer fog-layer-2"></div>
-        <div class="fog-layer fog-layer-3"></div>
-        <div class="fog-vignette"></div>
+  <!-- Overlay CRT do "modo 2003" (só renderiza nada se o body não tiver .theme-2003) -->
+  <div class="crt-layer" aria-hidden="true">
+    <div id="fog-bg" class="fog-bg">
+      <div class="fog-layer fog-layer-1"></div>
+      <div class="fog-layer fog-layer-2"></div>
+      <div class="fog-layer fog-layer-3"></div>
+      <div class="fog-vignette"></div>
     </div>
+    <div class="scanline"></div>
+    <div class="crt-flicker"></div>
+  </div>
 
-    <div id="site-wrap" class="site-wrap">
-        <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">
-                <img src="/img/logo.png" alt="A odisseia do puto" class="navbar-logo" />
-            </a>
+  <div class="site-shell">
+    <header class="site-header" role="banner">
+  <div class="site-header-inner">
+    <a class="site-brand" href="/" aria-label="A odisseia do puto — home">
+      <img src="/img/logo.png" alt="" class="site-brand-logo" width="140" height="32" />
+      <span class="site-brand-word">A odisseia do puto</span>
+    </a>
+
+    <button type="button" class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Abrir menu">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+
+    <nav id="site-nav" class="site-nav" aria-label="Principal">
+      <ul class="site-nav-list">
+        <li>
+          <a href="/" data-pt="Início" data-en="Home">Início</a>
+        </li>
+        <li>
+          <a href="/about/" data-pt="Sobre" data-en="About">Sobre</a>
+        </li>
+        <li>
+          <a href="/apoie/" data-pt="Apoie" data-en="Support">Apoie</a>
+        </li>
+      </ul>
+
+      <div class="site-nav-controls">
+        <div class="lang-switcher" role="group" aria-label="Idioma / Language">
+          <button type="button" class="lang-btn lang-btn-pt is-active" data-lang="pt" aria-pressed="true">PT</button>
+          <span class="lang-sep" aria-hidden="true">/</span>
+          <button type="button" class="lang-btn lang-btn-en" data-lang="en" aria-pressed="false">EN</button>
         </div>
 
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="mode-switcher-li">
-                    <span class="mode-label">Modo:</span>
-                    <button id="mode-toggle" class="mode-btn" title="Alternar Modo Leitura">
-                        <span class="mode-icon-2003">💾 2003</span>
-                        <span class="mode-icon-read" style="display:none;">📖 Ler</span>
-                    </button>
-                </li>
-                <li class="lang-switcher">
-                    <span class="lang-label" data-pt="Idioma:" data-en="Language:">Idioma:</span>
-                    <button type="button" class="lang-btn lang-btn-pt" data-lang="pt" aria-pressed="true">PT</button>
-                    <button type="button" class="lang-btn lang-btn-en" data-lang="en" aria-pressed="false">EN</button>
-                </li>
-                <li>
-                    <a href="/about/" data-pt="Sobre" data-en="About">Sobre</a>
-                </li>
-                <li>
-                    <a href="/apoie/" data-pt="Apoie" data-en="Support">Apoie</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-        <!-- Page Header (home = mais robusto). PT/EN via .has-en + .lang-pt / .lang-en -->
-<header class="intro-header intro-header--home">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading has-en">
-                    <div class="lang-pt">
-                        <h1>A odisseia do puto</h1>
-                        <hr class="small">
-                        <span class="subheading">O blackhat da cultura tech. Código, notícias e pop dissecados com a acidez de quem sobrevive a war rooms — e sobrevive para contar o chorume.</span>
-                    </div>
-                    
-                    <div class="lang-en">
-                        <h1>The Odyssey of the Puto</h1>
-                        <hr class="small">
-                        <span class="subheading">The blackhat of tech culture. Code, news and pop dissected with the acidity of those who survive war rooms — and live to tell the sludge.</span>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
+        <button id="mode-toggle" class="mode-btn" type="button"
+                aria-label="Alternar tema: moderno / 2003"
+                title="Alternar tema">
+          <svg class="mode-icon mode-icon-sun" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18">
+            <circle cx="12" cy="12" r="4" fill="currentColor"/>
+            <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="12" y1="2"  x2="12" y2="5"/>
+              <line x1="12" y1="19" x2="12" y2="22"/>
+              <line x1="2"  y1="12" x2="5"  y2="12"/>
+              <line x1="19" y1="12" x2="22" y2="12"/>
+              <line x1="4.2" y1="4.2" x2="6.3" y2="6.3"/>
+              <line x1="17.7" y1="17.7" x2="19.8" y2="19.8"/>
+              <line x1="4.2" y1="19.8" x2="6.3" y2="17.7"/>
+              <line x1="17.7" y1="6.3" x2="19.8" y2="4.2"/>
+            </g>
+          </svg>
+          <span class="mode-icon mode-icon-crt" aria-hidden="true">💾</span>
+          <span class="mode-label" data-pt="Moderno" data-en="Modern">Moderno</span>
+        </button>
+      </div>
+    </nav>
+  </div>
 </header>
 
-<!-- Main Content (home, sobre, etc.) — centralizado; Apoie usa largura maior para o grid de tevisões -->
-<div class="container page-main ">
-	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-			<!-- Newsletter na Home -->
-<div class="nl-home-wrap">
-  <!-- ===== NEWSLETTER: BLOCO NO FINAL DO POST ===== -->
+<script>
+  // Toggle do menu mobile (hambúrguer). Inline pra evitar flash.
+  (function () {
+    var btn = document.querySelector('.nav-toggle');
+    var nav = document.getElementById('site-nav');
+    if (!btn || !nav) return;
+    btn.addEventListener('click', function () {
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('is-open', !open);
+      document.body.classList.toggle('nav-open', !open);
+    });
+    // Fecha ao clicar em um link (SPA feel em mobile)
+    nav.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A' && nav.classList.contains('is-open')) {
+        btn.setAttribute('aria-expanded', 'false');
+        nav.classList.remove('is-open');
+        document.body.classList.remove('nav-open');
+      }
+    });
+  })();
+</script>
+
+
+    <main id="main" class="site-main" tabindex="-1">
+      <section class="home-hero" aria-labelledby="home-hero-title">
+  <div class="home-hero-inner">
+    <p class="home-kicker">
+      <span class="lang-pt">// Tech, cultura e o chorume de quem está na linha de frente</span>
+      <span class="lang-en">// Tech, culture and the sludge from those on the front line</span>
+    </p>
+    <h1 id="home-hero-title" class="home-title">
+      <span class="lang-pt">A odisseia do puto</span>
+      <span class="lang-en">The Odyssey of the Puto</span>
+    </h1>
+    <p class="home-lede">
+      <span class="lang-pt">O blackhat da cultura tech. Código, notícias e pop dissecados com acidez — por quem depura sistemas em produção às 3 da manhã.</span>
+      <span class="lang-en">The blackhat of tech culture. Code, news and pop dissected — by people who debug production at 3 AM.</span>
+    </p>
+    <div class="home-cta-row">
+      <a class="btn btn-primary" href="#latest" data-pt="Ler posts" data-en="Read posts">Ler posts</a>
+      <a class="btn btn-ghost" href="/about/" data-pt="Sobre o blog" data-en="About the blog">Sobre o blog</a>
+    </div>
+  </div>
+</section>
+
+<section class="home-newsletter" aria-label="Newsletter">
+  <div class="home-newsletter-inner">
+    <!-- ===== NEWSLETTER: BLOCO NO FINAL DO POST ===== -->
 <aside class="nl-end-block" id="nl-end-block" aria-label="Newsletter">
     <div class="nl-end-inner">
         <span class="nl-end-icon" id="nl-end-icon">📬</span>
@@ -228,215 +318,378 @@
         </button>
     </div>
 </div>
-</div>
-
-<!-- Filtro por tipo de post (PT/EN) -->
-<nav class="filter-tags has-en" aria-label="Filtrar por tipo de post">
-  <span class="filter-tags-label has-en">
-    <span class="lang-pt">// Ver:</span>
-    <span class="lang-en">// View:</span>
-  </span>
-  <div class="filter-tags-buttons">
-    <button type="button" class="filter-tag is-active" data-filter="all" aria-pressed="true"><span
-        class="lang-pt">Todos</span><span class="lang-en">All</span></button>
-    <button type="button" class="filter-tag" data-filter="codigo" aria-pressed="false"><span
-        class="lang-pt">Código</span><span class="lang-en">Code</span></button>
-    <button type="button" class="filter-tag" data-filter="noticias" aria-pressed="false"><span
-        class="lang-pt">Notícias</span><span class="lang-en">News</span></button>
-    <button type="button" class="filter-tag" data-filter="pop" aria-pressed="false"><span
-        class="lang-pt">Pop</span><span class="lang-en">Pop</span></button>
   </div>
-</nav>
+</section>
 
-<div id="post-list">
-  
-  
-  
-  
-  <div class="post-preview" data-tags="codigo">
-    <a href="/2026/02/23/melhores-livros-programacao-2026/">
-      <h2 class="post-title has-en">
-        <span class="lang-pt">Melhores Livros Programacao 2026</span>
-        <span class="lang-en">Melhores Livros Programacao 2026</span>
-      </h2>
-      
-    </a>
-    <p class="post-meta has-en">
-      <span class="lang-pt">Postado por A odisseia do puto em 23/02/2026</span>
-      <span class="lang-en">Posted by A odisseia do puto on 02/23/2026</span>
-    </p>
-  </div>
-  <hr class="post-sep">
-  
-  
-  
-  
-  <div class="post-preview" data-tags="noticias">
-    <a href="/2026/02/21/segfault-civilizacao-openai-falencia-tecnica/">
-      <h2 class="post-title has-en">
-        <span class="lang-pt">O Segfault da Civilização: A Insuficiência Múltipla de Órgãos da OpenAI</span>
-        <span class="lang-en">O Segfault da Civilização: A Insuficiência Múltipla de Órgãos da OpenAI</span>
-      </h2>
-      
-      <h3 class="post-subtitle has-en">
-        <span class="lang-pt">Como a bolha da IA sustenta o incesto algorítmico e o ecocídio hídrico através do centauro reverso</span>
-        <span class="lang-en">Como a bolha da IA sustenta o incesto algorítmico e o ecocídio hídrico através do centauro reverso</span>
-      </h3>
-      
-    </a>
-    <p class="post-meta has-en">
-      <span class="lang-pt">Postado por Frederico Doido em 21/02/2026</span>
-      <span class="lang-en">Posted by Frederico Doido on 02/21/2026</span>
-    </p>
-  </div>
-  <hr class="post-sep">
-  
-  
-  
-  
-  <div class="post-preview" data-tags="noticias">
-    <a href="/2026/02/21/fim-nginx-ingress-necrose-arquitetural-gateway-api/">
-      <h2 class="post-title has-en">
-        <span class="lang-pt">O Fim do NGINX Ingress Chega, Mas o Boleto Fica: A Necrose Arquitetural que Custa o Seu Cluster.</span>
-        <span class="lang-en">O Fim do NGINX Ingress Chega, Mas o Boleto Fica: A Necrose Arquitetural que Custa o Seu Cluster.</span>
-      </h2>
-      
-      <h3 class="post-subtitle has-en">
-        <span class="lang-pt">Uma Autopsia do Ingress NGINX</span>
-        <span class="lang-en">Uma Autopsia do Ingress NGINX</span>
-      </h3>
-      
-    </a>
-    <p class="post-meta has-en">
-      <span class="lang-pt">Postado por Frederico Doido em 21/02/2026</span>
-      <span class="lang-en">Posted by Frederico Doido on 02/21/2026</span>
-    </p>
-  </div>
-  <hr class="post-sep">
-  
-  
-  
-  
-  <div class="post-preview" data-tags="noticias">
-    <a href="/2026/02/21/manual-entrada-area-tech-playbook-carreira/">
-      <h2 class="post-title has-en">
-        <span class="lang-pt">O EXCELENTÍSSIMO MANUAL PARA ENTRAR NA ÁREA TECH (OU QUALQUER ÁREA)</span>
-        <span class="lang-en">O EXCELENTÍSSIMO MANUAL PARA ENTRAR NA ÁREA TECH (OU QUALQUER ÁREA)</span>
-      </h2>
-      
-      <h3 class="post-subtitle has-en">
-        <span class="lang-pt">Um playbook para mandar para o conhecido do primo do amigo da sua tia.</span>
-        <span class="lang-en">Um playbook para mandar para o conhecido do primo do amigo da sua tia.</span>
-      </h3>
-      
-    </a>
-    <p class="post-meta has-en">
-      <span class="lang-pt">Postado por Frederico Doido em 21/02/2026</span>
-      <span class="lang-en">Posted by Frederico Doido on 02/21/2026</span>
-    </p>
-  </div>
-  <hr class="post-sep">
-  
-  
-  
-  
-  <div class="post-preview" data-tags="pop">
-    <a href="/2026/02/17/necroterio-da-nostalgia-silent-hill-2-filme/">
-      <h2 class="post-title has-en">
-        <span class="lang-pt">O Necrotério da Nostalgia: Silent Hill 2 e a Estética do Vazio</span>
-        <span class="lang-en">O Necrotério da Nostalgia: Silent Hill 2 e a Estética do Vazio</span>
-      </h2>
-      
-      <h3 class="post-subtitle has-en">
-        <span class="lang-pt">Como o cinema pegou uma obra-prima do trauma e a transformou em um chorume genérico de seita.</span>
-        <span class="lang-en">Como o cinema pegou uma obra-prima do trauma e a transformou em um chorume genérico de seita.</span>
-      </h3>
-      
-    </a>
-    <p class="post-meta has-en">
-      <span class="lang-pt">Postado por Frederico Doido em 17/02/2026</span>
-      <span class="lang-en">Posted by Frederico Doido on 02/17/2026</span>
-    </p>
-  </div>
-  <hr class="post-sep">
-  
-  
-  
-  
-  <div class="post-preview" data-tags="noticias">
-    <a href="/noticias/2026/02/17/falencia-open-ai/">
-      <h2 class="post-title has-en">
-        <span class="lang-pt">A Autofagia do Silício e o Estelionato da Inteligência Infinita</span>
-        <span class="lang-en">Silicon Autophagy and the Infinite Intelligence Grift</span>
-      </h2>
-      
-      <h3 class="post-subtitle has-en">
-        <span class="lang-pt">Onde 14 bilhões de dólares viram fumaça para processar o chorume digital da própria IA.</span>
-        <span class="lang-en">Where 14 billion dollars go up in smoke to process AI's own digital sludge.</span>
-      </h3>
-      
-    </a>
-    <p class="post-meta has-en">
-      <span class="lang-pt">Postado por Frederico Doido em 17/02/2026</span>
-      <span class="lang-en">Posted by Frederico Doido on 02/17/2026</span>
-    </p>
-  </div>
-  <hr class="post-sep">
-  
-</div>
+<section id="latest" class="home-feed">
+  <header class="home-feed-header">
+    <h2 class="home-feed-title">
+      <span class="lang-pt">Últimos posts</span>
+      <span class="lang-en">Latest posts</span>
+    </h2>
 
-<!-- Pager -->
+    <nav class="filter-tags" aria-label="Filtrar por tipo de post">
+      <span class="filter-tags-label">
+        <span class="lang-pt">Filtrar:</span>
+        <span class="lang-en">Filter:</span>
+      </span>
+      <div class="filter-tags-buttons" role="tablist">
+        <button type="button" class="filter-tag is-active" data-filter="all" aria-pressed="true" role="tab">
+          <span class="lang-pt">Todos</span><span class="lang-en">All</span>
+        </button>
+        <button type="button" class="filter-tag" data-filter="codigo" aria-pressed="false" role="tab">
+          <span class="lang-pt">Código</span><span class="lang-en">Code</span>
+        </button>
+        <button type="button" class="filter-tag" data-filter="noticias" aria-pressed="false" role="tab">
+          <span class="lang-pt">Notícias</span><span class="lang-en">News</span>
+        </button>
+        <button type="button" class="filter-tag" data-filter="pop" aria-pressed="false" role="tab">
+          <span class="lang-pt">Pop</span><span class="lang-en">Pop</span>
+        </button>
+      </div>
+    </nav>
+  </header>
 
+  <div id="post-list" class="post-grid">
+    <article class="post-card" data-tags="noticias"
+               itemscope itemtype="https://schema.org/BlogPosting">
+        <a class="post-card-link" href="/noticias/tech/review/2026/04/20/apple-john-ternus-ceo/" itemprop="url">
+          
+          <div class="post-card-cover">
+            <img src="/img/placeholder.svg"
+                 alt=""
+                 loading="lazy"
+                 decoding="async"
+                 itemprop="image"
+                 onerror="this.onerror=null;this.src='/img/placeholder.svg';this.classList.add('is-placeholder');" />
+          </div>
+          <div class="post-card-body">
+            <p class="post-card-kicker">
+              <span class="post-card-cat">Noticias</span>
+              <span class="post-card-dot" aria-hidden="true">·</span>
+              <time class="post-card-date" datetime="2026-04-20T18:45:00-03:00" itemprop="datePublished">
+                <span class="lang-pt">20/04/2026</span>
+                <span class="lang-en">Apr 20, 2026</span>
+              </time>
+            </p>
+            <h3 class="post-card-title" itemprop="headline">
+              <span class="lang-pt">A Mudança de Guarda na Apple: O Fim da Era Tim Cook</span>
+              <span class="lang-en">Changing the Guard at Apple: The End of the Tim Cook Era</span>
+            </h3>
+            
+            <p class="post-card-deck" itemprop="description">
+              <span class="lang-pt">John Ternus se prepara para assumir a cadeira e o que isso significa para o seu bolso.</span>
+              <span class="lang-en">John Ternus prepares to take the chair and what it means for your wallet.</span>
+            </p>
+            
+            <p class="post-card-foot">
+              <span class="post-card-author">
+                <span class="lang-pt">Por Frederico</span>
+                <span class="lang-en">By Frederico</span>
+              </span>
+              <span class="post-card-read" data-pt="Ler →" data-en="Read →">Ler →</span>
+            </p>
+          </div>
+        </a>
+      </article>
+    <article class="post-card" data-tags="codigo"
+               itemscope itemtype="https://schema.org/BlogPosting">
+        <a class="post-card-link" href="/2026/02/23/melhores-livros-programacao-2026/" itemprop="url">
+          
+          <div class="post-card-cover">
+            <img src="/img/raimundo.png"
+                 alt=""
+                 loading="lazy"
+                 decoding="async"
+                 itemprop="image"
+                 onerror="this.onerror=null;this.src='/img/placeholder.svg';this.classList.add('is-placeholder');" />
+          </div>
+          <div class="post-card-body">
+            <p class="post-card-kicker">
+              <span class="post-card-cat">Codigo</span>
+              <span class="post-card-dot" aria-hidden="true">·</span>
+              <time class="post-card-date" datetime="2026-02-23T00:00:00-03:00" itemprop="datePublished">
+                <span class="lang-pt">23/02/2026</span>
+                <span class="lang-en">Feb 23, 2026</span>
+              </time>
+            </p>
+            <h3 class="post-card-title" itemprop="headline">
+              <span class="lang-pt">Melhores Livros Programacao 2026</span>
+              <span class="lang-en">Melhores Livros Programacao 2026</span>
+            </h3>
+            
+            <p class="post-card-foot">
+              <span class="post-card-author">
+                <span class="lang-pt">Por A odisseia do puto</span>
+                <span class="lang-en">By A odisseia do puto</span>
+              </span>
+              <span class="post-card-read" data-pt="Ler →" data-en="Read →">Ler →</span>
+            </p>
+          </div>
+        </a>
+      </article>
+    <article class="post-card" data-tags="noticias"
+               itemscope itemtype="https://schema.org/BlogPosting">
+        <a class="post-card-link" href="/2026/02/21/segfault-civilizacao-openai-falencia-tecnica/" itemprop="url">
+          
+          <div class="post-card-cover">
+            <img src="/img/placeholder.svg"
+                 alt=""
+                 loading="lazy"
+                 decoding="async"
+                 itemprop="image"
+                 onerror="this.onerror=null;this.src='/img/placeholder.svg';this.classList.add('is-placeholder');" />
+          </div>
+          <div class="post-card-body">
+            <p class="post-card-kicker">
+              <span class="post-card-cat">Noticias</span>
+              <span class="post-card-dot" aria-hidden="true">·</span>
+              <time class="post-card-date" datetime="2026-02-21T13:39:00-03:00" itemprop="datePublished">
+                <span class="lang-pt">21/02/2026</span>
+                <span class="lang-en">Feb 21, 2026</span>
+              </time>
+            </p>
+            <h3 class="post-card-title" itemprop="headline">
+              <span class="lang-pt">O Segfault da Civilização: A Insuficiência Múltipla de Órgãos da OpenAI</span>
+              <span class="lang-en">O Segfault da Civilização: A Insuficiência Múltipla de Órgãos da OpenAI</span>
+            </h3>
+            
+            <p class="post-card-deck" itemprop="description">
+              <span class="lang-pt">Como a bolha da IA sustenta o incesto algorítmico e o ecocídio hídrico através do centauro reverso</span>
+              <span class="lang-en">Como a bolha da IA sustenta o incesto algorítmico e o ecocídio hídrico através do centauro reverso</span>
+            </p>
+            
+            <p class="post-card-foot">
+              <span class="post-card-author">
+                <span class="lang-pt">Por Frederico Doido</span>
+                <span class="lang-en">By Frederico Doido</span>
+              </span>
+              <span class="post-card-read" data-pt="Ler →" data-en="Read →">Ler →</span>
+            </p>
+          </div>
+        </a>
+      </article>
+    <article class="post-card" data-tags="noticias"
+               itemscope itemtype="https://schema.org/BlogPosting">
+        <a class="post-card-link" href="/2026/02/21/fim-nginx-ingress-necrose-arquitetural-gateway-api/" itemprop="url">
+          
+          <div class="post-card-cover">
+            <img src="/img/placeholder.svg"
+                 alt=""
+                 loading="lazy"
+                 decoding="async"
+                 itemprop="image"
+                 onerror="this.onerror=null;this.src='/img/placeholder.svg';this.classList.add('is-placeholder');" />
+          </div>
+          <div class="post-card-body">
+            <p class="post-card-kicker">
+              <span class="post-card-cat">Noticias</span>
+              <span class="post-card-dot" aria-hidden="true">·</span>
+              <time class="post-card-date" datetime="2026-02-21T13:36:00-03:00" itemprop="datePublished">
+                <span class="lang-pt">21/02/2026</span>
+                <span class="lang-en">Feb 21, 2026</span>
+              </time>
+            </p>
+            <h3 class="post-card-title" itemprop="headline">
+              <span class="lang-pt">O Fim do NGINX Ingress Chega, Mas o Boleto Fica: A Necrose Arquitetural que Custa o Seu Cluster.</span>
+              <span class="lang-en">O Fim do NGINX Ingress Chega, Mas o Boleto Fica: A Necrose Arquitetural que Custa o Seu Cluster.</span>
+            </h3>
+            
+            <p class="post-card-deck" itemprop="description">
+              <span class="lang-pt">Uma Autopsia do Ingress NGINX</span>
+              <span class="lang-en">Uma Autopsia do Ingress NGINX</span>
+            </p>
+            
+            <p class="post-card-foot">
+              <span class="post-card-author">
+                <span class="lang-pt">Por Frederico Doido</span>
+                <span class="lang-en">By Frederico Doido</span>
+              </span>
+              <span class="post-card-read" data-pt="Ler →" data-en="Read →">Ler →</span>
+            </p>
+          </div>
+        </a>
+      </article>
+    <article class="post-card" data-tags="noticias"
+               itemscope itemtype="https://schema.org/BlogPosting">
+        <a class="post-card-link" href="/2026/02/21/manual-entrada-area-tech-playbook-carreira/" itemprop="url">
+          
+          <div class="post-card-cover">
+            <img src="/img/placeholder.svg"
+                 alt=""
+                 loading="lazy"
+                 decoding="async"
+                 itemprop="image"
+                 onerror="this.onerror=null;this.src='/img/placeholder.svg';this.classList.add('is-placeholder');" />
+          </div>
+          <div class="post-card-body">
+            <p class="post-card-kicker">
+              <span class="post-card-cat">Noticias</span>
+              <span class="post-card-dot" aria-hidden="true">·</span>
+              <time class="post-card-date" datetime="2026-02-21T13:28:00-03:00" itemprop="datePublished">
+                <span class="lang-pt">21/02/2026</span>
+                <span class="lang-en">Feb 21, 2026</span>
+              </time>
+            </p>
+            <h3 class="post-card-title" itemprop="headline">
+              <span class="lang-pt">O EXCELENTÍSSIMO MANUAL PARA ENTRAR NA ÁREA TECH (OU QUALQUER ÁREA)</span>
+              <span class="lang-en">O EXCELENTÍSSIMO MANUAL PARA ENTRAR NA ÁREA TECH (OU QUALQUER ÁREA)</span>
+            </h3>
+            
+            <p class="post-card-deck" itemprop="description">
+              <span class="lang-pt">Um playbook para mandar para o conhecido do primo do amigo da sua tia.</span>
+              <span class="lang-en">Um playbook para mandar para o conhecido do primo do amigo da sua tia.</span>
+            </p>
+            
+            <p class="post-card-foot">
+              <span class="post-card-author">
+                <span class="lang-pt">Por Frederico Doido</span>
+                <span class="lang-en">By Frederico Doido</span>
+              </span>
+              <span class="post-card-read" data-pt="Ler →" data-en="Read →">Ler →</span>
+            </p>
+          </div>
+        </a>
+      </article>
+    <article class="post-card" data-tags="pop"
+               itemscope itemtype="https://schema.org/BlogPosting">
+        <a class="post-card-link" href="/2026/02/17/necroterio-da-nostalgia-silent-hill-2-filme/" itemprop="url">
+          
+          <div class="post-card-cover">
+            <img src="/img/placeholder.svg"
+                 alt=""
+                 loading="lazy"
+                 decoding="async"
+                 itemprop="image"
+                 onerror="this.onerror=null;this.src='/img/placeholder.svg';this.classList.add('is-placeholder');" />
+          </div>
+          <div class="post-card-body">
+            <p class="post-card-kicker">
+              <span class="post-card-cat">Pop</span>
+              <span class="post-card-dot" aria-hidden="true">·</span>
+              <time class="post-card-date" datetime="2026-02-17T18:45:00-03:00" itemprop="datePublished">
+                <span class="lang-pt">17/02/2026</span>
+                <span class="lang-en">Feb 17, 2026</span>
+              </time>
+            </p>
+            <h3 class="post-card-title" itemprop="headline">
+              <span class="lang-pt">O Necrotério da Nostalgia: Silent Hill 2 e a Estética do Vazio</span>
+              <span class="lang-en">O Necrotério da Nostalgia: Silent Hill 2 e a Estética do Vazio</span>
+            </h3>
+            
+            <p class="post-card-deck" itemprop="description">
+              <span class="lang-pt">Como o cinema pegou uma obra-prima do trauma e a transformou em um chorume genérico de seita.</span>
+              <span class="lang-en">Como o cinema pegou uma obra-prima do trauma e a transformou em um chorume genérico de seita.</span>
+            </p>
+            
+            <p class="post-card-foot">
+              <span class="post-card-author">
+                <span class="lang-pt">Por Frederico Doido</span>
+                <span class="lang-en">By Frederico Doido</span>
+              </span>
+              <span class="post-card-read" data-pt="Ler →" data-en="Read →">Ler →</span>
+            </p>
+          </div>
+        </a>
+      </article>
+    <article class="post-card" data-tags="noticias"
+               itemscope itemtype="https://schema.org/BlogPosting">
+        <a class="post-card-link" href="/noticias/2026/02/17/falencia-open-ai/" itemprop="url">
+          
+          <div class="post-card-cover">
+            <img src="/img/placeholder.svg"
+                 alt=""
+                 loading="lazy"
+                 decoding="async"
+                 itemprop="image"
+                 onerror="this.onerror=null;this.src='/img/placeholder.svg';this.classList.add('is-placeholder');" />
+          </div>
+          <div class="post-card-body">
+            <p class="post-card-kicker">
+              <span class="post-card-cat">Noticias</span>
+              <span class="post-card-dot" aria-hidden="true">·</span>
+              <time class="post-card-date" datetime="2026-02-17T18:00:00-03:00" itemprop="datePublished">
+                <span class="lang-pt">17/02/2026</span>
+                <span class="lang-en">Feb 17, 2026</span>
+              </time>
+            </p>
+            <h3 class="post-card-title" itemprop="headline">
+              <span class="lang-pt">A Autofagia do Silício e o Estelionato da Inteligência Infinita</span>
+              <span class="lang-en">Silicon Autophagy and the Infinite Intelligence Grift</span>
+            </h3>
+            
+            <p class="post-card-deck" itemprop="description">
+              <span class="lang-pt">Onde 14 bilhões de dólares viram fumaça para processar o chorume digital da própria IA.</span>
+              <span class="lang-en">Where 14 billion dollars go up in smoke to process AI's own digital sludge.</span>
+            </p>
+            
+            <p class="post-card-foot">
+              <span class="post-card-author">
+                <span class="lang-pt">Por Frederico Doido</span>
+                <span class="lang-en">By Frederico Doido</span>
+              </span>
+              <span class="post-card-read" data-pt="Ler →" data-en="Read →">Ler →</span>
+            </p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
 
-<script src=" /js/newsletter.js"></script>
-		</div>
-	</div>
-</div>
+  
+</section>
 
-<hr>
+<script src="/js/newsletter.js" defer></script>
 
-        <!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 text-center">
-                <p class="footer-naas has-en">
-                    <span class="lang-pt"><span class="naas-prompt">$</span> um projeto de <a
-                            href="https://raimundopessoa.com" target="_blank" rel="noopener">_hi.mundo!</a></span>
-                    <span class="lang-en"><span class="naas-prompt">$</span> a <a href="https://raimundopessoa.com"
-                            target="_blank" rel="noopener">_hi.mundo!</a> project</span>
-                </p>
-                <p class="footer-contact has-en">
-                    <span class="lang-pt"><a
-                            href="mailto:contato@odisseiadoputo.cc">contato@odisseiadoputo.cc</a></span>
-                    <span class="lang-en"><a
-                            href="mailto:contato@odisseiadoputo.cc">contato@odisseiadoputo.cc</a></span>
-                </p>
-            </div>
-        </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+  <div class="site-footer-inner">
+    <div class="site-footer-col">
+      <p class="site-footer-brand">
+        <strong>A odisseia do puto</strong>
+      </p>
+      <p class="site-footer-tag has-en">
+        <span class="lang-pt">O blackhat da cultura tech. Código, notícias e pop dissecados com a acidez de quem sobrevive a war rooms — e sobrevive para contar o chorume.</span>
+        <span class="lang-en">The blackhat of tech culture. Code, news and pop dissected with the acidity of those who survive war rooms — and live to tell the sludge.</span>
+      </p>
     </div>
+
+    <div class="site-footer-col">
+      <h2 class="site-footer-label" data-pt="Navegar" data-en="Browse">Navegar</h2>
+      <ul class="site-footer-list">
+        <li><a href="/" data-pt="Início" data-en="Home">Início</a></li>
+        <li><a href="/about/" data-pt="Sobre" data-en="About">Sobre</a></li>
+        <li><a href="/apoie/" data-pt="Apoie" data-en="Support">Apoie</a></li>
+        <li><a href="/feed.xml" rel="alternate" type="application/atom+xml">RSS</a></li>
+      </ul>
+    </div>
+
+    <div class="site-footer-col">
+      <h2 class="site-footer-label" data-pt="Contato" data-en="Contact">Contato</h2>
+      <ul class="site-footer-list">
+        <li><a href="mailto:contato@odisseiadoputo.cc">contato@odisseiadoputo.cc</a></li>
+        <li><a href="https://odisseiadoputo.substack.com/" target="_blank" rel="noopener">Substack</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="site-footer-meta">
+    <p class="site-footer-credit has-en">
+      <span class="lang-pt">© 2026 · um projeto de
+        <a href="https://raimundopessoa.com" target="_blank" rel="noopener">_hi.mundo!</a></span>
+      <span class="lang-en">© 2026 · a
+        <a href="https://raimundopessoa.com" target="_blank" rel="noopener">_hi.mundo!</a> project</span>
+    </p>
+  </div>
 </footer>
 
-<!-- jQuery -->
-<script src=" /js/jquery.min.js "></script>
+  </div>
 
-<!-- Bootstrap Core JavaScript -->
-<script src=" /js/bootstrap.min.js "></script>
-
-<!-- Custom Theme JavaScript -->
-<script src=" /js/clean-blog.min.js "></script>
-    </div>
-
-    <!-- CRT overlay: por cima do conteúdo (position: fixed, z-index alto) -->
-    <div class="scanline" aria-hidden="true"></div>
-    <div class="crt-flicker" aria-hidden="true"></div>
-
-
-    <script src=" /js/fog.js"></script>
-    <script src=" /js/filter.js"></script>
-
-    <script src=" /js/lang-switcher.js"></script>
-    <script src=" /js/mode-switcher.js"></script>
+  <script src="/js/fog.js" defer></script>
+  <script src="/js/filter.js" defer></script>
+  <script src="/js/lang-switcher.js" defer></script>
+  <script src="/js/mode-switcher.js" defer></script>
 </body>
 
 </html>

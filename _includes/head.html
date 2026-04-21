@@ -1,73 +1,223 @@
-<head>
+{%- comment -%}
+  Page-level SEO variables (computed once, reused below).
+{%- endcomment -%}
+{%- assign page_title      = page.title       | default: site.title -%}
+{%- assign page_en_title   = page.en_title    | default: page_title -%}
+{%- assign page_desc       = page.description | default: page.subtitle | default: page.excerpt | default: site.description -%}
+{%- assign page_en_desc    = page.en_description | default: page.en_subtitle | default: page_desc -%}
+{%- assign page_desc       = page_desc    | strip_html | strip_newlines | truncate: 200 -%}
+{%- assign page_en_desc    = page_en_desc | strip_html | strip_newlines | truncate: 200 -%}
+{%- assign page_url_abs    = page.url | replace: 'index.html', '' | prepend: site.baseurl | prepend: site.url -%}
+{%- comment -%}
+  Resolve page_image seguindo a mesma lógica do _includes/cover-src.html:
+  1) page.header-img  2) primeira <img> do conteúdo  3) /favicon.png
+  Mas aqui sempre devolve URL ABSOLUTA (com site.url) pra OG/JSON-LD.
+{%- endcomment -%}
+{%- assign _raw_img = '' -%}
+{%- if page.header-img and page.header-img != '' -%}
+  {%- assign _hi = page.header-img -%}
+  {%- assign _lead = _hi | slice: 0, 1 -%}
+  {%- unless _lead == '/' -%}{%- assign _hi = _hi | prepend: '/' -%}{%- endunless -%}
+  {%- assign _first4 = _hi | slice: 0, 4 -%}
+  {%- if _first4 == 'http' or _first4 == '/htt' -%}
+    {%- assign _raw_img = page.header-img -%}
+  {%- else -%}
+    {%- assign _valid = site.static_files | where: 'path', _hi | size -%}
+    {%- if _valid > 0 -%}{%- assign _raw_img = _hi -%}{%- endif -%}
+  {%- endif -%}
+{%- endif -%}
+{%- if _raw_img == '' and page.content and page.content contains '<img' -%}
+  {%- assign _chunks2 = page.content | split: '<img' -%}
+  {%- for _ch in _chunks2 offset: 1 -%}
+    {%- if _raw_img != '' -%}{%- break -%}{%- endif -%}
+    {%- assign _sp = _ch | split: 'src="' -%}
+    {%- if _sp.size > 1 -%}
+      {%- assign _cand = _sp[1] | split: '"' | first -%}
+      {%- if _cand != '' and _cand != nil -%}
+        {%- unless _cand contains 'data:image/gif;base64' -%}
+          {%- assign _cf4 = _cand | slice: 0, 4 -%}
+          {%- if _cf4 == 'http' -%}
+            {%- assign _raw_img = _cand -%}
+          {%- else -%}
+            {%- assign _cl = _cand | slice: 0, 1 -%}
+            {%- unless _cl == '/' -%}{%- assign _cand = _cand | prepend: '/' -%}{%- endunless -%}
+            {%- assign _cv = site.static_files | where: 'path', _cand | size -%}
+            {%- if _cv > 0 -%}{%- assign _raw_img = _cand -%}{%- endif -%}
+          {%- endif -%}
+        {%- endunless -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+{%- if _raw_img == '' -%}
+  {%- assign _raw_img = '/img/placeholder.svg' -%}
+{%- endif -%}
+{%- assign _first_char = _raw_img | slice: 0, 4 -%}
+{%- if _first_char == 'http' -%}
+  {%- assign page_image = _raw_img -%}
+{%- else -%}
+  {%- assign _lead = _raw_img | slice: 0, 1 -%}
+  {%- if _lead != '/' -%}{%- assign _raw_img = _raw_img | prepend: '/' -%}{%- endif -%}
+  {%- assign page_image = _raw_img | prepend: site.baseurl | prepend: site.url -%}
+{%- endif -%}
+{%- if page.layout == 'post' -%}
+  {%- assign og_type = 'article' -%}
+{%- else -%}
+  {%- assign og_type = 'website' -%}
+{%- endif -%}
 
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- SEO & Open Graph Tags -->
-    <meta name="description" content="{% if page.subtitle %}{{ page.subtitle | strip_html | strip_newlines | truncate: 160 }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta property="og:description" content="{% if page.subtitle %}{{ page.subtitle | strip_html | strip_newlines | truncate: 160 }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
-    <meta property="og:site_name" content="{{ site.title }}">
-    <meta property="og:image" content="{% if page.header-img %}{{ page.header-img | prepend: site.baseurl | prepend: site.url }}{% else %}{{ '/favicon.png' | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="color-scheme" content="dark">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta name="twitter:description" content="{% if page.subtitle %}{{ page.subtitle | strip_html | strip_newlines | truncate: 160 }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="twitter:image" content="{% if page.header-img %}{{ page.header-img | prepend: site.baseurl | prepend: site.url }}{% else %}{{ '/favicon.png' | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+    <title>{% if page.title and page.title != site.title %}{{ page_title }} · {{ site.title }}{% else %}{{ site.title }} — {{ site.description | truncate: 60 }}{% endif %}</title>
 
-    <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{{ page_desc }}">
+    {% if page.author %}<meta name="author" content="{{ page.author }}">{% else %}<meta name="author" content="{{ site.title }}">{% endif %}
+    {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="canonical" href="{{ page_url_abs }}">
+
+    <!-- Hreflang (bilíngue PT/EN servido na mesma URL via toggle) -->
+    <link rel="alternate" hreflang="pt-BR" href="{{ page_url_abs }}">
+    <link rel="alternate" hreflang="en"    href="{{ page_url_abs }}">
+    <link rel="alternate" hreflang="x-default" href="{{ page_url_abs }}">
+
+    <!-- Open Graph -->
+    <meta property="og:type"        content="{{ og_type }}">
+    <meta property="og:site_name"   content="{{ site.title }}">
+    <meta property="og:title"       content="{{ page_title }}">
+    <meta property="og:description" content="{{ page_desc }}">
+    <meta property="og:url"         content="{{ page_url_abs }}">
+    <meta property="og:image"       content="{{ page_image }}">
+    <meta property="og:image:alt"   content="{{ page_title }}">
+    <meta property="og:locale"      content="pt_BR">
+    <meta property="og:locale:alternate" content="en_US">
+    {% if page.layout == 'post' %}
+    <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+    {% if page.last_modified_at %}<meta property="article:modified_time" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
+    {% if page.author %}<meta property="article:author" content="{{ page.author }}">{% endif %}
+    {% for tag in page.tags %}<meta property="article:tag" content="{{ tag }}">{% endfor %}
+    {% for cat in page.category %}<meta property="article:section" content="{{ cat }}">{% endfor %}
+    {% endif %}
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card"        content="summary_large_image">
+    <meta name="twitter:title"       content="{{ page_title }}">
+    <meta name="twitter:description" content="{{ page_desc }}">
+    <meta name="twitter:image"       content="{{ page_image }}">
+    <meta name="twitter:image:alt"   content="{{ page_title }}">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="{{ " /favicon.png" | prepend: site.baseurl }}">
-    <link rel="apple-touch-icon" href="{{ " /favicon.png" | prepend: site.baseurl }}">
+    <link rel="icon" type="image/png" href="{{ '/favicon.png' | prepend: site.baseurl }}">
+    <link rel="apple-touch-icon"      href="{{ '/favicon.png' | prepend: site.baseurl }}">
 
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="{{ " /css/bootstrap.min.css" | prepend: site.baseurl }}">
+    <!-- RSS / Atom -->
+    {%- feed_meta -%}
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ " /css/clean-blog.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ " /css/odisseia.css" | prepend: site.baseurl }}">
+    <!-- Fontes: Inter (UI) + Fraunces (editorial). Preconnect pra encurtar handshake. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=JetBrains+Mono:wght@400;500&display=swap">
 
-    <!-- Pygments Github CSS -->
-    <link rel="stylesheet" href="{{ " /css/syntax.css" | prepend: site.baseurl }}">
+    <!-- CSS: stylesheet novo (odisseia.css) + syntax highlighting + share icons -->
+    <link rel="stylesheet" href="{{ '/css/odisseia.css' | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ '/css/syntax.css'   | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ '/css/share.css'    | prepend: site.baseurl }}">
 
-    <!-- Share CSS -->
-    <link rel="stylesheet" href="{{ " /css/share.css" | prepend: site.baseurl }}">
-
-    <!-- Custom Fonts -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link
-        href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
-        rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    {% feed_meta %}
-
-
-
+    <!-- Preferências salvas: aplica *antes* do body pra evitar FOUC -->
     <script>
-        // Check for reading mode preference immediately to avoid flash of unstyled content
-        if (localStorage.getItem('odisseia_read_mode') === 'true') {
-            document.documentElement.classList.add('reading-mode');
-            // We also add to body when DOM is ready in case documentElement isn't enough for some styles
-            document.addEventListener('DOMContentLoaded', function () {
-                document.body.classList.add('reading-mode');
-            });
-        }
+      (function () {
+        try {
+          var d = document.documentElement;
+          // Tema: default = editorial; opt-in = "2003" (CRT)
+          if (localStorage.getItem('odisseia_theme') === '2003') d.classList.add('theme-2003');
+          // Idioma: default = pt
+          var l = localStorage.getItem('siteLang') === 'en' ? 'en' : 'pt';
+          d.setAttribute('lang', l === 'en' ? 'en' : 'pt-BR');
+          if (l === 'en') d.classList.add('site-lang-en');
+        } catch (e) {}
+      })();
     </script>
+
+    <!-- JSON-LD structured data -->
+    {% if page.layout == 'post' %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {"@type": "WebPage", "@id": "{{ page_url_abs }}"},
+      "headline": {{ page_title | jsonify }},
+      "description": {{ page_desc | jsonify }},
+      "image": [{{ page_image | jsonify }}],
+      "datePublished": "{{ page.date | date_to_xmlschema }}",
+      "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+      "author": {
+        "@type": "Person",
+        "name": {{ page.author | default: site.title | jsonify }}
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": {{ site.title | jsonify }},
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ '/favicon.png' | prepend: site.baseurl | prepend: site.url }}"
+        }
+      },
+      "inLanguage": "pt-BR"
+      {%- if page.category and page.category != empty -%},"articleSection": {{ page.category | first | jsonify }}{%- endif -%}
+      {%- assign _kw = page.tags | default: page.keywords -%}
+      {%- if _kw and _kw != empty -%},"keywords": {{ _kw | join: ', ' | jsonify }}{%- endif -%}
+    }
+    </script>
+    {% elsif page.url == '/' or page.url == '/index.html' %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": {{ site.title | jsonify }},
+      "description": {{ site.description | jsonify }},
+      "url": "{{ site.url }}{{ site.baseurl }}/",
+      "inLanguage": ["pt-BR", "en"],
+      "publisher": {
+        "@type": "Organization",
+        "name": {{ site.title | jsonify }},
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ '/favicon.png' | prepend: site.baseurl | prepend: site.url }}"
+        }
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": {{ site.title | jsonify }},
+      "url": "{{ site.url }}{{ site.baseurl }}/",
+      "inLanguage": ["pt-BR", "en"]
+    }
+    </script>
+    {% endif %}
+
+    <!-- Breadcrumb (para páginas internas além da home) -->
+    {% if page.url != '/' and page.url != '/index.html' %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": {{ site.title | jsonify }}, "item": "{{ site.url }}{{ site.baseurl }}/"},
+        {"@type": "ListItem", "position": 2, "name": {{ page_title | jsonify }}, "item": "{{ page_url_abs }}"}
+      ]
+    }
+    </script>
+    {% endif %}
+
     {% include analytics.html %}
 </head>

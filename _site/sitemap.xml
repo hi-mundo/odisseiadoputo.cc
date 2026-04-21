@@ -1,10 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage -->
   <url>
     <loc>https://odisseiadoputo.cc/</loc>
-    <lastmod>2026-02-25T23:26:25-03:00</lastmod>
+    <lastmod>2026-04-21T16:47:32-03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://odisseiadoputo.cc/"/>
+    <xhtml:link rel="alternate" hreflang="en"    href="https://odisseiadoputo.cc/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://odisseiadoputo.cc/"/>
+  </url>
+  <url>
+    <loc>https://odisseiadoputo.cc/noticias/tech/review/2026/04/20/apple-john-ternus-ceo/</loc>
+    <lastmod>2026-04-20T18:45:00-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://odisseiadoputo.cc/noticias/tech/review/2026/04/20/apple-john-ternus-ceo/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://odisseiadoputo.cc/noticias/tech/review/2026/04/20/apple-john-ternus-ceo/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://odisseiadoputo.cc/noticias/tech/review/2026/04/20/apple-john-ternus-ceo/"/>
   </url>
   
   <url>
@@ -12,6 +27,9 @@
     <lastmod>2026-02-23T00:00:00-03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://odisseiadoputo.cc/2026/02/23/melhores-livros-programacao-2026/"/>
+    
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://odisseiadoputo.cc/2026/02/23/melhores-livros-programacao-2026/"/>
   </url>
   
   <url>
@@ -19,6 +37,9 @@
     <lastmod>2026-02-21T13:39:00-03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://odisseiadoputo.cc/2026/02/21/segfault-civilizacao-openai-falencia-tecnica/"/>
+    
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://odisseiadoputo.cc/2026/02/21/segfault-civilizacao-openai-falencia-tecnica/"/>
   </url>
   
   <url>
@@ -26,6 +47,9 @@
     <lastmod>2026-02-21T13:36:00-03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://odisseiadoputo.cc/2026/02/21/fim-nginx-ingress-necrose-arquitetural-gateway-api/"/>
+    
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://odisseiadoputo.cc/2026/02/21/fim-nginx-ingress-necrose-arquitetural-gateway-api/"/>
   </url>
   
   <url>
@@ -33,6 +57,9 @@
     <lastmod>2026-02-21T13:28:00-03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://odisseiadoputo.cc/2026/02/21/manual-entrada-area-tech-playbook-carreira/"/>
+    
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://odisseiadoputo.cc/2026/02/21/manual-entrada-area-tech-playbook-carreira/"/>
   </url>
   
   <url>
@@ -40,6 +67,9 @@
     <lastmod>2026-02-17T18:45:00-03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://odisseiadoputo.cc/2026/02/17/necroterio-da-nostalgia-silent-hill-2-filme/"/>
+    
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://odisseiadoputo.cc/2026/02/17/necroterio-da-nostalgia-silent-hill-2-filme/"/>
   </url>
   
   <url>
@@ -47,29 +77,34 @@
     <lastmod>2026-02-17T18:00:00-03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://odisseiadoputo.cc/noticias/2026/02/17/falencia-open-ai/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://odisseiadoputo.cc/noticias/2026/02/17/falencia-open-ai/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://odisseiadoputo.cc/noticias/2026/02/17/falencia-open-ai/"/>
   </url>
   
-  
-  
+    
   <url>
     <loc>https://odisseiadoputo.cc/about/</loc>
+    <lastmod>2026-04-21T16:47:32-03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+    
   
-  
-  
+    
   <url>
     <loc>https://odisseiadoputo.cc/apoie/</loc>
+    <lastmod>2026-04-21T16:47:32-03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+    
   
+    
   
+    
   
+    
   
-  
-  
-  
-  
+
 </urlset>

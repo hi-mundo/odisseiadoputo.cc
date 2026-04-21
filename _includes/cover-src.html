@@ -1,0 +1,83 @@
+{%- comment -%}
+  Resolve a URL da capa (cover image) para um post.
+
+  Uso:
+    {% include cover-src.html post=post %}   ← na home, itera em paginator.posts
+    {% include cover-src.html post=page %}   ← dentro de _layouts/post.html
+
+  Output:
+    {{ cover_src }}         — URL pronta pra <img src=...> (relativa ao baseurl)
+    {{ cover_is_remote }}   — true se for URL externa (http://…)
+    {{ cover_is_fallback }} — true se caiu no placeholder (nenhuma imagem achada)
+
+  Ordem de fallback (validado no build, não só no render):
+    1. post.header-img — SE o arquivo existir em site.static_files
+    2. Primeira <img src="..."> do conteúdo renderizado
+    3. /img/placeholder.svg
+{%- endcomment -%}
+
+{%- assign _p = include.post -%}
+{%- assign _cover = '' -%}
+
+{%- comment -%} Nível 1: header-img, validado contra static_files {%- endcomment -%}
+{%- if _p.header-img and _p.header-img != '' -%}
+  {%- assign _hi = _p.header-img -%}
+  {%- assign _lead = _hi | slice: 0, 1 -%}
+  {%- unless _lead == '/' -%}{%- assign _hi = _hi | prepend: '/' -%}{%- endunless -%}
+  {%- assign _first4 = _hi | slice: 0, 4 -%}
+  {%- if _first4 == '/htt' or _first4 == 'http' -%}
+    {%- comment -%} URL remota — aceita sem validar {%- endcomment -%}
+    {%- assign _cover = _p.header-img -%}
+  {%- else -%}
+    {%- assign _valid = site.static_files | where: 'path', _hi | size -%}
+    {%- if _valid > 0 -%}{%- assign _cover = _hi -%}{%- endif -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- comment -%}
+  Nível 2: primeira <img src="..."> do content.
+  Percorre TODAS as <img> até achar uma que exista no disco OU seja remota.
+{%- endcomment -%}
+{%- if _cover == '' and _p.content and _p.content contains '<img' -%}
+  {%- assign _chunks = _p.content | split: '<img' -%}
+  {%- for _chunk in _chunks offset: 1 -%}
+    {%- if _cover != '' -%}{%- break -%}{%- endif -%}
+    {%- assign _src_parts = _chunk | split: 'src="' -%}
+    {%- if _src_parts.size > 1 -%}
+      {%- assign _candidate = _src_parts[1] | split: '"' | first -%}
+      {%- if _candidate != '' and _candidate != nil -%}
+        {%- unless _candidate contains 'data:image/gif;base64' -%}
+          {%- assign _c_first4 = _candidate | slice: 0, 4 -%}
+          {%- if _c_first4 == 'http' -%}
+            {%- assign _cover = _candidate -%}
+          {%- else -%}
+            {%- assign _cand = _candidate -%}
+            {%- assign _cand_lead = _cand | slice: 0, 1 -%}
+            {%- unless _cand_lead == '/' -%}{%- assign _cand = _cand | prepend: '/' -%}{%- endunless -%}
+            {%- assign _cand_valid = site.static_files | where: 'path', _cand | size -%}
+            {%- if _cand_valid > 0 -%}{%- assign _cover = _cand -%}{%- endif -%}
+          {%- endif -%}
+        {%- endunless -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+
+{%- comment -%} Nível 3: placeholder {%- endcomment -%}
+{%- assign cover_is_fallback = false -%}
+{%- if _cover == '' -%}
+  {%- assign _cover = '/img/placeholder.svg' -%}
+  {%- assign cover_is_fallback = true -%}
+{%- endif -%}
+
+{%- comment -%} Normalização final da URL {%- endcomment -%}
+{%- assign _first4 = _cover | slice: 0, 4 -%}
+{%- if _first4 == 'http' -%}
+  {%- assign cover_src = _cover -%}
+  {%- assign cover_is_remote = true -%}
+{%- else -%}
+  {%- assign _lead = _cover | slice: 0, 1 -%}
+  {%- unless _lead == '/' -%}{%- assign _cover = _cover | prepend: '/' -%}{%- endunless -%}
+  {%- assign cover_src = _cover | prepend: site.baseurl -%}
+  {%- assign cover_is_remote = false -%}
+{%- endif -%}

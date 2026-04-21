@@ -1,34 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" dir="ltr">
 
 {% include head.html %}
 
 <body>
+  <!-- Skip link (a11y) -->
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
 
-    <!-- Fundo estático com efeito fog (fixo; conteúdo rola por cima) -->
-    <div id="fog-bg" class="fog-bg" aria-hidden="true">
-        <div class="fog-layer fog-layer-1"></div>
-        <div class="fog-layer fog-layer-2"></div>
-        <div class="fog-layer fog-layer-3"></div>
-        <div class="fog-vignette"></div>
+  <!-- Overlay CRT do "modo 2003" (só renderiza nada se o body não tiver .theme-2003) -->
+  <div class="crt-layer" aria-hidden="true">
+    <div id="fog-bg" class="fog-bg">
+      <div class="fog-layer fog-layer-1"></div>
+      <div class="fog-layer fog-layer-2"></div>
+      <div class="fog-layer fog-layer-3"></div>
+      <div class="fog-vignette"></div>
     </div>
+    <div class="scanline"></div>
+    <div class="crt-flicker"></div>
+  </div>
 
-    <div id="site-wrap" class="site-wrap">
-        {% include nav.html %}
-        {{ content }}
-        {% include footer.html %}
-    </div>
+  <div class="site-shell">
+    {% include nav.html %}
 
-    <!-- CRT overlay: por cima do conteúdo (position: fixed, z-index alto) -->
-    <div class="scanline" aria-hidden="true"></div>
-    <div class="crt-flicker" aria-hidden="true"></div>
+    <main id="main" class="site-main" tabindex="-1">
+      {{ content }}
+    </main>
 
+    {% include footer.html %}
+  </div>
 
-    <script src="{{ " /js/fog.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ " /js/filter.js" | prepend: site.baseurl }}"></script>
-
-    <script src="{{ " /js/lang-switcher.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ " /js/mode-switcher.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ '/js/fog.js'          | prepend: site.baseurl }}" defer></script>
+  <script src="{{ '/js/filter.js'       | prepend: site.baseurl }}" defer></script>
+  <script src="{{ '/js/lang-switcher.js'| prepend: site.baseurl }}" defer></script>
+  <script src="{{ '/js/mode-switcher.js'| prepend: site.baseurl }}" defer></script>
 </body>
 
 </html>

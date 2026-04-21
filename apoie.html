@@ -1,45 +1,42 @@
 ---
 layout: page
 title: "Apoie"
+en_title: "Support"
 description: "Odiamos anúncios tanto quanto você. Financie a Odisseia e receba conteúdo premium."
+en_description: "We hate ads as much as you do. Fund the Odyssey and get premium content."
 permalink: /apoie/
 ---
 
-<div class="apoie-matrix">
-  <p class="apoie-intro">Neo, descobrindo que não tem ads.</p>
-  <p class="apoie-sub">(Tradução: Odiamos anúncios. Eles sujam a Matrix e irritam o Morpheus.)</p>
-  <div class="apoie-gif-wrap">
-    <img src="https://media.giphy.com/media/rHdnOjlF4Od8T2DIx6/giphy.gif" alt="Neo vendo a Matrix" class="apoie-gif"
-      width="320" height="180" loading="lazy">
+<div class="lang-pt">
+  <div class="apoie-matrix">
+    <p class="apoie-intro">Neo, descobrindo que não tem ads.</p>
+    <p class="apoie-sub">(Tradução: odiamos anúncios. Eles sujam a Matrix e irritam o Morpheus.)</p>
+    <div class="apoie-gif-wrap">
+      <img src="https://media.giphy.com/media/rHdnOjlF4Od8T2DIx6/giphy.gif"
+           alt="Neo vendo a Matrix" class="apoie-gif"
+           width="320" height="180" loading="lazy">
+    </div>
   </div>
-</div>
 
-<div class="reading-content" style="max-width: 720px; margin: 0 auto; padding: 0 15px;">
   <h2>Odiamos ads, mas precisamos manter a infra de pé</h2>
-  <p>Principalmente para financiar a acidez literária do <strong>Frederico</strong> e o stack técnico do
-    <strong>Raimundo</strong>.</p>
+  <p>Principalmente para financiar a acidez literária do <strong>Frederico</strong> e o stack técnico do <strong>Raimundo</strong>.</p>
+  <p>Poluir sua visão com banners piscantes é coisa de portal corporativo sem alma. A Odisseia é o blackhat da cultura tech: limpa, direta e sem filtros.</p>
 
-  <p>Poluir sua visão com banners piscantes é coisa de portal corporativo sem alma. A Odisseia é o blackhat da cultura
-    tech: limpa, direta e sem filtros.</p>
-
-  <h3>A Regra do Jogo</h3>
-
-  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0;">
-    <div
-      style="border: 1px solid var(--border-soft); padding: 1.5rem; border-radius: 4px; background: rgba(0,221,112,0.02);">
-      <h4 style="margin-top: 0; color: var(--accent);">Newsletter Premium</h4>
-      <p style="font-size: 0.9rem; margin-bottom: 0;">Receba tudo <strong>na hora</strong>.</p>
-      <ul style="font-size: 0.9rem; padding-left: 1.2rem; margin-top: 0.5rem;">
+  <h3>A regra do jogo</h3>
+  <div class="apoie-grid">
+    <div class="apoie-card apoie-card--premium">
+      <h4>Newsletter Premium</h4>
+      <p>Receba tudo <strong>na hora</strong>.</p>
+      <ul>
         <li>Conteúdo fresco, duas vezes na semana.</li>
         <li>Análises profundas e revisadas.</li>
         <li>Acesso direto aos autores.</li>
       </ul>
     </div>
-
-    <div style="border: 1px dotted var(--border-soft); padding: 1.5rem; border-radius: 4px; opacity: 0.8;">
-      <h4 style="margin-top: 0; color: var(--text-muted);">Apenas o Site</h4>
-      <p style="font-size: 0.9rem; margin-bottom: 0;">Receba com <strong>atraso</strong>.</p>
-      <ul style="font-size: 0.9rem; padding-left: 1.2rem; margin-top: 0.5rem; color: var(--text-muted);">
+    <div class="apoie-card apoie-card--free">
+      <h4>Apenas o site</h4>
+      <p>Receba com <strong>atraso</strong>.</p>
+      <ul>
         <li>Conteúdo liberado semanas depois.</li>
         <li>Sem notificações de novidades.</li>
         <li>Você depende de lembrar de voltar aqui.</li>
@@ -49,31 +46,53 @@ permalink: /apoie/
 
   <p>Se você quer estar na vanguarda e não ler notícias velhas, assina agora.</p>
 
-  <aside class="nl-end-block" id="nl-end-block" aria-label="Newsletter">
-    <div class="nl-end-inner">
-      <span class="nl-end-icon">📬</span>
-      <div class="nl-end-text">
-        <strong class="nl-end-title">Receba quentinho no email.</strong>
-        <span class="nl-end-desc">Cada post novo vai direto pra sua caixa. Sem depender de rede social, sem
-          atraso.</span>
-      </div>
-      <form class="nl-inline-form" id="nl-end-form" novalidate>
-        <input type="email" id="nl-end-email" class="nl-input" placeholder="seu@email.com" autocomplete="email"
-          required />
-        <button type="submit" class="nl-btn" id="nl-end-submit">
-          <span class="nl-btn-text">Entrar</span>
-          <span class="nl-btn-spinner" hidden></span>
-        </button>
-      </form>
-      <p class="nl-error" id="nl-end-error" hidden></p>
-      <p class="nl-inline-success" id="nl-end-success" hidden>
-        ✅ Tá dentro! O próximo post chega quentinho direto na sua caixa.
-      </p>
-    </div>
-  </aside>
+  {% include newsletter.html %}
 
-  <p style="text-align: center; margin-top: 1rem; font-size: 0.8em; color: var(--text-muted);">Junte-se à resistência.
-  </p>
+  <p class="apoie-footer-note">Junte-se à resistência.</p>
 </div>
 
-<script src="{{ " /js/newsletter.js" | prepend: site.baseurl }}"></script>
+<div class="lang-en">
+  <div class="apoie-matrix">
+    <p class="apoie-intro">Neo, realizing there are no ads.</p>
+    <p class="apoie-sub">(Translation: we hate ads. They pollute the Matrix and annoy Morpheus.)</p>
+    <div class="apoie-gif-wrap">
+      <img src="https://media.giphy.com/media/rHdnOjlF4Od8T2DIx6/giphy.gif"
+           alt="Neo seeing the Matrix" class="apoie-gif"
+           width="320" height="180" loading="lazy">
+    </div>
+  </div>
+
+  <h2>We hate ads, but we need to keep the infra running</h2>
+  <p>Mainly to fund <strong>Frederico</strong>'s literary acidity and <strong>Raimundo</strong>'s technical stack.</p>
+  <p>Polluting your vision with flashy banners is for soulless corporate portals. The Odyssey is the blackhat of tech culture: clean, direct, unfiltered.</p>
+
+  <h3>The rules of the game</h3>
+  <div class="apoie-grid">
+    <div class="apoie-card apoie-card--premium">
+      <h4>Premium Newsletter</h4>
+      <p>Get everything <strong>instantly</strong>.</p>
+      <ul>
+        <li>Fresh content, twice a week.</li>
+        <li>Deep, polished analysis.</li>
+        <li>Direct access to the authors.</li>
+      </ul>
+    </div>
+    <div class="apoie-card apoie-card--free">
+      <h4>Just the site</h4>
+      <p>Get it <strong>late</strong>.</p>
+      <ul>
+        <li>Content released weeks later.</li>
+        <li>No notifications about updates.</li>
+        <li>You depend on remembering to come back.</li>
+      </ul>
+    </div>
+  </div>
+
+  <p>If you want to be on the front line instead of reading stale news, subscribe now.</p>
+
+  {% include newsletter.html %}
+
+  <p class="apoie-footer-note">Join the resistance.</p>
+</div>
+
+<script src="{{ '/js/newsletter.js' | prepend: site.baseurl }}" defer></script>

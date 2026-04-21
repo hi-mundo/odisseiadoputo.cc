@@ -1,146 +1,222 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" dir="ltr">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="O blackhat da cultura tech. Código, notícias e pop dissecados com a acidez de quem sobrevive a war rooms — e sobrevive para contar o chorume.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="color-scheme" content="dark">
 
-    <title>Sobre - A odisseia do puto</title>
+    <title>Sobre · A odisseia do puto</title>
+
+    <meta name="description" content="Quem faz a Odisseia do Puto">
+    <meta name="author" content="A odisseia do puto">
+    
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
     <link rel="canonical" href="https://odisseiadoputo.cc/about/">
 
+    <!-- Hreflang (bilíngue PT/EN servido na mesma URL via toggle) -->
+    <link rel="alternate" hreflang="pt-BR" href="https://odisseiadoputo.cc/about/">
+    <link rel="alternate" hreflang="en"    href="https://odisseiadoputo.cc/about/">
+    <link rel="alternate" hreflang="x-default" href="https://odisseiadoputo.cc/about/">
+
+    <!-- Open Graph -->
+    <meta property="og:type"        content="website">
+    <meta property="og:site_name"   content="A odisseia do puto">
+    <meta property="og:title"       content="Sobre">
+    <meta property="og:description" content="Quem faz a Odisseia do Puto">
+    <meta property="og:url"         content="https://odisseiadoputo.cc/about/">
+    <meta property="og:image"       content="https://odisseiadoputo.cc/img/placeholder.svg">
+    <meta property="og:image:alt"   content="Sobre">
+    <meta property="og:locale"      content="pt_BR">
+    <meta property="og:locale:alternate" content="en_US">
+    
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card"        content="summary_large_image">
+    <meta name="twitter:title"       content="Sobre">
+    <meta name="twitter:description" content="Quem faz a Odisseia do Puto">
+    <meta name="twitter:image"       content="https://odisseiadoputo.cc/img/placeholder.svg">
+    <meta name="twitter:image:alt"   content="Sobre">
+
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href=" /favicon.png">
-    <link rel="apple-touch-icon" href=" /favicon.png">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon"      href="/favicon.png">
 
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href=" /css/bootstrap.min.css">
+    <!-- RSS / Atom --><link type="application/atom+xml" rel="alternate" href="https://odisseiadoputo.cc/feed.xml" title="A odisseia do puto" /><!-- Fontes: Inter (UI) + Fraunces (editorial). Preconnect pra encurtar handshake. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=JetBrains+Mono:wght@400;500&display=swap">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href=" /css/clean-blog.css">
-    <link rel="stylesheet" href=" /css/odisseia.css">
+    <!-- CSS: stylesheet novo (odisseia.css) + syntax highlighting + share icons -->
+    <link rel="stylesheet" href="/css/odisseia.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/share.css">
 
-    <!-- Pygments Github CSS -->
-    <link rel="stylesheet" href=" /css/syntax.css">
-
-    <!-- Share CSS -->
-    <link rel="stylesheet" href=" /css/share.css">
-
-    <!-- Custom Fonts -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link
-        href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
-        rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <link type="application/atom+xml" rel="alternate" href="https://odisseiadoputo.cc/feed.xml" title="A odisseia do puto" />
-
-
-
+    <!-- Preferências salvas: aplica *antes* do body pra evitar FOUC -->
     <script>
-        // Check for reading mode preference immediately to avoid flash of unstyled content
-        if (localStorage.getItem('odisseia_read_mode') === 'true') {
-            document.documentElement.classList.add('reading-mode');
-            // We also add to body when DOM is ready in case documentElement isn't enough for some styles
-            document.addEventListener('DOMContentLoaded', function () {
-                document.body.classList.add('reading-mode');
-            });
-        }
+      (function () {
+        try {
+          var d = document.documentElement;
+          // Tema: default = editorial; opt-in = "2003" (CRT)
+          if (localStorage.getItem('odisseia_theme') === '2003') d.classList.add('theme-2003');
+          // Idioma: default = pt
+          var l = localStorage.getItem('siteLang') === 'en' ? 'en' : 'pt';
+          d.setAttribute('lang', l === 'en' ? 'en' : 'pt-BR');
+          if (l === 'en') d.classList.add('site-lang-en');
+        } catch (e) {}
+      })();
     </script>
+
+    <!-- JSON-LD structured data -->
+    
+
+    <!-- Breadcrumb (para páginas internas além da home) -->
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "A odisseia do puto", "item": "https://odisseiadoputo.cc/"},
+        {"@type": "ListItem", "position": 2, "name": "Sobre", "item": "https://odisseiadoputo.cc/about/"}
+      ]
+    }
+    </script>
+    
+
     
 
 </head>
 
+
 <body>
+  <!-- Skip link (a11y) -->
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
 
-    <!-- Fundo estático com efeito fog (fixo; conteúdo rola por cima) -->
-    <div id="fog-bg" class="fog-bg" aria-hidden="true">
-        <div class="fog-layer fog-layer-1"></div>
-        <div class="fog-layer fog-layer-2"></div>
-        <div class="fog-layer fog-layer-3"></div>
-        <div class="fog-vignette"></div>
+  <!-- Overlay CRT do "modo 2003" (só renderiza nada se o body não tiver .theme-2003) -->
+  <div class="crt-layer" aria-hidden="true">
+    <div id="fog-bg" class="fog-bg">
+      <div class="fog-layer fog-layer-1"></div>
+      <div class="fog-layer fog-layer-2"></div>
+      <div class="fog-layer fog-layer-3"></div>
+      <div class="fog-vignette"></div>
     </div>
+    <div class="scanline"></div>
+    <div class="crt-flicker"></div>
+  </div>
 
-    <div id="site-wrap" class="site-wrap">
-        <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">
-                <img src="/img/logo.png" alt="A odisseia do puto" class="navbar-logo" />
-            </a>
+  <div class="site-shell">
+    <header class="site-header" role="banner">
+  <div class="site-header-inner">
+    <a class="site-brand" href="/" aria-label="A odisseia do puto — home">
+      <img src="/img/logo.png" alt="" class="site-brand-logo" width="140" height="32" />
+      <span class="site-brand-word">A odisseia do puto</span>
+    </a>
+
+    <button type="button" class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Abrir menu">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+
+    <nav id="site-nav" class="site-nav" aria-label="Principal">
+      <ul class="site-nav-list">
+        <li>
+          <a href="/" data-pt="Início" data-en="Home">Início</a>
+        </li>
+        <li>
+          <a href="/about/" data-pt="Sobre" data-en="About">Sobre</a>
+        </li>
+        <li>
+          <a href="/apoie/" data-pt="Apoie" data-en="Support">Apoie</a>
+        </li>
+      </ul>
+
+      <div class="site-nav-controls">
+        <div class="lang-switcher" role="group" aria-label="Idioma / Language">
+          <button type="button" class="lang-btn lang-btn-pt is-active" data-lang="pt" aria-pressed="true">PT</button>
+          <span class="lang-sep" aria-hidden="true">/</span>
+          <button type="button" class="lang-btn lang-btn-en" data-lang="en" aria-pressed="false">EN</button>
         </div>
 
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="mode-switcher-li">
-                    <span class="mode-label">Modo:</span>
-                    <button id="mode-toggle" class="mode-btn" title="Alternar Modo Leitura">
-                        <span class="mode-icon-2003">💾 2003</span>
-                        <span class="mode-icon-read" style="display:none;">📖 Ler</span>
-                    </button>
-                </li>
-                <li class="lang-switcher">
-                    <span class="lang-label" data-pt="Idioma:" data-en="Language:">Idioma:</span>
-                    <button type="button" class="lang-btn lang-btn-pt" data-lang="pt" aria-pressed="true">PT</button>
-                    <button type="button" class="lang-btn lang-btn-en" data-lang="en" aria-pressed="false">EN</button>
-                </li>
-                <li>
-                    <a href="/about/" data-pt="Sobre" data-en="About">Sobre</a>
-                </li>
-                <li>
-                    <a href="/apoie/" data-pt="Apoie" data-en="Support">Apoie</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-        <!-- Page Header (home = mais robusto). PT/EN via .has-en + .lang-pt / .lang-en -->
-<header class="intro-header ">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading has-en">
-                    <div class="lang-pt">
-                        <h1>Sobre</h1>
-                        <hr class="small">
-                        <span class="subheading">Quem faz a Odisseia do Puto</span>
-                    </div>
-                    
-                    <div class="lang-en">
-                        <h1>About</h1>
-                        <hr class="small">
-                        <span class="subheading">Who runs The Odyssey of the Puto</span>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
+        <button id="mode-toggle" class="mode-btn" type="button"
+                aria-label="Alternar tema: moderno / 2003"
+                title="Alternar tema">
+          <svg class="mode-icon mode-icon-sun" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18">
+            <circle cx="12" cy="12" r="4" fill="currentColor"/>
+            <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="12" y1="2"  x2="12" y2="5"/>
+              <line x1="12" y1="19" x2="12" y2="22"/>
+              <line x1="2"  y1="12" x2="5"  y2="12"/>
+              <line x1="19" y1="12" x2="22" y2="12"/>
+              <line x1="4.2" y1="4.2" x2="6.3" y2="6.3"/>
+              <line x1="17.7" y1="17.7" x2="19.8" y2="19.8"/>
+              <line x1="4.2" y1="19.8" x2="6.3" y2="17.7"/>
+              <line x1="17.7" y1="6.3" x2="19.8" y2="4.2"/>
+            </g>
+          </svg>
+          <span class="mode-icon mode-icon-crt" aria-hidden="true">💾</span>
+          <span class="mode-label" data-pt="Moderno" data-en="Modern">Moderno</span>
+        </button>
+      </div>
+    </nav>
+  </div>
 </header>
 
-<!-- Main Content (home, sobre, etc.) — centralizado; Apoie usa largura maior para o grid de tevisões -->
-<div class="container page-main ">
-	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-			<div class="about-content has-en">
+<script>
+  // Toggle do menu mobile (hambúrguer). Inline pra evitar flash.
+  (function () {
+    var btn = document.querySelector('.nav-toggle');
+    var nav = document.getElementById('site-nav');
+    if (!btn || !nav) return;
+    btn.addEventListener('click', function () {
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('is-open', !open);
+      document.body.classList.toggle('nav-open', !open);
+    });
+    // Fecha ao clicar em um link (SPA feel em mobile)
+    nav.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A' && nav.classList.contains('is-open')) {
+        btn.setAttribute('aria-expanded', 'false');
+        nav.classList.remove('is-open');
+        document.body.classList.remove('nav-open');
+      }
+    });
+  })();
+</script>
+
+
+    <main id="main" class="site-main" tabindex="-1">
+      <section class="page-hero ">
+  <div class="page-hero-inner">
+    
+    <nav class="breadcrumb" aria-label="Trilha">
+      <a href="/" data-pt="Início" data-en="Home">Início</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <span class="breadcrumb-current">Sobre</span>
+    </nav>
+    
+
+    <div class="lang-pt">
+      <h1 class="page-title">Sobre</h1>
+      <p class="page-lede">Quem faz a Odisseia do Puto</p>
+    </div>
+    
+    <div class="lang-en">
+      <h1 class="page-title">About</h1>
+      <p class="page-lede">Who runs The Odyssey of the Puto</p>
+    </div>
+    
+  </div>
+</section>
+
+<div class="page-body ">
+  <div class="about-content has-en">
   <div class="lang-pt">
     <p><strong>A odisseia do puto</strong> é um manifesto contra a mediocridade técnica. Tecnologia, engenharia e
       cultura pop dissecadas sem filtro — por quem depura sistemas em produção às 3 da manhã.</p>
@@ -166,7 +242,7 @@
         <p>O lado racional e técnico da força. É quem sugere os temas, mantém o stack de pé e garante que o blog não
           derreta. Ele é o cérebro da operação, arquitetando cada odisseia nos bastidores.</p>
 
-        <hr style="border: 0; border-top: 1px dashed var(--border-soft); margin: 1.5rem 0;">
+        <hr class="about-person-sep">
 
         <h4>Frederico Doido</h4>
         <p class="role">O Teclado / Blackhat dos Revisores</p>
@@ -302,7 +378,7 @@
         <p>The rational and technical side. He’s the one suggesting topics, keeping the stack running, and ensuring the
           blog doesn't melt down. He’s the brain of the operation, architecting every odyssey behind the scenes.</p>
 
-        <hr style="border: 0; border-top: 1px dashed var(--border-soft); margin: 1.5rem 0;">
+        <hr class="about-person-sep">
 
         <h4>Frederico Doido</h4>
         <p class="role">The Keyboard / Blackhat of Reviewers</p>
@@ -415,54 +491,57 @@
 </div>
 
 <script src=" /js/newsletter.js"></script>
-		</div>
-	</div>
 </div>
 
-<hr>
+    </main>
 
-        <!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 text-center">
-                <p class="footer-naas has-en">
-                    <span class="lang-pt"><span class="naas-prompt">$</span> um projeto de <a
-                            href="https://raimundopessoa.com" target="_blank" rel="noopener">_hi.mundo!</a></span>
-                    <span class="lang-en"><span class="naas-prompt">$</span> a <a href="https://raimundopessoa.com"
-                            target="_blank" rel="noopener">_hi.mundo!</a> project</span>
-                </p>
-                <p class="footer-contact has-en">
-                    <span class="lang-pt"><a
-                            href="mailto:contato@odisseiadoputo.cc">contato@odisseiadoputo.cc</a></span>
-                    <span class="lang-en"><a
-                            href="mailto:contato@odisseiadoputo.cc">contato@odisseiadoputo.cc</a></span>
-                </p>
-            </div>
-        </div>
+    <footer class="site-footer" role="contentinfo">
+  <div class="site-footer-inner">
+    <div class="site-footer-col">
+      <p class="site-footer-brand">
+        <strong>A odisseia do puto</strong>
+      </p>
+      <p class="site-footer-tag has-en">
+        <span class="lang-pt">O blackhat da cultura tech. Código, notícias e pop dissecados com a acidez de quem sobrevive a war rooms — e sobrevive para contar o chorume.</span>
+        <span class="lang-en">The blackhat of tech culture. Code, news and pop dissected with the acidity of those who survive war rooms — and live to tell the sludge.</span>
+      </p>
     </div>
+
+    <div class="site-footer-col">
+      <h2 class="site-footer-label" data-pt="Navegar" data-en="Browse">Navegar</h2>
+      <ul class="site-footer-list">
+        <li><a href="/" data-pt="Início" data-en="Home">Início</a></li>
+        <li><a href="/about/" data-pt="Sobre" data-en="About">Sobre</a></li>
+        <li><a href="/apoie/" data-pt="Apoie" data-en="Support">Apoie</a></li>
+        <li><a href="/feed.xml" rel="alternate" type="application/atom+xml">RSS</a></li>
+      </ul>
+    </div>
+
+    <div class="site-footer-col">
+      <h2 class="site-footer-label" data-pt="Contato" data-en="Contact">Contato</h2>
+      <ul class="site-footer-list">
+        <li><a href="mailto:contato@odisseiadoputo.cc">contato@odisseiadoputo.cc</a></li>
+        <li><a href="https://odisseiadoputo.substack.com/" target="_blank" rel="noopener">Substack</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="site-footer-meta">
+    <p class="site-footer-credit has-en">
+      <span class="lang-pt">© 2026 · um projeto de
+        <a href="https://raimundopessoa.com" target="_blank" rel="noopener">_hi.mundo!</a></span>
+      <span class="lang-en">© 2026 · a
+        <a href="https://raimundopessoa.com" target="_blank" rel="noopener">_hi.mundo!</a> project</span>
+    </p>
+  </div>
 </footer>
 
-<!-- jQuery -->
-<script src=" /js/jquery.min.js "></script>
+  </div>
 
-<!-- Bootstrap Core JavaScript -->
-<script src=" /js/bootstrap.min.js "></script>
-
-<!-- Custom Theme JavaScript -->
-<script src=" /js/clean-blog.min.js "></script>
-    </div>
-
-    <!-- CRT overlay: por cima do conteúdo (position: fixed, z-index alto) -->
-    <div class="scanline" aria-hidden="true"></div>
-    <div class="crt-flicker" aria-hidden="true"></div>
-
-
-    <script src=" /js/fog.js"></script>
-    <script src=" /js/filter.js"></script>
-
-    <script src=" /js/lang-switcher.js"></script>
-    <script src=" /js/mode-switcher.js"></script>
+  <script src="/js/fog.js" defer></script>
+  <script src="/js/filter.js" defer></script>
+  <script src="/js/lang-switcher.js" defer></script>
+  <script src="/js/mode-switcher.js" defer></script>
 </body>
 
 </html>

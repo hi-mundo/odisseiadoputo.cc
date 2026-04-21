@@ -1,38 +1,35 @@
 ---
 layout: default
 ---
+{%- if page.url == '/' or page.url == '/index.html' -%}
+  {%- assign is_home = true -%}
+{%- else -%}
+  {%- assign is_home = false -%}
+{%- endif -%}
 
-<!-- Page Header (home = mais robusto). PT/EN via .has-en + .lang-pt / .lang-en -->
-<header class="intro-header {% if page.url == '/' or page.url == '' or page.url == '/index.html' %}intro-header--home{% endif %}">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading {% if page.en_title or page.en_description %}has-en{% endif %}">
-                    <div class="lang-pt">
-                        <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
-                        <hr class="small">
-                        <span class="subheading">{{ page.description }}</span>
-                    </div>
-                    {% if page.en_title or page.en_description %}
-                    <div class="lang-en">
-                        <h1>{{ page.en_title | default: page.title | default: site.title }}</h1>
-                        <hr class="small">
-                        <span class="subheading">{{ page.en_description | default: page.description }}</span>
-                    </div>
-                    {% endif %}
-                </div>
-            </div>
-        </div>
+<section class="page-hero {% if is_home %}page-hero--home{% endif %}">
+  <div class="page-hero-inner">
+    {% if is_home == false %}
+    <nav class="breadcrumb" aria-label="Trilha">
+      <a href="{{ site.baseurl }}/" data-pt="Início" data-en="Home">Início</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <span class="breadcrumb-current">{{ page.title }}</span>
+    </nav>
+    {% endif %}
+
+    <div class="lang-pt">
+      <h1 class="page-title">{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+      {% if page.description %}<p class="page-lede">{{ page.description }}</p>{% endif %}
     </div>
-</header>
+    {% if page.en_title or page.en_description %}
+    <div class="lang-en">
+      <h1 class="page-title">{{ page.en_title | default: page.title | default: site.title }}</h1>
+      {% if page.en_description or page.description %}<p class="page-lede">{{ page.en_description | default: page.description }}</p>{% endif %}
+    </div>
+    {% endif %}
+  </div>
+</section>
 
-<!-- Main Content (home, sobre, etc.) — centralizado; Apoie usa largura maior para o grid de tevisões -->
-<div class="container page-main {% if page.permalink == '/apoie/' %}page-main--apoie{% endif %}">
-	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 {% if page.permalink == '/apoie/' %}col-apoie-full{% endif %}">
-			{{ content }}
-		</div>
-	</div>
+<div class="page-body {% if page.permalink == '/apoie/' %}page-body--wide{% endif %}">
+  {{ content }}
 </div>
-
-<hr>
