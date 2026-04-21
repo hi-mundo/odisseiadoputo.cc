@@ -16,31 +16,31 @@ en_content: |
   Here are 9 laptops for AI programming, ranging from the absurd delusions of grandeur to the actual survival gear you can afford.
   
   ### 1. MacBook Pro M3 Max (The Heir's Choice)
-  The definitive machine. Unified memory means you can load a 70B model into RAM. But the price in Brazil is a crime against humanity. [Look at this absolute absurdity. Are you a billionaire? Click and laugh/cry](https://amzn.to/SEU_LINK_1).
+  The definitive machine. Unified memory means you can load a massive model into RAM. But the price in Brazil is a crime against humanity. [Look at this absolute absurdity. Are you a billionaire? Click and laugh/cry](https://amzn.to/48GzHYQ).
 
-  ### 2. Alienware m18 R2 (The Portable Heater)
-  You need CUDA cores? This monster delivers, but it weighs a ton and the battery lasts 12 minutes. [See the ridiculous price they charge for this spine-breaking RGB machine](https://amzn.to/SEU_LINK_2).
+  ### 2. Alienware Aurora 16" (The Portable Heater)
+  You need CUDA cores? This monster delivers an RTX 4050, but it weighs a ton. They slapped the "gamer" tag to charge you double. [See the ridiculous price they charge for this spine-breaking RGB machine](https://amzn.to/4vHVN7d).
 
   ### 3. Acer Nitro 5 (The Brazilian Reality)
-  This is the trench warrior. It’s made of cheap plastic, the screen colors are washed out, but it has an entry-level RTX. It will run your small PyTorch scripts before thermal throttling kicks in. [This is what you can actually afford. Look at the price of survival](https://amzn.to/SEU_LINK_3).
+  This is the trench warrior. It’s made of cheap plastic, but it runs your small PyTorch scripts before thermal throttling kicks in. [This is what you can actually afford. Look at the price of survival](https://amzn.to/4mG97Vv).
 
-  ### 4. Dell G15 (The Mid-Range Compromise)
-  A bit better than the Nitro, usually packs an RTX 4050 or 4060. It gets loud, but you get enough VRAM to not crash your IDE immediately. [Look at the toll Dell charges for decent local CUDA](https://amzn.to/SEU_LINK_4).
+  ### 4. Apple 2026 MacBook Neo A18 Pro (The New Gimmick)
+  Apple just invented the "Neo" line with the A18 Pro chip. It's meant for "Apple Intelligence" (whatever that marketing term means today). It has only 8GB of RAM, which is a joke for AI, but people will buy it anyway. [Look at the premium tax for 8GB in 2026](https://amzn.to/4mGMZKw).
 
-  ### 5. MacBook Air M1 (The Immortal Used Market King)
-  You just want to write code, use SSH, and rely on cloud GPUs? Stop looking at new machines. The Air M1 is still the best cost-benefit for a dumb terminal with a battery that lasts all day. [Even brand new, the price has collapsed to something acceptable. Check it out](https://amzn.to/SEU_LINK_5).
+  ### 5. Lenovo IdeaPad Slim 3 i7 (The Heavy Multitasker)
+  With 24GB of RAM and an i7, it’s not a GPU powerhouse, but it will let you open 40 Chrome tabs of StackOverflow while running Docker without freezing. [Take a look at the absolute minimum you have to pay for decent RAM](https://amzn.to/4cB5k7b).
 
-  ### 6. Lenovo IdeaPad 3 (The Desperate Terminal)
-  You have no money. Zero. But you need to learn. Buy this, wipe Windows immediately, install Ubuntu, and use Google Colab for everything. [Take a look at the absolute minimum you have to pay to enter the game](https://amzn.to/SEU_LINK_6).
+  ### 6. Asus TUF Gaming F16 (The Sturdy Plastic)
+  It survives being thrown in a backpack on a crowded bus. The RTX 3050 is barely enough, but it runs. [Click to see how much this military-wannabe plastic costs](https://amzn.to/4sHchtv).
 
-  ### 7. Asus TUF Gaming (The Sturdy Plastic)
-  It survives being thrown in a backpack on a crowded bus. The RTX options are decent for the price. [Click to see how much this military-wannabe plastic costs](https://amzn.to/SEU_LINK_7).
+  ### 7. Galaxy Book4 (The Windows MacBook)
+  For people who want the Apple premium feel but are tied to Windows. Thin, light, i5 processor. It will overheat if you train a model, but you will look cool. [See the premium tax Samsung is asking for this](https://amzn.to/3QR5z6R).
 
-  ### 8. Galaxy Book 3 Ultra (The Windows MacBook)
-  For people who want the Apple premium feel but are tied to Windows. It has an NVIDIA GPU inside a slim chassis. It will overheat, but you will look cool. [See the premium tax Samsung is asking for this](https://amzn.to/SEU_LINK_8).
+  ### 8. MacBook Air M3 (The "I saved my 13th Salary" Choice)
+  If you managed to save some money and want modern Apple Silicon. It has no fan, so don't try heavy local training. [See how much the Apple entry-tax is right now](https://amzn.to/4sM8xqC).
 
-  ### 9. MacBook Air M3 (The "I saved my 13th Salary" Choice)
-  If you managed to save some money and want modern Apple Silicon, but can't sell a kidney for the Pro version. It has no fan, so don't try heavy local training. [See how much the Apple entry-tax is right now](https://amzn.to/SEU_LINK_9).
+  ### 9. Your Old Laptop + Linux (The Desperate Truth)
+  Since the Dell G15 is out of stock everywhere, here is the harsh truth: if you have no money, grab your 5-year-old laptop, wipe Windows, install Ubuntu, and use Google Colab. It costs $0 and runs better than half this list.
 ---
 
 # O Imposto do Silício no Brasil
@@ -52,28 +52,28 @@ Se você não é herdeiro e o seu pai não é dono de cartório, rodar inferênc
 Aqui está a lista real de 2026. Do delírio absoluto até o que você realmente consegue pagar sem estourar o limite do cartão nubank.
 
 ### 1. MacBook Pro M3 Max (O Delírio do Herdeiro)
-É a melhor máquina para IA do mundo? É. A memória unificada permite que você jogue um LLM gigantesco na RAM rindo da cara da NVIDIA. Mas o custo no Brasil é um crime previsto no código penal. [Quer passar raiva? Clica aqui e olha o valor pornográfico que estão cobrando por essa máquina na Amazon. Ninguém normal paga isso.](https://amzn.to/SEU_LINK_1)
+É a melhor máquina para IA do mundo? É. A memória unificada permite que você jogue um LLM gigantesco na RAM rindo da cara da NVIDIA. Mas o custo no Brasil é um crime previsto no código penal. [Quer passar raiva? Clica aqui e olha o valor pornográfico que estão cobrando por essa máquina na Amazon. Ninguém normal paga isso.](https://amzn.to/48GzHYQ)
 
-### 2. Alienware m18 R2 (O Aquecedor a Lenha)
-Se você se recusa a dar dinheiro pra Apple e exige núcleos CUDA locais, o caminho é esse monstro de 18 polegadas. Ele pesa quase 4 quilos, a bateria dura 12 minutos fora da tomada, e a fonte de energia parece um tijolo de construção. [Dá uma espiada no buraco negro que isso vai causar no seu orçamento. É ridículo.](https://amzn.to/SEU_LINK_2)
+### 2. Alienware Aurora 16" RTX 4050 (O Aquecedor a Lenha)
+Se você se recusa a dar dinheiro pra Apple e exige núcleos CUDA locais, o caminho é esse monstro. Ele pesa horrores, e a Dell cobra um absurdo só porque tem o logo de um alienígena. [Dá uma espiada no buraco negro que isso vai causar no seu orçamento. É ridículo.](https://amzn.to/4vHVN7d)
 
 ### 3. Acer Nitro 5 (A Realidade do Povo)
-Bem-vindo à trincheira. É feito de plástico vagabundo, a tela tem cores lavadas, mas tem uma RTX de entrada (3050 ou 4050) escondida aí dentro. Ele vai fritar se você tentar treinar um modelo pesado, mas vai rodar seus scripts iniciais de Deep Learning. [Esse é o que você provavelmente vai acabar comprando. Dá uma olhada no preço da sobrevivência.](https://amzn.to/SEU_LINK_3)
+Bem-vindo à trincheira. É feito de plástico vagabundo, a tela tem cores lavadas, mas ele roda o básico sem explodir na primeira compilação. [Esse é o que você provavelmente vai acabar comprando. Dá uma olhada no preço da sobrevivência.](https://amzn.to/4mG97Vv)
 
-### 4. Dell G15 (O Meio-Termo Barulhento)
-Um degrau acima do Nitro. Costuma vir com uma RTX 4060 que já te dá uma VRAM razoável para não travar o Jupyter Notebook no primeiro "import torch". O problema? Quando as ventoinhas ligam, seus vizinhos acham que você comprou um drone. [Veja quantos milhares a Dell pede por esse jato comercial.](https://amzn.to/SEU_LINK_4)
+### 4. Apple 2026 MacBook Neo A18 Pro (A Piada de 8GB)
+A Apple inventou a linha "Neo" focada em "Apple Intelligence" e enfiou o chip A18 Pro. Sabe qual é a piada? Eles têm a pachorra de vender máquina "para IA" com 8GB de memória unificada em pleno 2026. [Acha que estou mentindo? Clica aqui pra ver o absurdo que estão cobrando por 8GB de RAM hoje em dia.](https://amzn.to/4mGMZKw)
 
-### 5. MacBook Air M1 (O Imortal)
-Você só escreve código, usa SSH e roda tudo na nuvem? Pare de procurar máquina de 20 mil reais. O Air M1, mesmo com seus anos de idade, ainda humilha 90% dos notebooks Windows em estabilidade e bateria. É o melhor terminal burro de luxo já feito. [Até a Apple já largou mão e o preço desabou na Amazon. Vê se isso não faz mais sentido.](https://amzn.to/SEU_LINK_5)
+### 5. Lenovo IdeaPad Slim 3 i7 (O Terminal Multitarefa)
+Uma máquina com absurdos 24GB de RAM de fábrica e um i7. Não tem placa dedicada monstra, mas vai te deixar rodar Docker e abrir 40 abas do StackOverflow sem o Windows pedir arrego. [Olha a pechincha. É o preço mínimo para não passar raiva com falta de RAM.](https://amzn.to/4cB5k7b)
 
-### 6. Lenovo IdeaPad 3 (O Desespero)
-Você não tem um puto no bolso, mas quer estudar IA. Compra isso, formata o Windows lixo que vem nele na primeira hora, bota um Ubuntu, instala o VS Code e usa a GPU gratuita do Google Colab. Pronto. [Olha a pechincha. É o preço mínimo do ingresso pra entrar na área de T.I.](https://amzn.to/SEU_LINK_6)
+### 6. Asus TUF Gaming F16 (O Tanque de Plástico)
+Se você pega ônibus lotado e precisa de um notebook com GPU dedicada (uma RTX 3050 guerreira) que não se parta ao meio na mochila. A carcaça tenta pagar de "militar", mas é só plástico duro. [Clica e vê se vale a pena o pedágio por um pouquinho mais de durabilidade.](https://amzn.to/4sHchtv)
 
-### 7. Asus TUF Gaming (O Tanque de Plástico)
-Se você pega ônibus lotado e precisa de um notebook com GPU dedicada que não se parta ao meio na mochila, a linha TUF é decente. A carcaça tenta pagar de "militar", mas é só um plástico duro que faz o trabalho. [Clica e vê se vale a pena o pedágio por um pouquinho mais de durabilidade.](https://amzn.to/SEU_LINK_7)
+### 7. Galaxy Book4 (O Falso Mac)
+Para a galera que quer o visual fino de um MacBook, mas vendeu a alma pro Windows. Tem um i5 e 16GB. Consequência: vai engasgar com a temperatura se rodar carga pesada. [Olha o imposto premium que a Samsung cobra pra você fingir que tem um Mac.](https://amzn.to/3QR5z6R)
 
-### 8. Galaxy Book 3 Ultra (O Falso Mac)
-Para a galera que quer o visual fino de um MacBook, mas vendeu a alma pro Windows. Ele tem placa dedicada (RTX) num chassi fino. Consequência: vai engasgar com a temperatura. [Olha o imposto premium que a Samsung cobra pra você fingir que tem um Mac.](https://amzn.to/SEU_LINK_8)
+### 8. MacBook Air M3 (O Teto do Assalariado)
+Se você guardou o décimo terceiro, quer o chip M3, mas obviamente não tem grana pro Pro. Lembre-se: ele não tem ventoinha. Se você rodar um modelo pesado localmente, ele vai fritar a bateria. [O preço dessa maquininha premium no Brasil já mostra o quanto a gente é roubado.](https://amzn.to/4sM8xqC)
 
-### 9. MacBook Air M3 (O Teto do Assalariado)
-Se você guardou o décimo terceiro, quer o chip M3, mas obviamente não tem grana pro Pro. Lembre-se: ele não tem ventoinha. Se você rodar um modelo pesado localmente, ele vai fritar a bateria e travar. Só serve para cloud. [O preço dessa maquininha de escrever premium no Brasil já mostra o quanto a gente é roubado. Dá uma olhada.](https://amzn.to/SEU_LINK_9)
+### 9. O Seu PC Velho com Linux (A Verdade Absoluta)
+O Dell G15 que eu ia indicar sumiu do estoque, então vamos ser francos: se a grana está curta, não compre porcaria nenhuma. Pegue o seu notebook de 5 anos atrás, apague o Windows, instale o Ubuntu e rode as inferências no Google Colab. É de graça, não esquenta o seu colo e é melhor que metade das carroças dessa lista. Aceita que dói menos.
