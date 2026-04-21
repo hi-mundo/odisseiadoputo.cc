@@ -14,6 +14,11 @@ en_content: |
   Vercel just got breached, and it wasn't a zero-day exploit. An employee granted full Google Workspace OAuth permissions to an AI tool called Context.ai. Context.ai got hacked last month. The attackers simply walked into Vercel using that valid token. This is a profound failure in understanding how SaaS supply chains actually work.
   
   We treat OAuth prompts like EULAs—we just click "Allow". But in a corporate environment, granting access to a third-party app gives it the keys to your SSO kingdom. The attackers didn't just breach Vercel; they pivoted. They used the Workspace access to move laterally into Vercel's internal infrastructure. And Vercel's excuse that "sensitive variables were encrypted" ignores the reality of how KMS and decryption contexts work when an environment is fully compromised.
+
+  ### Sources
+  - [Trend Micro: Vercel Breach OAuth Supply Chain](https://www.trendmicro.com/en_us/research/26/d/vercel-breach-oauth-supply-chain.html)
+  - [The Hacker News: Vercel Breach Tied to Context.ai](https://thehackernews.com/2026/04/vercel-breach-tied-to-context-ai-hack.html)
+  - [Dark Reading: Vercel Employees AI Tool Access Data Breach](https://www.darkreading.com/application-security/vercel-employees-ai-tool-access-data-breach)
 ---
 
 # O Castelo de Cartas do SaaS e o Vetor OAuth
@@ -46,3 +51,9 @@ A Vercel mandou rotacionar as credenciais. Faça isso agora, sem pensar duas vez
 2. **Zero Trust para SaaS:** Trate integrações de terceiros como agentes hostis. O escopo do token OAuth precisa ser o mínimo necessário (Princípio do Menor Privilégio). Pediu acesso total aos e-mails pra gerar um resumo de log? Bloqueia.
 
 Terceirizar inteligência artificial é ótimo pra produtividade, mas quando voce acopla um sistema novo numa base sem auditoria, voce ta só construindo a ponte pro seu próprio velório digital.
+
+
+### Fontes e Referências
+- [Trend Micro: Vercel Breach OAuth Supply Chain](https://www.trendmicro.com/en_us/research/26/d/vercel-breach-oauth-supply-chain.html)
+- [The Hacker News: Vercel Breach Tied to Context.ai](https://thehackernews.com/2026/04/vercel-breach-tied-to-context-ai-hack.html)
+- [Dark Reading: Vercel Employees AI Tool Access Data Breach](https://www.darkreading.com/application-security/vercel-employees-ai-tool-access-data-breach)
