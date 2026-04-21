@@ -1,9 +1,9 @@
 ---
 layout:     post
-title:      "Vercel Hackeada: Como um Botão 'Permitir Tudo' Quebrou a Cadeia de Suprimentos"
-subtitle:   "O CEO quer culpar a inteligência artificial dos hackers, mas o problema real é funcionário dando permissão OAuth pra startup aleatória."
-en_title:   "Vercel Hacked: How an 'Allow All' Button Broke the Supply Chain"
-en_subtitle: "The CEO wants to blame AI hackers, but the real issue is employees giving OAuth access to random startups."
+title:      "Anatomia de um Desastre: O Hack da Vercel e a Farsa do OAuth Seguro"
+subtitle:   "Como um token roubado de uma startup de IA permitiu um movimento lateral que comprometeu milhares de variáveis de ambiente."
+en_title:   "Anatomy of a Disaster: The Vercel Hack and the Secure OAuth Farce"
+en_subtitle: "How a stolen token from an AI startup allowed lateral movement that compromised thousands of environment variables."
 date:       2026-04-21 15:00:00
 author:     "Frederico"
 header-img: "img/bg-security.jpg"
@@ -11,31 +11,38 @@ category:   [tech, seguranca]
 en_content: |
   # The Supply Chain House of Cards
   
-  Vercel just got breached, and it wasn't a zero-day exploit. An employee granted full Google Workspace OAuth permissions to an AI tool called Context.ai. Context.ai got hacked last month. The attackers simply walked into Vercel using that valid token.
+  Vercel just got breached, and it wasn't a zero-day exploit. An employee granted full Google Workspace OAuth permissions to an AI tool called Context.ai. Context.ai got hacked last month. The attackers simply walked into Vercel using that valid token. This is a profound failure in understanding how SaaS supply chains actually work.
   
-  Now, environment variables from Vercel customers are exposed. The CEO, Guillermo Rauch, is trying to spin this by saying the attackers moved with "surprising velocity" thanks to AI. That's PR bullshit. They moved fast because the door was wide open. Lock down your Google Workspace OAuth settings and rotate your Vercel secrets immediately.
+  We treat OAuth prompts like EULAs—we just click "Allow". But in a corporate environment, granting access to a third-party app gives it the keys to your SSO kingdom. The attackers didn't just breach Vercel; they pivoted. They used the Workspace access to move laterally into Vercel's internal infrastructure. And Vercel's excuse that "sensitive variables were encrypted" ignores the reality of how KMS and decryption contexts work when an environment is fully compromised.
 ---
 
-# O Castelo de Cartas do SaaS
+# O Castelo de Cartas do SaaS e o Vetor OAuth
 
-A Vercel acabou de ser invadida e a culpa não é de um exploit zero-day hiper complexo vendido na dark web. A infraestrutura de milhares de clientes foi exposta porque um funcionário clicou no botão "Permitir Tudo" do Google.
+A Vercel foi invadida e a infraestrutura de milhares de clientes foi exposta. A culpa não é de um exploit zero-day hiper complexo vendido na dark web, mas da falha arquitetural mais ignorada da década: a cadeia de suprimentos via permissões OAuth. 
 
-O ataque foi um *supply chain* via OAuth. Um funcionário da Vercel usou a conta corporativa do Google Workspace para dar permissão irrestrita a uma ferramentinha de analytics baseada em IA chamada Context.ai. 
+O ataque começou fora da Vercel. Um funcionário usou sua conta corporativa do Google Workspace para dar permissão irrestrita (o maldito botão "Permitir Tudo") a uma ferramenta de analytics baseada em IA chamada Context.ai. O detalhe tragicômico? A Context.ai foi hackeada no mês passado. Os invasores rasparam o banco de tokens OAuth deles, identificaram a credencial válida de um engenheiro da Vercel e começaram a festa.
 
-O detalhe tragicômico? A Context.ai foi hackeada no mês passado. Os invasores roubaram os tokens OAuth de lá, viram que tinham acesso livre ao ambiente da Vercel e simplesmente entraram pela porta da frente.
+# Movimento Lateral: Do E-mail ao Banco de Dados
 
-# Variáveis de Ambiente e Desculpas de PR
+O mercado ainda trata o OAuth corporativo como se fosse o botão de "Fazer login com Facebook" do Tinder. Não é. Quando voce da permissão de Workspace pra um SaaS de terceiros, voce ta entregando o controle do seu provedor de identidade (SSO). 
 
-O resultado prático é que variáveis de ambiente de clientes da Vercel vazaram. A empresa jura que as variáveis marcadas como "sensíveis" estavam encriptadas e que só as "não-sensíveis" foram lidas. Se você acredita que desenvolvedor marca tudo certinho como sensível no painel da Vercel, eu tenho um terreno na lua pra te vender.
+Os invasores não tentaram quebrar a criptografia da Vercel de cara. Eles usaram o token da Context.ai para acessar o Workspace do funcionário (lendo e-mails, acessos e documentos internos). A partir dai, fizeram um movimento lateral limpo e silencioso para dentro dos sistemas internos da Vercel, usando o acesso legítimo do engenheiro. É o supply chain attack perfeito: a ferramenta terceirizada vira a ponte pra burlar o perímetro principal.
 
-A cereja do bolo é a resposta de RP. O CEO Guillermo Rauch tentou justificar a catástrofe dizendo que os invasores agiram com uma "velocidade surpreendente" e culpou o uso de inteligência artificial por parte dos hackers. É a desculpa corporativa perfeita da década: culpar a IA pelo fato da sua governança interna ser um lixo.
+# A Farsa das Variáveis Encriptadas
 
-A invasão foi rápida porque quando você entrega a chave mestra pra um bandido, ele não precisa perder tempo arrombando a porta.
+O resultado prático foi o vazamento de variáveis de ambiente de clientes. A Vercel soltou uma nota de RP jurando que as variáveis marcadas como "sensíveis" estavam encriptadas e que só as "não-sensíveis" foram lidas. 
 
-# Mitigação
+Isso é uma meia-verdade técnica projetada pra acalmar acionista. 
 
-A Vercel mandou rotacionar as credenciais. Faça isso. Mas o problema estrutural é no seu quintal.
+Primeiro: confiar no desenvolvedor final para marcar manualmente o que é sensível num dashboard é uma falha grotesca de "secure by default". Segundo: se o invasor ta dentro do seu ambiente interno com privilégios escalados, ele não precisa quebrar a criptografia em repouso. Ele pode acessar as instâncias de computação ou as roles que possuem o contexto de descriptografia (as chaves do KMS) e extrair os dados em memória ou em tempo de execução. 
 
-Se a sua empresa permite que qualquer desenvolvedor integre o Google Workspace corporativo com a primeira startup de IA que ele acha legal no Twitter, você é o próximo da fila. 
+A cereja do bolo foi o CEO Guillermo Rauch tentar justificar a catástrofe dizendo que os invasores agiram com uma "velocidade surpreendente", insinuando que os hackers usaram IA para acelerar o ataque. É a desculpa perfeita pra tentar tirar o foco da várzea que era a governança de acessos deles. A invasão foi rápida porque a porta tava escancarada por dentro.
 
-Bloqueie a instalação de apps OAuth de terceiros no seu Workspace ou Azure AD para ontem. Só libere por whitelist. A preguiça de criar um fluxo de aprovação custa a credibilidade inteira da sua empresa.
+# Como Mitigar Essa Várzea
+
+A Vercel mandou rotacionar as credenciais. Faça isso agora, sem pensar duas vezes. Mas se a sua empresa não mudar a cultura, voce é o próximo.
+
+1. **Trave o OAuth Corporativo:** Se a sua organização permite que qualquer desenvolvedor integre o Google Workspace ou Azure AD com a primeira startup de IA que ele acha no Twitter, a culpa do próximo vazamento é sua. O bloqueio de apps de terceiros tem que ser default. A liberação só acontece via whitelist, depois do time de sec dar o sangue auditando a startup.
+2. **Zero Trust para SaaS:** Trate integrações de terceiros como agentes hostis. O escopo do token OAuth precisa ser o mínimo necessário (Princípio do Menor Privilégio). Pediu acesso total aos e-mails pra gerar um resumo de log? Bloqueia.
+
+Terceirizar inteligência artificial é ótimo pra produtividade, mas quando voce acopla um sistema novo numa base sem auditoria, voce ta só construindo a ponte pro seu próprio velório digital.
