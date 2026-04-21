@@ -19,7 +19,7 @@ en_content: |
   
   If you are waiting for a magical moment to upgrade your computer, stop. When management changes, product lines get turbulent. Right now, the current generation of MacBooks is arguably the most stable and cost-effective we've seen in a decade. 
   
-  Instead of waiting for whatever experimental redesign Ternus will push out first, grab the solid stuff. And let's be honest, the M3 price isn't "dropping" because Apple would rather burn inventory than offer a real discount. But [this model right here](https://amzn.to/41OTBgv) is the sweet spot on Amazon today. It does everything you need without the early-adopter tax. Buy it, use it for five years, and let the rest of the world pay the premium to test the new CEO's first ideas.
+  Instead of waiting for whatever experimental redesign Ternus will push out first, grab the solid stuff. And let's be honest, the M3 price isn't "dropping" because Apple would rather turn inventory into paperweights than offer a massive discount. But [this model right here](https://amzn.to/41OTBgv) is the sweet spot on Amazon today. It does everything you need without the early-adopter tax. Buy it, use it for five years, and let the rest of the world pay the premium to test the new CEO's first ideas.
 ---
 
 # O Cara do Hardware Assume o Volante
@@ -32,8 +32,8 @@ Cook foi o mestre da cadeia de suprimentos. Ele transformou a maçã numa máqui
 
 Se você está aí segurando seu dinheiro, esperando um momento mágico para trocar de computador, pode parar. Quando a diretoria muda, a linha de produtos fica turbulenta e os preços sobem. Hoje, a geração atual de MacBooks é, sem sombra de dúvida, a mais estável e com o melhor custo-benefício que já vimos em anos.
 
-Em vez de esperar pela primeira invenção de moda que o Ternus vai colocar no mercado para marcar território, pegue o que já funciona. E sejamos honestos: o M3 não está "despencando de preço" p*rra nenhuma, porque a Apple prefere jogar laptop no oceano a dar desconto real. Mas [este modelo aqui](https://amzn.to/41OTBgv) é a sua melhor aposta na Amazon hoje.
+Em vez de esperar pela primeira invenção de moda que o Ternus vai colocar no mercado para marcar território, pegue o que já funciona. E sejamos honestos: a lenda do M3 "despencando de preço" é só isso, uma lenda. A corporação prefere transformar estoque em peso de papel a liquidar preço de verdade. Mas [este modelo aqui](https://amzn.to/41OTBgv) é a sua melhor aposta na Amazon hoje.
 
 Ele faz tudo o que você precisa, não trava, não esquenta e você não paga a "taxa de teste" do primeiro produto da nova gestão. 
 
-Compra logo isso, usa pelos próximos cinco anos e deixa os trouxas pagarem o dobro para testar as ideias do novo chefe.
+Compra logo isso, usa pelos próximos cinco anos e deixa o resto do mercado pagar o prêmio de risco para testar as ideias do novo chefe.
