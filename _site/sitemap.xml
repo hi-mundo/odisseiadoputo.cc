@@ -5,13 +5,83 @@
   <!-- Homepage -->
   <url>
     <loc>https://odisseiadoputo.cc/</loc>
-    <lastmod>2026-04-21T16:47:32-03:00</lastmod>
+    <lastmod>2026-04-21T16:48:34-03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://odisseiadoputo.cc/"/>
     <xhtml:link rel="alternate" hreflang="en"    href="https://odisseiadoputo.cc/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://odisseiadoputo.cc/"/>
   </url>
+  <url>
+    <loc>https://odisseiadoputo.cc/tech/noticias/review/2026/04/21/github-copilot-congela-assinaturas/</loc>
+    <lastmod>2026-04-21T13:45:00-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://odisseiadoputo.cc/tech/noticias/review/2026/04/21/github-copilot-congela-assinaturas/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://odisseiadoputo.cc/tech/noticias/review/2026/04/21/github-copilot-congela-assinaturas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://odisseiadoputo.cc/tech/noticias/review/2026/04/21/github-copilot-congela-assinaturas/"/>
+  </url>
+  
+  <url>
+    <loc>https://odisseiadoputo.cc/tech/noticias/2026/04/21/meta-keylogger-ia/</loc>
+    <lastmod>2026-04-21T13:15:00-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://odisseiadoputo.cc/tech/noticias/2026/04/21/meta-keylogger-ia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://odisseiadoputo.cc/tech/noticias/2026/04/21/meta-keylogger-ia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://odisseiadoputo.cc/tech/noticias/2026/04/21/meta-keylogger-ia/"/>
+  </url>
+  
+  <url>
+    <loc>https://odisseiadoputo.cc/tech/seguranca/2026/04/21/vercel-oauth-supply-chain/</loc>
+    <lastmod>2026-04-21T12:00:00-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://odisseiadoputo.cc/tech/seguranca/2026/04/21/vercel-oauth-supply-chain/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://odisseiadoputo.cc/tech/seguranca/2026/04/21/vercel-oauth-supply-chain/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://odisseiadoputo.cc/tech/seguranca/2026/04/21/vercel-oauth-supply-chain/"/>
+  </url>
+  
+  <url>
+    <loc>https://odisseiadoputo.cc/tech/seguranca/2026/04/21/vazamento-lovable-bola/</loc>
+    <lastmod>2026-04-21T03:10:00-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://odisseiadoputo.cc/tech/seguranca/2026/04/21/vazamento-lovable-bola/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://odisseiadoputo.cc/tech/seguranca/2026/04/21/vazamento-lovable-bola/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://odisseiadoputo.cc/tech/seguranca/2026/04/21/vazamento-lovable-bola/"/>
+  </url>
+  
+  <url>
+    <loc>https://odisseiadoputo.cc/tech/seguranca/2026/04/20/computacao-quantica-aes-128/</loc>
+    <lastmod>2026-04-20T19:55:00-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://odisseiadoputo.cc/tech/seguranca/2026/04/20/computacao-quantica-aes-128/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://odisseiadoputo.cc/tech/seguranca/2026/04/20/computacao-quantica-aes-128/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://odisseiadoputo.cc/tech/seguranca/2026/04/20/computacao-quantica-aes-128/"/>
+  </url>
+  
+  <url>
+    <loc>https://odisseiadoputo.cc/tech/review/2026/04/20/qwen-3-6-agentes-realidade/</loc>
+    <lastmod>2026-04-20T19:50:00-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://odisseiadoputo.cc/tech/review/2026/04/20/qwen-3-6-agentes-realidade/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://odisseiadoputo.cc/tech/review/2026/04/20/qwen-3-6-agentes-realidade/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://odisseiadoputo.cc/tech/review/2026/04/20/qwen-3-6-agentes-realidade/"/>
+  </url>
+  
+  <url>
+    <loc>https://odisseiadoputo.cc/review/tech/2026/04/20/melhores-laptops-programacao-ia/</loc>
+    <lastmod>2026-04-20T19:30:00-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://odisseiadoputo.cc/review/tech/2026/04/20/melhores-laptops-programacao-ia/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://odisseiadoputo.cc/review/tech/2026/04/20/melhores-laptops-programacao-ia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://odisseiadoputo.cc/review/tech/2026/04/20/melhores-laptops-programacao-ia/"/>
+  </url>
+  
   <url>
     <loc>https://odisseiadoputo.cc/noticias/tech/review/2026/04/20/apple-john-ternus-ceo/</loc>
     <lastmod>2026-04-20T18:45:00-03:00</lastmod>
@@ -85,7 +155,7 @@
     
   <url>
     <loc>https://odisseiadoputo.cc/about/</loc>
-    <lastmod>2026-04-21T16:47:32-03:00</lastmod>
+    <lastmod>2026-04-21T16:48:34-03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -94,7 +164,7 @@
     
   <url>
     <loc>https://odisseiadoputo.cc/apoie/</loc>
-    <lastmod>2026-04-21T16:47:32-03:00</lastmod>
+    <lastmod>2026-04-21T16:48:34-03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
