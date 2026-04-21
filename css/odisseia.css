@@ -78,6 +78,10 @@
 /* -------- Modern reset -------------------------------------- */
 *, *::before, *::after { box-sizing: border-box; }
 * { margin: 0; padding: 0; }
+/* O atributo `hidden` do HTML5 precisa vencer qualquer `display: <x>`
+   que o author-stylesheet defina (ex: .nl-btn-spinner é inline-block
+   e sem o !important o hidden não desligaria o loading spinner). */
+[hidden] { display: none !important; }
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; tab-size: 4; scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

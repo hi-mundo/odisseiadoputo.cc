@@ -49,8 +49,6 @@ en_description: "Who runs The Odyssey of the Puto"
       </p>
       <p>Se preferir, estamos no Substack: <a href="https://odisseiadoputo.substack.com/" target="_blank"
           rel="noopener">odisseiadoputo.substack.com</a></p>
-
-      {% include newsletter.html %}
     </section>
 
     <p class="about-footer">Dois putos, uma odisseia. Este blog é <strong>um projeto de <a
@@ -100,8 +98,6 @@ en_description: "Who runs The Odyssey of the Puto"
       </p>
       <p>If you prefer, we are on Substack: <a href="https://odisseiadoputo.substack.com/" target="_blank"
           rel="noopener">odisseiadoputo.substack.com</a></p>
-
-      {% include newsletter.html %}
     </section>
 
     <p class="about-footer">Two putos, one odyssey. This blog is <strong>a <a href="https://raimundopessoa.com"
@@ -110,4 +106,7 @@ en_description: "Who runs The Odyssey of the Puto"
   </div>
 </div>
 
-<script src="{{ " /js/newsletter.js" | prepend: site.baseurl }}"></script>
+{%- comment -%} Um único form de newsletter, fora dos lang-*, pra evitar IDs duplicados. {%- endcomment -%}
+{% include newsletter.html %}
+
+<script src="{{ '/js/newsletter.js' | prepend: site.baseurl }}" defer></script>

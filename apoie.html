@@ -46,8 +46,6 @@ permalink: /apoie/
 
   <p>Se você quer estar na vanguarda e não ler notícias velhas, assina agora.</p>
 
-  {% include newsletter.html %}
-
   <p class="apoie-footer-note">Junte-se à resistência.</p>
 </div>
 
@@ -90,9 +88,10 @@ permalink: /apoie/
 
   <p>If you want to be on the front line instead of reading stale news, subscribe now.</p>
 
-  {% include newsletter.html %}
-
   <p class="apoie-footer-note">Join the resistance.</p>
 </div>
+
+{%- comment -%} Um único form de newsletter, fora dos lang-*, pra evitar IDs duplicados. {%- endcomment -%}
+{% include newsletter.html %}
 
 <script src="{{ '/js/newsletter.js' | prepend: site.baseurl }}" defer></script>
