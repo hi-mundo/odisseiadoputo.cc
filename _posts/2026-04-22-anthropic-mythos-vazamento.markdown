@@ -28,15 +28,17 @@ Era o equivalente digital de uma ogiva nuclear guardada num cofre suíço.
 
 E adivinha como esse cofre impenetrável foi aberto no exato mesmo dia do anúncio?
 
-# A Engenharia do Ridículo
+# A Mecânica do Fracasso: IDOR e Segurança por Obscuridade
 
-Você imaginaria um ataque patrocinado por estado, zero-days não documentados e quebra de criptografia. A realidade é muito mais deprimente.
+Se você espera um ataque com zero-days não documentados e injeção de kernel, a realidade vai te deprimir. A mecânica do vazamento é uma aula do que NÃO fazer em design de infraestrutura.
 
-Um grupo de pessoas num fórum privado conseguiu acesso ao Mythos da seguinte forma: 
-1. Eles usaram credenciais vazadas de um funcionário de uma empresa terceirizada (um *vendor*).
-2. Eles literalmente adivinharam a URL do modelo testando o padrão de nomenclatura da Anthropic.
+O grupo do fórum privado conseguiu acesso ao Mythos explorando o elo mais sujo da cadeia: o *third-party vendor*. Eles comprometeram as credenciais de um prestador de serviço que tinha acesso a uma sandbox de homologação. Mas a falha fatal vem a seguir.
 
-É isso. A inteligência artificial capaz de derrubar a infraestrutura global vazou porque a empresa mais paranóica do Vale do Silício tomou um baile do elo mais fraco da cibersegurança: a conta de um prestador de serviço terceirizado e uma rota de API previsível.
+Como eles acharam o modelo "super secreto"? Eles literalmente adivinharam o endpoint. Isso escancara duas falhas arquiteturais patéticas na Anthropic:
+1. **Predictable Resource Location:** O padrão de nomenclatura da API da Anthropic era tão óbvio (`claude-3-opus`, `claude-3-sonnet`) que bastou um script de força bruta simples no dicionário para bater no endpoint do Mythos.
+2. **Security through Obscurity (e falta de RBAC):** O fato de que "adivinhar a URL" resultou em acesso bem-sucedido prova que o endpoint não estava protegido por controles de acesso baseados em função (RBAC) rígidos e granulares. Se a única barreira entre um hacker e o seu modelo militar é o fato de que "ninguém sabe o link ainda", você não tem segurança, você tem esperança.
+
+A inteligência artificial capaz de derrubar a infraestrutura global vazou porque a empresa mais paranóica do Vale do Silício confiou em segurança por obscuridade.
 
 # A Ilusão do Perímetro
 
