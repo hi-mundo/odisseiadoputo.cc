@@ -20,27 +20,27 @@ en_content: |
   You can build the most advanced neural network on the planet, alignment guardrails, and constitutional AI. None of it matters if your supply chain is held together by duct tape. Anthropic got bypassed by the exact same vector that brings down regular companies: vendor credentials and predictable endpoints. Stop worrying about AI becoming Skynet and start worrying about your third-party contractors' passwords.
 ---
 
-# O Evangelho da Segurança Ruiu
+# O Evangelho da Segurança Ruiu e o AI "Dual-Use"
 
-Se tem uma empresa que adora posar de adulto responsável na sala da Inteligência Artificial, é a Anthropic. Eles construíram um modelo novo chamado "Mythos", que a própria agência de segurança do Reino Unido classificou como um "salto de ameaça cibernética". A IA é supostamente tão boa em achar vulnerabilidade e conduzir ataques autônomos que a Anthropic decidiu: "é perigosa demais pro público, vamos liberar só pra um grupinho seleto". 
+Se tem uma empresa que adora posar de adulto responsável na sala da Inteligência Artificial, é a Anthropic. Eles construíram o "Claude Mythos Preview", um modelo que mudou o paradigma da IA. O Mythos não é um mero assistente ou "copilot" gerador de código. Ele é um sistema ofensivo autônomo. 
 
-Era o equivalente digital de uma ogiva nuclear guardada num cofre suíço. 
+Estamos falando de uma máquina projetada para simular cadeias de ataque com mais de 30 passos, gerar exploits do zero e fazer *pentest* cross-system. A IA virou uma tecnologia de uso dual (exatamente como a criptografia avançada). Por isso, a Anthropic decidiu: "é perigosa demais pro público, vamos liberar só pra um grupinho seleto corporativo e governamental".
 
-E adivinha como esse cofre impenetrável foi aberto no exato mesmo dia do anúncio?
+Era o equivalente digital de uma ogiva nuclear guardada num cofre suíço. E adivinha como esse cofre impenetrável foi aberto no exato mesmo dia do anúncio?
 
-# A Mecânica do Fracasso: IDOR e Segurança por Obscuridade
+# A Mecânica do Fracasso: Full-Stack Security e Obscuridade
 
-Se você espera um ataque com zero-days não documentados e injeção de kernel, a realidade vai te deprimir. A mecânica do vazamento é uma aula do que NÃO fazer em design de infraestrutura.
+Se você espera um ataque com zero-days e injeção de kernel para roubar os pesos (weights) do modelo, a realidade vai te deprimir. Não vazou código, vazou **acesso**. A mecânica da invasão prova que segurança de IA não é um problema do modelo, é um problema *full-stack*.
 
-O grupo do fórum privado conseguiu acesso ao Mythos explorando o elo mais sujo da cadeia: o *third-party vendor*. Eles comprometeram as credenciais de um prestador de serviço que tinha acesso a uma sandbox de homologação. Mas a falha fatal vem a seguir.
+O grupo do fórum privado conseguiu acesso ao Mythos explorando o elo mais sujo da cadeia: o *third-party vendor* e a infraestrutura de CI/CD de parceiros. Eles comprometeram as credenciais de um prestador de serviço. Mas a falha fatal vem a seguir.
 
-Como eles acharam o modelo "super secreto"? Eles literalmente adivinharam o endpoint. Isso escancara duas falhas arquiteturais patéticas na Anthropic:
-1. **Predictable Resource Location:** O padrão de nomenclatura da API da Anthropic era tão óbvio (`claude-3-opus`, `claude-3-sonnet`) que bastou um script de força bruta simples no dicionário para bater no endpoint do Mythos.
-2. **Security through Obscurity (e falta de RBAC):** O fato de que "adivinhar a URL" resultou em acesso bem-sucedido prova que o endpoint não estava protegido por controles de acesso baseados em função (RBAC) rígidos e granulares. Se a única barreira entre um hacker e o seu modelo militar é o fato de que "ninguém sabe o link ainda", você não tem segurança, você tem esperança.
+Como eles acharam o modelo "super secreto"? Eles literalmente adivinharam o endpoint. Isso escancara falhas arquiteturais patéticas na Anthropic:
+1. **Predictable Resource Location:** O padrão de nomenclatura da API era tão óbvio (`claude-3-opus`) que um brute-force de dicionário bateu no endpoint do Mythos.
+2. **Security through Obscurity (e falta de RBAC):** "Adivinhar a URL" resultou em acesso bem-sucedido. O endpoint não estava isolado por controles de acesso (RBAC) granulares que validassem o escopo da credencial vazada do vendor. 
 
-A inteligência artificial capaz de derrubar a infraestrutura global vazou porque a empresa mais paranóica do Vale do Silício confiou em segurança por obscuridade.
+A inteligência artificial capaz de simular ciberataques militares vazou porque a empresa mais paranóica do Vale confiou em segurança por obscuridade na camada de API.
 
-# A Ilusão do Perímetro
+# A Ilusão do Perímetro e o Foco no Lugar Errado
 
 A ironia chega a ser fisicamente dolorosa. A Anthropic gasta milhões treinando *Constitutional AI* e alinhamento ético pra máquina não destruir a humanidade, mas não consegue proteger a porta dos fundos da própria infraestrutura. 
 
@@ -53,3 +53,4 @@ Pare de ter medo da Skynet e vá auditar os acessos da sua empresa terceirizada.
 ### Fontes e Referências
 - [The Guardian: Anthropic investigates report of rogue access to hack-enabling Mythos AI](https://www.theguardian.com/technology/2026/apr/22/anthropic-investigates-report-of-rogue-access-to-hack-enabling-mythos-ai)
 - [Financial Times: Anthropic Mythos Unauthorized Access](https://www.ft.com/content/56d65763-69fe-4756-baf4-c8192b7aadaf?syn-25a6b1a6=1)
+- [Deep Insight AI: Anthropic Mythos Leak Explained](https://deepinsightai.io/anthropic-mythos-leak/)
