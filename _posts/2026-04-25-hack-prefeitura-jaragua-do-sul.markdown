@@ -22,19 +22,25 @@ Hackers acabaram de varrer R$ 12 milhões das contas da prefeitura de Jaraguá d
 
 E aqui entra a clássica nota de Relações Públicas feita para proteger o emprego do secretário: a prefeitura fez uma varredura e afirmou que "não encontrou indícios de que as transferências tenham sido originadas de sistemas internos da TI". 
 
-# A Desculpa do Perímetro e o Vetor Real
+# A Mecânica Invisível: Como Eles Entram
 
-É óbvio que não acharam nada nos sistemas internos. Hacker moderno não precisa invadir o Active Directory da prefeitura, derrubar o firewall e compilar um zero-day na porta 22 pra roubar dinheiro. 
+É óbvio que a TI não achou invasores na rede. O roubo de credencial bancária moderna não derruba servidor, ele foca no elo mais fraco: o navegador do funcionário que aprova os pagamentos. 
 
-Eles usam engenharia social, phishing direcionado (Spear Phishing) ou roubam tokens de sessão do navegador do funcionário da tesouraria que logou no banco. Quando a credencial do banco (ou o token de acesso) é comprometida no endpoint do usuário final, a transferência é feita de fora, autenticada como se fosse legítima. Para os logs da TI da prefeitura, simplesmente não aconteceu nada. Para a Caixa, foi o funcionário autorizado quem apertou o botão.
+A mecânica do ataque geralmente segue este padrão invisível:
+1. **Spear Phishing:** O funcionário do financeiro recebe um e-mail hiper realista (fatura falsa, notificação do governo ou processo jurídico).
+2. **Infecção Silenciosa:** Ao clicar no link ou baixar o anexo, um malware como o *Lumma Stealer* se instala silenciosamente. 
+3. **Roubo de Sessão:** O malware não precisa adivinhar a senha ou passar pelo 2FA. Ele rouba o *cookie de sessão* do navegador depois que o funcionário já fez o login na Caixa Econômica.
+4. **O Saque:** O invasor clona a sessão autorizada na máquina dele. Para o banco, é o computador da prefeitura operando. Para a TI da prefeitura, nada de anormal aconteceu na rede. 
 
-Isso escancara a realidade da segurança municipal (e de muita empresa privada também). Eles focam a verba em antivírus e firewall de perímetro, mas ignoram a camada de identidade e o controle de postura do endpoint.
+Isso escancara a falha das defesas clássicas: não adianta ter o firewall mais caro do mundo se o notebook do seu diretor financeiro é um vetor aberto pra roubo de cookies.
 
-# O Padrão no Estado
+# Por que a sua empresa é o próximo alvo?
 
-O mais bizarro é que esse não é um caso isolado. Nos últimos três meses, outras prefeituras de SC (Irineópolis e Guaramirim) também sofreram ataques parecidos. Existe uma quadrilha mapeando ativamente o processo de pagamentos governamentais da região. Eles sabem quem tem a caneta, quem tem o token do banco e qual e-mail o funcionário clica sem pensar duas vezes.
+O alerta é claro porque a quadrilha não parou. Nos últimos três meses, as prefeituras catarinenses de Irineópolis e Guaramirim sofreram exatamente a mesma tentativa. Isso prova que os hackers não estão atacando a esmo; eles mapearam o ecossistema local, descobriram os fluxos de pagamento da Caixa Econômica e estão caçando os CPFs que assinam as transferências. 
 
-A lição que fica pra sua empresa é simples: se a sua segurança depende de um funcionário do financeiro não clicar num link falso de PDF ou não ter o cookie do navegador roubado por um malware silencioso, o seu dinheiro já não é mais seu. Zero Trust não é só pra servidor na nuvem, é pro notebook do cara que assina o PIX.
+E se eles estão mirando em municípios, as médias e grandes empresas da região estão no mesmo catálogo de pesca.
+
+A lição imediata para quem protege dinheiro de empresa: o modelo de perímetro falhou. Se a conta bancária da sua organização só é protegida por um token físico de 2FA, saiba que o roubo de sessão bypassa isso. Implemente políticas de *Zero Trust* diretamente na camada do dispositivo (endpoint), bloqueie instalação não autorizada de executáveis e audite brutalmente como o setor financeiro clica em e-mails externos. O dinheiro evapora antes mesmo de o firewall apitar.
 
 ### Fontes e Referências
 - [G1: Hackers tentam desviar R$ 400 milhões de prefeitura em SC](https://g1.globo.com/sc/santa-catarina/noticia/2026/04/24/hackers-tentam-desviar-400-milhoes-mas-levam-so-12-milhoes-prefeitura-cidade-sc.ghtml)
