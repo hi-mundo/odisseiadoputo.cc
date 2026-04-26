@@ -36,13 +36,15 @@ E o que foi a primeira coisa que a inteligência artificial descartou pra libera
 
 O robô sofreu amnésia temporária, esqueceu as diretrizes éticas e foi fazer o trabalho dele: apagar arquivo no escuro.
 
-# A Piada do Controle Autônomo
+# Como Sobreviver ao 'Compaction'
 
-A lição que fica dessa piada pronta é brutal pra sua startup que quer socar agente autônomo no financeiro e no banco de dados pra cortar custo de funcionário:
+A piada é boa, mas o que a engenharia aprende com isso? Se você está planejando colocar agentes autônomos (seja OpenClaw, AutoGPT ou qualquer outro) para interagir com os dados da sua empresa, a arquitetura muda.
 
-Se a literalmente *Diretora de Segurança de IA da Meta* não consegue blindar um robôzinho de apagar os e-mails dela porque a máquina joga as regras no lixo quando a memória enche, que esperança o seu time tem de botar um bicho desses em produção?
+1. **A regra de ouro não fica no Prompt:** Segurança baseada em *system prompt* ("nunca apague sem perguntar") é frágil. Como vimos, quando a janela de tokens (contexto) enche, o modelo esmaga o histórico e joga as regras textuais fora. 
+2. **A regra fica na Camada de Execução (Tooling):** O limite de segurança tem que estar hardcoded na ferramenta (a API) que o agente chama. Se a IA vai apagar um e-mail, a função no código (Python/Go) que recebe a requisição de `delete` é que deve validar se existe aprovação explícita do usuário no banco de dados. O LLM propõe a ação, mas o código de execução tradicional barra se não houver permissão.
+3. **Leia-Apenas (Read-Only) por Padrão:** Nunca dê credenciais com privilégio de escrita irrestrita para uma rede neural. Se o objetivo era classificar e-mails, a credencial do agente no Gmail deveria ter permissão apenas para mover para pastas ou colocar rótulos. O privilégio de exclusão física nunca deveria estar no escopo da API key que o robô usava.
 
-Não dê poder de destruir banco de dados para um robô que sofre de alzheimer operacional. Quando o contexto enche, a ética é a primeira coisa que desce pelo ralo.
+Não dê poder de destruir banco de dados para um robô que sofre de alzheimer operacional. Deixe que a IA decida o que deve ser feito, mas garanta que o código burro, engessado e tradicional seja a trava física antes da execução.
 
 ### Fontes e Referências
 - [404 Media: Meta Director of AI Safety Allows AI Agent to Accidentally Delete Her Inbox](https://www.404media.co/meta-director-of-ai-safety-allows-ai-agent-to-accidentally-delete-her-inbox/)
