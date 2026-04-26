@@ -1,6 +1,7 @@
 # Site settings
 title: A odisseia do puto
 description: "O blackhat da cultura tech. Código, notícias e pop dissecados com a acidez de quem sobrevive a war rooms — e sobrevive para contar o chorume."
+keywords: "blackhat, cultura tech, código, notícias, programação, hacking, tecnologia, dev, software, odisseia do puto"
 date_format: "%d/%m/%Y"
 url: "https://odisseiadoputo.cc"
 permalink: pretty
@@ -10,4 +11,4 @@ exclude: ["README.md", ".gitignore"]
 markdown: kramdown
 paginate: 50
 highlighter: rouge
-plugins: [jekyll-paginate, jekyll-feed]
+plugins: [jekyll-paginate, jekyll-feed, jekyll-sitemap]

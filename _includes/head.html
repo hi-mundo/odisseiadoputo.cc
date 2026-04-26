@@ -8,6 +8,30 @@
 {%- assign page_desc       = page_desc    | strip_html | strip_newlines | truncate: 200 -%}
 {%- assign page_en_desc    = page_en_desc | strip_html | strip_newlines | truncate: 200 -%}
 {%- assign page_url_abs    = page.url | replace: 'index.html', '' | prepend: site.baseurl | prepend: site.url -%}
+
+{%- comment -%} Automatic Keywords Selection {%- endcomment -%}
+{%- assign site_keywords = site.keywords -%}
+{%- assign page_keywords = page.keywords -%}
+{%- if page_keywords == nil or page_keywords == empty -%}
+  {%- assign kw_array = "" | split: "," -%}
+  {%- if page.tags -%}
+    {%- assign kw_array = kw_array | concat: page.tags -%}
+  {%- endif -%}
+  {%- if page.category -%}
+    {%- if page.category.size > 0 -%}
+      {%- assign kw_array = kw_array | concat: page.category -%}
+    {%- else -%}
+      {%- assign cat_as_array = page.category | split: "!!!" -%} {% comment %} dummy split to get array {% endcomment %}
+      {%- assign kw_array = kw_array | concat: cat_as_array -%}
+    {%- endif -%}
+  {%- endif -%}
+  {%- assign page_keywords = kw_array | uniq | join: ", " -%}
+{%- endif -%}
+{%- if page_keywords and page_keywords != "" -%}
+  {%- assign seo_keywords = page_keywords | append: ", " | append: site_keywords -%}
+{%- else -%}
+  {%- assign seo_keywords = site_keywords -%}
+{%- endif -%}
 {%- comment -%}
   Resolve page_image seguindo a mesma lógica do _includes/cover-src.html:
   1) page.header-img  2) primeira <img> do conteúdo  3) /favicon.png
@@ -77,7 +101,7 @@
 
     <meta name="description" content="{{ page_desc }}">
     {% if page.author %}<meta name="author" content="{{ page.author }}">{% else %}<meta name="author" content="{{ site.title }}">{% endif %}
-    {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+    <meta name="keywords" content="{{ seo_keywords }}">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
     <link rel="canonical" href="{{ page_url_abs }}">
@@ -171,8 +195,7 @@
       },
       "inLanguage": "pt-BR"
       {%- if page.category and page.category != empty -%},"articleSection": {{ page.category | first | jsonify }}{%- endif -%}
-      {%- assign _kw = page.tags | default: page.keywords -%}
-      {%- if _kw and _kw != empty -%},"keywords": {{ _kw | join: ', ' | jsonify }}{%- endif -%}
+      {%- if seo_keywords and seo_keywords != "" -%},"keywords": {{ seo_keywords | jsonify }}{%- endif -%}
     }
     </script>
     {% elsif page.url == '/' or page.url == '/index.html' %}
