@@ -2,7 +2,7 @@
 layout: default
 comments: true
 ---
-{%- assign category_label = page.category | first | default: 'post' -%}
+{%- assign category_label = page.categories | first | default: 'post' -%}
 {%- assign word_count = content | strip_html | number_of_words -%}
 {%- assign read_minutes = word_count | divided_by: 220 | plus: 1 -%}
 
@@ -48,10 +48,10 @@ comments: true
           <span class="lang-pt">{{ read_minutes }} min de leitura</span>
           <span class="lang-en">{{ read_minutes }} min read</span>
         </span>
-        {% if page.category %}
+        {% if page.categories and page.categories.size > 0 %}
         <span class="post-meta-sep" aria-hidden="true">·</span>
         <span class="post-meta-item post-meta-cat">
-          {% for cat in page.category %}<a href="{{ site.baseurl }}/#{{ cat | downcase }}" class="tag-pill">{{ cat }}</a>{% endfor %}
+          {% for cat in page.categories %}<a href="{{ site.baseurl }}/#{{ cat | downcase }}" class="tag-pill">{{ cat }}</a>{% endfor %}
         </span>
         {% endif %}
       </div>
@@ -82,9 +82,11 @@ comments: true
 
     {%- comment -%} Related Posts SEO Hack {%- endcomment -%}
     {%- assign related_posts = "" | split: "," -%}
+    {%- assign _rel_key = page.categories | join: "¦" -%}
     {%- for post in site.posts -%}
       {%- if post.url != page.url -%}
-        {%- if post.category == page.category -%}
+        {%- assign _post_rel_key = post.categories | join: "¦" -%}
+        {%- if _post_rel_key == _rel_key and _rel_key != "" -%}
           {%- assign related_posts = related_posts | push: post -%}
         {%- endif -%}
       {%- endif -%}

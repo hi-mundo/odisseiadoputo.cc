@@ -17,13 +17,12 @@
   {%- if page.tags -%}
     {%- assign kw_array = kw_array | concat: page.tags -%}
   {%- endif -%}
-  {%- if page.category -%}
-    {%- if page.category.size > 0 -%}
-      {%- assign kw_array = kw_array | concat: page.category -%}
-    {%- else -%}
-      {%- assign cat_as_array = page.category | split: "!!!" -%} {% comment %} dummy split to get array {% endcomment %}
-      {%- assign kw_array = kw_array | concat: cat_as_array -%}
-    {%- endif -%}
+  {%- comment -%}
+    Jekyll merges singular `category` into `page.categories` (array). Raw `page.category`
+    may still be a string — never pass it to `concat` (requires an array).
+  {%- endcomment -%}
+  {%- if page.categories and page.categories.size > 0 -%}
+    {%- assign kw_array = kw_array | concat: page.categories -%}
   {%- endif -%}
   {%- assign page_keywords = kw_array | uniq | join: ", " -%}
 {%- endif -%}
@@ -126,7 +125,7 @@
     {% if page.last_modified_at %}<meta property="article:modified_time" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
     {% if page.author %}<meta property="article:author" content="{{ page.author }}">{% endif %}
     {% for tag in page.tags %}<meta property="article:tag" content="{{ tag }}">{% endfor %}
-    {% for cat in page.category %}<meta property="article:section" content="{{ cat }}">{% endfor %}
+    {% for cat in page.categories %}<meta property="article:section" content="{{ cat }}">{% endfor %}
     {% endif %}
 
     <!-- Twitter Card -->
@@ -194,7 +193,7 @@
         }
       },
       "inLanguage": "pt-BR"
-      {%- if page.category and page.category != empty -%},"articleSection": {{ page.category | first | jsonify }}{%- endif -%}
+      {%- if page.categories and page.categories.size > 0 -%},"articleSection": {{ page.categories | first | jsonify }}{%- endif -%}
       {%- if seo_keywords and seo_keywords != "" -%},"keywords": {{ seo_keywords | jsonify }}{%- endif -%}
     }
     </script>
