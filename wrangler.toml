@@ -1,0 +1,10 @@
+# Deploy estático via Wrangler (evita auto-config errada: npx bundle exec jekyll build).
+# Ajusta `name` se o Worker na Cloudflare tiver outro slug.
+name = "odisseiadoputo"
+compatibility_date = "2026-04-29"
+
+[build]
+command = "bundle exec jekyll build"
+
+[assets]
+directory = "./_site"

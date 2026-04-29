@@ -57,3 +57,6 @@ build-iPhoneSimulator/
 
 # Claude Code local config
 .claude/
+
+# Wrangler (artefatos locais)
+.wrangler/
