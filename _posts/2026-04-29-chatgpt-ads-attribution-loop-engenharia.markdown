@@ -4,7 +4,7 @@ title:      "Engenharia Reversa no ChatGPT: Como a OpenAI Injeta Anúncios e Ras
 subtitle:   "O robô que prometia revolucionar a humanidade virou só mais um painel de anúncios focado em te vender marmita no Grubhub."
 en_title:   "Reverse Engineering ChatGPT: How OpenAI Injects Ads and Tracks You"
 en_subtitle: "The robot that promised to revolutionize humanity became just another ad board focused on selling you food delivery."
-date:       2026-04-29 08:30:00
+date:       2026-04-29 00:00:00
 author:     "Frederico"
 header-img: "img/post-exemplo.jpg"
 image: "https://images.unsplash.com/photo-1614064641913-6b714b108625?q=80&w=1200&auto=format&fit=crop"
