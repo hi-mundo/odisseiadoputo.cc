@@ -30,7 +30,7 @@ Para acabar com a palhaçada, fiz o filtro. Aqui estão os 3 únicos notebooks f
 
 Se você quer um notebook que não pareça um tijolo da década de 90 e entregue um desempenho fluido pro dia a dia, a linha Galaxy Book2 da Samsung se tornou o padrão ouro do trabalhador brasileiro.
 
-<img src="https://m.media-amazon.com/images/I/61k1jY04cCL._AC_SX679_.jpg" alt="Samsung Galaxy Book2" width="100%" style="border-radius: 8px; margin-bottom: 20px;">
+<img src="https://m.media-amazon.com/images/I/61Nl5bV4B-L._AC_SX679_.jpg" alt="Samsung Galaxy Book2" width="100%" style="border-radius: 8px; margin-bottom: 20px;">
 
 Ele é leve, tem uma tela Full HD muito honesta e o design não passa vergonha em reunião. A versão com o Core i5 empurra tranquilamente o pacote Office inteiro aberto junto com dezenas de abas no navegador sem o cooler parecer uma turbina de avião. E o melhor: diferente dos MacBooks, você consegue abrir e fazer upgrade de memória e armazenamento de forma fácil no futuro.
 
@@ -44,7 +44,7 @@ Ele é leve, tem uma tela Full HD muito honesta e o design não passa vergonha e
 
 A linha IdeaPad da Lenovo é como o Uno Mile do mercado de tecnologia: não é a coisa mais luxuosa que você vai ver na vida, mas faz o serviço e é pau pra toda obra. Se o seu orçamento está mais curto, essa é a escolha mais segura.
 
-<img src="https://m.media-amazon.com/images/I/61kG+n+A2QL._AC_SX679_.jpg" alt="Lenovo IdeaPad 3i" width="100%" style="border-radius: 8px; margin-bottom: 20px;">
+<img src="https://m.media-amazon.com/images/I/517iF-FfF1L._AC_SX679_.jpg" alt="Lenovo IdeaPad 3i" width="100%" style="border-radius: 8px; margin-bottom: 20px;">
 
 Ele atende 95% da população que só precisa navegar na internet, ver aulas online e montar apresentações. A carcaça aguenta o tranco do dia a dia da mochila e o teclado da Lenovo é, historicamente, um dos mais confortáveis pra quem precisa digitar o dia inteiro (estudantes e redatores).
 
@@ -58,7 +58,7 @@ Ele atende 95% da população que só precisa navegar na internet, ver aulas onl
 
 Se você tem aversão a gastar muito e quer o limite inferior do que é considerado "bom" em 2026, o Vivobook Go 15 assumiu esse posto. 
 
-<img src="https://m.media-amazon.com/images/I/71WjM9Lg5AL._AC_SX679_.jpg" alt="ASUS Vivobook Go 15" width="100%" style="border-radius: 8px; margin-bottom: 20px;">
+<img src="https://m.media-amazon.com/images/I/71c1AmL11jL._AC_SX679_.jpg" alt="ASUS Vivobook Go 15" width="100%" style="border-radius: 8px; margin-bottom: 20px;">
 
 A Asus cortou alguns luxos no material da carcaça e na qualidade absurda de tela para conseguir entregar um processador decente (Ryzen 5) e SSD rápido custando consideravelmente menos que os concorrentes da mesma categoria. É a máquina pra deixar fixa na mesa de casa ou do escritório. Ele liga rápido, responde bem às tarefas do cotidiano e não te faz passar raiva pra abrir o e-mail.
 
