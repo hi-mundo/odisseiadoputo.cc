@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="color-scheme" content="dark">
+
+    <title>O Git Push da Morte: Como um Comando Simples Quebrou o GitHub Inteiro · A odisseia do puto</title>
+
+    <meta name="description" content="A vulnerabilidade que permitia a qualquer usuário autenticado rodar código nos servidores do GitHub e ler todos os repositórios privados da plataforma.">
+    <meta name="author" content="Frederico">
+    <meta name="keywords" content="tech, seguranca, noticias, blackhat, cultura tech, código, notícias, programação, hacking, tecnologia, dev, software, odisseia do puto">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <link rel="canonical" href="https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/28/github-rce-vulnerabilidade-git-push/">
+
+    <!-- Hreflang (bilíngue PT/EN servido na mesma URL via toggle) -->
+    <link rel="alternate" hreflang="pt-BR" href="https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/28/github-rce-vulnerabilidade-git-push/">
+    <link rel="alternate" hreflang="en"    href="https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/28/github-rce-vulnerabilidade-git-push/">
+    <link rel="alternate" hreflang="x-default" href="https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/28/github-rce-vulnerabilidade-git-push/">
+
+    <!-- Open Graph -->
+    <meta property="og:type"        content="article">
+    <meta property="og:site_name"   content="A odisseia do puto">
+    <meta property="og:title"       content="O Git Push da Morte: Como um Comando Simples Quebrou o GitHub Inteiro">
+    <meta property="og:description" content="A vulnerabilidade que permitia a qualquer usuário autenticado rodar código nos servidores do GitHub e ler todos os repositórios privados da plataforma.">
+    <meta property="og:url"         content="https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/28/github-rce-vulnerabilidade-git-push/">
+    <meta property="og:image"       content="https://odisseiadoputo.cc/img/placeholder.svg">
+    <meta property="og:image:alt"   content="O Git Push da Morte: Como um Comando Simples Quebrou o GitHub Inteiro">
+    <meta property="og:locale"      content="pt_BR">
+    <meta property="og:locale:alternate" content="en_US">
+    
+    <meta property="article:published_time" content="2026-04-28T19:30:00-03:00">
+    
+    <meta property="article:author" content="Frederico">
+    
+    <meta property="article:section" content="tech"><meta property="article:section" content="seguranca"><meta property="article:section" content="noticias">
+    
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card"        content="summary_large_image">
+    <meta name="twitter:title"       content="O Git Push da Morte: Como um Comando Simples Quebrou o GitHub Inteiro">
+    <meta name="twitter:description" content="A vulnerabilidade que permitia a qualquer usuário autenticado rodar código nos servidores do GitHub e ler todos os repositórios privados da plataforma.">
+    <meta name="twitter:image"       content="https://odisseiadoputo.cc/img/placeholder.svg">
+    <meta name="twitter:image:alt"   content="O Git Push da Morte: Como um Comando Simples Quebrou o GitHub Inteiro">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon"      href="/favicon.png">
+
+    <!-- RSS / Atom --><link type="application/atom+xml" rel="alternate" href="https://odisseiadoputo.cc/feed.xml" title="A odisseia do puto" /><!-- Fontes: Inter (UI) + Fraunces (editorial). Preconnect pra encurtar handshake. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=JetBrains+Mono:wght@400;500&display=swap">
+
+    <!-- CSS: stylesheet novo (odisseia.css) + syntax highlighting + share icons -->
+    <link rel="stylesheet" href="/css/odisseia.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/share.css">
+
+    <!-- Preferências salvas: aplica *antes* do body pra evitar FOUC -->
+    <script>
+      (function () {
+        try {
+          var d = document.documentElement;
+          // Tema: default = editorial; opt-in = "2003" (CRT)
+          if (localStorage.getItem('odisseia_theme') === '2003') d.classList.add('theme-2003');
+          // Idioma: default = pt
+          var l = localStorage.getItem('siteLang') === 'en' ? 'en' : 'pt';
+          d.setAttribute('lang', l === 'en' ? 'en' : 'pt-BR');
+          if (l === 'en') d.classList.add('site-lang-en');
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- JSON-LD structured data -->
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {"@type": "WebPage", "@id": "https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/28/github-rce-vulnerabilidade-git-push/"},
+      "headline": "O Git Push da Morte: Como um Comando Simples Quebrou o GitHub Inteiro",
+      "description": "A vulnerabilidade que permitia a qualquer usuário autenticado rodar código nos servidores do GitHub e ler todos os repositórios privados da plataforma.",
+      "image": ["https://odisseiadoputo.cc/img/placeholder.svg"],
+      "datePublished": "2026-04-28T19:30:00-03:00",
+      "dateModified": "2026-04-28T19:30:00-03:00",
+      "author": {
+        "@type": "Person",
+        "name": "Frederico"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "A odisseia do puto",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://odisseiadoputo.cc/favicon.png"
+        }
+      },
+      "inLanguage": "pt-BR","articleSection": "tech","keywords": "tech, seguranca, noticias, blackhat, cultura tech, código, notícias, programação, hacking, tecnologia, dev, software, odisseia do puto"}
+    </script>
+    
+
+    <!-- Breadcrumb (para páginas internas além da home) -->
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "A odisseia do puto", "item": "https://odisseiadoputo.cc/"},
+        {"@type": "ListItem", "position": 2, "name": "O Git Push da Morte: Como um Comando Simples Quebrou o GitHub Inteiro", "item": "https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/28/github-rce-vulnerabilidade-git-push/"}
+      ]
+    }
+    </script>
+    
+
+    
+
+</head>
+
+
+<body>
+  <span hidden>Impact-Site-Verification: 0b2dadf9-d8ff-42e0-b36f-a06abdfe6aa9</span>
+  <!-- Skip link (a11y) -->
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <!-- Overlay CRT do "modo 2003" (só renderiza nada se o body não tiver .theme-2003) -->
+  <div class="crt-layer" aria-hidden="true">
+    <div id="fog-bg" class="fog-bg">
+      <div class="fog-layer fog-layer-1"></div>
+      <div class="fog-layer fog-layer-2"></div>
+      <div class="fog-layer fog-layer-3"></div>
+      <div class="fog-vignette"></div>
+    </div>
+    <div class="scanline"></div>
+    <div class="crt-flicker"></div>
+  </div>
+
+  <div class="site-shell">
+    <header class="site-header" role="banner">
+  <div class="site-header-inner">
+    <a class="site-brand" href="/" aria-label="A odisseia do puto — home">
+      <img src="/img/logo.png" alt="" class="site-brand-logo" width="140" height="32" />
+      <span class="site-brand-word">A odisseia do puto</span>
+    </a>
+
+    <button type="button" class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Abrir menu">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+
+    <nav id="site-nav" class="site-nav" aria-label="Principal">
+      <ul class="site-nav-list">
+        <li>
+          <a href="/" data-pt="Início" data-en="Home">Início</a>
+        </li>
+        <li>
+          <a href="/about/" data-pt="Sobre" data-en="About">Sobre</a>
+        </li>
+        <li>
+          <a href="/apoie/" data-pt="Apoie" data-en="Support">Apoie</a>
+        </li>
+      </ul>
+
+      <div class="site-nav-controls">
+        <div class="lang-switcher" role="group" aria-label="Idioma / Language">
+          <button type="button" class="lang-btn lang-btn-pt is-active" data-lang="pt" aria-pressed="true">PT</button>
+          <span class="lang-sep" aria-hidden="true">/</span>
+          <button type="button" class="lang-btn lang-btn-en" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+
+        <button id="mode-toggle" class="mode-btn" type="button"
+                aria-label="Alternar tema: moderno / 2003"
+                title="Alternar tema">
+          <svg class="mode-icon mode-icon-sun" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18">
+            <circle cx="12" cy="12" r="4" fill="currentColor"/>
+            <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <line x1="12" y1="2"  x2="12" y2="5"/>
+              <line x1="12" y1="19" x2="12" y2="22"/>
+              <line x1="2"  y1="12" x2="5"  y2="12"/>
+              <line x1="19" y1="12" x2="22" y2="12"/>
+              <line x1="4.2" y1="4.2" x2="6.3" y2="6.3"/>
+              <line x1="17.7" y1="17.7" x2="19.8" y2="19.8"/>
+              <line x1="4.2" y1="19.8" x2="6.3" y2="17.7"/>
+              <line x1="17.7" y1="6.3" x2="19.8" y2="4.2"/>
+            </g>
+          </svg>
+          <span class="mode-icon mode-icon-crt" aria-hidden="true">💾</span>
+          <span class="mode-label" data-pt="Moderno" data-en="Modern">Moderno</span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<script>
+  // Toggle do menu mobile (hambúrguer). Inline pra evitar flash.
+  (function () {
+    var btn = document.querySelector('.nav-toggle');
+    var nav = document.getElementById('site-nav');
+    if (!btn || !nav) return;
+    btn.addEventListener('click', function () {
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      nav.classList.toggle('is-open', !open);
+      document.body.classList.toggle('nav-open', !open);
+    });
+    // Fecha ao clicar em um link (SPA feel em mobile)
+    nav.addEventListener('click', function (e) {
+      if (e.target.tagName === 'A' && nav.classList.contains('is-open')) {
+        btn.setAttribute('aria-expanded', 'false');
+        nav.classList.remove('is-open');
+        document.body.classList.remove('nav-open');
+      }
+    });
+  })();
+</script>
+
+
+    <main id="main" class="site-main" tabindex="-1">
+      <article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+  <meta itemprop="datePublished" content="2026-04-28T19:30:00-03:00">
+  <meta itemprop="mainEntityOfPage" content="https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/28/github-rce-vulnerabilidade-git-push/">
+
+  <header class="post-header">
+    <div class="post-header-inner">
+      <nav class="breadcrumb" aria-label="Trilha">
+        <a href="/" data-pt="Início" data-en="Home">Início</a>
+        <span class="breadcrumb-sep" aria-hidden="true">/</span>
+        <span class="breadcrumb-current">Tech</span>
+      </nav>
+
+      <div class="lang-pt">
+        <h1 class="post-title" itemprop="headline">O Git Push da Morte: Como um Comando Simples Quebrou o GitHub Inteiro</h1>
+        
+          <p class="post-deck" itemprop="description">A vulnerabilidade que permitia a qualquer usuário autenticado rodar código nos servidores do GitHub e ler todos os repositórios privados da plataforma.</p>
+        
+      </div>
+      
+      <div class="lang-en">
+        <h1 class="post-title">The Git Push of Death: How a Simple Command Broke All of GitHub</h1>
+        
+          <p class="post-deck">The vulnerability that allowed any authenticated user to run code on GitHub's servers and read all private repositories on the platform.</p>
+        
+      </div>
+      
+
+      <div class="post-meta" itemprop="author" itemscope itemtype="https://schema.org/Person">
+        <span class="post-meta-item post-meta-author">
+          <span class="lang-pt">Por <span itemprop="name">Frederico</span></span>
+          <span class="lang-en">By <span>Frederico</span></span>
+        </span>
+        <span class="post-meta-sep" aria-hidden="true">·</span>
+        <time class="post-meta-item post-meta-date" datetime="2026-04-28T19:30:00-03:00">
+          <span class="lang-pt">28/04/2026</span>
+          <span class="lang-en">Apr 28, 2026</span>
+        </time>
+        <span class="post-meta-sep" aria-hidden="true">·</span>
+        <span class="post-meta-item post-meta-read">
+          <span class="lang-pt">3 min de leitura</span>
+          <span class="lang-en">3 min read</span>
+        </span>
+        
+        <span class="post-meta-sep" aria-hidden="true">·</span>
+        <span class="post-meta-item post-meta-cat">
+          <a href="/#tech" class="tag-pill">tech</a><a href="/#seguranca" class="tag-pill">seguranca</a><a href="/#noticias" class="tag-pill">noticias</a>
+        </span>
+        
+      </div>
+    </div>
+
+    
+    <figure class="post-hero">
+      <img src="/img/placeholder.svg"
+           alt="O Git Push da Morte: Como um Comando Simples Quebrou o GitHub Inteiro"
+           itemprop="image"
+           loading="eager"
+           decoding="async"
+           onerror="this.onerror=null;this.src='/img/placeholder.svg';this.classList.add('is-placeholder');" />
+    </figure>
+  </header>
+
+  <div class="post-body-wrap">
+    
+
+
+<nav class="share-nav" aria-label="Compartilhar">
+  <span class="share-label">
+    <span class="lang-pt">Compartilhar</span>
+    <span class="lang-en">Share</span>
+  </span>
+  <ul class="share">
+    <li>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fodisseiadoputo.cc%2Ftech%2Fseguranca%2Fnoticias%2F2026%2F04%2F28%2Fgithub-rce-vulnerabilidade-git-push%2F" rel="nofollow noopener" target="_blank" title="Compartilhar no LinkedIn" aria-label="Compartilhar no LinkedIn">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M19 3A2 2 0 0 1 21 5v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18V9.75H5.67V18h2.67zM7 8.58a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zM18.34 18v-4.52c0-2.42-1.3-3.55-3.03-3.55-1.4 0-2.02.77-2.37 1.31V9.75h-2.67c.04.76 0 8.25 0 8.25h2.67v-4.61c0-.24.02-.48.09-.65.2-.48.63-.97 1.38-.97.97 0 1.36.74 1.36 1.82V18h2.57z"/></svg>
+      </a>
+    </li>
+    <li>
+      <a href="https://twitter.com/intent/tweet?text=O+Git+Push+da+Morte%3A+Como+um+Comando+Simples+Quebrou+o+GitHub+Inteiro&url=https%3A%2F%2Fodisseiadoputo.cc%2Ftech%2Fseguranca%2Fnoticias%2F2026%2F04%2F28%2Fgithub-rce-vulnerabilidade-git-push%2F" rel="nofollow noopener" target="_blank" title="Compartilhar no X" aria-label="Compartilhar no X">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.16 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.reddit.com/submit?url=https%3A%2F%2Fodisseiadoputo.cc%2Ftech%2Fseguranca%2Fnoticias%2F2026%2F04%2F28%2Fgithub-rce-vulnerabilidade-git-push%2F&title=O+Git+Push+da+Morte%3A+Como+um+Comando+Simples+Quebrou+o+GitHub+Inteiro" rel="nofollow noopener" target="_blank" title="Compartilhar no Reddit" aria-label="Compartilhar no Reddit">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M22 12.5c0-1.1-.9-2-2-2-.6 0-1.1.2-1.4.6-1.4-1-3.4-1.6-5.6-1.7l1-4.4 3 .7c0 .8.6 1.4 1.4 1.4.8 0 1.4-.6 1.4-1.4 0-.8-.6-1.4-1.4-1.4-.5 0-1 .3-1.3.7l-3.3-.7c-.1 0-.3 0-.3.1L12.5 8.9c-2.3.1-4.3.7-5.7 1.7-.4-.4-.9-.6-1.4-.6-1.1 0-2 .9-2 2 0 .8.5 1.5 1.2 1.8v.5c0 3 3.5 5.4 7.8 5.4s7.8-2.4 7.8-5.4v-.5c.7-.3 1.2-1 1.2-1.8zM7 13.8c0-.8.6-1.4 1.4-1.4.8 0 1.4.6 1.4 1.4 0 .8-.6 1.4-1.4 1.4-.8 0-1.4-.6-1.4-1.4zm8.3 3.6c-1 .6-2 .8-3.3.8s-2.4-.2-3.3-.8c-.2-.1-.3-.4-.1-.6.2-.2.4-.3.7-.1.7.5 1.6.7 2.8.7 1.1 0 2-.2 2.8-.6.2-.1.5 0 .6.2 0 .1 0 .3-.2.4zm-.2-2.2c-.8 0-1.4-.6-1.4-1.4 0-.8.6-1.4 1.4-1.4.8 0 1.4.6 1.4 1.4 0 .7-.6 1.4-1.4 1.4z"/></svg>
+      </a>
+    </li>
+    <li>
+      <a href="https://news.ycombinator.com/submitlink?u=https%3A%2F%2Fodisseiadoputo.cc%2Ftech%2Fseguranca%2Fnoticias%2F2026%2F04%2F28%2Fgithub-rce-vulnerabilidade-git-push%2F&t=O+Git+Push+da+Morte%3A+Como+um+Comando+Simples+Quebrou+o+GitHub+Inteiro" rel="nofollow noopener" target="_blank" title="Enviar ao Hacker News" aria-label="Enviar ao Hacker News">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="currentColor"><path d="M2 2h20v20H2V2zm9.03 10.18v5.34h1.94v-5.34l3.5-6.4h-2.13l-2.34 4.63-2.34-4.63H7.53l3.5 6.4z"/></svg>
+      </a>
+    </li>
+    <li>
+      <a href="#" class="share-copy-link" data-url="https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/28/github-rce-vulnerabilidade-git-push/" title="Copiar link" aria-label="Copiar link">
+        <svg class="share-icon-link" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+        <svg class="share-icon-check" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><polyline points="20 6 9 17 4 12"/></svg>
+      </a>
+    </li>
+  </ul>
+</nav>
+<script>
+(function() {
+  var btn = document.querySelector('.share-copy-link');
+  if (!btn) return;
+  btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    var url = btn.getAttribute('data-url');
+    function flash() {
+      var link  = btn.querySelector('.share-icon-link');
+      var check = btn.querySelector('.share-icon-check');
+      if (link)  link.style.display  = 'none';
+      if (check) check.style.display = 'block';
+      setTimeout(function () {
+        if (link)  link.style.display  = 'block';
+        if (check) check.style.display = 'none';
+      }, 1500);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(flash);
+    } else {
+      var ta = document.createElement('textarea');
+      ta.value = url;
+      ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+      flash();
+    }
+  });
+})();
+</script>
+
+
+    <div class="post-body" itemprop="articleBody">
+      
+        <div class="lang-pt post-prose"><h1 id="o-apocalipse-do-git-push">O Apocalipse do “Git Push”</h1>
+
+<p>Se você trabalha escrevendo código, você confia no GitHub como confia que o sol vai nascer amanhã. É o cofre-forte da propriedade intelectual do planeta. E esse cofre acabou de provar que a porta dos fundos estava aberta pra quem soubesse forçar a maçaneta.</p>
+
+<p>A empresa de cibersegurança Wiz divulgou publicamente hoje a <strong>CVE-2026-3854</strong> (CVSS 8.7). Em termos simples: era uma falha de Execução Remota de Código (RCE) que afetava tanto o GitHub.com quanto as instalações privadas do GitHub Enterprise Server.</p>
+
+<p>A mecânica da invasão? Qualquer usuário autenticado da plataforma conseguia executar comandos diretos nos servidores de backend do GitHub usando um único comando: um <code class="language-plaintext highlighter-rouge">git push</code> malicioso.</p>
+
+<h1 id="a-falha-amadora-injeção-de-cabeçalho">A Falha Amadora: Injeção de Cabeçalho</h1>
+
+<p>Para quem escova bit, a humilhação do GitHub é dupla, porque a falha foi estupidamente básica. O problema estava na falta de sanitização de input na infraestrutura interna do Git.</p>
+
+<p>Quando você roda um <code class="language-plaintext highlighter-rouge">git push</code>, você pode passar parâmetros extras (as famosas push options). O GitHub pegava esses valores passados pelo usuário e colocava direto nos cabeçalhos (headers) dos serviços internos de comunicação deles.</p>
+
+<p>O problema é que os caras do GitHub usaram um caractere delimitador no formato interno do cabeçalho que era o <em>mesmo</em> caractere que o usuário podia digitar. A falha clássica de injeção. O atacante enviava uma push option marota, o sistema interno não limpava a string, e o invasor conseguia injetar campos extras de metadados, forçando os nós de armazenamento do GitHub a executarem comandos remotos no backend.</p>
+
+<h1 id="o-estrago-se-alguém-tivesse-achado-antes">O Estrago (Se Alguém Tivesse Achado Antes)</h1>
+
+<p>O impacto disso beira o absurdo. No GitHub.com, essa falha abria acesso de execução remota nos nós de storage compartilhados, ou seja, acesso potencial a literalmente <strong>milhões de repositórios privados</strong> de empresas no mundo todo. Para quem roda o GitHub Enterprise Server local (bancos, governos), a falha entregava comprometimento total do servidor e de todos os secrets armazenados lá dentro.</p>
+
+<p>O GitHub arrumou a bagunça no site principal em impressionantes duas horas depois que a Wiz reportou (lá em março), e os patches pro Enterprise já saíram. Mas a lição técnica que a gente precisa engolir de seco é assustadora:</p>
+
+<p>Se a Microsoft/GitHub, com um exército de engenheiros ganhando 500 mil dólares por ano, cometeu uma falha júnior de sanitização de input injetado em cabeçalho interno… que confiança você tem de que o código de <em>backend</em> da sua empresa não tá fazendo a mesma coisa agora?</p>
+
+<p>E o detalhe irônico pro futuro da cibersegurança: essa foi uma das primeiras vulnerabilidades críticas descobertas em binários de código fechado usando inteligência artificial. O robô já tá achando brecha no código alheio melhor que a gente.</p>
+
+<h3 id="fontes-e-referências">Fontes e Referências</h3>
+<ul>
+  <li><a href="https://thehackernews.com/2026/04/researchers-discover-critical-github.html">The Hacker News: Researchers Discover Critical GitHub Flaw</a></li>
+  <li><a href="https://www.wiz.io/blog/github-rce-vulnerability-cve-2026-3854">Wiz Blog: GitHub RCE Vulnerability (CVE-2026-3854)</a></li>
+  <li><a href="https://github.blog/security/securing-the-git-push-pipeline-responding-to-a-critical-remote-code-execution-vulnerability/">GitHub Blog: Securing the Git push pipeline</a></li>
+</ul>
+</div>
+        <div class="lang-en post-prose"><h1 id="the-apocalyptic-git-push">The Apocalyptic Git Push</h1>
+
+<p>Cybersecurity firm Wiz just disclosed a vulnerability in GitHub (CVE-2026-3854) with a CVSS of 8.7 that borders on the absurd. Any authenticated user could execute arbitrary code (RCE) on GitHub’s backend servers using a single, specially crafted <code class="language-plaintext highlighter-rouge">git push</code> command.</p>
+
+<p>The flaw was a basic injection in GitHub’s internal Git infrastructure. They didn’t sanitize user-supplied push options before appending them to internal service headers. This allowed an attacker to inject metadata and execute commands on the shared storage nodes. On GitHub.com, this meant potential access to millions of private repositories. On GitHub Enterprise Server, it meant full server compromise. GitHub patched it in two hours, but the structural lesson is clear: if GitHub can fail at input sanitization, your startup’s backend is definitely vulnerable.</p>
+</div>
+      
+    </div>
+    <section class="related-posts" aria-labelledby="related-title">
+      <h3 id="related-title" class="related-posts-title">
+        <span class="lang-pt">Leia também</span>
+        <span class="lang-en">Read also</span>
+      </h3>
+      <div class="related-posts-grid">
+        
+        <a href="/tech/seguranca/noticias/2026/04/28/chatgpt-ads-attribution-loop-engenharia/" class="related-post-card">
+          <span class="related-post-title">
+            <span class="lang-pt">Engenharia Reversa no ChatGPT: Como a OpenAI Injeta Anúncios e Rastreia Você</span>
+            <span class="lang-en">Reverse Engineering ChatGPT: How OpenAI Injects Ads and Tracks You</span>
+          </span>
+        </a>
+        
+        <a href="/tech/seguranca/noticias/2026/04/28/lofygang-hackers-brasil-minecraft/" class="related-post-card">
+          <span class="related-post-title">
+            <span class="lang-pt">LofyGang Voltou: Os Hackers Brasileiros que Mineram o seu Cartão de Crédito no Minecraft</span>
+            <span class="lang-en">LofyGang is Back: The Brazilian Hackers Mining Your Credit Card in Minecraft</span>
+          </span>
+        </a>
+        
+        <a href="/tech/seguranca/noticias/2026/04/27/btg-pactual-vazamento-dados/" class="related-post-card">
+          <span class="related-post-title">
+            <span class="lang-pt">O Seu Dinheiro em Dólar Vazou: O Hack do BTG Pactual e o Risco de Terceiros</span>
+            <span class="lang-en">Your Dollar Money Leaked: The BTG Pactual Hack and Third-Party Risk</span>
+          </span>
+        </a>
+        
+      </div>
+    </section>
+    
+
+    <!-- ===== NEWSLETTER: BLOCO NO FINAL DO POST ===== -->
+<aside class="nl-end-block" id="nl-end-block" aria-label="Newsletter">
+    <div class="nl-end-inner">
+        <span class="nl-end-icon" id="nl-end-icon">📬</span>
+        <div class="nl-end-text has-en">
+            <strong class="nl-end-title">
+                <span class="lang-pt">Quer receber quentinho no email?</span>
+                <span class="lang-en">Want fresh updates in your inbox?</span>
+            </strong>
+            <span class="nl-end-desc">
+                <span class="lang-pt">Cada novo post vai direto pra sua caixa. Sem precisar ficar voltando aqui.</span>
+                <span class="lang-en">Every new post goes straight to your inbox. No need to keep checking back.</span>
+            </span>
+        </div>
+        <form class="nl-inline-form" id="nl-end-form" novalidate>
+            <input type="email" id="nl-end-email" class="nl-input" placeholder="seu@email.com" autocomplete="email"
+                required />
+            <button type="submit" class="nl-btn has-en" id="nl-end-submit">
+                <span class="nl-btn-text">
+                    <span class="lang-pt">Assinar</span>
+                    <span class="lang-en">Subscribe</span>
+                </span>
+                <span class="nl-btn-spinner" hidden></span>
+            </button>
+        </form>
+        <p class="nl-error" id="nl-end-error" hidden></p>
+        <p class="nl-inline-success has-en" id="nl-end-success" hidden>
+            <span class="lang-pt">✅ Tá dentro! O próximo post chega quentinho direto na sua caixa.</span>
+            <span class="lang-en">✅ You're in! The next post will arrive fresh in your inbox.</span>
+        </p>
+    </div>
+</aside>
+
+<!-- ===== NEWSLETTER MODAL ===== -->
+<div id="nl-modal" class="nl-modal" role="dialog" aria-modal="true" aria-labelledby="nl-modal-title" hidden>
+    <div class="nl-modal-backdrop" id="nl-modal-backdrop"></div>
+    <div class="nl-modal-box">
+        <button class="nl-modal-close has-en" id="nl-modal-close" aria-label="Fechar">
+            <span class="lang-pt">&times;</span>
+            <span class="lang-en">&times;</span>
+        </button>
+        <div class="nl-modal-icon" id="nl-modal-icon">📬</div>
+        <h2 class="nl-modal-title" id="nl-modal-title"></h2>
+        <p class="nl-modal-desc" id="nl-modal-desc"></p>
+        <form class="nl-form" id="nl-modal-form" novalidate>
+            <div class="nl-input-row">
+                <input type="email" id="nl-modal-email" class="nl-input" placeholder="seu@email.com"
+                    autocomplete="email" required />
+                <button type="submit" class="nl-btn has-en" id="nl-modal-submit">
+                    <span class="nl-btn-text">
+                        <span class="lang-pt">Assinar</span>
+                        <span class="lang-en">Subscribe</span>
+                    </span>
+                    <span class="nl-btn-spinner" hidden></span>
+                </button>
+            </div>
+            <p class="nl-error" id="nl-modal-error" hidden></p>
+        </form>
+        <button class="nl-dismiss has-en" id="nl-modal-dismiss">
+            <span class="lang-pt">Agora não</span>
+            <span class="lang-en">Not now</span>
+        </button>
+    </div>
+</div>
+
+<!-- ===== NEWSLETTER MODAL SUCESSO ===== -->
+<div id="nl-modal-success" class="nl-modal" role="dialog" aria-modal="true" hidden>
+    <div class="nl-modal-backdrop"></div>
+    <div class="nl-modal-box nl-modal-box--success">
+        <div class="nl-modal-icon">✅</div>
+        <h2 class="nl-modal-title has-en">
+            <span class="lang-pt">Tá dentro.</span>
+            <span class="lang-en">You're in.</span>
+        </h2>
+        <p class="nl-modal-desc has-en">
+            <span class="lang-pt">Agora não precisa mais ficar acompanhando o site — o próximo post chega quentinho
+                direto na sua caixa.</span>
+            <span class="lang-en">No need to keep tracking the site — the next post will arrive fresh in your
+                inbox.</span>
+        </p>
+        <button class="nl-btn nl-btn--full has-en" id="nl-success-close">
+            <span class="lang-pt">Fechar</span>
+            <span class="lang-en">Close</span>
+        </button>
+    </div>
+</div>
+
+    <nav class="post-pager" aria-label="Navegação entre posts">
+      
+      <a class="post-pager-item post-pager-prev" href="/tech/seguranca/noticias/2026/04/27/btg-pactual-vazamento-dados/" rel="prev">
+        <span class="post-pager-dir" data-pt="Anterior" data-en="Previous">Anterior</span>
+        <span class="post-pager-title">O Seu Dinheiro em Dólar Vazou: O Hack do BTG Pactual e o Risco de Terceiros</span>
+      </a>
+      
+      
+      <a class="post-pager-item post-pager-next" href="/tech/seguranca/noticias/2026/04/28/lofygang-hackers-brasil-minecraft/" rel="next">
+        <span class="post-pager-dir" data-pt="Próximo" data-en="Next">Próximo</span>
+        <span class="post-pager-title">LofyGang Voltou: Os Hackers Brasileiros que Mineram o seu Cartão de Crédito no Minecraft</span>
+      </a>
+      
+    </nav>
+  </div>
+</article>
+
+<script src="/js/newsletter.js" defer></script>
+
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+  <div class="site-footer-inner">
+    <div class="site-footer-col">
+      <p class="site-footer-brand">
+        <strong>A odisseia do puto</strong>
+      </p>
+      <p class="site-footer-tag has-en">
+        <span class="lang-pt">O blackhat da cultura tech. Código, notícias e pop dissecados com a acidez de quem sobrevive a war rooms — e sobrevive para contar o chorume.</span>
+        <span class="lang-en">The blackhat of tech culture. Code, news and pop dissected with the acidity of those who survive war rooms — and live to tell the sludge.</span>
+      </p>
+    </div>
+
+    <div class="site-footer-col">
+      <h2 class="site-footer-label" data-pt="Navegar" data-en="Browse">Navegar</h2>
+      <ul class="site-footer-list">
+        <li><a href="/" data-pt="Início" data-en="Home">Início</a></li>
+        <li><a href="/about/" data-pt="Sobre" data-en="About">Sobre</a></li>
+        <li><a href="/apoie/" data-pt="Apoie" data-en="Support">Apoie</a></li>
+        <li><a href="/feed.xml" rel="alternate" type="application/atom+xml">RSS</a></li>
+      </ul>
+    </div>
+
+    <div class="site-footer-col">
+      <h2 class="site-footer-label" data-pt="Contato" data-en="Contact">Contato</h2>
+      <ul class="site-footer-list">
+        <li><a href="mailto:contato@odisseiadoputo.cc">contato@odisseiadoputo.cc</a></li>
+        <li><a href="https://odisseiadoputo.substack.com/" target="_blank" rel="noopener">Substack</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="site-footer-meta">
+    <p class="site-footer-credit has-en">
+      <span class="lang-pt">© 2026 · um projeto de
+        <a href="https://raimundopessoa.com" target="_blank" rel="noopener">_hi.mundo!</a></span>
+      <span class="lang-en">© 2026 · a
+        <a href="https://raimundopessoa.com" target="_blank" rel="noopener">_hi.mundo!</a> project</span>
+    </p>
+  </div>
+</footer>
+
+<button id="back-to-top" class="back-to-top" aria-label="Voltar ao topo" hidden>
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<script>
+  // External Links SEO Hack
+  document.querySelectorAll('.post-prose a').forEach(function(link) {
+    if (link.hostname !== window.location.hostname) {
+      link.setAttribute('target', '_blank');
+      link.setAttribute('rel', 'noopener noreferrer');
+    }
+  });
+
+  // Back to Top Logic
+  const btt = document.getElementById('back-to-top');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) {
+      btt.hidden = false;
+    } else {
+      btt.hidden = true;
+    }
+  });
+  btt.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+
+  </div>
+
+  <script src="/js/fog.js" defer></script>
+  <script src="/js/filter.js" defer></script>
+  <script src="/js/lang-switcher.js" defer></script>
+  <script src="/js/mode-switcher.js" defer></script>
+</body>
+
+</html>

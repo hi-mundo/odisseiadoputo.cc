@@ -12,7 +12,7 @@
 
     <meta name="description" content="John Ternus se prepara para assumir a cadeira e o que isso significa para o seu bolso.">
     <meta name="author" content="Frederico">
-    
+    <meta name="keywords" content="noticias, tech, review, blackhat, cultura tech, código, notícias, programação, hacking, tecnologia, dev, software, odisseia do puto">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
     <link rel="canonical" href="https://odisseiadoputo.cc/noticias/tech/review/2026/04/20/apple-john-ternus-ceo/">
@@ -101,7 +101,7 @@
           "url": "https://odisseiadoputo.cc/favicon.png"
         }
       },
-      "inLanguage": "pt-BR","articleSection": "noticias"}
+      "inLanguage": "pt-BR","articleSection": "noticias","keywords": "noticias, tech, review, blackhat, cultura tech, código, notícias, programação, hacking, tecnologia, dev, software, odisseia do puto"}
     </script>
     
 
@@ -125,6 +125,7 @@
 
 
 <body>
+  <span hidden>Impact-Site-Verification: 0b2dadf9-d8ff-42e0-b36f-a06abdfe6aa9</span>
   <!-- Skip link (a11y) -->
   <a class="skip-link" href="#main">Pular para o conteúdo</a>
 
@@ -477,15 +478,15 @@
     </div>
 </div>
 
-    <nav class="post-pager" aria-label="Outros posts">
+    <nav class="post-pager" aria-label="Navegação entre posts">
       
-      <a class="post-pager-item post-pager-prev" href="/2026/02/23/melhores-livros-programacao-2026/">
+      <a class="post-pager-item post-pager-prev" href="/2026/02/23/melhores-livros-programacao-2026/" rel="prev">
         <span class="post-pager-dir" data-pt="Anterior" data-en="Previous">Anterior</span>
         <span class="post-pager-title">Melhores Livros Programacao 2026</span>
       </a>
       
       
-      <a class="post-pager-item post-pager-next" href="/review/tech/2026/04/20/melhores-laptops-programacao-ia/">
+      <a class="post-pager-item post-pager-next" href="/review/tech/2026/04/20/melhores-laptops-programacao-ia/" rel="next">
         <span class="post-pager-dir" data-pt="Próximo" data-en="Next">Próximo</span>
         <span class="post-pager-title">9 Laptops para Programar IA no Brasil [Sem Vender o Celta]</span>
       </a>
@@ -538,6 +539,33 @@
     </p>
   </div>
 </footer>
+
+<button id="back-to-top" class="back-to-top" aria-label="Voltar ao topo" hidden>
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<script>
+  // External Links SEO Hack
+  document.querySelectorAll('.post-prose a').forEach(function(link) {
+    if (link.hostname !== window.location.hostname) {
+      link.setAttribute('target', '_blank');
+      link.setAttribute('rel', 'noopener noreferrer');
+    }
+  });
+
+  // Back to Top Logic
+  const btt = document.getElementById('back-to-top');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) {
+      btt.hidden = false;
+    } else {
+      btt.hidden = true;
+    }
+  });
+  btt.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
 
   </div>
 

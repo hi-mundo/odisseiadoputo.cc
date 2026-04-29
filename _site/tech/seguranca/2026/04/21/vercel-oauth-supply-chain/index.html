@@ -12,7 +12,7 @@
 
     <meta name="description" content="Como um token roubado de uma startup de IA permitiu um movimento lateral que comprometeu milhares de variáveis de ambiente.">
     <meta name="author" content="Frederico">
-    
+    <meta name="keywords" content="tech, seguranca, blackhat, cultura tech, código, notícias, programação, hacking, tecnologia, dev, software, odisseia do puto">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
     <link rel="canonical" href="https://odisseiadoputo.cc/tech/seguranca/2026/04/21/vercel-oauth-supply-chain/">
@@ -101,7 +101,7 @@
           "url": "https://odisseiadoputo.cc/favicon.png"
         }
       },
-      "inLanguage": "pt-BR","articleSection": "tech"}
+      "inLanguage": "pt-BR","articleSection": "tech","keywords": "tech, seguranca, blackhat, cultura tech, código, notícias, programação, hacking, tecnologia, dev, software, odisseia do puto"}
     </script>
     
 
@@ -125,6 +125,7 @@
 
 
 <body>
+  <span hidden>Impact-Site-Verification: 0b2dadf9-d8ff-42e0-b36f-a06abdfe6aa9</span>
   <!-- Skip link (a11y) -->
   <a class="skip-link" href="#main">Pular para o conteúdo</a>
 
@@ -421,6 +422,30 @@
 </div>
       
     </div>
+    <section class="related-posts" aria-labelledby="related-title">
+      <h3 id="related-title" class="related-posts-title">
+        <span class="lang-pt">Leia também</span>
+        <span class="lang-en">Read also</span>
+      </h3>
+      <div class="related-posts-grid">
+        
+        <a href="/tech/seguranca/2026/04/21/vazamento-lovable-bola/" class="related-post-card">
+          <span class="related-post-title">
+            <span class="lang-pt">Anatomia do Vazamento Lovable: Como um BOLA Expôs a Microsoft</span>
+            <span class="lang-en">Anatomy of the Lovable Leak: How a BOLA Exposed Microsoft</span>
+          </span>
+        </a>
+        
+        <a href="/tech/seguranca/2026/04/20/computacao-quantica-aes-128/" class="related-post-card">
+          <span class="related-post-title">
+            <span class="lang-pt">A Paranoia Quântica e as Chaves de 128 bits</span>
+            <span class="lang-en">Quantum Paranoia and 128-bit Keys</span>
+          </span>
+        </a>
+        
+      </div>
+    </section>
+    
 
     <!-- ===== NEWSLETTER: BLOCO NO FINAL DO POST ===== -->
 <aside class="nl-end-block" id="nl-end-block" aria-label="Newsletter">
@@ -509,15 +534,15 @@
     </div>
 </div>
 
-    <nav class="post-pager" aria-label="Outros posts">
+    <nav class="post-pager" aria-label="Navegação entre posts">
       
-      <a class="post-pager-item post-pager-prev" href="/tech/seguranca/2026/04/21/vazamento-lovable-bola/">
+      <a class="post-pager-item post-pager-prev" href="/tech/seguranca/2026/04/21/vazamento-lovable-bola/" rel="prev">
         <span class="post-pager-dir" data-pt="Anterior" data-en="Previous">Anterior</span>
         <span class="post-pager-title">Anatomia do Vazamento Lovable: Como um BOLA Expôs a Microsoft</span>
       </a>
       
       
-      <a class="post-pager-item post-pager-next" href="/tech/noticias/2026/04/21/meta-keylogger-ia/">
+      <a class="post-pager-item post-pager-next" href="/tech/noticias/2026/04/21/meta-keylogger-ia/" rel="next">
         <span class="post-pager-dir" data-pt="Próximo" data-en="Next">Próximo</span>
         <span class="post-pager-title">Meta Virou um Keylogger Gigante: Treinando IA com o Mouse dos Funcionários</span>
       </a>
@@ -570,6 +595,33 @@
     </p>
   </div>
 </footer>
+
+<button id="back-to-top" class="back-to-top" aria-label="Voltar ao topo" hidden>
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<script>
+  // External Links SEO Hack
+  document.querySelectorAll('.post-prose a').forEach(function(link) {
+    if (link.hostname !== window.location.hostname) {
+      link.setAttribute('target', '_blank');
+      link.setAttribute('rel', 'noopener noreferrer');
+    }
+  });
+
+  // Back to Top Logic
+  const btt = document.getElementById('back-to-top');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) {
+      btt.hidden = false;
+    } else {
+      btt.hidden = true;
+    }
+  });
+  btt.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
 
   </div>
 

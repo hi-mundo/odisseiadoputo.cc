@@ -12,7 +12,7 @@
 
     <meta name="description" content="Como o cinema pegou uma obra-prima do trauma e a transformou em um chorume genérico de seita.">
     <meta name="author" content="Frederico Doido">
-    
+    <meta name="keywords" content="pop, blackhat, cultura tech, código, notícias, programação, hacking, tecnologia, dev, software, odisseia do puto">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
     <link rel="canonical" href="https://odisseiadoputo.cc/2026/02/17/necroterio-da-nostalgia-silent-hill-2-filme/">
@@ -101,7 +101,7 @@
           "url": "https://odisseiadoputo.cc/favicon.png"
         }
       },
-      "inLanguage": "pt-BR","keywords": "pop"}
+      "inLanguage": "pt-BR","keywords": "pop, blackhat, cultura tech, código, notícias, programação, hacking, tecnologia, dev, software, odisseia do puto"}
     </script>
     
 
@@ -125,6 +125,7 @@
 
 
 <body>
+  <span hidden>Impact-Site-Verification: 0b2dadf9-d8ff-42e0-b36f-a06abdfe6aa9</span>
   <!-- Skip link (a11y) -->
   <a class="skip-link" href="#main">Pular para o conteúdo</a>
 
@@ -467,15 +468,15 @@
     </div>
 </div>
 
-    <nav class="post-pager" aria-label="Outros posts">
+    <nav class="post-pager" aria-label="Navegação entre posts">
       
-      <a class="post-pager-item post-pager-prev" href="/noticias/2026/02/17/falencia-open-ai/">
+      <a class="post-pager-item post-pager-prev" href="/noticias/2026/02/17/falencia-open-ai/" rel="prev">
         <span class="post-pager-dir" data-pt="Anterior" data-en="Previous">Anterior</span>
         <span class="post-pager-title">A Autofagia do Silício e o Estelionato da Inteligência Infinita</span>
       </a>
       
       
-      <a class="post-pager-item post-pager-next" href="/2026/02/21/manual-entrada-area-tech-playbook-carreira/">
+      <a class="post-pager-item post-pager-next" href="/2026/02/21/manual-entrada-area-tech-playbook-carreira/" rel="next">
         <span class="post-pager-dir" data-pt="Próximo" data-en="Next">Próximo</span>
         <span class="post-pager-title">O EXCELENTÍSSIMO MANUAL PARA ENTRAR NA ÁREA TECH (OU QUALQUER ÁREA)</span>
       </a>
@@ -528,6 +529,33 @@
     </p>
   </div>
 </footer>
+
+<button id="back-to-top" class="back-to-top" aria-label="Voltar ao topo" hidden>
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<script>
+  // External Links SEO Hack
+  document.querySelectorAll('.post-prose a').forEach(function(link) {
+    if (link.hostname !== window.location.hostname) {
+      link.setAttribute('target', '_blank');
+      link.setAttribute('rel', 'noopener noreferrer');
+    }
+  });
+
+  // Back to Top Logic
+  const btt = document.getElementById('back-to-top');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) {
+      btt.hidden = false;
+    } else {
+      btt.hidden = true;
+    }
+  });
+  btt.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
 
   </div>
 

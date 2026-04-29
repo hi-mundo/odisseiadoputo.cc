@@ -12,7 +12,7 @@
 
     <meta name="description" content="Onde 14 bilhões de dólares viram fumaça para processar o chorume digital da própria IA.">
     <meta name="author" content="Frederico Doido">
-    
+    <meta name="keywords" content="noticias, blackhat, cultura tech, código, notícias, programação, hacking, tecnologia, dev, software, odisseia do puto">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
     <link rel="canonical" href="https://odisseiadoputo.cc/noticias/2026/02/17/falencia-open-ai/">
@@ -101,7 +101,7 @@
           "url": "https://odisseiadoputo.cc/favicon.png"
         }
       },
-      "inLanguage": "pt-BR","articleSection": null}
+      "inLanguage": "pt-BR","articleSection": "noticias","keywords": "noticias, blackhat, cultura tech, código, notícias, programação, hacking, tecnologia, dev, software, odisseia do puto"}
     </script>
     
 
@@ -125,6 +125,7 @@
 
 
 <body>
+  <span hidden>Impact-Site-Verification: 0b2dadf9-d8ff-42e0-b36f-a06abdfe6aa9</span>
   <!-- Skip link (a11y) -->
   <a class="skip-link" href="#main">Pular para o conteúdo</a>
 
@@ -232,7 +233,7 @@
       <nav class="breadcrumb" aria-label="Trilha">
         <a href="/" data-pt="Início" data-en="Home">Início</a>
         <span class="breadcrumb-sep" aria-hidden="true">/</span>
-        <span class="breadcrumb-current">Post</span>
+        <span class="breadcrumb-current">Noticias</span>
       </nav>
 
       <div class="lang-pt">
@@ -535,10 +536,10 @@
     </div>
 </div>
 
-    <nav class="post-pager" aria-label="Outros posts">
+    <nav class="post-pager" aria-label="Navegação entre posts">
       <span></span>
       
-      <a class="post-pager-item post-pager-next" href="/2026/02/17/necroterio-da-nostalgia-silent-hill-2-filme/">
+      <a class="post-pager-item post-pager-next" href="/2026/02/17/necroterio-da-nostalgia-silent-hill-2-filme/" rel="next">
         <span class="post-pager-dir" data-pt="Próximo" data-en="Next">Próximo</span>
         <span class="post-pager-title">O Necrotério da Nostalgia: Silent Hill 2 e a Estética do Vazio</span>
       </a>
@@ -591,6 +592,33 @@
     </p>
   </div>
 </footer>
+
+<button id="back-to-top" class="back-to-top" aria-label="Voltar ao topo" hidden>
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<script>
+  // External Links SEO Hack
+  document.querySelectorAll('.post-prose a').forEach(function(link) {
+    if (link.hostname !== window.location.hostname) {
+      link.setAttribute('target', '_blank');
+      link.setAttribute('rel', 'noopener noreferrer');
+    }
+  });
+
+  // Back to Top Logic
+  const btt = document.getElementById('back-to-top');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) {
+      btt.hidden = false;
+    } else {
+      btt.hidden = true;
+    }
+  });
+  btt.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
 
   </div>
 

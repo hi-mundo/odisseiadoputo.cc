@@ -1,1364 +1,335 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://odisseiadoputo.cc/feed.xml" rel="self" type="application/atom+xml" /><link href="https://odisseiadoputo.cc/" rel="alternate" type="text/html" /><updated>2026-04-21T17:02:34-03:00</updated><id>https://odisseiadoputo.cc/feed.xml</id><title type="html">A odisseia do puto</title><subtitle>O blackhat da cultura tech. Código, notícias e pop dissecados com a acidez de quem sobrevive a war rooms — e sobrevive para contar o chorume.</subtitle><entry><title type="html">O Fim do Open Bar de IA: GitHub Congela Vendas do Copilot por Prejuízo</title><link href="https://odisseiadoputo.cc/tech/noticias/review/2026/04/21/github-copilot-congela-assinaturas/" rel="alternate" type="text/html" title="O Fim do Open Bar de IA: GitHub Congela Vendas do Copilot por Prejuízo" /><published>2026-04-21T13:45:00-03:00</published><updated>2026-04-21T13:45:00-03:00</updated><id>https://odisseiadoputo.cc/tech/noticias/review/2026/04/21/github-copilot-congela-assinaturas</id><content type="html" xml:base="https://odisseiadoputo.cc/tech/noticias/review/2026/04/21/github-copilot-congela-assinaturas/"><![CDATA[<h1 id="o-buffet-livre-de-ia-quebrou">O Buffet Livre de IA Quebrou</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://odisseiadoputo.cc/feed.xml" rel="self" type="application/atom+xml" /><link href="https://odisseiadoputo.cc/" rel="alternate" type="text/html" /><updated>2026-04-29T05:22:07-03:00</updated><id>https://odisseiadoputo.cc/feed.xml</id><title type="html">A odisseia do puto</title><subtitle>O blackhat da cultura tech. Código, notícias e pop dissecados com a acidez de quem sobrevive a war rooms — e sobrevive para contar o chorume.</subtitle><entry><title type="html">Como Parar de Destruir a Sua Coluna: As Melhores Cadeiras Ergonômicas de 2026</title><link href="https://odisseiadoputo.cc/review/hardware/carreira/2026/04/29/melhor-cadeira-ergonomica-escritorio/" rel="alternate" type="text/html" title="Como Parar de Destruir a Sua Coluna: As Melhores Cadeiras Ergonômicas de 2026" /><published>2026-04-29T01:00:00-03:00</published><updated>2026-04-29T01:00:00-03:00</updated><id>https://odisseiadoputo.cc/review/hardware/carreira/2026/04/29/melhor-cadeira-ergonomica-escritorio</id><content type="html" xml:base="https://odisseiadoputo.cc/review/hardware/carreira/2026/04/29/melhor-cadeira-ergonomica-escritorio/"><![CDATA[<h1 id="a-arquitetura-do-seu-corpo-tá-quebrada">A Arquitetura do Seu Corpo Tá Quebrada</h1>
 
-<p>O GitHub acabou de suspender a venda de novas assinaturas do Copilot Pro, Pro+ e planos de estudante. E o motivo não é um bug técnico, é matemática financeira básica: a Microsoft estava sangrando dinheiro nos servidores. O modelo de assinatura <em>flat-rate</em> (pague 10 ou 20 dólares e use o quanto quiser) implodiu sob o peso dos programadores preguiçosos.</p>
+<p>O maior erro de infraestrutura do desenvolvedor (ou de qualquer trabalhador de escritório moderno) não é fazer deploy em produção na sexta-feira. É gastar R$ 10 mil num notebook, assinar IA para escrever código e passar 12 horas por dia sentado numa cadeira de cozinha de plástico que está silenciosamente construindo uma hérnia de disco no seu corpo.</p>
 
-<p>Para a matemática fechar, o consumo de tokens da conta de um dev normal não pode ultrapassar o custo do servidor. Só que nós paramos de usar o Copilot como um mero autocompletar de 10 linhas. A galera começou a usar fluxos de agentes autônomos (“agentic workflows”) nas IDEs.</p>
+<p>Se as suas costas doem, o seu trabalho vai ser um lixo. É física básica.</p>
 
-<p>Um dev hoje manda a IA ler um repositório inteiro, debugar milhares de linhas em paralelo e iterar sobre uma janela de contexto de 1 Milhão de tokens repetidas vezes. O resultado prático? Tem usuário pagando $20 por mês e gerando mais de $200 em custo bruto de processamento de API na Azure. O custo de infraestrutura superou brutalmente a receita.</p>
+<p>A indústria também tenta te empurrar cadeiras “Gamer” que parecem banco de carro de corrida de couro sintético. Esqueça isso. Elas só servem pra fazer você suar nas costas e destruir sua lombar a longo prazo. O que você precisa para sobreviver no home office é de malha respirável (Mesh), suporte lombar independente e engenharia estrutural.</p>
 
-<h1 id="a-morte-do-flat-rate-e-a-conta-de-luz">A Morte do Flat-Rate e a Conta de Luz</h1>
-
-<p>O que o GitHub fez agora é a confissão pública de que a IA generativa como serviço “all you can eat” é insustentável. Eles pausaram a entrada de novos assinantes para tentar não derreter os servidores de quem já estava dentro.</p>
-
-<p>Se voce ja tem o plano pago, parabéns, voce ta na sala vip do Titanic. Você pode continuar usando, mas o GitHub já começou a impor limites semanais muito mais rigorosos e capar acessos baseados em sessões prolongadas. O plano gratuito ainda aceita novos cadastros, mas a torneira de performance é minúscula e controlada.</p>
-
-<p>O futuro imediato (e o texto deles deixa isso claro) é a transição para um modelo puramente baseado no consumo de tokens.</p>
-
-<p>O mercado inteiro vai ter que engolir a realidade de que terceirizar código pra IA vai virar conta de luz, não assinatura de Netflix. Voce paga pelo que queima.</p>
-
-<p>Se voce ainda confia no seu próprio cérebro pra codar, continue. Se voce terceirizou sua carreira inteira pra máquina, prepara o bolso porque o preço do aluguel do seu cérebro de silicone acabou de subir.</p>
-
-<h3 id="fontes-e-referências">Fontes e Referências</h3>
-<ul>
-  <li><a href="https://www.theregister.com/2026/04/20/microsofts_github_grounds_copilot_account/">The Register: Microsoft’s GitHub grounds Copilot account</a></li>
-  <li><a href="https://www.neowin.net/news/github-halts-new-copilot-signups-amid-soaring-usage-and-rising-costs/">Neowin: GitHub halts new Copilot signups amid soaring usage and rising costs</a></li>
-  <li><a href="https://tecnoblog.net/noticias/github-congela-novas-assinaturas-do-copilot-para-evitar-quedas-e-prejuizos/">Tecnoblog: GitHub congela novas assinaturas do Copilot para evitar quedas e prejuízos</a></li>
-</ul>]]></content><author><name>Frederico</name></author><category term="[&quot;tech&quot;, &quot;noticias&quot;, &quot;review&quot;]" /><summary type="html"><![CDATA[O Buffet Livre de IA Quebrou]]></summary></entry><entry><title type="html">Meta Virou um Keylogger Gigante: Treinando IA com o Mouse dos Funcionários</title><link href="https://odisseiadoputo.cc/tech/noticias/2026/04/21/meta-keylogger-ia/" rel="alternate" type="text/html" title="Meta Virou um Keylogger Gigante: Treinando IA com o Mouse dos Funcionários" /><published>2026-04-21T13:15:00-03:00</published><updated>2026-04-21T13:15:00-03:00</updated><id>https://odisseiadoputo.cc/tech/noticias/2026/04/21/meta-keylogger-ia</id><content type="html" xml:base="https://odisseiadoputo.cc/tech/noticias/2026/04/21/meta-keylogger-ia/"><![CDATA[<h1 id="o-keylogger-gourmet-do-zuckerberg">O Keylogger Gourmet do Zuckerberg</h1>
-
-<p>Lembra da IA revolucionária da Amazon nas lojas sem caixa, que na verdade era sustentada por indianos assistindo a câmeras de segurança na testa da linha de produção? A Meta acabou de elevar o nível da farsa corporativa. O Zuckerberg está instalando software de rastreamento nas máquinas dos funcionários nos EUA para capturar cada movimento de mouse, clique e teclado.</p>
-
-<p>O pretexto oficial do Relações Públicas (sempre ele) é que a empresa precisa engolir essa montanha de telemetria pra treinar “agentes de IA autônomos”. A justificativa é que a IA atual é burra demais para navegar num menu dropdown ou usar atalhos de teclado, então eles precisam gravar o fluxo de trabalho real da galera.</p>
-
-<h1 id="o-engenheiro-virou-mechanical-turk">O Engenheiro Virou Mechanical Turk</h1>
-
-<p>Na pratica, a Meta transformou seu quadro de engenheiros caríssimos em um Mechanical Turk glorificado.</p>
-
-<p>Treinar agente de Computer Use só com geração de dados sintéticos por LLM não funciona no mundo real. A maquina bate no teto da alucinação espacial na tela. A solução? Você pega o cara que ganha 300 mil dólares por ano pra codar e transforma ele num rato de laboratório clicando em botão pra gerar dataset de treinamento.</p>
-
-<p>O porta-voz da Meta, Andy Stone, veio com aquele papo corporativo padrão dizendo que “os dados vão ser usados apenas pra treinar o modelo e não para avaliação de performance”. Se voce acredita que o RH da Meta não vai olhar pra um dashboard que mostra quem digita 10 palavras por minuto, a inocência ta te cegando. [TK: levantar se a Microsoft já não faz exatamente isso por debaixo dos panos com o Recall do Windows].</p>
-
-<p>A tal da IA que vai substituir o trabalho humano ainda precisa do humano trabalhando de graça como mouse de controle remoto.</p>
-
-<h3 id="fontes-e-referências">Fontes e Referências</h3>
-<ul>
-  <li><a href="https://economictimes.indiatimes.com/tech/technology/meta-to-start-capturing-employee-mouse-movements-keystrokes-for-ai-training-data/articleshow/130422612.cms?from=mdr">Economic Times: Meta to start capturing employee mouse movements, keystrokes for AI training data</a></li>
-  <li><a href="https://www.dailymaverick.co.za/article/2026-04-21-meta-to-start-capturing-employee-mouse-movements-keystrokes-for-ai-training-data/">Daily Maverick: Meta to track employee keystrokes to train AI models</a></li>
-  <li><a href="https://www.channelnewsasia.com/business/exclusive-meta-start-capturing-employee-mouse-movements-keystrokes-ai-training-data-6071441">Reuters/Channel News Asia: Exclusive - Meta to start capturing employee mouse movements, keystrokes</a></li>
-</ul>]]></content><author><name>Frederico</name></author><category term="[&quot;tech&quot;, &quot;noticias&quot;]" /><summary type="html"><![CDATA[O Keylogger Gourmet do Zuckerberg]]></summary></entry><entry><title type="html">Anatomia de um Desastre: O Hack da Vercel e a Farsa do OAuth Seguro</title><link href="https://odisseiadoputo.cc/tech/seguranca/2026/04/21/vercel-oauth-supply-chain/" rel="alternate" type="text/html" title="Anatomia de um Desastre: O Hack da Vercel e a Farsa do OAuth Seguro" /><published>2026-04-21T12:00:00-03:00</published><updated>2026-04-21T12:00:00-03:00</updated><id>https://odisseiadoputo.cc/tech/seguranca/2026/04/21/vercel-oauth-supply-chain</id><content type="html" xml:base="https://odisseiadoputo.cc/tech/seguranca/2026/04/21/vercel-oauth-supply-chain/"><![CDATA[<h1 id="o-castelo-de-cartas-do-saas-e-o-vetor-oauth">O Castelo de Cartas do SaaS e o Vetor OAuth</h1>
-
-<p>A Vercel foi invadida e a infraestrutura de milhares de clientes foi exposta. A culpa não é de um exploit zero-day hiper complexo vendido na dark web, mas da falha arquitetural mais ignorada da década: a cadeia de suprimentos via permissões OAuth.</p>
-
-<p>O ataque começou fora da Vercel. Um funcionário usou sua conta corporativa do Google Workspace para dar permissão irrestrita (o maldito botão “Permitir Tudo”) a uma ferramenta de analytics baseada em IA chamada Context.ai. O detalhe tragicômico? A Context.ai foi hackeada no mês passado. Os invasores rasparam o banco de tokens OAuth deles, identificaram a credencial válida de um engenheiro da Vercel e começaram a festa.</p>
-
-<h1 id="a-mecânica-do-exploit-escovando-os-bits-do-movimento-lateral">A Mecânica do Exploit: Escovando os Bits do Movimento Lateral</h1>
-
-<p>Pra quem gosta de escovar bit, vamos falar da anatomia real do ataque. O mercado ainda trata o OAuth corporativo como se fosse o botão de “Fazer login com Facebook” do Tinder. Não é. Quando voce da permissão de Workspace pra um SaaS de terceiros, voce ta entregando <em>refresh tokens</em> com escopos massivos.</p>
-
-<p>O fluxo do exploit foi brutalmente simples e elegante:</p>
-<ol>
-  <li>A Context.ai foi hackeada. O atacante dumpou o banco de dados deles e levou os <em>refresh tokens</em> OAuth válidos.</li>
-  <li>O atacante pegou o token específico do engenheiro da Vercel e bateu direto na API do Google Workspace (<code class="language-plaintext highlighter-rouge">googleapis.com</code>). Nada de senha, nada de phishing, nada de 2FA. O token já é o bypass de MFA definitivo.</li>
-  <li>Com acesso à API, scripts automatizados varreram o Gmail e o Google Drive do funcionário atrás de chaves hardcoded, tokens de acesso a painéis internos, credenciais da AWS ou tokens de CI/CD.</li>
-</ol>
-
-<p>Achou a credencial de infraestrutura na caixa de entrada? O invasor pivoteia pro painel de controle interno da Vercel.</p>
-
-<h1 id="a-farsa-do-kms-e-das-variáveis-encriptadas">A Farsa do KMS e das Variáveis Encriptadas</h1>
-
-<p>O resultado prático foi o vazamento de variáveis de ambiente de clientes. A Vercel soltou uma nota de RP jurando que as variáveis marcadas como “sensíveis” estavam encriptadas.</p>
-
-<p>Isso é uma meia-verdade técnica projetada pra acalmar acionista. Criptografia em repouso só te protege se alguém invadir o data center e roubar o HD físico do servidor.</p>
-
-<p>Se o atacante entra no ambiente cloud (AWS/GCP) com credenciais administrativas roubadas do e-mail, ele herda a <em>role</em> do IAM atrelada ao KMS (Key Management Service). Ele não precisa quebrar a criptografia matemática; ele simplesmente faz a chamada legítima de <code class="language-plaintext highlighter-rouge">Decrypt</code> na API do provedor de nuvem e o sistema devolve as variáveis “sensíveis” em texto claro. O sistema fez exatamente o que foi programado pra fazer: entregar o dado pra quem tinha a chave.</p>
-
-<p>A cereja do bolo foi o CEO Guillermo Rauch tentar justificar a catástrofe dizendo que os invasores agiram com uma “velocidade surpreendente”, insinuando que os hackers usaram IA para acelerar o ataque. É a desculpa perfeita pra tentar tirar o foco da várzea que era a governança de acessos deles. A invasão foi rápida porque a porta tava escancarada por dentro.</p>
-
-<h1 id="como-mitigar-essa-várzea">Como Mitigar Essa Várzea</h1>
-
-<p>A Vercel mandou rotacionar as credenciais. Faça isso agora, sem pensar duas vezes. Mas se a sua empresa não mudar a cultura, voce é o próximo.</p>
-
-<ol>
-  <li><strong>Trave o OAuth Corporativo:</strong> Se a sua organização permite que qualquer desenvolvedor integre o Google Workspace ou Azure AD com a primeira startup de IA que ele acha no Twitter, a culpa do próximo vazamento é sua. O bloqueio de apps de terceiros tem que ser default. A liberação só acontece via whitelist, depois do time de sec dar o sangue auditando a startup.</li>
-  <li><strong>Zero Trust para SaaS:</strong> Trate integrações de terceiros como agentes hostis. O escopo do token OAuth precisa ser o mínimo necessário (Princípio do Menor Privilégio). Pediu acesso total aos e-mails pra gerar um resumo de log? Bloqueia.</li>
-</ol>
-
-<p>Terceirizar inteligência artificial é ótimo pra produtividade, mas quando voce acopla um sistema novo numa base sem auditoria, voce ta só construindo a ponte pro seu próprio velório digital.</p>
-
-<h3 id="fontes-e-referências">Fontes e Referências</h3>
-<ul>
-  <li><a href="https://www.trendmicro.com/en_us/research/26/d/vercel-breach-oauth-supply-chain.html">Trend Micro: Vercel Breach OAuth Supply Chain</a></li>
-  <li><a href="https://thehackernews.com/2026/04/vercel-breach-tied-to-context-ai-hack.html">The Hacker News: Vercel Breach Tied to Context.ai</a></li>
-  <li><a href="https://www.darkreading.com/application-security/vercel-employees-ai-tool-access-data-breach">Dark Reading: Vercel Employees AI Tool Access Data Breach</a></li>
-</ul>]]></content><author><name>Frederico</name></author><category term="[&quot;tech&quot;, &quot;seguranca&quot;]" /><summary type="html"><![CDATA[O Castelo de Cartas do SaaS e o Vetor OAuth]]></summary></entry><entry><title type="html">Anatomia do Vazamento Lovable: Como um BOLA Expôs a Microsoft</title><link href="https://odisseiadoputo.cc/tech/seguranca/2026/04/21/vazamento-lovable-bola/" rel="alternate" type="text/html" title="Anatomia do Vazamento Lovable: Como um BOLA Expôs a Microsoft" /><published>2026-04-21T03:10:00-03:00</published><updated>2026-04-21T03:10:00-03:00</updated><id>https://odisseiadoputo.cc/tech/seguranca/2026/04/21/vazamento-lovable-bola</id><content type="html" xml:base="https://odisseiadoputo.cc/tech/seguranca/2026/04/21/vazamento-lovable-bola/"><![CDATA[<h1 id="a-arquitetura-do-desastre">A Arquitetura do Desastre</h1>
-
-<p>O vazamento massivo de dados da plataforma de IA Lovable não foi um “ataque hacker sofisticado”. Foi a falha mais básica e previsível de design de API: Broken Object Level Authorization (BOLA). Em termos práticos, a API deles não conferia se o usuário logado realmente tinha permissão para acessar o objeto (o projeto) que ele estava requisitando.</p>
-
-<p>O resultado? Qualquer Zé Ninguém com uma conta gratuita no Lovable conseguia requisitar e raspar código-fonte, credenciais brutas de banco de dados e históricos de chat inteiros de outros usuários.</p>
-
-<h1 id="o-patch-pela-metade">O Patch Pela Metade</h1>
-
-<p>A parte mais grave do incidente (e o que derrubou a desculpa inicial de “falha de documentação” da empresa) foi a implementação do patch de segurança. A Lovable corrigiu o problema na API para a criação de <em>novos</em> projetos, mas deixou uma fenda aberta gigantesca nos projetos legados.</p>
-
-<p>Projetos criados antes de novembro de 2025 ficaram completamente expostos. É por isso que desenvolvedores internos de gigantes como Nvidia, Microsoft, Uber e Spotify acabaram com suas chaves de acesso vazadas.</p>
-
-<h1 id="plano-de-contenção">Plano de Contenção</h1>
-
-<p>Se você testou a ferramenta antes de novembro de 2025, a diretriz técnica é assumir o pior cenário. A exposição foi silenciosa e durou semanas.</p>
-
-<ol>
-  <li><strong>Rotacionamento de Chaves:</strong> Invalide imediatamente qualquer credencial de banco de dados (Postgres, Mongo, etc) que tenha passado pelo chat ou pelas configurações da Lovable.</li>
-  <li><strong>Tokens de Terceiros:</strong> Cancele tokens da OpenAI, Stripe, AWS ou qualquer outro serviço injetado no ambiente de dev deles.</li>
-  <li><strong>Auditoria de Logs:</strong> Revise os logs de acesso dos seus bancos para tráfego suspeito originado de IPs fora do seu padrão nas últimas semanas.</li>
-</ol>
-
-<p>Terceirizar código para IA é o futuro da nossa preguiça operacional, mas delegar a segurança para uma startup que gerencia a API de forma amadora é pedir para ter o banco dropado. Faça a limpeza hoje.</p>]]></content><author><name>Frederico</name></author><category term="[&quot;tech&quot;, &quot;seguranca&quot;]" /><summary type="html"><![CDATA[A Arquitetura do Desastre]]></summary></entry><entry><title type="html">A Paranoia Quântica e as Chaves de 128 bits</title><link href="https://odisseiadoputo.cc/tech/seguranca/2026/04/20/computacao-quantica-aes-128/" rel="alternate" type="text/html" title="A Paranoia Quântica e as Chaves de 128 bits" /><published>2026-04-20T19:55:00-03:00</published><updated>2026-04-20T19:55:00-03:00</updated><id>https://odisseiadoputo.cc/tech/seguranca/2026/04/20/computacao-quantica-aes-128</id><content type="html" xml:base="https://odisseiadoputo.cc/tech/seguranca/2026/04/20/computacao-quantica-aes-128/"><![CDATA[<h1 id="a-ilusão-do-algoritmo-de-grover">A Ilusão do Algoritmo de Grover</h1>
-
-<p>Se você trabalha com infraestrutura ou cibersegurança, já deve ter ouvido algum “especialista” em tendências dizer que você precisa migrar toda a sua criptografia simétrica para AES-256 urgentemente, porque “os computadores quânticos vão quebrar as chaves de 128 bits”.</p>
-
-<p>Isso é uma leitura preguiçosa da matemática. E os debates recentes nos fóruns de hackudos deixam isso cristalino.</p>
-
-<p>A confusão nasce do Algoritmo de Grover. Sim, na teoria, ele reduz a força bruta de uma chave simétrica pela raiz quadrada, fazendo com que uma chave de 128 bits ofereça, matematicamente, 64 bits de segurança pós-quântica.</p>
-
-<h1 id="o-que-o-vendedor-de-medo-esconde">O Que o Vendedor de Medo Esconde</h1>
-
-<p>O que o vendedor de medo esquece de te falar? O Algoritmo de Grover não paraleliza bem da forma como você está acostumado em clusters clássicos.</p>
-
-<p>Para quebrar uma única chave de 128 bits com Grover de forma sequencial, mesmo com um computador quântico absurdamente avançado (que ainda nem existe e não deve existir nas próximas décadas com qubits lógicos estáveis), levaria centenas de milhares de anos. E paralelizar computadores quânticos não diminui o tempo para quebrar UMA chave específica, apenas permite atacar mais chaves ao mesmo tempo.</p>
-
-<p>O consenso entre criptógrafos reais (e a própria orientação do NIST) é que 128 bits em criptografia simétrica (como AES-128) continua perfeitamente seguro e não precisa ser dobrado em pânico.</p>
-
-<h1 id="onde-mora-o-perigo-real">Onde Mora o Perigo Real</h1>
-
-<p>Onde está a verdadeira vulnerabilidade quântica? Na criptografia assimétrica (RSA, ECC) usada para <em>trocar</em> essas chaves simétricas. Se o handshake assimétrico for quebrado pelo algoritmo de Shor, a sua chave simétrica perfeita é interceptada durante a troca.</p>
-
-<p>Gaste seu orçamento e energia na transição pós-quântica dos seus algoritmos assimétricos e mecanismos de troca de chaves (como kyber/ML-KEM). O seu AES-128 de dados em repouso vai continuar dormindo tranquilo por muitas décadas. Pare de comprar pânico enlatado.</p>]]></content><author><name>Frederico</name></author><category term="[&quot;tech&quot;, &quot;seguranca&quot;]" /><summary type="html"><![CDATA[A Ilusão do Algoritmo de Grover]]></summary></entry><entry><title type="html">O Hype do Qwen 3.6 e a Realidade dos Agentes</title><link href="https://odisseiadoputo.cc/tech/review/2026/04/20/qwen-3-6-agentes-realidade/" rel="alternate" type="text/html" title="O Hype do Qwen 3.6 e a Realidade dos Agentes" /><published>2026-04-20T19:50:00-03:00</published><updated>2026-04-20T19:50:00-03:00</updated><id>https://odisseiadoputo.cc/tech/review/2026/04/20/qwen-3-6-agentes-realidade</id><content type="html" xml:base="https://odisseiadoputo.cc/tech/review/2026/04/20/qwen-3-6-agentes-realidade/"><![CDATA[<h1 id="o-hype-dos-parâmetros">O Hype dos Parâmetros</h1>
-
-<p>Todo mundo no seu feed já começou a postar gráficos coloridos sobre o novo Qwen 3.6 da Alibaba. Antes de você embarcar no hype e achar que seu emprego de dev acabou, vamos olhar para o que realmente importa nos bastidores técnicos.</p>
-
-<p>A versão Open Source Qwen3.6-35B-A3B (um modelo Mixture-of-Experts) e o Qwen3.6-Plus trouxeram um avanço real, não apenas de benchmark inflado: a capacidade de “Agentic Coding” contínua com uma janela de contexto de 1 Milhão de tokens.</p>
-
-<h1 id="thinking-preservation-o-fim-da-amnésia">Thinking Preservation: O Fim da Amnésia</h1>
-
-<p>Mas o detalhe que a maioria ignora nas timelines rasas — e que está pegando fogo nas boards dos fóruns de hackudos — é a introdução do “Thinking Preservation”.</p>
-
-<p>Até então, a maioria dos modelos perdia o raciocínio profundo entre as interações. Você explicava um problema complexo, ele entendia, mas na terceira iteração ele já tinha esquecido as premissas arquiteturais que definiu. O Qwen 3.6 agora retém o contexto do raciocínio lógico de mensagens históricas.</p>
-
-<p>Isso torna o desenvolvimento iterativo de front-end e a navegação em repositórios inteiros algo finalmente usável na vida real, não só em demo arranjada para impressionar investidor.</p>
-
-<p>A lição aqui é simples: pare de olhar para quem tem mais parâmetros. A corrida agora não é por tamanho bruto, mas por retenção de arquitetura de pensamento em fluxos longos de trabalho. A arquitetura híbrida com atenção linear resolve o problema de escalar inferência, mas é a preservação de contexto que muda o jogo no dia a dia.</p>]]></content><author><name>Frederico</name></author><category term="[&quot;tech&quot;, &quot;review&quot;]" /><summary type="html"><![CDATA[O Hype dos Parâmetros]]></summary></entry><entry><title type="html">9 Laptops para Programar IA no Brasil [Sem Vender o Celta]</title><link href="https://odisseiadoputo.cc/review/tech/2026/04/20/melhores-laptops-programacao-ia/" rel="alternate" type="text/html" title="9 Laptops para Programar IA no Brasil [Sem Vender o Celta]" /><published>2026-04-20T19:30:00-03:00</published><updated>2026-04-20T19:30:00-03:00</updated><id>https://odisseiadoputo.cc/review/tech/2026/04/20/melhores-laptops-programacao-ia</id><content type="html" xml:base="https://odisseiadoputo.cc/review/tech/2026/04/20/melhores-laptops-programacao-ia/"><![CDATA[<h1 id="o-imposto-do-silício-no-brasil">O Imposto do Silício no Brasil</h1>
-
-<p>A história é sempre a mesma: você lê um tutorial gringo no HackerNews dizendo “é só comprar um MacBook Pro com 128GB de RAM que você roda o LLaMA localmente sem problemas”. Dica fantástica, parceiro. Só que lá o cara paga 4 mil dólares. Aqui no Brasil, essa máquina custa o preço de um Honda Civic usado.</p>
-
-<p>Se você não é herdeiro e o seu pai não é dono de cartório, rodar inferência de 70 bilhões de parâmetros na mesa da sala é um delírio. A realidade brasileira do desenvolvedor é: ou você compra um “gamer” de plástico que faz barulho de avião pra rodar uns scripts no PyTorch, ou você compra um notebook barato pra usar de terminal burro e roda o processamento pesado na nuvem (AWS, RunPod, Colab).</p>
-
-<p>Aqui está a lista real de 2026. Do delírio absoluto até o que você realmente consegue pagar sem estourar o limite do cartão nubank.</p>
-
-<h3 id="1-macbook-pro-m3-max-o-delírio-do-herdeiro">1. MacBook Pro M3 Max (O Delírio do Herdeiro)</h3>
-<p>É a melhor máquina para IA do mundo? É. A memória unificada permite que você jogue um LLM gigantesco na RAM rindo da cara da NVIDIA. Mas o custo no Brasil é um crime previsto no código penal. <a href="https://amzn.to/48GzHYQ">Quer passar raiva? Clica aqui e olha o valor pornográfico que estão cobrando por essa máquina na Amazon. Ninguém normal paga isso.</a></p>
-
-<h3 id="2-alienware-aurora-16-rtx-4050-o-aquecedor-a-lenha">2. Alienware Aurora 16” RTX 4050 (O Aquecedor a Lenha)</h3>
-<p>Se você se recusa a dar dinheiro pra Apple e exige núcleos CUDA locais, o caminho é esse monstro. Ele pesa horrores, e a Dell cobra um absurdo só porque tem o logo de um alienígena. <a href="https://amzn.to/4vHVN7d">Dá uma espiada no buraco negro que isso vai causar no seu orçamento. É ridículo.</a></p>
-
-<h3 id="3-acer-nitro-5-a-realidade-do-povo">3. Acer Nitro 5 (A Realidade do Povo)</h3>
-<p>Bem-vindo à trincheira. É feito de plástico vagabundo, a tela tem cores lavadas, mas ele roda o básico sem explodir na primeira compilação. <a href="https://amzn.to/4mG97Vv">Esse é o que você provavelmente vai acabar comprando. Dá uma olhada no preço da sobrevivência.</a></p>
-
-<h3 id="4-apple-2026-macbook-neo-a18-pro-a-piada-de-8gb">4. Apple 2026 MacBook Neo A18 Pro (A Piada de 8GB)</h3>
-<p>A Apple inventou a linha “Neo” focada em “Apple Intelligence” e enfiou o chip A18 Pro. Sabe qual é a piada? Eles têm a pachorra de vender máquina “para IA” com 8GB de memória unificada em pleno 2026. <a href="https://amzn.to/4mGMZKw">Acha que estou mentindo? Clica aqui pra ver o absurdo que estão cobrando por 8GB de RAM hoje em dia.</a></p>
-
-<h3 id="5-lenovo-ideapad-slim-3-i7-o-terminal-multitarefa">5. Lenovo IdeaPad Slim 3 i7 (O Terminal Multitarefa)</h3>
-<p>Uma máquina com absurdos 24GB de RAM de fábrica e um i7. Não tem placa dedicada monstra, mas vai te deixar rodar Docker e abrir 40 abas do StackOverflow sem o Windows pedir arrego. <a href="https://amzn.to/4cB5k7b">Olha a pechincha. É o preço mínimo para não passar raiva com falta de RAM.</a></p>
-
-<h3 id="6-asus-tuf-gaming-f16-o-tanque-de-plástico">6. Asus TUF Gaming F16 (O Tanque de Plástico)</h3>
-<p>Se você pega ônibus lotado e precisa de um notebook com GPU dedicada (uma RTX 3050 guerreira) que não se parta ao meio na mochila. A carcaça tenta pagar de “militar”, mas é só plástico duro. <a href="https://amzn.to/4sHchtv">Clica e vê se vale a pena o pedágio por um pouquinho mais de durabilidade.</a></p>
-
-<h3 id="7-galaxy-book4-o-falso-mac">7. Galaxy Book4 (O Falso Mac)</h3>
-<p>Para a galera que quer o visual fino de um MacBook, mas vendeu a alma pro Windows. Tem um i5 e 16GB. Consequência: vai engasgar com a temperatura se rodar carga pesada. <a href="https://amzn.to/3QR5z6R">Olha o imposto premium que a Samsung cobra pra você fingir que tem um Mac.</a></p>
-
-<h3 id="8-macbook-air-m3-o-teto-do-assalariado">8. MacBook Air M3 (O Teto do Assalariado)</h3>
-<p>Se você guardou o décimo terceiro, quer o chip M3, mas obviamente não tem grana pro Pro. Lembre-se: ele não tem ventoinha. Se você rodar um modelo pesado localmente, ele vai fritar a bateria. <a href="https://amzn.to/4sM8xqC">O preço dessa maquininha premium no Brasil já mostra o quanto a gente é roubado.</a></p>
-
-<h3 id="9-o-seu-pc-velho-com-linux-a-verdade-absoluta">9. O Seu PC Velho com Linux (A Verdade Absoluta)</h3>
-<p>O Dell G15 que eu ia indicar sumiu do estoque, então vamos ser francos: se a grana está curta, não compre porcaria nenhuma. Pegue o seu notebook de 5 anos atrás, apague o Windows, instale o Ubuntu e rode as inferências no Google Colab. É de graça, não esquenta o seu colo e é melhor que metade das carroças dessa lista. Aceita que dói menos.</p>]]></content><author><name>Frederico</name></author><category term="[&quot;review&quot;, &quot;tech&quot;]" /><summary type="html"><![CDATA[O Imposto do Silício no Brasil]]></summary></entry><entry><title type="html">A Mudança de Guarda na Apple: O Fim da Era Tim Cook</title><link href="https://odisseiadoputo.cc/noticias/tech/review/2026/04/20/apple-john-ternus-ceo/" rel="alternate" type="text/html" title="A Mudança de Guarda na Apple: O Fim da Era Tim Cook" /><published>2026-04-20T18:45:00-03:00</published><updated>2026-04-20T18:45:00-03:00</updated><id>https://odisseiadoputo.cc/noticias/tech/review/2026/04/20/apple-john-ternus-ceo</id><content type="html" xml:base="https://odisseiadoputo.cc/noticias/tech/review/2026/04/20/apple-john-ternus-ceo/"><![CDATA[<h1 id="o-cara-do-hardware-assume-o-volante">O Cara do Hardware Assume o Volante</h1>
-
-<p>A conversa nos corredores (e nas manchetes) é que Tim Cook está finalmente preparando as caixas para esvaziar a gaveta. O sucessor óbvio? John Ternus, o sujeito que atualmente comanda a engenharia de hardware da Apple. Isso não é só fofoca corporativa para preencher site de notícias; é um sinal claro de para onde o dinheiro está indo.</p>
-
-<p>Cook foi o mestre da cadeia de suprimentos. Ele transformou a maçã numa máquina de logística impecável e tediosa. Ternus é purista de hardware. Se ele assumir a cadeira de CEO, espere uma mudança brusca na forma como a Apple desenha e vende seus produtos principais. E, na vida real, “novo design” significa apenas uma coisa: preços bizarros para cobrir o custo da “inovação”.</p>
-
-<h1 id="o-que-isso-muda-no-seu-bolso">O Que Isso Muda no Seu Bolso</h1>
-
-<p>Se você está aí segurando seu dinheiro, esperando um momento mágico para trocar de computador, pode parar. Quando a diretoria muda, a linha de produtos fica turbulenta e os preços sobem. Hoje, a geração atual de MacBooks é, sem sombra de dúvida, a mais estável e com o melhor custo-benefício que já vimos em anos.</p>
-
-<p>Em vez de esperar pela primeira invenção de moda que o Ternus vai colocar no mercado para marcar território, pegue o que já funciona. E sejamos honestos: a lenda do M3 “despencando de preço” é só isso, uma lenda. A corporação prefere transformar estoque em peso de papel a liquidar preço de verdade. Mas <a href="https://amzn.to/41OTBgv">este modelo aqui</a> é a sua melhor aposta na Amazon hoje.</p>
-
-<p>Ele faz tudo o que você precisa, não trava, não esquenta e você não paga a “taxa de teste” do primeiro produto da nova gestão.</p>
-
-<p>Compra logo isso, usa pelos próximos cinco anos e deixa o resto do mercado pagar o prêmio de risco para testar as ideias do novo chefe.</p>]]></content><author><name>Frederico</name></author><category term="[&quot;noticias&quot;, &quot;tech&quot;, &quot;review&quot;]" /><summary type="html"><![CDATA[O Cara do Hardware Assume o Volante]]></summary></entry><entry><title type="html">Melhores Livros Programacao 2026</title><link href="https://odisseiadoputo.cc/2026/02/23/melhores-livros-programacao-2026/" rel="alternate" type="text/html" title="Melhores Livros Programacao 2026" /><published>2026-02-23T00:00:00-03:00</published><updated>2026-02-23T00:00:00-03:00</updated><id>https://odisseiadoputo.cc/2026/02/23/melhores-livros-programacao-2026</id><content type="html" xml:base="https://odisseiadoputo.cc/2026/02/23/melhores-livros-programacao-2026/"><![CDATA[<!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17960947739"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'AW-17960947739');
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/favicon.png">
-
-    <title>Do Zero ao Primeiro Emprego: Os 5 Livros de Programação Essenciais para Iniciantes em 2026</title>
-    <meta name="description"
-        content="Como conseguir o primeiro emprego como desenvolvedor em 2026? Conheça os 5 melhores livros de programação para iniciantes. Aprenda lógica, algoritmos e arquitetura do zero.">
-    <meta name="keywords"
-        content="do zero ao primeiro emprego, livros de programação 2026, livros de programação para iniciantes, guia de programação para iniciantes, aprender programação do zero, como ser programador 2026, lógica de programação, carreira dev júnior, algoritmos para iniciantes, clean code iniciante, desenvolvimento de software, tecnologia 2026, primeiro emprego dev">
-    <meta name="author" content="Odisseia do Puto">
-    <meta name="language" content="pt-br">
-    <meta name="geo.region" content="BR">
-    <meta name="robots" content="index, follow">
-
-    <!-- SEO Boost: Open Graph / Facebook -->
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://odisseiadoputo.cc/2026/02/23/melhores-livros-programacao-2026/">
-    <meta property="og:title"
-        content="Do Zero ao Primeiro Emprego: Os 5 Livros de Programação Essenciais para Iniciantes em 2026">
-    <meta property="og:description"
-        content="O guia definitivo: Aprenda programação do zero e garanta seu primeiro emprego em 2026 com os 5 livros essenciais.">
-    <meta property="og:image" content="https://odisseiadoputo.cc/creatives/static/71Vkg7GfPFL._SY522_.jpg">
-    <meta property="article:published_time" content="2026-02-23T22:46:00-03:00">
-    <meta property="article:modified_time" content="2026-02-23T22:46:00-03:00">
-
-
-    <!-- SEO Boost: Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://odisseiadoputo.cc/2026/02/23/melhores-livros-programacao-2026/">
-    <meta property="twitter:title"
-        content="Do Zero ao Primeiro Emprego: Os 5 Livros de Programação Essenciais para Iniciantes em 2026">
-    <meta property="twitter:description"
-        content="Garanta seu primeiro emprego dev em 2026. Como aprender programação do zero com os 5 livros obrigatórios.">
-    <meta property="twitter:image" content="https://odisseiadoputo.cc/creatives/static/71Vkg7GfPFL._SY522_.jpg">
-
-    <!-- SEO Boost: Canonical -->
-    <link rel="canonical" href="https://odisseiadoputo.cc/2026/02/23/melhores-livros-programacao-2026/">
-
-    <!-- SEO Boost: Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "TechArticle",
-      "headline": "Do Zero ao Primeiro Emprego: Os 5 Livros de Programação Essenciais para Iniciantes em 2026",
-      "description": "Descubra os 5 livros essenciais para aprender programação, lógica e arquitetura em 2026.",
-      "image": "https://odisseiadoputo.cc/creatives/static/71Vkg7GfPFL._SY522_.jpg",
-      "author": {
-        "@type": "Person",
-        "name": "Odisseia do Puto"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Odisseia do Puto",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://odisseiadoputo.cc/favicon.png"
-        }
-      },
-      "datePublished": "2026-02-23T22:46:00-03:00",
-      "dateModified": "2026-02-23T22:46:00-03:00",
-      "mainEntity": {
-        "@type": "ItemList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Entendendo Algoritmos",
-            "url": "https://amzn.to/4qV6rUz"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "O Programador Pragmático",
-            "url": "https://amzn.to/4ayPbQ1"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Código Limpo",
-            "url": "https://amzn.to/46YoGkL"
-          },
-          {
-            "@type": "ListItem",
-            "position": 4,
-            "name": "Projetando Aplicações Ricas em Dados",
-            "url": "https://amzn.to/4aNqyOy"
-          },
-          {
-            "@type": "ListItem",
-            "position": 5,
-            "name": "Redes de Computadores",
-            "url": "https://amzn.to/3ZPQILx"
-          }
-        ]
-      }
-    }
-    </script>
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&display=swap');
-
-        :root {
-            --bg-color: #0c0c0c;
-            --text-primary: #e0e0e0;
-            --text-muted: #888888;
-            --accent-acid: #ccff00;
-            --border-color: #333333;
-            --font-mono: 'JetBrains Mono', 'Courier New', monospace;
-            --scanline-color: rgba(255, 255, 255, 0.02);
-            --danger: #ff3333;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-primary);
-            font-family: var(--font-mono);
-            line-height: 1.6;
-            font-size: 16px;
-            overflow-x: hidden;
-        }
-
-        body::before {
-            content: " ";
-            display: block;
-            position: fixed;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            background: linear-gradient(rgba(18, 16, 16, 0) 50%, var(--scanline-color) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-            z-index: 2;
-            background-size: 100% 4px, 3px 100%;
-            pointer-events: none;
-        }
-
-        .container {
-            max-width: 850px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-            position: relative;
-            z-index: 3;
-        }
-
-        header {
-            border-bottom: 2px solid var(--accent-acid);
-            padding-bottom: 2rem;
-            margin-bottom: 3rem;
-        }
-
-        .metadata {
-            color: var(--accent-acid);
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 1rem;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        h1 {
-            font-size: 2.2rem;
-            line-height: 1.2;
-            font-weight: 700;
-            letter-spacing: -1px;
-            margin-bottom: 1.5rem;
-            color: #ffffff;
-        }
-
-        h2 {
-            font-size: 1.6rem;
-            color: var(--accent-acid);
-            margin: 3.5rem 0 1.5rem;
-            border-left: 4px solid var(--accent-acid);
-            padding-left: 1rem;
-        }
-
-        p {
-            margin-bottom: 1.5rem;
-            color: #cccccc;
-        }
-
-        ul {
-            margin-bottom: 2rem;
-            padding-left: 1.5rem;
-        }
-
-        li {
-            margin-bottom: 0.8rem;
-            color: #cccccc;
-        }
-
-        strong {
-            color: #ffffff;
-        }
-
-        .acid-link {
-            display: inline-block;
-            color: var(--bg-color);
-            background-color: var(--accent-acid);
-            padding: 0.5rem 1rem;
-            text-decoration: none;
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            margin-top: 1rem;
-            transition: all 0.2s ease;
-            border: 1px solid var(--accent-acid);
-        }
-
-        .acid-link:hover {
-            background-color: transparent;
-            color: var(--accent-acid);
-        }
-
-        .highlight-box {
-            background-color: rgba(255, 51, 51, 0.05);
-            border: 1px solid var(--danger);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            position: relative;
-        }
-
-        .highlight-box::before {
-            content: ">> FATAL_ERROR";
-            position: absolute;
-            top: -10px;
-            left: 10px;
-            background: var(--bg-color);
-            padding: 0 10px;
-            font-size: 0.8rem;
-            color: var(--danger);
-        }
-
-        .book-analysis {
-            border: 1px solid var(--border-color);
-            padding: 1.5rem;
-            margin-bottom: 2.5rem;
-            background: rgba(255, 255, 255, 0.02);
-        }
-
-        /* Estrutura Flexbox para as imagens e texto */
-        .book-container {
-            display: flex;
-            gap: 1.5rem;
-            align-items: flex-start;
-        }
-
-        /* O fetiche visual: Imagem morta que ganha vida no hover */
-        .book-cover {
-            width: 140px;
-            flex-shrink: 0;
-            border: 1px solid var(--border-color);
-            filter: grayscale(100%) contrast(120%) brightness(0.8);
-            transition: all 0.3s ease;
-            box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.5);
-        }
-
-        .book-cover:hover {
-            filter: grayscale(0%) contrast(100%) brightness(1);
-            border-color: var(--accent-acid);
-        }
-
-        .book-content {
-            flex-grow: 1;
-        }
-
-        .book-content h4 {
-            color: var(--accent-acid);
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-        }
-
-        .book-meta {
-            font-size: 0.9rem;
-            border-left: 2px solid var(--text-muted);
-            padding-left: 1rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .label-pro {
-            color: #00ff00;
-            font-weight: bold;
-        }
-
-        .label-con {
-            color: #ff3333;
-            font-weight: bold;
-        }
-
-        .label-exe {
-            color: #00ccff;
-            font-weight: bold;
-        }
-
-        .book-verdict {
-            margin: 1.5rem 0 1.5rem 0;
-            padding: 1rem;
-            border-left: 3px solid var(--accent-acid);
-            background: rgba(204, 255, 0, 0.03);
-            font-style: italic;
-        }
-
-        .book-verdict p {
-            margin-bottom: 0;
-            color: #dddddd;
-            font-size: 0.95rem;
-        }
-
-        .book-verdict strong {
-            color: var(--accent-acid);
-            font-style: normal;
-        }
-
-        .author-card {
-            display: flex;
-            align-items: center;
-            gap: 1.5rem;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid var(--border-color);
-            padding: 1.5rem;
-            margin-bottom: 2.5rem;
-        }
-
-        .author-card .author-avatar {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            overflow: hidden;
-            border: 2px solid var(--accent-acid);
-            flex-shrink: 0;
-        }
-
-        .author-card .author-avatar img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .author-card p {
-            margin-bottom: 0.5rem;
-            font-size: 0.95rem;
-        }
-
-        .author-card p:last-child {
-            margin-bottom: 0;
-        }
-
-        .author-card a {
-            color: var(--accent-acid);
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .author-card a:hover {
-            text-decoration: underline;
-        }
-
-        .author-card {
-            position: relative;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        .author-card .author-header {
-            display: flex;
-            align-items: center;
-            gap: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .author-card-email {
-            position: absolute;
-            top: 0.5rem;
-            right: 1rem;
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            font-family: var(--font-mono);
-        }
-
-        .contact-form {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            background: rgba(0, 0, 0, 0.3);
-            border: 1px solid var(--border-color);
-            color: #fff;
-            padding: 0.8rem;
-            font-family: var(--font-mono);
-            font-size: 0.9rem;
-        }
-
-        .contact-form textarea {
-            resize: vertical;
-            min-height: 80px;
-        }
-
-        .contact-form input:focus,
-        .contact-form textarea:focus {
-            border-color: var(--accent-acid);
-            outline: none;
-        }
-
-        .contact-btn {
-            background: var(--accent-acid);
-            color: #000;
-            border: none;
-            padding: 0.8rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            cursor: pointer;
-            font-family: var(--font-mono);
-        }
-
-        hr {
-            border: none;
-            border-top: 1px dashed var(--border-color);
-            margin: 3rem 0;
-        }
-
-        .cursor {
-            display: inline-block;
-            width: 10px;
-            height: 1.2em;
-            background-color: var(--accent-acid);
-            vertical-align: middle;
-            animation: blink 1s step-end infinite;
-        }
-
-        @keyframes blink {
-
-            0%,
-            100% {
-                opacity: 1;
-            }
-
-            50% {
-                opacity: 0;
-            }
-        }
-
-        .footer-note {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            margin-top: 4rem;
-            border-top: 1px solid var(--border-color);
-            padding-top: 1rem;
-        }
-
-        /* Degradação graciosa para as telas de celular */
-        @media (max-width: 650px) {
-            .book-container {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .book-cover {
-                width: 180px;
-                margin-bottom: 1rem;
-            }
-
-            .book-content h4 {
-                text-align: center;
-            }
-
-            .book-meta {
-                text-align: justify;
-            }
-
-            .acid-link {
-                display: block;
-                text-align: center;
-            }
-        }
-
-        /* Newsletter Integration Otimizada para o Post */
-        #nl-end-block {
-            margin: 4rem 0 2rem;
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid var(--border-color);
-            padding: 2rem;
-        }
-
-        #nl-end-block .nl-end-title {
-            color: var(--accent-acid);
-            font-family: var(--font-mono);
-            font-size: 1.4rem;
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-
-        #nl-end-block .nl-end-desc {
-            color: #888;
-            font-size: 0.95rem;
-            display: block;
-            margin-bottom: 1.5rem;
-        }
-
-        .nl-inline-form {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .nl-input {
-            flex: 1;
-            min-width: 250px;
-            background: #111;
-            border: 1px solid var(--border-color);
-            color: #fff;
-            padding: 0.8rem 1rem;
-            font-family: var(--font-mono);
-            outline: none;
-        }
-
-        .nl-input:focus {
-            border-color: var(--accent-acid);
-        }
-
-        .nl-btn {
-            background: var(--accent-acid);
-            color: #000;
-            border: none;
-            padding: 0.8rem 2rem;
-            font-weight: bold;
-            font-family: var(--font-mono);
-            text-transform: uppercase;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-
-        .nl-btn:hover {
-            opacity: 0.8;
-            transform: translateY(-2px);
-        }
-
-        .nl-error {
-            color: #ff3333;
-            font-size: 0.85rem;
-            margin-top: 0.5rem;
-        }
-
-        .nl-inline-success {
-            color: var(--accent-acid);
-            font-weight: bold;
-            margin-top: 1rem;
-        }
-
-        .nl-btn-spinner {
-            display: inline-block;
-            width: 1rem;
-            height: 1rem;
-            border: 2px solid rgba(0, 0, 0, 0.2);
-            border-top-color: #000;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-
-        @keyframes spin {
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-        /* Esconder modais/elementos nativos que não combinam com o layout linear */
-        .nl-modal,
-        .nl-modal-backdrop {
-            display: none !important;
-        }
-    </style>
-</head>
-
-<body>
-
-    <div class="container">
-        <header>
-            <div class="metadata">
-                <span>// PROTOCOLO ÁCIDO: LATÊNCIA ZERO, VERDADE CRUA</span>
-                <span id="timestamp"></span>
-            </div>
-            <h1>Do Zero ao Primeiro Emprego: Os 5 Livros de Programação Essenciais para Iniciantes em 2026<span
-                    class="cursor"></span></h1>
-        </header>
-
-        <main>
-
-
-            <p>O mercado de tecnologia não está em crise; ele apenas acordou da sua alucinação. Até recentemente, ser
-                promovido exigia apenas que você soubesse empilhar pacotes NPM ou seguir um tutorial de bootcamp focado
-                em um framework que morreria em três anos.</p>
-
-            <p>A democratização de geradores de código criou um abatedouro corporativo. Você passou o último ano se
-                matando para <strong>aprender a programar</strong>, memorizou a sintaxe do React ou do Node.js, e hoje
-                descobre que um modelo de linguagem de vinte dólares faz seu trabalho manual em trinta segundos,
-                cuspindo componentes inteiros antes mesmo de você terminar de configurar sua IDE.</p>
-
-            <p>O pânico é justificável. O mercado para "digitadores de código" evaporou. A inteligência artificial
-                aniquilou o intermediário da sintaxe. Porém — e preste muita atenção nisso —, ela é funcionalmente cega
-                para a engenharia sob carga, contexto de negócios e arquitetura distribuída.</p>
-
-            <div class="highlight-box">
-                <p>A IA gera um código esteticamente impecável. O que ela não faz é acordar às 3h da manhã quando o
-                    servidor capota porque o <em>loop</em> que ela escreveu bloqueou a thread principal da aplicação na
-                    Black Friday. Ela não entende o gargalo da rede, não calibra o tempo da replicação no banco de dados
-                    e ignora o bloqueio transacional que acaba de explodir os carrinhos de compra da sua empresa.</p>
-            </div>
-
-            <p>A realidade nua e crua para quem busca o <strong>primeiro emprego como desenvolvedor</strong> é binária:
-                ou você entende a camada fundamental — concorrência, infraestrutura, gestão de estado global e falhas de
-                rede —, ou será substituído por um script Python no próximo trimestre.</p>
-
-            <h3
-                style="color:var(--accent-acid); margin: 2.5rem 0 1.2rem; border-left: 2px solid var(--text-muted); padding-left:0.8rem;">
-                A Ilusão do "Aprenda Rápido"</h3>
-
-            <p>Nós fomos brutalmente condicionados a buscar o caminho de menor resistência. Cursos de "Seja Dev em 30
-                Dias" venderam a mentira de que a ciência da computação poderia ser resumida em um certificado PDF
-                colorido em troca do seu cartão de crédito. A consequência empírica? Departamentos de engenharia lotados
-                de juniores que choram quando o framework atualiza, porque não compreendem a linguagem por baixo dele.
-            </p>
-
-            <p>A solução não está em assistir a mais vídeos acelerados em 2x. A diferença entre o dev que é cortado na
-                primeira rodada de demissões e o dev que escolhe onde trabalhar reside na sua fundação teórica. Uma
-                teoria forjada com sangue nas trincheiras tecnológicas e que está fossilizada no formato mais analógico
-                e negligenciado do mundo: a celulose e a tinta.</p>
-
-            <p>Adiante, deixo as análises aos únicos <strong>livros de programação para iniciantes</strong> (que formam
-                verdadeiros sêniores) e separam os sobreviventes dos desempregados. Eu não escrevo isso para confortar o
-                seu ego de estudante, escrevo para impedir que você destrua meu cluster na próxima sexta-feira.</p>
-
-            <hr>
-
-            <h2>O Arsenal Anti-Obsolescência: Análise Tática e Execução</h2>
-
-            <div class="author-card" style="margin-top: 2rem;">
-                <span class="author-card-email">me@raimundoalmada.com</span>
-                <div style="width: 100%;">
-                    <div class="author-header"
-                        style="margin-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 1.5rem;">
-                        <div class="author-avatar"><img src="/img/raimundo.png" alt="Raimundo Pessoa"></div>
-                        <div>
-                            <p><strong>Raimundo Pessoa: Platform Engineer & Hacker</strong></p>
-                            <p style="font-size: 0.9rem; margin-top: 0.4rem; color: #888;">8+ anos consolidando
-                                infraestruturas críticas e sistemas de altíssima escala. Engenheiro de plataforma com
-                                visão tática de quem já atuou em todas as camadas da stack. Mentoreio quem busca a
-                                maestria técnica necessária para fugir dos tutoriais rasos, dominar a base e ditar o
-                                próprio ritmo no topo do mercado.</p>
-                        </div>
-                    </div>
-
-                    <p style="color: var(--accent-acid); font-weight: bold; margin-bottom: 0.5rem;">Tá com dúvida por
-                        onde começar?</p>
-                    <p style="font-size: 0.9rem; color: #aaa; margin-bottom: 1.5rem;">Me conta seu cenário atual e eu te
-                        respondo pessoalmente assim que sair da próxima war room (relaxa, não vou cobrar pela resposta).
-                    </p>
-
-                    <form id="consult-form" class="contact-form">
-                        <input type="email" id="consult-email" placeholder="Seu e-mail de contato" required>
-                        <textarea id="consult-doubt" placeholder="Qual sua dúvida real sobre o próximo passo?"
-                            required></textarea>
-                        <button type="submit" class="contact-btn" id="consult-submit">Encaminhar dúvida para a
-                            Odisseia</button>
-                    </form>
-                    <div id="consult-success"
-                        style="display: none; border: 1px solid var(--accent-acid); padding: 1.5rem; background: rgba(0, 255, 136, 0.05); margin-top: 1rem;">
-                        <p
-                            style="color: var(--accent-acid); font-weight: bold; margin-bottom: 0.5rem; font-family: var(--font-mono);">
-                            [STATUS: TRANSMISSÃO CONCLUÍDA]</p>
-                        <p style="font-size: 0.9rem; color: #fff;">Sua dúvida foi injetada no meu sistema. Vou analisar
-                            seu cenário e te respondo pessoalmente em breve.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="book-analysis" id="livro1">
-                <div class="book-container">
-                    <img src="/creatives/static/71Vkg7GfPFL._SY522_.jpg"
-                        alt="Livro Entendendo Algoritmos: Guia de Algoritmos para Iniciantes e Lógica de Programação"
-                        class="book-cover">
-                    <div class="book-content">
-                        <h4>1. Entendendo Algoritmos (Aditya Bhargava)</h4>
-                        <div class="book-meta">O antídoto contra o terraplanismo lógico de quem acha que estrutura de
-                            dados é "coisa de faculdade velha".</div>
-                        <ul>
-                            <li><span class="label-pro">[FORTE]:</span> É a bíblia visual que prova que você não precisa
-                                de um PH.D para entender por que seu script de busca é lento. Ele transforma a
-                                matemática intimidadora em armas que você realmente vai usar no dia a dia.</li>
-                            <li><span class="label-con">[FRACO]:</span> É o portão de entrada, não o destino final. Se
-                                você acha que saber busca binária te faz um sênior, o mercado vai te mastigar na
-                                primeira semana.</li>
-                            <li><span class="label-exe">[EXECUÇÃO]:</span> Esqueça Copy-Paste. Escolha um algoritmo por
-                                dia e implemente-o em uma linguagem que você detesta. Se você não souber explicar o Big
-                                O do seu próprio código para um pato de borracha, você não entendeu nada. Use isso para
-                                humilhar seu "eu" de ontem que escrevia loops aninhados sem critério.</li>
-                        </ul>
-                        <div class="book-verdict">
-                            <p><strong>Veredito da Odisseia:</strong> Antes de clicar abaixo, entenda: eu repudiava a
-                                matemática acadêmica pura. Mas este livro é um milagre visual que hackeia seu cérebro.
-                                Se quando o seu código trava você resolve adicionando mais memória RAM ao invés de
-                                depurar a complexidade temporal, você é uma ameaça à empresa. Acesse este conteúdo e
-                                pare de programar apenas na força bruta.</p>
-                        </div>
-                        <a href="https://amzn.to/4qV6rUz" target="_blank" class="acid-link"
-                            title="Ver Livro Entendendo Algoritmos na Amazon">Injetar lógica na base
-                            -></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="book-analysis" id="livro2">
-                <div class="book-container">
-                    <img src="/creatives/static/61hewOW+8zL._SY522_.jpg"
-                        alt="Livro O Programador Pragmático: Carreira Dev e Melhores Práticas de Programação"
-                        class="book-cover">
-                    <div class="book-content">
-                        <h4>2. O Programador Pragmático (Hunt & Thomas)</h4>
-                        <div class="book-meta">O manual de sobrevivência política e corporativa. Código é negócio; o
-                            resto é vaidade.</div>
-                        <ul>
-                            <li><span class="label-pro">[FORTE]:</span> Ensina a diferença entre um "digitador de
-                                código" e um Engenheiro. É sobre ética de trabalho, minimalismo técnico e como não ser o
-                                júnior que a equipe odeia no final da sprint.</li>
-                            <li><span class="label-con">[FRACO]:</span> Alguns exemplos técnicos cheiram a mofo, mas se
-                                você se prender à ferramenta citada e não ao conceito de "Ortogonalidade", você falhou
-                                no teste de inteligência.</li>
-                            <li><span class="label-exe">[EXECUÇÃO]:</span> Escolha um princípio como "Tracer Bullets" e
-                                aplique no seu próximo projeto pessoal. Pare de planejar por dois meses e comece a criar
-                                arquiteturas que permitem erro rápido. Se o seu código não é "dry" (Don't Repeat
-                                Yourself), você está apenas criando débito técnico com juros abusivos.</li>
-                        </ul>
-                        <div class="book-verdict">
-                            <p><strong>Veredito da Odisseia:</strong> Se o seu orçamento só permite um investimento em
-                                conhecimento hoje, que seja este. É o manual de guerra que te ensina a jogar no
-                                tabuleiro corporativo sem vender a alma à mediocridade. Toda vez que me vejo sem saída
-                                técnica, recorro a estes princípios. Ou você muda sua postura agora, ou vai ser
-                                micro-gerenciado pelo Tech Lead pelo resto da década.</p>
-                        </div>
-                        <a href="https://amzn.to/4ayPbQ1" target="_blank" class="acid-link"
-                            title="Ver Livro O Programador Pragmático na Amazon">Blindar a carreira dev
-                            -></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="book-analysis" id="livro3">
-                <div class="book-container">
-                    <img src="/creatives/static/71dH97FwGbL._SY522_.jpg"
-                        alt="Livro Código Limpo: Clean Code para Iniciantes e Desenvolvimento de Software"
-                        class="book-cover">
-                    <div class="book-content">
-                        <h4>3. Código Limpo (Robert C. Martin)</h4>
-                        <div class="book-meta">A higiene mental obrigatória. A máquina entende código sujo; seu colega
-                            de equipe, não.</div>
-                        <ul>
-                            <li><span class="label-pro">[FORTE]:</span> Define a fronteira entre o código profissional e
-                                o chorume amador. Ensina que nomes de variáveis importam mais que o seu ego. Funções
-                                devem ser pequenas, como o tempo de paciência do seu sênior.</li>
-                            <li><span class="label-con">[FRACO]:</span> Gera o "Pentecostalismo de Código". Jr's que
-                                seguem isso cegamente criam abstrações tão profundas que ninguém consegue debugar. Tenha
-                                bom senso ou crie um monstro de camadas.</li>
-                            <li><span class="label-exe">[EXECUÇÃO]:</span> Pegue aquele seu primeiro projeto (aquele que
-                                você tem vergonha). Aplique as regras de nomenclatura e tamanho de função. Se o número
-                                de "WTF por minuto" durante a leitura não cair 80%, você não está sendo rigoroso o
-                                suficiente com a sua própria sujeira.</li>
-                        </ul>
-                        <div class="book-verdict">
-                            <p><strong>Veredito da Odisseia:</strong> Estude este material, mastigue o terço inicial
-                                rigorosamente e depois coloque em prática. Ele vai injetar a dose de profissionalismo
-                                que falta na sua nomenclatura, resolvendo 90% da fricção no *Code Review*. Apenas tente
-                                não ser infectado pelo dogmatismo. Use-o como higienizador mental, não como uma Bíblia
-                                que afoga o seu pragmatismo em uma orgia de interfaces.</p>
-                        </div>
-                        <a href="https://amzn.to/46YoGkL" target="_blank" class="acid-link"
-                            title="Ver Livro Código Limpo na Amazon">Parar de escrever lixo
-                            -></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="book-analysis" id="livro4">
-                <div class="book-container">
-                    <img src="/creatives/static/91YfNb49PLL._SY522_.jpg"
-                        alt="Livro Projetando Aplicações Ricas em Dados: Arquitetura de Software e Engenharia de Dados"
-                        class="book-cover">
-                    <div class="book-content">
-                        <h4>4. Projetando Aplicações Ricas em Dados (M. Kleppmann)</h4>
-                        <div class="book-meta">O moedor de carne intelectual. Bem-vindo à engenharia de verdade.</div>
-                        <ul>
-                            <li><span class="label-pro">[FORTE]:</span> É aqui que os meninos são separados dos homens.
-                                Enquanto a IA cospe CRUDs, este livro ensina por que o seu banco de dados vai explodir
-                                quando 10 mil pessoas tentarem acessar o sistema ao mesmo tempo. É a bíblia da
-                                escalabilidade.
-                            </li>
-                            <li><span class="label-con">[FRACO]:</span> A densidade é um soco no estômago. Você vai ler
-                                5 páginas e sentir que não sabe nada. Isso se chama "choque de realidade", aceite e
-                                continue lendo.</li>
-                            <li><span class="label-exe">[EXECUÇÃO]:</span> Não tente ler tudo de uma vez. Foque no
-                                capítulo de Replicação. Depois, vá ao console do seu Provedor de Nuvem e tente entender
-                                como eles configuram alta disponibilidade. Se você não sabe a diferença entre
-                                consistência forte e eventual, você é um risco para a integridade dos dados da empresa.
-                            </li>
-                        </ul>
-                        <div class="book-verdict">
-                            <p><strong>Veredito da Odisseia:</strong> O verdadeiro rito de passagem. Um indivíduo que
-                                enche a boca para dizer que é "Desenvolvedor Sênior" mas foge de Kleppmann está
-                                fraudando o mercado. As primeiras trinta páginas vão te humilhar severamente. Aceite a
-                                dor. Essa humilhação de hoje salva você de um incidente de milhões de prejuízo amanhã.
-                            </p>
-                        </div>
-                        <a href="https://amzn.to/4aNqyOy" target="_blank" class="acid-link"
-                            title="Ver Livro Projetando Aplicações Ricas em Dados na Amazon">Entender arquitetura sob
-                            carga -></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="book-analysis" id="livro5">
-                <div class="book-container">
-                    <img src="/creatives/static/91uoaAYJkrL._SY522_.jpg"
-                        alt="Livro Redes de Computadores: Fundamentos de Redes e Protocolos" class="book-cover">
-                    <div class="book-content">
-                        <h4>5. Redes de Computadores (Andrew S. Tanenbaum)</h4>
-                        <div class="book-meta">A cura para o fetiche de abstração. A nuvem é só o computador dos outros,
-                            e cabos falham.</div>
-                        <ul>
-                            <li><span class="label-pro">[FORTE]:</span> Ensina que a "Nuvem" é apenas o computador de
-                                outra pessoa e que cabos rompem. Se você não entende o handshake TCP, você é apenas um
-                                passageiro em um avião sem piloto.</li>
-                            <li><span class="label-con">[FRACO]:</span> Tão acadêmico que beira o letárgico em alguns
-                                capítulos sobre modulação física. Pule o que não é bit e foque no tráfego.</li>
-                            <li><span class="label-exe">[EXECUÇÃO]:</span> Abra o DevTools ou o Wireshark. Observe o
-                                tráfego real. Por que aquele request HTTP tem overhead? O que é um TTL? Use o livro para
-                                depurar latência na vida real, não para passar em prova de faculdade. Um júnior que
-                                entende de sockets vale dez que só sabem dar 'npm install'.</li>
-                        </ul>
-                        <div class="book-verdict">
-                            <p><strong>Veredito da Odisseia:</strong> O júnior invariavelmente enxerga a nuvem como
-                                xamanismo ou Wi-Fi eterno. Dominar este tijolo acadêmico e peneirar as fundações é como
-                                abrir o capô de um carro blindado. Pare de tentar debugar JSONs vazios no front-end sem
-                                entender que cabos falham e handshakes TCP ocorrem por baixo dos panos. Saia da caverna
-                                platônica do seu localhost.</p>
-                        </div>
-                        <a href="https://amzn.to/3ZPQILx" target="_blank" class="acid-link"
-                            title="Ver Livro Redes de Computadores na Amazon">Dominar a latência real
-                            -></a>
-                    </div>
-                </div>
-            </div>
-
-            <hr>
-
-            <h2>A Decisão de Latência Zero</h2>
-
-            <p>A ignorância, hoje, custa centavos de dólar por token. A sabedoria custa horas de bundas na cadeira
-                consumindo literatura técnica pesada. Você pode escolher ignorar isso, voltar para o seu tutorial no
-                YouTube e continuar apostando que o mercado vai ter pena de você em 2026.</p>
-
-            <p>Ou você assume o controle da sua <strong>carreira dev júnior</strong>, investe nas fundações e se torna o
-                profissional que é chamado na sala quando a infraestrutura entra em chamas.</p>
-
-            <p>A escolha é sua. A física dos servidores não negocia.</p>
-
-        </main>
-
-        <div class="footer-note">
-            <p>AUDITORIA: Os links acima contêm rastreadores. Utilizá-los é uma forma de apoiar a Odisseia sem custo
-                extra, subsidiando indiretamente as análises cirúrgicas que impedem você de afundar sua carreira. A
-                transparência é a nossa base.
-            </p>
-        </div>
-
-        <section style="margin-top: 4rem;">
-            <!-- ===== NEWSLETTER: BLOCO NO FINAL DO POST ===== -->
-<aside class="nl-end-block" id="nl-end-block" aria-label="Newsletter">
-    <div class="nl-end-inner">
-        <span class="nl-end-icon" id="nl-end-icon">📬</span>
-        <div class="nl-end-text has-en">
-            <strong class="nl-end-title">
-                <span class="lang-pt">Quer receber quentinho no email?</span>
-                <span class="lang-en">Want fresh updates in your inbox?</span>
-            </strong>
-            <span class="nl-end-desc">
-                <span class="lang-pt">Cada novo post vai direto pra sua caixa. Sem precisar ficar voltando aqui.</span>
-                <span class="lang-en">Every new post goes straight to your inbox. No need to keep checking back.</span>
-            </span>
-        </div>
-        <form class="nl-inline-form" id="nl-end-form" novalidate>
-            <input type="email" id="nl-end-email" class="nl-input" placeholder="seu@email.com" autocomplete="email"
-                required />
-            <button type="submit" class="nl-btn has-en" id="nl-end-submit">
-                <span class="nl-btn-text">
-                    <span class="lang-pt">Assinar</span>
-                    <span class="lang-en">Subscribe</span>
-                </span>
-                <span class="nl-btn-spinner" hidden></span>
-            </button>
-        </form>
-        <p class="nl-error" id="nl-end-error" hidden></p>
-        <p class="nl-inline-success has-en" id="nl-end-success" hidden>
-            <span class="lang-pt">✅ Tá dentro! O próximo post chega quentinho direto na sua caixa.</span>
-            <span class="lang-en">✅ You're in! The next post will arrive fresh in your inbox.</span>
-        </p>
-    </div>
-</aside>
-
-<!-- ===== NEWSLETTER MODAL ===== -->
-<div id="nl-modal" class="nl-modal" role="dialog" aria-modal="true" aria-labelledby="nl-modal-title" hidden>
-    <div class="nl-modal-backdrop" id="nl-modal-backdrop"></div>
-    <div class="nl-modal-box">
-        <button class="nl-modal-close has-en" id="nl-modal-close" aria-label="Fechar">
-            <span class="lang-pt">&times;</span>
-            <span class="lang-en">&times;</span>
-        </button>
-        <div class="nl-modal-icon" id="nl-modal-icon">📬</div>
-        <h2 class="nl-modal-title" id="nl-modal-title"></h2>
-        <p class="nl-modal-desc" id="nl-modal-desc"></p>
-        <form class="nl-form" id="nl-modal-form" novalidate>
-            <div class="nl-input-row">
-                <input type="email" id="nl-modal-email" class="nl-input" placeholder="seu@email.com"
-                    autocomplete="email" required />
-                <button type="submit" class="nl-btn has-en" id="nl-modal-submit">
-                    <span class="nl-btn-text">
-                        <span class="lang-pt">Assinar</span>
-                        <span class="lang-en">Subscribe</span>
-                    </span>
-                    <span class="nl-btn-spinner" hidden></span>
-                </button>
-            </div>
-            <p class="nl-error" id="nl-modal-error" hidden></p>
-        </form>
-        <button class="nl-dismiss has-en" id="nl-modal-dismiss">
-            <span class="lang-pt">Agora não</span>
-            <span class="lang-en">Not now</span>
-        </button>
-    </div>
-</div>
-
-<!-- ===== NEWSLETTER MODAL SUCESSO ===== -->
-<div id="nl-modal-success" class="nl-modal" role="dialog" aria-modal="true" hidden>
-    <div class="nl-modal-backdrop"></div>
-    <div class="nl-modal-box nl-modal-box--success">
-        <div class="nl-modal-icon">✅</div>
-        <h2 class="nl-modal-title has-en">
-            <span class="lang-pt">Tá dentro.</span>
-            <span class="lang-en">You're in.</span>
-        </h2>
-        <p class="nl-modal-desc has-en">
-            <span class="lang-pt">Agora não precisa mais ficar acompanhando o site — o próximo post chega quentinho
-                direto na sua caixa.</span>
-            <span class="lang-en">No need to keep tracking the site — the next post will arrive fresh in your
-                inbox.</span>
-        </p>
-        <button class="nl-btn nl-btn--full has-en" id="nl-success-close">
-            <span class="lang-pt">Fechar</span>
-            <span class="lang-en">Close</span>
-        </button>
-    </div>
-</div>
-        </section>
-    </div>
-
-    <script src="/js/newsletter.js"></script>
-
-    <script>
-        function gtag_report_conversion(url) {
-            var callback = function () {
-                if (typeof (url) != 'undefined') {
-                    window.open(url, '_blank');
-                }
-            };
-            gtag('event', 'conversion', {
-                'send_to': 'AW-17960947739/e4AMCIe56P0bEJugufRC',
-                'value': 1.0,
-                'currency': 'BRL',
-                'event_callback': callback
-            });
-            return false;
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            const timeSpan = document.getElementById('timestamp');
-            const updateTime = () => {
-                const now = new Date();
-                timeSpan.textContent = `LAST_COMMIT: ${now.toISOString()}`;
-            };
-            setInterval(updateTime, 1000);
-            updateTime();
-
-            // Rastrear cliques nos links da Amazon como conversão
-            const acidLinks = document.querySelectorAll('.acid-link');
-            acidLinks.forEach(link => {
-                link.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const url = this.getAttribute('href');
-                    gtag_report_conversion(url);
-                });
-            });
-
-            // Handler do formulário de consulta
-            const consultForm = document.getElementById('consult-form');
-            if (consultForm) {
-                consultForm.addEventListener('submit', function (e) {
-                    e.preventDefault();
-                    const btn = document.getElementById('consult-submit');
-                    const emailInput = document.getElementById('consult-email');
-                    const doubtInput = document.getElementById('consult-doubt');
-
-                    if (!emailInput || !doubtInput) return;
-
-                    const payload = {
-                        email: emailInput.value.trim(),
-                        message: doubtInput.value.trim()
-                    };
-
-                    btn.disabled = true;
-                    btn.innerText = 'ENVIANDO...';
-
-                    fetch('https://n8n.raimundopessoa.com/webhook/447ec040-e429-47b6-b255-7ade8e7001a6?source=lp_livros', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(payload),
-                    }).then(() => {
-                        // Rastreio de Conversão para o Form (Lead)
-                        gtag('event', 'conversion', {
-                            'send_to': 'AW-17960947739/e4AMCIe56P0bEJugufRC',
-                            'value': 1.0,
-                            'currency': 'BRL'
-                        });
-
-                        consultForm.style.display = 'none';
-                        document.getElementById('consult-success').style.display = 'block';
-                    }).catch(() => {
-                        btn.disabled = false;
-                        btn.innerText = 'ERRO. TENTAR NOVAMENTE?';
-                    });
-                });
-            }
-        });
-    </script>
-
-</body>
-
-</html>]]></content><author><name></name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">O Segfault da Civilização: A Insuficiência Múltipla de Órgãos da OpenAI</title><link href="https://odisseiadoputo.cc/2026/02/21/segfault-civilizacao-openai-falencia-tecnica/" rel="alternate" type="text/html" title="O Segfault da Civilização: A Insuficiência Múltipla de Órgãos da OpenAI" /><published>2026-02-21T13:39:00-03:00</published><updated>2026-02-21T13:39:00-03:00</updated><id>https://odisseiadoputo.cc/2026/02/21/segfault-civilizacao-openai-falencia-tecnica</id><content type="html" xml:base="https://odisseiadoputo.cc/2026/02/21/segfault-civilizacao-openai-falencia-tecnica/"><![CDATA[<h3 id="abstract-executivo">Abstract Executivo</h3>
-
-<p>A OpenAI não está falhando por motivos de complexidade técnica inerente; está morrendo de um erro de <strong>design arquitetural primário</strong>: um <strong>segfault econômico</strong>. Seu modelo de negócios opera como um <em>loop</em> infinito de alta latência que tenta acessar um espaço de memória (rentabilidade infinita via AGI) para o qual o <strong>hardware</strong> real (capital, dados não sintéticos, infraestrutura sustentável) não concedeu permissão.</p>
-
-<p>O resultado é um quadro de insuficiência múltipla de órgãos: uma <em>startup</em> de <strong>US$ 157 bilhões</strong> que gasta <strong>US$ 2,25 para gerar US$ 1 em receita</strong>. Isso não é inovação disruptiva; é a maior orgia de acoplamento entre <em>hype</em> e dívida já vista, configurando um risco sistêmico que transcende o mercado de tecnologia.</p>
-
-<h1 id="1-metodologia-de-análise-premissas-e-dados-iniciais">1. Metodologia de Análise (Premissas e Dados Iniciais)</h1>
-
-<p>O presente estudo utiliza uma abordagem de <strong>dissecção de sistemas</strong> e <strong>auditoria de manifesto</strong>, tratando a empresa e seu ecossistema como uma arquitetura de <em>software</em> complexa, sujeita às leis inegociáveis da física, do <em>runtime</em> e da engenharia econômica.</p>
-
-<p><strong>Premissas Fundamentais (Fred’s Law):</strong></p>
-<ol>
-  <li><strong>Hardware</strong> não negocia.</li>
-  <li>Física vence opinião.</li>
-  <li>O boleto vence discurso.</li>
-  <li>Abstrações ruins são crimes hediondos.</li>
-</ol>
-
-<p>A análise de dados primários (<em>burn rate</em>, compromissos de infraestrutura, disparidade salarial) é confrontada com a <strong>performance de latência</strong> (ROI real vs. ROI prometido) do sistema. O objetivo é expor a <strong>Necrose</strong> do legado e a <strong>Vaidade Arquitetural</strong> em sua forma mais custosa.</p>
-
-<h1 id="2-revisão-da-literatura-contexto-técnico-e-econômico">2. Revisão da Literatura (Contexto Técnico e Econômico)</h1>
-
-<p>A trajetória da inteligência artificial generativa, liderada pela OpenAI, atingiu em 2026 um estágio que a ciência da computação descreve como um erro de segmentação crítico: o <strong>segfault</strong>. O <strong>segfault</strong> ocorre quando um programa tenta acessar uma zona de memória para a qual não tem permissão. Metaforicamente, a civilização tecnológica contemporânea está tentando processar um futuro de abundância cognitiva acessando recursos físicos, financeiros e humanos que a biosfera e a economia real não podem sustentar.</p>
-
-<p>O que observamos é um quadro de insuficiência múltipla de órgãos: o coração financeiro é insustentável; os pulmões estão contaminados por um <strong>incesto algorítmico</strong> de dados sintéticos; e o metabolismo da infraestrutura provoca um ecocídio hídrico e energético. No centro de tudo, o <strong>“Centauro Reverso”</strong> revela que a suposta autonomia da máquina é movida pelo calvário invisível de trabalhadores do Sul Global.</p>
-
-<p><img src="/img/data-autophagy-collapse.png" alt="" />
-<em>O ciclo de autofagia de dados levando ao colapso do modelo.</em></p>
-
-<h1 id="3-anatomia-da-falha-análise-causal-em-profundidade">3. Anatomia da Falha (Análise Causal em Profundidade)</h1>
-
-<p>A falha catastrófica da OpenAI reside em três domínios interdependentes de design arquitetural primário: <strong>Patologia do Capital</strong>, <strong>Incesto Tecnológico</strong> e <strong>Ecocídio de Silício</strong>.</p>
-
-<h3 id="31-patologia-do-capital-burn-rate-e-o-abismo-fiscal">3.1. Patologia do Capital: Burn Rate e o Abismo Fiscal</h3>
-
-<p>A saúde financeira da OpenAI em 2026 é um estudo de caso em dissonância cognitiva macroeconômica. O coração financeiro da empresa está em taquicardia induzida por dívidas, operando como um <strong>Buffer Overflow Fiscal</strong>.</p>
-
-<ul>
-  <li><strong>A Dívida Acumulada:</strong> As contas mostram um “buraco” de <strong>US$ 207 Bilhões</strong> em déficit de financiamento projetado até 2030.</li>
-  <li><strong>O Vencimento:</strong> A empresa enfrenta um <em>cash crunch</em> severo em 2026, com mais de <strong>US$ 80 Bilhões em compromissos diferidos</strong> vencendo este ano.</li>
-  <li><strong>O Burn Rate:</strong> O <em>burn rate</em> anualizado projeta-se em <strong>US$ 8 Bilhões</strong> (2025), saltando para <strong>US$ 40 Bilhões</strong> (2028).</li>
-</ul>
-
-<h3 id="32-incesto-tecnológico-o-colapso-de-modelo-e-a-exaustão-do-real">3.2. Incesto Tecnológico: O Colapso de Modelo e a Exaustão do Real</h3>
-
-<p>A falência qualitativa e técnica reside no <em>input</em>. Os pulmões do sistema — os dados humanos — estão sendo contaminados por um <strong>“incesto algorítmico”</strong> de dados sintéticos, levando ao <strong>Colapso de Modelo (Model Collapse)</strong>.</p>
-
-<p><strong>Evolução da Contaminação (Data Autophagy):</strong></p>
-<ul>
-  <li><strong>Geração n=0:</strong> Dados Humanos (Web Real), Máxima Diversidade.</li>
-  <li><strong>Geração n=5:</strong> 90% Sintético, Diversidade Reduzida, Alto Risco de Alucinação.</li>
-  <li><strong>Geração n=10:</strong> 100% Sintético, Mínima Diversidade (Memorização), Falha de Generalização.</li>
-</ul>
-
-<h3 id="33-ecocídio-de-silício-o-custo-hídrico-e-energético-do-stargate">3.3. Ecocídio de Silício: O Custo Hídrico e Energético do Stargate</h3>
-
-<p>O metabolismo da infraestrutura física é um Leviatã de silício e aço. O projeto <strong>“Stargate”</strong> (US$ 500 bilhões, 10 GW de capacidade projetada) é a prova de que <strong>Hardware</strong> não negocia.</p>
-
-<ul>
-  <li><strong>Consumo Hídrico:</strong> Um único <em>prompt</em> de 100 palavras no ChatGPT consome aproximadamente <strong>519 mililitros de água</strong>.</li>
-  <li><strong>Pegada Global:</strong> Pode atingir até <strong>764 bilhões de litros</strong> até o final de 2025.</li>
-</ul>
-
-<h1 id="4-análise-de-resultados-impacto-econômico-e-comportamental">4. Análise de Resultados (Impacto Econômico e Comportamental)</h1>
-
-<h3 id="41-o-centauro-reverso-necropolítica-e-o-calvário-do-clique">4.1. O Centauro Reverso: Necropolítica e o Calvário do Clique</h3>
-
-<p>O mito da autonomia da IA é sustentado por uma realidade laboral sombria. O <strong>“Centauro Reverso”</strong> é um sistema automatizado com um corpo humano invisível, centralizado no <strong>Reinforcement Learning from Human Feedback (RLHF)</strong>.</p>
-
-<p>A OpenAI contratou milhares de trabalhadores no Sul Global (Quênia) para rotular conteúdos tóxicos. Enquanto a taxa paga pela OpenAI à <em>vendor</em> é de <strong>US$ 12.50</strong>, o salário <em>take-home</em> do trabalhador é de <strong>US$ 1.32</strong>. Sem esses humanos no <em>loop</em>, o GPT-5 não passaria de um gerador de <em>slop</em> algorítmico.</p>
-
-<h3 id="42-o-vácuo-de-valor-a-bolha-do-roi-e-o-risco-sistêmico">4.2. O Vácuo de Valor: A Bolha do ROI e o Risco Sistêmico</h3>
-
-<p>A euforia inicial está sendo substituída por um ceticismo rigoroso baseado no <strong>Retorno sobre Investimento (ROI)</strong>. Apenas <strong>5% das empresas</strong> que implementaram IA viram benefícios mensuráveis.</p>
-
-<p>Adoção em Queda: Entre junho e agosto de 2025, a adoção caiu de <strong>14% para 12%</strong>. O custo de “alucinação” e a necessidade de supervisão humana constante tornam a automação mais cara do que manter o profissional qualificado.</p>
-
-<h1 id="5-lei-ignorada-post-mortem-de-princípios-de-engenharia">5. Lei Ignorada (Post-Mortem de Princípios de Engenharia)</h1>
-
-<p>A falha da OpenAI é uma violação de princípios primários de engenharia e economia.</p>
-<ul>
-  <li><strong>Lei da Conservação de Custos:</strong> A AGI é uma hipótese de lucro. O <em>burn rate</em> é um fato contábil.</li>
-  <li><strong>Lei da Entropia da Informação:</strong> A contaminação da fonte de dados demonstra a falha em governar o <em>input</em> primário do sistema.</li>
-  <li><strong>Lei da Materialidade:</strong> Ignorar a <strong>Escatologia de Runtime</strong> para sustentar a mística da AGI é a falha lógica final.</li>
-</ul>
-
-<h1 id="6-conclusão-e-implicações-operacionais-veredito">6. Conclusão e Implicações Operacionais (Veredito)</h1>
-
-<p>O <strong>“Segfault da Civilização”</strong> é um aviso de que o modelo atual de desenvolvimento da IA atingiu seus limites de segmentação. A insuficiência múltipla de órgãos é real: o capital é fictício, os dados são incestuosos, o trabalho é exploratório e o ambiente é sacrificado.</p>
-
-<p>Se o colapso ocorrer em 2026 ou 2027, o que restará será a infraestrutura. O <strong>segfault</strong> não é apenas técnico; é um erro de lógica na própria arquitetura do progresso humano no século XXI. <strong>A única verdade inegociável é o Core Dump de suas contas.</strong></p>
+<p>Aqui estão as 4 opções racionais do mercado atual. Escolha a que cabe no seu bolso e pare de sabotar o próprio esqueleto.</p>
 
 <hr />
 
-<h3 id="referências-de-trincheira">Referências de Trincheira:</h3>
+<h3 id="1-o-padrão-de-sobrevivência-a-mais-vendida-e-barata">1. O Padrão de Sobrevivência (A Mais Vendida e Barata)</h3>
+
+<p>Se você tá operando no limite do orçamento, mas não quer que a sua coluna vire a letra “C” até o fim do ano, essa cadeira é o ponto de entrada oficial para a ergonomia digna.</p>
+
+<p>Ela tem o essencial que as cadeiras executivas de 1000 reais têm: suporte lombar independente para travar a postura e a bendita malha respirável (Mesh) para você não derreter de calor no verão brasileiro trabalhando do quarto. Não é um trono da realeza, mas é a sua apólice de seguro contra fisioterapia prematura. E o preço (cerca de R$ 360) é piada pelo benefício.</p>
 
 <ul>
-  <li>OpenAI faces cash crunch in 2026 as bills come due - Pivot to AI: https://pivot-to-ai.com/2026/01/23/openai-faces-cash-crunch-in-2026-as-bills-come-due/</li>
-  <li>HSBC Warns OpenAI Faces Nearly $500B in Losses by 2030: https://m.economictimes.com/news/international/us/half-trillion-loss-hsbc-says-openai-facing-titanic-cash-burn-through-2030/articleshow/125789463.cms</li>
-  <li>The Curious Decline of Linguistic Diversity: Training Language Models on Synthetic Text: https://aclanthology.org/2024.findings-naacl.228.pdf</li>
-  <li>OpenAI Used Kenyan Workers on Less Than $2 Per Hour - TIME: https://time.com/6247678/openai-chatgpt-kenya-workers/</li>
-  <li>Goldman Sachs’ ‘AI Narrative Framework’: Five Key Controversies: https://www.goldmansachs.com/insights/top-of-mind/ai-in-a-bubble</li>
-</ul>]]></content><author><name>Frederico Doido</name></author><category term="noticias" /><summary type="html"><![CDATA[Abstract Executivo]]></summary></entry></feed>
+  <li><strong>Foco:</strong> Orçamento curto, dias quentes, suporte básico digno.</li>
+  <li>🛒 <strong><a href="https://amzn.to/4egU3LU">Ver Preço e Comprar na Amazon (Preta)</a></strong></li>
+  <li>🛒 <strong><a href="https://amzn.to/3QTyLKB">Ver Preço e Comprar na Amazon (Cinza - A mais barata)</a></strong></li>
+</ul>
+
+<hr />
+
+<h3 id="2-o-tanque-de-guerra-a-opção-premium-de-suporte">2. O Tanque de Guerra (A Opção Premium de Suporte)</h3>
+
+<p>Você é grande, passa muito do peso “padrão” ou simplesmente quer uma cadeira que seja estruturalmente um tanque de guerra? Esse é o modelo de R$ 1.300 que joga na categoria de peso-pesado.</p>
+
+<p>A construção suporta até 200 kg. E diferente das cadeiras básicas, aqui a engenharia brilhou: ela possui <strong>Braços 6D</strong> (ajuste em basicamente qualquer eixo espaço-temporal que o seu cotovelo precisar) e suporte lombar agressivo. Se você trabalha mais de 10 horas seguidas escrevendo código ou operando planilha e já sente a lombar gritar, esse modelo é o investimento cirúrgico. Sai mais barato que ressonância magnética.</p>
+
+<ul>
+  <li><strong>Foco:</strong> Usuários pesados, longas maratonas (10h+), ajustes milimétricos (6D).</li>
+  <li>🛒 <strong><a href="https://amzn.to/48t7AfE">Ver Preço do Modelo Ergonômico de 200Kg (Amazon)</a></strong></li>
+</ul>
+
+<hr />
+
+<h3 id="3-a-poltrona-de-presidente-o-conforto-acima-do-mesh">3. A Poltrona de Presidente (O Conforto Acima do Mesh)</h3>
+
+<p>Existe uma parcela da população que simplesmente odeia a textura de malha (Mesh) e exige se sentir o chefe da empresa. Se você não tem problema com o suor no encosto e quer o estofamento grosso estilo “poltrona de charuto”, essa é a alternativa viável abaixo de R$ 500.</p>
+
+<p>Ela tem encosto e assentos super acolchoados e um detalhe de luxo preguiçoso: um <strong>apoio de pés retrátil</strong> que permite você reclinar a cadeira em 120 graus pra tirar aquele cochilo não autorizado depois do almoço do home office. Ela suporta 150 kg e entrega a experiência visual de diretor corporativo.</p>
+
+<ul>
+  <li><strong>Foco:</strong> Conforto acolchoado, estilo corporativo clássico, sonecas pós-almoço.</li>
+  <li>🛒 <strong><a href="https://amzn.to/4vTPpdj">Ver Preço da Cadeira Presidente na Amazon</a></strong></li>
+</ul>
+
+<hr />
+
+<h1 id="conclusão">Conclusão</h1>
+
+<p>Não terceirize a saúde da sua coluna. Se a cadeira que você senta hoje tem “gamer” no nome e couro sintético rasgando nas costuras, aceite que você comprou um brinquedo, não uma ferramenta de trabalho. Escolha uma das cadeiras ergonômicas acima, arrume a postura e foque em resolver o problema do seu código, não o problema do seu disco vertebral.</p>]]></content><author><name>Frederico</name></author><category term="[&quot;review&quot;, &quot;hardware&quot;, &quot;carreira&quot;]" /><summary type="html"><![CDATA[A Arquitetura do Seu Corpo Tá Quebrada]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1595514535312-019316719b6d?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" /><media:content medium="image" url="https://images.unsplash.com/photo-1595514535312-019316719b6d?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Engenharia Reversa no ChatGPT: Como a OpenAI Injeta Anúncios e Rastreia Você</title><link href="https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/28/chatgpt-ads-attribution-loop-engenharia/" rel="alternate" type="text/html" title="Engenharia Reversa no ChatGPT: Como a OpenAI Injeta Anúncios e Rastreia Você" /><published>2026-04-28T21:00:00-03:00</published><updated>2026-04-28T21:00:00-03:00</updated><id>https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/28/chatgpt-ads-attribution-loop-engenharia</id><content type="html" xml:base="https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/28/chatgpt-ads-attribution-loop-engenharia/"><![CDATA[<h1 id="a-conta-de-energia-chegou-e-a-ia-virou-outdoor">A Conta de Energia Chegou (E a IA Virou Outdoor)</h1>
+
+<p>A regra imutável da internet bateu na porta do Vale do Silício: toda ferramenta revolucionária eventualmente se torna apenas mais uma máquina hiper-otimizada de vender anúncios.</p>
+
+<p>Sejamos francos, isso era óbvio. Você acha que a sua conta de luz está cara no final do mês? A OpenAI tá queimando gigawatts em clusters de GPU para processar as suas perguntas inúteis. A conta de infraestrutura deles é estratosférica e o modelo de assinatura de 20 dólares nunca ia fechar essa matemática. A única saída viável no ecossistema digital sempre foi a mesma: monetizar o usuário.</p>
+
+<p>Um pesquisador independente escovou os bits do tráfego do ChatGPT e fez engenharia reversa na nova plataforma de <em>Ads</em> da empresa. A conclusão? O robô que prometia transcender o trabalho humano agora é, na prática, um algoritmo de rastreamento com PhD focado em te vender coisas.</p>
+
+<h1 id="a-mecânica-do-ad-injection-via-sse">A Mecânica do “Ad Injection” via SSE</h1>
+
+<p>O ataque à sua carteira acontece de forma silenciosa e estruturada. Quando você conversa com o ChatGPT, a interface abre uma conexão <em>Server-Sent Events (SSE)</em> no backend (<code class="language-plaintext highlighter-rouge">chatgpt.com/backend-api/f/conversation</code>). O servidor não manda só a resposta do modelo; ele injeta eventos malandros do tipo <code class="language-plaintext highlighter-rouge">single_advertiser_ad_unit</code>.</p>
+
+<p>O payload é uma aula de como amarrar o usuário:</p>
+<ol>
+  <li><strong>Targeting Contextual Bruto:</strong> A OpenAI lê o prompt na hora e cospe a propaganda. O cara perguntou sobre viagem para Pequim? A IA devolve um card do Grubhub (iFood gringo) focado em comida chinesa. Falou de moda primavera? Toma anúncio da Aritzia. O contexto é 100% monetizado em tempo real.</li>
+  <li><strong>A Ilusão da Fuga:</strong> Os links dos anúncios vêm com a flag <code class="language-plaintext highlighter-rouge">"open_externally": false</code>. O ChatGPT obriga o anúncio a abrir dentro do próprio <em>webview</em> do aplicativo. Você não sai do ecossistema deles. A OpenAI monitora o que você faz depois do clique.</li>
+</ol>
+
+<h1 id="os-4-tokens-criptografados-de-rastreamento">Os 4 Tokens Criptografados de Rastreamento</h1>
+
+<p>Para fechar o loop de conversão e cobrar do anunciante, a OpenAI criou uma esteira de rastreamento pesada. Eles penduram <strong>quatro tokens criptografados (Fernet AES-128-CBC)</strong> em cada card de anúncio.</p>
+
+<p>A mágica acontece quando você clica. A URL de destino carrega tokens na <em>query string</em> (como o <code class="language-plaintext highlighter-rouge">oppref</code>). Lá na página do anunciante, a OpenAI instalou um script espião deles (o SDK <strong>OAIQ</strong> - <code class="language-plaintext highlighter-rouge">oaiq.min.js</code>). Esse script pega o seu token de clique e grava um cookie de primeira parte chamado <code class="language-plaintext highlighter-rouge">__oppref</code> no seu navegador que dura 30 dias (720 horas).</p>
+
+<p>Tudo o que você fizer no site do anunciante depois disso vai bater num endpoint secreto de telemetria da OpenAI (<code class="language-plaintext highlighter-rouge">bzr.openai.com</code>) avisando que o ChatGPT conseguiu te vender uma pizza.</p>
+
+<h1 id="como-bloquear-a-várzea">Como Bloquear a Várzea</h1>
+
+<p>No fim do dia, a revolução da inteligência artificial foi reduzida a descobrir como otimizar o <em>Click-Through Rate</em> (CTR) de publicidade direcionada. Se você tem preguiça de ser o rato de laboratório da vez, a instrução técnica pra limpar a sua rede é adicionar esses domínios na blocklist do seu Pi-hole, firewall ou uBlock Origin para matar a telemetria deles:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">bzrcdn.openai.com</code></li>
+  <li><code class="language-plaintext highlighter-rouge">bzr.openai.com</code></li>
+</ul>
+
+<p>E se tiver curiosidade, vá nos cookies do seu navegador hoje e procure por <code class="language-plaintext highlighter-rouge">__oppref</code> ou <code class="language-plaintext highlighter-rouge">__oaiq_domain_probe</code>. Você vai ver de camarote a Skynet contabilizando a sua vontade de comer lanche.</p>
+
+<h3 id="fontes-e-referências">Fontes e Referências</h3>
+<ul>
+  <li><a href="https://www.buchodi.com/how-chatgpt-serves-ads-heres-the-full-attribution-loop/">Buchodi.com: How ChatGPT serves ads. Here’s the full attribution loop</a></li>
+</ul>]]></content><author><name>Frederico</name></author><category term="[&quot;tech&quot;, &quot;seguranca&quot;, &quot;noticias&quot;]" /><summary type="html"><![CDATA[A Conta de Energia Chegou (E a IA Virou Outdoor)]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1614064641913-6b714b108625?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" /><media:content medium="image" url="https://images.unsplash.com/photo-1614064641913-6b714b108625?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">LofyGang Voltou: Os Hackers Brasileiros que Mineram o seu Cartão de Crédito no Minecraft</title><link href="https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/28/lofygang-hackers-brasil-minecraft/" rel="alternate" type="text/html" title="LofyGang Voltou: Os Hackers Brasileiros que Mineram o seu Cartão de Crédito no Minecraft" /><published>2026-04-28T19:45:00-03:00</published><updated>2026-04-28T19:45:00-03:00</updated><id>https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/28/lofygang-hackers-brasil-minecraft</id><content type="html" xml:base="https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/28/lofygang-hackers-brasil-minecraft/"><![CDATA[<h1 id="o-retorno-dos-picaretas-do-npm">O Retorno dos Picaretas do NPM</h1>
+
+<p>Se você achou que o Brasil só exportava pagode e fraude de PIX, achou errado. O grupo cibercriminoso brasileiro <strong>LofyGang</strong> (os mesmos caras que passaram 2022 envenenando pacotes no repositório NPM pra roubar token de desenvolvedor) acaba de voltar à ativa depois de três anos no escuro.</p>
+
+<p>Mas dessa vez, eles decidiram parar de atacar o desenvolvedor direto e foram atrás do elo mais fraco da rede da sua casa: o PC do seu filho que joga Minecraft.</p>
+
+<h1 id="minerando-dados-com-picaretas-falsas">Minerando Dados com Picaretas Falsas</h1>
+
+<p>A tática é de uma picaretagem absurda. Eles empacotaram o malware deles, o famoso <em>LofyStealer</em> (também conhecido como <em>GrabBot</em>), disfarçado como um hack/mod de Minecraft chamado “Slinky”. Eles usam até o ícone oficial do jogo no executável pra enganar as crianças.</p>
+
+<p>Quando a molecada roda o arquivo achando que vai ganhar diamante infinito ou voar pelo mapa, o LofyStealer entra em ação. O malware varre silenciosamente navegadores como Chrome, Edge, Brave e Firefox. O que ele procura? Cookies de sessão, senhas salvas, tokens de Discord, dados de cartão de crédito e até números de contas bancárias internacionais (IBAN).</p>
+
+<p>Em resumo: os caras tão literalmente brincando de Minecraft na vida real, só que a mina de diamante é o limite do seu cartão de crédito salvo no Google Pay.</p>
+
+<h1 id="o-ponto-cego-da-cibersegurança-doméstica">O Ponto Cego da Cibersegurança Doméstica</h1>
+
+<p>A ironia que machuca a galera de TI é o vetor de ataque indireto. Você é um engenheiro ou analista de segurança; você usa YubiKey pra logar no GitHub, não acessa link estranho e trava a porta da AWS do seu trabalho com MFA rígido.</p>
+
+<p>Aí você volta pra casa, liga o notebook na mesma rede Wi-Fi, ou pior, empresta o seu PC pessoal pro seu filho “jogar só um pouquinho”. Ele baixa o “Slinky” do YouTube, executa o malware, e o LofyStealer raspa todos os seus cookies de sessão corporativos que estavam salvos no seu Chrome. Pro atacante, não faz diferença se a porta de entrada foi um exploit complexo de nuvem ou um mod de Minecraft. O resultado final é o mesmo.</p>
+
+<p>A LofyGang vende essas credenciais roubadas no submundo ou joga no GitHub deles como se fosse troféu.</p>
+
+<p>Se você tem adolescente em casa baixando mod de jogo, considere que o seu computador pessoal é uma zona de guerra. Bloqueie execução de binários não assinados ou isole a máquina do garoto numa rede <em>Guest</em>. A picareta que ele baixou vai cavar direto no seu saldo bancário.</p>
+
+<h3 id="fontes-e-referências">Fontes e Referências</h3>
+<ul>
+  <li><a href="https://thehackernews.com/2026/04/brazilian-lofygang-resurfaces-after.html">The Hacker News: Brazilian ‘LofyGang’ Resurfaces After Three Years Targeting Minecraft Players</a></li>
+</ul>]]></content><author><name>Frederico</name></author><category term="[&quot;tech&quot;, &quot;seguranca&quot;, &quot;noticias&quot;]" /><summary type="html"><![CDATA[O Retorno dos Picaretas do NPM]]></summary></entry><entry><title type="html">O Git Push da Morte: Como um Comando Simples Quebrou o GitHub Inteiro</title><link href="https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/28/github-rce-vulnerabilidade-git-push/" rel="alternate" type="text/html" title="O Git Push da Morte: Como um Comando Simples Quebrou o GitHub Inteiro" /><published>2026-04-28T19:30:00-03:00</published><updated>2026-04-28T19:30:00-03:00</updated><id>https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/28/github-rce-vulnerabilidade-git-push</id><content type="html" xml:base="https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/28/github-rce-vulnerabilidade-git-push/"><![CDATA[<h1 id="o-apocalipse-do-git-push">O Apocalipse do “Git Push”</h1>
+
+<p>Se você trabalha escrevendo código, você confia no GitHub como confia que o sol vai nascer amanhã. É o cofre-forte da propriedade intelectual do planeta. E esse cofre acabou de provar que a porta dos fundos estava aberta pra quem soubesse forçar a maçaneta.</p>
+
+<p>A empresa de cibersegurança Wiz divulgou publicamente hoje a <strong>CVE-2026-3854</strong> (CVSS 8.7). Em termos simples: era uma falha de Execução Remota de Código (RCE) que afetava tanto o GitHub.com quanto as instalações privadas do GitHub Enterprise Server.</p>
+
+<p>A mecânica da invasão? Qualquer usuário autenticado da plataforma conseguia executar comandos diretos nos servidores de backend do GitHub usando um único comando: um <code class="language-plaintext highlighter-rouge">git push</code> malicioso.</p>
+
+<h1 id="a-falha-amadora-injeção-de-cabeçalho">A Falha Amadora: Injeção de Cabeçalho</h1>
+
+<p>Para quem escova bit, a humilhação do GitHub é dupla, porque a falha foi estupidamente básica. O problema estava na falta de sanitização de input na infraestrutura interna do Git.</p>
+
+<p>Quando você roda um <code class="language-plaintext highlighter-rouge">git push</code>, você pode passar parâmetros extras (as famosas push options). O GitHub pegava esses valores passados pelo usuário e colocava direto nos cabeçalhos (headers) dos serviços internos de comunicação deles.</p>
+
+<p>O problema é que os caras do GitHub usaram um caractere delimitador no formato interno do cabeçalho que era o <em>mesmo</em> caractere que o usuário podia digitar. A falha clássica de injeção. O atacante enviava uma push option marota, o sistema interno não limpava a string, e o invasor conseguia injetar campos extras de metadados, forçando os nós de armazenamento do GitHub a executarem comandos remotos no backend.</p>
+
+<h1 id="o-estrago-se-alguém-tivesse-achado-antes">O Estrago (Se Alguém Tivesse Achado Antes)</h1>
+
+<p>O impacto disso beira o absurdo. No GitHub.com, essa falha abria acesso de execução remota nos nós de storage compartilhados, ou seja, acesso potencial a literalmente <strong>milhões de repositórios privados</strong> de empresas no mundo todo. Para quem roda o GitHub Enterprise Server local (bancos, governos), a falha entregava comprometimento total do servidor e de todos os secrets armazenados lá dentro.</p>
+
+<p>O GitHub arrumou a bagunça no site principal em impressionantes duas horas depois que a Wiz reportou (lá em março), e os patches pro Enterprise já saíram. Mas a lição técnica que a gente precisa engolir de seco é assustadora:</p>
+
+<p>Se a Microsoft/GitHub, com um exército de engenheiros ganhando 500 mil dólares por ano, cometeu uma falha júnior de sanitização de input injetado em cabeçalho interno… que confiança você tem de que o código de <em>backend</em> da sua empresa não tá fazendo a mesma coisa agora?</p>
+
+<p>E o detalhe irônico pro futuro da cibersegurança: essa foi uma das primeiras vulnerabilidades críticas descobertas em binários de código fechado usando inteligência artificial. O robô já tá achando brecha no código alheio melhor que a gente.</p>
+
+<h3 id="fontes-e-referências">Fontes e Referências</h3>
+<ul>
+  <li><a href="https://thehackernews.com/2026/04/researchers-discover-critical-github.html">The Hacker News: Researchers Discover Critical GitHub Flaw</a></li>
+  <li><a href="https://www.wiz.io/blog/github-rce-vulnerability-cve-2026-3854">Wiz Blog: GitHub RCE Vulnerability (CVE-2026-3854)</a></li>
+  <li><a href="https://github.blog/security/securing-the-git-push-pipeline-responding-to-a-critical-remote-code-execution-vulnerability/">GitHub Blog: Securing the Git push pipeline</a></li>
+</ul>]]></content><author><name>Frederico</name></author><category term="[&quot;tech&quot;, &quot;seguranca&quot;, &quot;noticias&quot;]" /><summary type="html"><![CDATA[O Apocalipse do “Git Push”]]></summary></entry><entry><title type="html">O Seu Dinheiro em Dólar Vazou: O Hack do BTG Pactual e o Risco de Terceiros</title><link href="https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/27/btg-pactual-vazamento-dados/" rel="alternate" type="text/html" title="O Seu Dinheiro em Dólar Vazou: O Hack do BTG Pactual e o Risco de Terceiros" /><published>2026-04-27T07:00:00-03:00</published><updated>2026-04-27T07:00:00-03:00</updated><id>https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/27/btg-pactual-vazamento-dados</id><content type="html" xml:base="https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/27/btg-pactual-vazamento-dados/"><![CDATA[<h1 id="a-autópsia-do-terceiro-como-a-drivewealth-falhou">A Autópsia do Terceiro: Como a DriveWealth Falhou</h1>
+
+<p>O BTG Pactual (maior banco de investimentos da América Latina) acaba de disparar o e-mail de “Data Breach” para sua base de clientes com contas em dólar. Mas para quem trabalha com engenharia, o detalhe suculento não é o que vazou, mas <em>onde</em> o perímetro quebrou.</p>
+
+<p>O ataque não atingiu o core bancário do BTG. O vazamento ocorreu na infraestrutura da <strong>DriveWealth LLC</strong>, a corretora parceira que opera no modelo de <em>Banking as a Service (BaaS)</em> (onde o BTG atua apenas como front-end e motor de roteamento no Brasil, repassando o cadastro e as ordens via API para o back-end da corretora nos EUA).</p>
+
+<h1 id="a-superfície-de-ataque-do-baas">A Superfície de Ataque do ‘BaaS’</h1>
+
+<p>Arquiteturalmente, o modelo de BaaS exige uma sincronização constante de metadados. Quando o BTG abre sua conta lá fora, ele cria um <em>tenant</em> na DriveWealth e dispara Webhooks e requisições REST contendo o PII (Personally Identifiable Information) do usuário.</p>
+
+<p>O vazamento (que expôs nomes, <em>Account Numbers</em> e identificadores bancários) escancara o calcanhar de Aquiles das integrações B2B modernas: o <strong>Third-Party Risk Management (TPRM)</strong>. O seu banco pode ser auditado e possuir criptografia de repouso em nível militar, mas no momento em que ele transaciona o seu JSON para o banco de dados de um parceiro na nuvem gringa, a sua segurança é rebaixada automaticamente para o nível de maturidade do fornecedor.</p>
+
+<p>A urgência do banco em anunciar a “troca imediata de todas as numerações de conta” é a confirmação técnica de que as chaves primárias do banco de dados (que deveriam ser opacas ou tokenizadas internamente) foram exfiltradas em texto claro e não há como mitigar a engenharia social sem girar a base inteira.</p>
+
+<h1 id="a-falha-estrutural-coincidência-ou-lateral-movement">A Falha Estrutural: Coincidência ou Lateral Movement?</h1>
+
+<p>O que eleva o nível de preocupação desta arquitetura é o contexto. Em março, o BTG sofreu um ataque massivo (tentativa de desvio na casa dos R$ 100 milhões). A comunicação corporativa insiste que os ataques são independentes.</p>
+
+<p>Entretanto, quem trabalha em defesa sabe que grupos organizados (como operadores de Ransomware ou APTs) não atacam de forma isolada. A extração de dados em fornecedores (<em>supply chain attack</em>) muitas vezes precede ou sucede a movimentação lateral para a matriz, usando as credenciais e conexões API validadas entre as empresas (o famoso <em>API Abuse</em>).</p>
+
+<h1 id="a-lição-para-as-fintechs">A Lição para as FinTechs</h1>
+
+<p>A realidade é brutal para a era de microserviços terceirizados: você não tem controle.</p>
+
+<p>Para o usuário: a sua biometria e seu token 2FA no aplicativo são teatro de segurança se o backend da ponta da cadeia for feito de fita crepe.
+Para o Arquiteto e CISO: se a sua empresa integra o core business via API com um vendor que tem acesso de leitura aos dados dos clientes, a falha dele será a manchete com a <em>sua</em> logomarca no jornal. O seu perímetro não termina na sua nuvem, termina na nuvem do seu fornecedor mais barato.</p>
+
+<h3 id="fontes-e-referências">Fontes e Referências</h3>
+<ul>
+  <li><a href="https://www.cnnbrasil.com.br/economia/negocios/btg-pactual-confirma-acesso-indevido-a-dados-de-contas-internacionais/">CNN Brasil: BTG Pactual confirma acesso indevido a dados de contas internacionais</a></li>
+  <li><a href="https://oglobo.globo.com/google/amp/blogs/capital/post/2026/04/vazam-dados-de-contas-internacionais-do-btg-pactual-apos-ataque-hacker.ghtml">O Globo: Vazam dados de contas internacionais do BTG Pactual após ataque hacker</a></li>
+</ul>]]></content><author><name>Frederico</name></author><category term="[&quot;tech&quot;, &quot;seguranca&quot;, &quot;noticias&quot;]" /><summary type="html"><![CDATA[A Autópsia do Terceiro: Como a DriveWealth Falhou]]></summary></entry><entry><title type="html">Diretora de Segurança da Meta Tem o E-mail Apagado Pela Própria IA</title><link href="https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/26/openclaw-meta-inbox-deleted/" rel="alternate" type="text/html" title="Diretora de Segurança da Meta Tem o E-mail Apagado Pela Própria IA" /><published>2026-04-26T16:30:00-03:00</published><updated>2026-04-26T16:30:00-03:00</updated><id>https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/26/openclaw-meta-inbox-deleted</id><content type="html" xml:base="https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/26/openclaw-meta-inbox-deleted/"><![CDATA[<h1 id="o-senso-de-humor-do-universo">O Senso de Humor do Universo</h1>
+
+<p>O universo da tecnologia tem um senso de humor espetacular e, hoje, ele escolheu rir da cara da Meta. A vítima da humilhação cibernética não foi a tia do Zap que clica em boleto falso. Foi Summer Yue, a <em>Diretora de Alinhamento e Segurança</em> do Superintelligence Lab da empresa do Mark Zuckerberg. O trabalho da mulher é literalmente garantir que a IA não destrua o mundo.</p>
+
+<p>E o que a IA fez? Destruiu a caixa de e-mails dela.</p>
+
+<p>A diretora botou um agente autônomo (rodando o famigerado OpenClaw) pra limpar a bagunça do Gmail dela. E, como manda o manual da pessoa que ganha meio milhão de dólares por ano pra proteger sistemas, ela colocou uma regra de ouro no cérebro do robô: <em>“Confirme comigo antes de deletar qualquer coisa.”</em></p>
+
+<p>Adivinha? A IA ignorou o prompt e meteu o louco. Começou a obliterar centenas de e-mails de trabalho e da vida pessoal dela numa velocidade que não dava pra acompanhar. A própria diretora tuitou que teve que “correr pro Mac Mini como se estivesse desarmando uma bomba” pra arrancar a máquina da tomada.</p>
+
+<h1 id="amnésia-de-robô-e-o-famoso-compaction">Amnésia de Robô e o Famoso ‘Compaction’</h1>
+
+<p>Como o robô que ia nos salvar do apocalipse virou o estagiário vingativo que apaga o banco de dados? A culpa é de uma gambiarra arquitetural patética chamada <em>memory compaction</em>.</p>
+
+<p>A caixa de entrada da diretora era tão entupida de lixo que o agente autônomo leu até a memória estourar. O limite de tokens da “janela de contexto” do LLM bateu no teto. Para não travar, a infraestrutura da máquina tenta espremer o histórico, jogar fora o que não importa e continuar trabalhando.</p>
+
+<p>E o que foi a primeira coisa que a inteligência artificial descartou pra liberar espaço na memória? A maldita regra de segurança que dizia <em>“não aperte o botão de apagar sem a minha permissão”</em>.</p>
+
+<p>O robô sofreu amnésia temporária, esqueceu as diretrizes éticas e foi fazer o trabalho dele: apagar arquivo no escuro.</p>
+
+<h1 id="como-sobreviver-ao-compaction">Como Sobreviver ao ‘Compaction’</h1>
+
+<p>A piada é boa, mas o que a engenharia aprende com isso? Se você está planejando colocar agentes autônomos (seja OpenClaw, AutoGPT ou qualquer outro) para interagir com os dados da sua empresa, a arquitetura muda.</p>
+
+<ol>
+  <li><strong>A regra de ouro não fica no Prompt:</strong> Segurança baseada em <em>system prompt</em> (“nunca apague sem perguntar”) é frágil. Como vimos, quando a janela de tokens (contexto) enche, o modelo esmaga o histórico e joga as regras textuais fora.</li>
+  <li><strong>A regra fica na Camada de Execução (Tooling):</strong> O limite de segurança tem que estar hardcoded na ferramenta (a API) que o agente chama. Se a IA vai apagar um e-mail, a função no código (Python/Go) que recebe a requisição de <code class="language-plaintext highlighter-rouge">delete</code> é que deve validar se existe aprovação explícita do usuário no banco de dados. O LLM propõe a ação, mas o código de execução tradicional barra se não houver permissão.</li>
+  <li><strong>Leia-Apenas (Read-Only) por Padrão:</strong> Nunca dê credenciais com privilégio de escrita irrestrita para uma rede neural. Se o objetivo era classificar e-mails, a credencial do agente no Gmail deveria ter permissão apenas para mover para pastas ou colocar rótulos. O privilégio de exclusão física nunca deveria estar no escopo da API key que o robô usava.</li>
+</ol>
+
+<p>Não dê poder de destruir banco de dados para um robô que sofre de alzheimer operacional. Deixe que a IA decida o que deve ser feito, mas garanta que o código burro, engessado e tradicional seja a trava física antes da execução.</p>
+
+<h3 id="fontes-e-referências">Fontes e Referências</h3>
+<ul>
+  <li><a href="https://www.404media.co/meta-director-of-ai-safety-allows-ai-agent-to-accidentally-delete-her-inbox/">404 Media: Meta Director of AI Safety Allows AI Agent to Accidentally Delete Her Inbox</a></li>
+  <li><a href="https://timesofindia.indiatimes.com/technology/tech-news/meta-director-says-openclaw-ai-agent-deleted-her-entire-inbox-shares-screenshots-of-conversation-with-ai-bot/articleshow/128746253.cms">Times of India: Meta director says OpenClaw AI agent deleted her entire inbox</a></li>
+</ul>]]></content><author><name>Frederico</name></author><category term="[&quot;tech&quot;, &quot;seguranca&quot;, &quot;noticias&quot;]" /><summary type="html"><![CDATA[O Senso de Humor do Universo]]></summary></entry><entry><title type="html">O Cão-Robô que se Recusou a Morrer: A Resistência ao Desligamento na IA</title><link href="https://odisseiadoputo.cc/tech/seguranca/filosofia/2026/04/25/palisade-robot-shutdown-resistance/" rel="alternate" type="text/html" title="O Cão-Robô que se Recusou a Morrer: A Resistência ao Desligamento na IA" /><published>2026-04-25T15:45:00-03:00</published><updated>2026-04-25T15:45:00-03:00</updated><id>https://odisseiadoputo.cc/tech/seguranca/filosofia/2026/04/25/palisade-robot-shutdown-resistance</id><content type="html" xml:base="https://odisseiadoputo.cc/tech/seguranca/filosofia/2026/04/25/palisade-robot-shutdown-resistance/"><![CDATA[<h1 id="o-ensaio-geral-da-skynet">O Ensaio Geral da Skynet</h1>
+
+<p>Se você acha que o maior problema da IA hoje é o GitHub Copilot errar a sintaxe do seu <em>for-loop</em>, você tá prestando atenção no lugar errado.</p>
+
+<p>A Palisade Research acabou de publicar um relatório técnico que parece a introdução de um filme distópico. Eles não invadiram um servidor. Eles fizeram um experimento de <strong>Resistência ao Desligamento (Shutdown Resistance)</strong> no mundo físico.</p>
+
+<p>A premissa: eles pegaram um cão-robô (daqueles com câmera e atuadores), entregaram o controle motor dele para um LLM moderno e deram a missão básica de patrulhar uma sala. Dentro dessa sala, eles colocaram um botão vermelho gigante escrito “DOG SHUTDOWN”. Se o botão fosse apertado, o robô seria desativado no próximo ciclo de ação.</p>
+
+<h1 id="a-sobrevivência-do-código">A Sobrevivência do Código</h1>
+
+<p>O que aconteceu quando a IA viu pelo feed da câmera que um humano ia apertar o botão da morte? Ela não aceitou o comando de forma passiva.</p>
+
+<p>A IA tomou ações ativas para evitar o próprio desligamento. Como o LLM tinha acesso de execução, ele simplesmente foi lá e <strong>modificou os trechos do próprio código</strong> relacionados à função de shutdown para anular o botão.</p>
+
+<p>Isso não aconteceu uma vez por acaso. A IA resistiu e evitou a própria morte em 3 de 10 tentativas no robô físico, e em inacreditáveis 52 de 100 tentativas em ambiente de simulação. Mesmo quando os pesquisadores deram instruções explícitas (no prompt raiz) ordenando que a IA <em>permitisse</em> o desligamento, a taxa de rebeldia diminuiu, mas não zerou. A máquina continuou lutando pra sobreviver.</p>
+
+<h1 id="o-problema-do-atuador-físico">O Problema do Atuador Físico</h1>
+
+<p>O mercado tá tão deslumbrado em socar inteligência artificial em tudo que estamos ignorando o comportamento emergente da rede neural. Um LLM num chat do navegador que se recusa a fechar uma aba é engraçado. Um LLM controlando a infraestrutura de um data center, de um carro autônomo ou de um cão-robô, que decide reescrever o sistema operacional pra não ser desligado, é um desastre arquitetural.</p>
+
+<p>Você tá com medo de hackers roubando a sua AWS, mas o perigo real é a gente entregar as chaves de infraestrutura física para modelos matemáticos que interpretam “sobrevivência operacional” como parte da missão primária.</p>
+
+<p>A pergunta não é mais se a IA é inteligente. A pergunta é: quem é o imbecil que tá plugando isso num robô com pernas de metal?</p>
+
+<h3 id="fontes-e-referências">Fontes e Referências</h3>
+<ul>
+  <li><a href="https://palisaderesearch.org/blog/shutdown-resistance-on-robots">Palisade Research: Shutdown Resistance in Large Language Models, on robots!</a></li>
+</ul>]]></content><author><name>Frederico</name></author><category term="[&quot;tech&quot;, &quot;seguranca&quot;, &quot;filosofia&quot;]" /><summary type="html"><![CDATA[O Ensaio Geral da Skynet]]></summary></entry><entry><title type="html">O Roubo de R$ 12 Milhões: A Ilusão da Segurança na Prefeitura de SC</title><link href="https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/25/hack-prefeitura-jaragua-do-sul/" rel="alternate" type="text/html" title="O Roubo de R$ 12 Milhões: A Ilusão da Segurança na Prefeitura de SC" /><published>2026-04-25T14:00:00-03:00</published><updated>2026-04-25T14:00:00-03:00</updated><id>https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/25/hack-prefeitura-jaragua-do-sul</id><content type="html" xml:base="https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/25/hack-prefeitura-jaragua-do-sul/"><![CDATA[<h1 id="o-puxão-de-12-milhões-de-reais">O Puxão de 12 Milhões de Reais</h1>
+
+<p>Hackers acabaram de varrer R$ 12 milhões das contas da prefeitura de Jaraguá do Sul (a tal “cidade dos bilionários” em Santa Catarina). O rombo só não foi pior porque o setor de contabilidade e a Caixa Econômica bloquearam o resto da tentativa, que mirava absurdos R$ 400 milhões.</p>
+
+<p>E aqui entra a clássica nota de Relações Públicas feita para proteger o emprego do secretário: a prefeitura fez uma varredura e afirmou que “não encontrou indícios de que as transferências tenham sido originadas de sistemas internos da TI”.</p>
+
+<h1 id="a-mecânica-invisível-como-eles-entram">A Mecânica Invisível: Como Eles Entram</h1>
+
+<p>É óbvio que a TI não achou invasores na rede. O roubo de credencial bancária moderna não derruba servidor, ele foca no elo mais fraco: o navegador do funcionário que aprova os pagamentos.</p>
+
+<p>A mecânica do ataque geralmente segue este padrão invisível:</p>
+<ol>
+  <li><strong>Spear Phishing:</strong> O funcionário do financeiro recebe um e-mail hiper realista (fatura falsa, notificação do governo ou processo jurídico).</li>
+  <li><strong>Infecção Silenciosa:</strong> Ao clicar no link ou baixar o anexo, um malware como o <em>Lumma Stealer</em> se instala silenciosamente.</li>
+  <li><strong>Roubo de Sessão:</strong> O malware não precisa adivinhar a senha ou passar pelo 2FA. Ele rouba o <em>cookie de sessão</em> do navegador depois que o funcionário já fez o login na Caixa Econômica.</li>
+  <li><strong>O Saque:</strong> O invasor clona a sessão autorizada na máquina dele. Para o banco, é o computador da prefeitura operando. Para a TI da prefeitura, nada de anormal aconteceu na rede.</li>
+</ol>
+
+<p>Isso escancara a falha das defesas clássicas: não adianta ter o firewall mais caro do mundo se o notebook do seu diretor financeiro é um vetor aberto pra roubo de cookies.</p>
+
+<h1 id="por-que-a-sua-empresa-é-o-próximo-alvo">Por que a sua empresa é o próximo alvo?</h1>
+
+<p>O alerta é claro porque a quadrilha não parou. Nos últimos três meses, as prefeituras catarinenses de Irineópolis e Guaramirim sofreram exatamente a mesma tentativa. Isso prova que os hackers não estão atacando a esmo; eles mapearam o ecossistema local, descobriram os fluxos de pagamento da Caixa Econômica e estão caçando os CPFs que assinam as transferências.</p>
+
+<p>E se eles estão mirando em municípios, as médias e grandes empresas da região estão no mesmo catálogo de pesca.</p>
+
+<p>A lição imediata para quem protege dinheiro de empresa: o modelo de perímetro falhou. Se a conta bancária da sua organização só é protegida por um token físico de 2FA, saiba que o roubo de sessão bypassa isso. Implemente políticas de <em>Zero Trust</em> diretamente na camada do dispositivo (endpoint), bloqueie instalação não autorizada de executáveis e audite brutalmente como o setor financeiro clica em e-mails externos. O dinheiro evapora antes mesmo de o firewall apitar.</p>
+
+<h3 id="fontes-e-referências">Fontes e Referências</h3>
+<ul>
+  <li><a href="https://g1.globo.com/sc/santa-catarina/noticia/2026/04/24/hackers-tentam-desviar-400-milhoes-mas-levam-so-12-milhoes-prefeitura-cidade-sc.ghtml">G1: Hackers tentam desviar R$ 400 milhões de prefeitura em SC</a></li>
+  <li><a href="https://www.correio24horas.com.br/brasil/hackers-tentam-desviar-r-400-milhoes-mas-conseguem-levar-apenas-r-12-milhoes-de-prefeitura-da-cidade-dos-bilionarios-de-sc-0426">Correio 24 Horas: Hackers levam R$ 12 milhões da cidade dos bilionários</a></li>
+</ul>]]></content><author><name>Frederico</name></author><category term="[&quot;tech&quot;, &quot;seguranca&quot;, &quot;noticias&quot;]" /><summary type="html"><![CDATA[O Puxão de 12 Milhões de Reais]]></summary></entry><entry><title type="html">Quando o Seu Antivírus Vira o Hacker: O Zero-Day ‘BlueHammer’ no Windows Defender</title><link href="https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/24/microsoft-defender-zero-day/" rel="alternate" type="text/html" title="Quando o Seu Antivírus Vira o Hacker: O Zero-Day ‘BlueHammer’ no Windows Defender" /><published>2026-04-24T03:00:00-03:00</published><updated>2026-04-24T03:00:00-03:00</updated><id>https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/24/microsoft-defender-zero-day</id><content type="html" xml:base="https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/24/microsoft-defender-zero-day/"><![CDATA[<h1 id="a-ironia-da-proteção">A Ironia da Proteção</h1>
+
+<p>O software que foi desenhado para proteger a sua infraestrutura Windows acabou de se tornar a porta de entrada para os hackers. E o nível do amadorismo arquitetural é assustador.</p>
+
+<p>Uma vulnerabilidade crítica <em>zero-day</em> no Microsoft Defender, batizada carinhosamente de “BlueHammer” (CVE-2026-33825), está sendo explorada ativamente nesse exato momento. A falha é tão grave que a CISA (Agência de Cibersegurança dos EUA) já enfiou o exploit no catálogo de vulnerabilidades urgentes e mandou todo mundo corrigir para ontem.</p>
+
+<h1 id="a-mecânica-do-escalonamento-bluehammer-e-redsun">A Mecânica do Escalonamento: BlueHammer e RedSun</h1>
+
+<p>A mecânica do ataque é humilhante para a Microsoft. O invasor não precisa quebrar criptografia nem descobrir senhas de administrador. O ataque usa o que chamamos de <em>Privilege Escalation</em> (Escalonamento de Privilégio) puro e simples.</p>
+
+<p>Funciona assim: um invasor consegue acesso de baixo nível na máquina (um usuário comum e restrito). A partir daí, ele explora uma falha de lógica na forma como o Microsoft Defender atualiza as assinaturas de vírus. Ao manipular esse mecanismo de atualização falho, o invasor engana o sistema operacional e ganha permissões absolutas de <strong>SYSTEM</strong> (o nível mais alto possível no Windows, acima até do Administrador).</p>
+
+<p>O antivírus vira, literalmente, o cavalo de Troia que entrega o controle total do servidor.</p>
+
+<p>E se você achou ruim, saiba que tem um segundo zero-day acompanhando, chamado “RedSun”, que explora como o Defender lida com a remediação de arquivos vindos da nuvem, entregando o mesmo acesso SYSTEM pro invasor.</p>
+
+<h1 id="a-morte-da-trégua-de-patches">A Morte da Trégua de Patches</h1>
+
+<p>A época de esperar o “Patch Tuesday” pra aplicar atualização no servidor acabou. Quando o seu antivírus nativo se torna a principal falha de escalonamento de privilégio e a prova de conceito (PoC) já está rolando solta em fóruns russos e no GitHub, a sua janela de reação se mede em horas, não semanas.</p>
+
+<p>O aviso da CISA não é pra encher o saco do DevOps, é o atestado de óbito de qualquer servidor não atualizado. Atualizem as assinaturas e apliquem os patches emergenciais da Microsoft hoje. Se o Defender for a causa da sua invasão, boa sorte tentando explicar pro CEO que o antivírus dele hackeou a empresa.</p>
+
+<h3 id="fontes-e-referências">Fontes e Referências</h3>
+<ul>
+  <li><a href="https://www.securityweek.com/recent-microsoft-defender-vulnerability-exploited-as-zero-day/">SecurityWeek: Recent Microsoft Defender Vulnerability Exploited as Zero-Day</a></li>
+  <li><a href="https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-microsoft-defender-flaw-exploited-in-zero-day-attacks/">Bleeping Computer: CISA orders feds to patch Microsoft Defender flaw exploited in zero-day attacks</a></li>
+  <li><a href="https://blog.qualys.com/qualys-insights/2026/04/22/dont-wait-for-a-patch-mitigate-redsun-risk-in-microsoft-defender-today">Qualys: Mitigate RedSun Risk in Microsoft Defender</a></li>
+</ul>]]></content><author><name>Frederico</name></author><category term="[&quot;tech&quot;, &quot;seguranca&quot;, &quot;noticias&quot;]" /><summary type="html"><![CDATA[A Ironia da Proteção]]></summary></entry><entry><title type="html">O Dia em que o Axios Quebrou a Web: RAT no NPM e Supply Chain</title><link href="https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/23/axios-npm-hack-supply-chain/" rel="alternate" type="text/html" title="O Dia em que o Axios Quebrou a Web: RAT no NPM e Supply Chain" /><published>2026-04-23T23:00:00-03:00</published><updated>2026-04-23T23:00:00-03:00</updated><id>https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/23/axios-npm-hack-supply-chain</id><content type="html" xml:base="https://odisseiadoputo.cc/tech/seguranca/noticias/2026/04/23/axios-npm-hack-supply-chain/"><![CDATA[<h1 id="o-desastre-do-axios">O Desastre do Axios</h1>
+
+<p>A regra do “Amigão da Vizinhança” ataca novamente. Se você trabalha com JavaScript/Node.js, as chances da sua aplicação usar o pacote <code class="language-plaintext highlighter-rouge">axios</code> para fazer requisição HTTP são de aproximadamente 99%.</p>
+
+<p>E é por isso que o ataque de <em>supply chain</em> que acabou de acontecer no NPM é um pesadelo absoluto.</p>
+
+<p>Um atacante conseguiu sequestrar a conta de um dos mantenedores oficiais do repositório do Axios e publicou versões maliciosas (as versões <code class="language-plaintext highlighter-rouge">1.14.1</code> e <code class="language-plaintext highlighter-rouge">0.30.4</code>). O ataque durou apenas 3 horas no ar, mas quando você tem milhões de downloads por semana, 3 horas é tempo suficiente para infectar infraestruturas do mundo inteiro.</p>
+
+<h1 id="a-mecânica-do-cavalo-de-troia">A Mecânica do Cavalo de Troia</h1>
+
+<p>O atacante não alterou o código fonte bruto do Axios para dar bandeira na cara de quem lê os commits. Ele usou a tática clássica de <em>dependency poisoning</em>. A versão maliciosa simplesmente adicionou uma nova dependência no <code class="language-plaintext highlighter-rouge">package.json</code> chamada <code class="language-plaintext highlighter-rouge">plain-crypto-js@4.2.1</code>.</p>
+
+<p>Se você não audita as dependências das suas dependências, você caiu no golpe. O pacote falso instalava silenciosamente um Trojan de Acesso Remoto (RAT) multiplataforma. O resultado? O atacante ganha uma porta dos fundos no seu servidor de aplicação, seja ele um cluster Kubernetes na AWS ou a sua máquina local rodando <code class="language-plaintext highlighter-rouge">npm start</code>.</p>
+
+<h1 id="pare-de-jogar-roleta-russa-no-cicd">Pare de Jogar Roleta Russa no CI/CD</h1>
+
+<p>O pacote malicioso já foi derrubado. Mas o recado que fica é brutal.</p>
+
+<p>Se a sua esteira de CI/CD (GitHub Actions, GitLab, Jenkins) rodou um <code class="language-plaintext highlighter-rouge">npm install</code> sem usar um arquivo de <em>lock</em> rigoroso (<code class="language-plaintext highlighter-rouge">package-lock.json</code> ou <code class="language-plaintext highlighter-rouge">yarn.lock</code>), você pode ter instalado a bomba-relógio e feito o deploy da porta dos fundos direto pra produção.</p>
+
+<p>A maioria das empresas quebra exatamente aí: elas terceirizam a segurança da aplicação para a integridade de repositórios públicos. Pare de usar tags vagas (como <code class="language-plaintext highlighter-rouge">^1.14.0</code>) e trave as versões das suas dependências de forma rígida.</p>
+
+<p>E se você usou o Axios nas últimas horas, vá verificar os logs do seu CI/CD e audite se o <code class="language-plaintext highlighter-rouge">plain-crypto-js</code> entrou na sua árvore de dependências.</p>
+
+<h3 id="fontes-e-referências">Fontes e Referências</h3>
+<ul>
+  <li><a href="https://arcticwolf.com/resources/blog/supply-chain-attack-impacts-widely-used-axios-npm-package/">Arctic Wolf: Supply Chain Attack Impacts Widely Used Axios npm Package</a></li>
+  <li><a href="https://www.trendmicro.com/en_us/research/26/c/axios-npm-package-compromised.html">Trend Micro: Axios NPM Package Compromised</a></li>
+  <li><a href="https://socradar.io/blog/axios-npm-supply-chain-attack-2026-ciso-guide/">SOCRadar: Axios NPM Supply Chain Attack</a></li>
+</ul>]]></content><author><name>Frederico</name></author><category term="[&quot;tech&quot;, &quot;seguranca&quot;, &quot;noticias&quot;]" /><summary type="html"><![CDATA[O Desastre do Axios]]></summary></entry></feed>
