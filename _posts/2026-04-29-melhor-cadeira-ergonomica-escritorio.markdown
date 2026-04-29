@@ -6,7 +6,7 @@ en_title:   "How to Stop Destroying Your Spine: The Best Ergonomic Chairs of 202
 en_subtitle: "Because spending $2000 on a MacBook and sitting on a plastic chair that gives you a herniated disc is an architectural flaw in your life."
 date:       2026-04-29 04:00:00
 author:     "Frederico"
-header-img: "img/bg-tech.jpg"
+header-img: "https://images.unsplash.com/photo-1595514535312-019316719b6d?q=80&w=1200&auto=format&fit=crop"
 category:   [review, hardware, carreira]
 en_content: |
   # The Spine Architecture
