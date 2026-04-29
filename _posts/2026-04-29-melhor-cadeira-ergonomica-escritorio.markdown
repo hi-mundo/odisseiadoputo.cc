@@ -6,7 +6,8 @@ en_title:   "How to Stop Destroying Your Spine: The Best Ergonomic Chairs of 202
 en_subtitle: "Because spending $2000 on a MacBook and sitting on a plastic chair that gives you a herniated disc is an architectural flaw in your life."
 date:       2026-04-29 04:00:00
 author:     "Frederico"
-header-img: "https://images.unsplash.com/photo-1595514535312-019316719b6d?q=80&w=1200&auto=format&fit=crop"
+header-img: "img/post-exemplo.jpg"
+image: "https://images.unsplash.com/photo-1595514535312-019316719b6d?q=80&w=1200&auto=format&fit=crop"
 category:   [review, hardware, carreira]
 en_content: |
   # The Spine Architecture
@@ -62,6 +63,6 @@ Ela tem encosto e assentos super acolchoados e um detalhe de luxo preguiçoso: u
 
 ---
 
-# Conclusão e SEO
+# Conclusão
 
 Não terceirize a saúde da sua coluna. Se a cadeira que você senta hoje tem "gamer" no nome e couro sintético rasgando nas costuras, aceite que você comprou um brinquedo, não uma ferramenta de trabalho. Escolha uma das cadeiras ergonômicas acima, arrume a postura e foque em resolver o problema do seu código, não o problema do seu disco vertebral.
