@@ -6,7 +6,8 @@ en_title:   "Reverse Engineering ChatGPT: How OpenAI Injects Ads and Tracks You"
 en_subtitle: "The robot that promised to revolutionize humanity became just another ad board focused on selling you food delivery."
 date:       2026-04-29 08:30:00
 author:     "Frederico"
-header-img: "img/bg-tech.jpg"
+header-img: "img/post-exemplo.jpg"
+image: "https://images.unsplash.com/photo-1614064641913-6b714b108625?q=80&w=1200&auto=format&fit=crop"
 category:   [tech, seguranca, noticias]
 en_content: |
   # The Ad Machine
