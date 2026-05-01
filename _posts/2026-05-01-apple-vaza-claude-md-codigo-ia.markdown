@@ -43,3 +43,5 @@ O ecossistema fechado que critica o seu código automatizado usa a mesmíssima f
 
 ### Fontes e Referências
 - [X/Twitter (via xcancel): Aaronp613 vaza o arquivo Claude.md do Apple Support](https://xcancel.com/aaronp613/status/2049986504617820551)
+- [MacRumors: Apple Pulls Vibe Coding Apps from the App Store](https://www.macrumors.com/2026/03/30/apple-pulls-vibe-coding-app/)
+- [CNET: Apple App Store Guidelines Have Some 'Vibe Coding' Apps in Limbo](https://www.cnet.com/tech/services-and-software/apple-app-store-guidelines-have-some-vibe-coding-apps-in-limbo/)
