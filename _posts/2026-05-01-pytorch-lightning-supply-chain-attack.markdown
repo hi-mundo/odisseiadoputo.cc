@@ -6,8 +6,8 @@ en_title:   "The 'Shai-Hulud' Attack on PyTorch Lightning: What Really Happened"
 en_subtitle: "The AI library was compromised, but no blind panic. Here are the cross-referenced facts about versions 2.6.2 and 2.6.3 on PyPI."
 date:       2026-05-01 10:00:00
 author:     "Frederico"
-header-img: "img/pytorch-worm.jpg"
-image:      "img/pytorch-worm.jpg"
+header-img: "img/pytorch-worm-realistic.jpg"
+image:      "img/pytorch-worm-realistic.jpg"
 category:   [tech, seguranca, ia, noticias]
 en_content: |
   # The Real Shai-Hulud Incident
