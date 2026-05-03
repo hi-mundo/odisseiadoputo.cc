@@ -41,6 +41,9 @@ Ninguém está programando tudo do zero na mão em 2026. A IA já está entranha
 
 O ecossistema fechado que critica o seu código automatizado usa a mesmíssima ferramenta de linha de comando que você. Eles só têm um setor de Relações Públicas melhor (e desenvolvedores que, teoricamente, deveriam revisar o pacote antes de subir pra produção).
 
+
+> **Atualização / Correção:** Na primeira versão deste artigo, o texto dava a entender que a Apple estava banindo apps *feitos* por IA. Para ser tecnicamente exato: a Apple está banindo e removendo da loja aplicativos que **funcionam como ferramentas de vibe coding** (como Replit e similares, onde o usuário usa IA para gerar e rodar código direto no celular), usando como escudo a velha regra de proibição de execução de código externo. O erro de semântica foi corrigido, mas a ironia central segue intacta: a Apple te proíbe de usar IA para gerar e rodar código no ecossistema dela, enquanto usa a IA da concorrência para programar os próprios aplicativos.
+
 ### Fontes e Referências
 - [X/Twitter (via xcancel): Aaronp613 vaza o arquivo Claude.md do Apple Support](https://xcancel.com/aaronp613/status/2049986504617820551)
 - [MacRumors: Apple Pulls Vibe Coding Apps from the App Store](https://www.macrumors.com/2026/03/30/apple-pulls-vibe-coding-app/)
