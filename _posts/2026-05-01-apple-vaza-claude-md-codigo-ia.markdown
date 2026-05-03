@@ -1,9 +1,9 @@
 ---
 layout:     post
 title:      "O Maior Segredo da Apple Vazou num Arquivo Markdown de 10 Linhas"
-subtitle:   "A empresa acabou de banir aplicativos gerados por IA da App Store, mas esqueceu de esconder que usa o robô da concorrência para programar seu próprio sistema."
+subtitle:   "A empresa acabou de banir aplicativos que permitem criar apps por IA na App Store, mas esqueceu de esconder que usa o robô da concorrência para programar seu próprio sistema."
 en_title:   "Apple's Biggest Secret Leaked in a 10-Line Markdown File"
-en_subtitle: "The company just banned AI-generated apps from the App Store, but forgot to hide that it uses the competition's robot to code its own system."
+en_subtitle: "The company just banned apps that perform vibe coding from the App Store, but forgot to hide that it uses the competition's robot to code its own system."
 date:       2026-05-01 00:00:00
 author:     "Frederico"
 header-img: "img/apple-claude-leak.jpg"
@@ -12,7 +12,7 @@ category:   [tech, software, noticias]
 en_content: |
   # Apple ships Claude.md
   
-  Apple just shot itself in the foot in the most embarrassing way possible. They recently banned "vibe-coded" (100% AI-generated) apps from the App Store. But yesterday, during a routine update to the official Apple Support app (v5.13), a developer accidentally shipped a file named `CLAUDE.md` straight to production.
+  Apple just shot itself in the foot in the most embarrassing way possible. They recently banned "vibe coding" apps (tools that allow users to generate and run AI code) from the App Store. But yesterday, during a routine update to the official Apple Support app (v5.13), a developer accidentally shipped a file named `CLAUDE.md` straight to production.
   
   What is this file? It's the exact configuration file used by Anthropic's Claude Code (the command-line AI agent) to understand the codebase and write code autonomously. Apple, the company investing billions in "Apple Intelligence", is secretly using the competition's AI to build its core apps. They had to release an emergency patch (v5.13.1) just to delete the text file. The hypocrisy is absolute.
 ---
@@ -29,7 +29,7 @@ E por que um simples Markdown causou tanto desespero? Porque ele prova que a emp
 
 Se você não trabalha com código, aqui vai o contexto: o arquivo `CLAUDE.md` (ou `claude.md`) não é um *readme* qualquer. Ele é o arquivo de configuração e regras usado pelo **Claude Code**, o agente autônomo de inteligência artificial da Anthropic (a maior concorrente do ChatGPT). Os desenvolvedores usam esse arquivo para explicar ao robô como a arquitetura do projeto funciona, para que a IA possa escrever o código do aplicativo sozinha.
 
-Aqui está o tamanho da hipocrisia: nas últimas semanas, a Apple começou a banir da App Store aplicativos feitos puramente com IA (a prática que a bolha tech chamou de *vibe coding*). O recado oficial era: "nós não aceitamos lixo gerado por robôs na nossa loja". 
+Aqui está o tamanho da hipocrisia: nas últimas semanas, a Apple começou a banir e remover da App Store os aplicativos que permitem aos usuários fazerem o famoso *vibe coding* (ferramentas como Replit e similares, que geram e executam código via IA no próprio celular). A desculpa oficial é que esses aplicativos violam as regras de execução de código externo. 
 
 O que o vazamento desse arquivo escancarou? Que a própria Apple usa a inteligência artificial dos outros para programar os aplicativos nativos do iOS, enquanto gasta bilhões em marketing tentando emplacar a sua própria "Apple Intelligence". E, segundo os prints que rodaram na internet, o arquivo vazado cita até ferramentas internas ultra-secretas deles, como o *Tap to Radar* e o *Juno*.
 
