@@ -1,9 +1,9 @@
 ---
 layout:     post
-title:      "O Falso Notepad++ para Mac: Como a Mídia Tech Caiu num Golpe de Marca"
-subtitle:   "Criaram um site falso, roubaram o logotipo, copiaram a biografia do criador oficial e venderam a ilusão que os usuários de macOS queriam. É assim que você instala malware sorrindo."
-en_title:   "The Fake Notepad++ for Mac: How Tech Media Fell for a Trademark Scam"
-en_subtitle: "They created a fake site, stole the logo, copied the official creator's bio, and sold the illusion macOS users wanted. This is how you install malware smiling."
+title:      "A Engenharia Social do Falso Notepad++ para Mac"
+subtitle:   "Como um site não oficial usou a força de uma marca clássica para atrair usuários de macOS e por que isso é um risco clássico de segurança."
+en_title:   "The Social Engineering of the Fake Notepad++ for Mac"
+en_subtitle: "How an unofficial site used the strength of a classic brand to attract macOS users and why this is a classic security risk."
 date:       2026-05-04 13:00:00
 author:     "Frederico"
 header-img: "img/fake-notepad-mac.jpg"
@@ -32,7 +32,7 @@ Na última semana, apareceu na internet o domínio `notepad-plus-plus-mac.org`. 
 - Fizeram uma página de download com cara de oficial.
 - Tiveram a cara de pau de copiar a biografia e a foto de **Don Ho** (o criador e desenvolvedor solitário original do Notepad++) para dar legitimidade ao esquema.
 
-O golpe foi tão bem envelopado que enganou veículos da mídia de tecnologia, fóruns no Reddit e tópicos no StackOverflow. Uma galera começou a noticiar: *"Finalmente, o Notepad++ chegou ao Mac!"*
+A estratégia visual foi tão bem executada que o link circulou rapidamente em fóruns de tecnologia, no Reddit e no StackOverflow, atraindo quem estava ansioso por essa novidade.
 
 # O Puxão de Orelha do Don Ho
 

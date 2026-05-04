@@ -1,9 +1,9 @@
 ---
 layout:     post
-title:      "Como Rodar o Claude Code 17x Mais Barato (Sem Pagar Pedágio pra Anthropic)"
-subtitle:   "O Claude Code é a melhor ferramenta de IA para terminal, mas a conta no fim do mês é um assalto. Conheça o DeepClaude: o corpo é da Anthropic, o cérebro é do DeepSeek."
-en_title:   "How to Run Claude Code 17x Cheaper (Without Paying Anthropic's Toll)"
-en_subtitle: "Claude Code is the best AI terminal tool, but the monthly bill is a robbery. Meet DeepClaude: Anthropic's body, DeepSeek's brain."
+title:      "Otimização de API: Como Rodar o Claude Code Usando o DeepSeek"
+subtitle:   "O Claude Code é uma ferramenta fantástica para o terminal, mas o custo da API pode ser alto. O projeto DeepClaude propõe uma solução inteligente unindo os dois mundos."
+en_title:   "API Optimization: How to Run Claude Code Using DeepSeek"
+en_subtitle: "Claude Code is a fantastic terminal tool, but API costs can be high. The DeepClaude project proposes a smart solution joining both worlds."
 date:       2026-05-04 10:00:00
 author:     "Frederico"
 header-img: "img/deepclaude-hack.jpg"
@@ -21,9 +21,9 @@ en_content: |
 
 Vamos alinhar uma coisa: o **Claude Code** (a ferramenta de linha de comando da Anthropic) é disparado o melhor agente autônomo de código que existe hoje. Ele edita arquivos, roda bash, faz git commit e spawna subagentes sozinho no seu terminal. É bruxaria pura.
 
-O problema é a conta de energia dessa brincadeira. A Anthropic cobra absurdos $15 dólares por milhão de tokens (no modelo Opus) e corta a sua onda com um limite (cap) de $200 dólares por mês se você abusar. Para um desenvolvedor que precisa do robô rodando *loops* o dia inteiro, isso quebra o orçamento.
+O desafio para uso contínuo é o custo da API. O modelo Opus da Anthropic tem um valor premium ($15 dólares por milhão de tokens) e limites mensais normais de plataforma. Para um desenvolvedor que roda o agente de forma autônoma o dia inteiro, a otimização de custo se torna uma necessidade arquitetural.
 
-Foi aí que a comunidade fez o que faz de melhor: gambiarra arquitetural com engenharia reversa.
+E foi exatamente essa dor que a comunidade open-source resolveu de forma genial.
 
 # Conheça o DeepClaude (O Cérebro Trocado)
 
