@@ -1309,6 +1309,18 @@ a .lang-pt, a .lang-en,
   line-height: 1.35;
   color: var(--text-mid);
 }
+.seo-vitrine-title {
+  display: block;
+  font-size: 13px;
+  line-height: 1.35;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+.seo-vitrine-copy {
+  font-size: 13px;
+  line-height: 1.52;
+  color: var(--text-mid);
+}
 @media (max-width: 760px) {
   .seo-vitrine-grid {
     grid-template-columns: 1fr;

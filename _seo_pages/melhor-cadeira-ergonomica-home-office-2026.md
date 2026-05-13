@@ -48,33 +48,25 @@ Para 2h de uso eventual, quase qualquer uma passa. Para 8h por dia, a verdade ap
 
 ## Opções recomendadas
 
-### Vitrine rápida
+### Produtos recomendados (imagem + análise)
 
 <div class="seo-vitrine-grid">
   <a class="seo-vitrine-card" href="https://amzn.to/3PnpM43">
     <img src="https://images.weserv.nl/?url=https://m.media-amazon.com/images/I/61H3dhK2+BL._AC_UL640_QL65_.jpg&w=640" alt="Cadeira ergonômica para rotina intensa de home office">
-    <span>Opção para rotina longa com foco em ajuste real</span>
+    <strong class="seo-vitrine-title">Ajuste real para rotina longa</strong>
+    <p class="seo-vitrine-copy">Essa é para quem trabalha sentado o dia inteiro e já percebeu que cadeira ruim cobra juros no corpo. O ganho aqui vem de ajuste consistente e suporte para uso contínuo.</p>
   </a>
   <a class="seo-vitrine-card" href="https://amzn.to/4dlXwGZ">
     <img src="https://images.weserv.nl/?url=https://m.media-amazon.com/images/I/61-QlZ8vTkL._AC_UL640_QL65_.jpg&w=640" alt="Cadeira ergonômica com encosto em mesh">
-    <span>Perfil intermediário para quem quer conforto sem exagero</span>
+    <strong class="seo-vitrine-title">Equilíbrio para home office diário</strong>
+    <p class="seo-vitrine-copy">Se você quer sair da cadeira improvisada sem pular direto para faixa premium, essa opção costuma fazer sentido. É compra adulta: melhora conforto e reduz dor acumulada.</p>
   </a>
   <a class="seo-vitrine-card" href="https://amzn.to/3R3p2BG">
     <img src="https://images.weserv.nl/?url=https://m.media-amazon.com/images/I/61lP1QrnWGL._AC_UL640_QL65_.jpg&w=640" alt="Cadeira ergonômica com apoio lombar e braços ajustáveis">
-    <span>Alternativa para uso diário com ajustes essenciais</span>
+    <strong class="seo-vitrine-title">Ergonomia funcional no uso diário</strong>
+    <p class="seo-vitrine-copy">Boa escolha para quem prioriza apoio lombar e ajustes que realmente mudam a postura ao longo do dia. Não é sobre mil recursos no papel, é sobre terminar o expediente inteiro.</p>
   </a>
 </div>
-
-### Recomendações diretas (com critério de uso)
-
-**Opção 1 — [ajuste real para rotina longa](https://amzn.to/3PnpM43):**  
-Essa é para quem trabalha sentado o dia inteiro e já percebeu que cadeira ruim cobra juros no corpo. O ganho aqui vem de ajuste consistente e suporte para uso contínuo, não de estética gamer para foto de setup.
-
-**Opção 2 — [equilíbrio para home office diário](https://amzn.to/4dlXwGZ):**  
-Se você quer sair da cadeira improvisada sem pular direto para faixa premium, essa opção costuma fazer sentido. É a compra “adulta”: melhora conforto, reduz dor acumulada e não te joga num preço absurdo sem necessidade.
-
-**Opção 3 — [foco em ergonomia funcional](https://amzn.to/3R3p2BG):**  
-Boa escolha para quem prioriza apoio lombar e ajustes que realmente mudam a postura ao longo do dia. Não é sobre mil recursos no papel; é sobre terminar o expediente sem parecer que brigou com a própria coluna.
 
 ### Amazon (opções de busca)
 

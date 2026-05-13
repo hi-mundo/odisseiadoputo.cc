@@ -60,16 +60,17 @@ Não vale para [perfil que não serve].
 
 > Regra operacional: link específico só entra se o produto estiver disponível no momento da revisão final.
 
-### Recomendações diretas no texto (obrigatório)
+### Produtos recomendados (imagem + análise no mesmo bloco)
 
-**Opção 1 — [nome curto com link](link):**  
-[Parágrafo curto explicando por que essa recomendação existe, para qual perfil e qual problema ela resolve.]
-
-**Opção 2 — [nome curto com link](link):**  
-[Parágrafo curto com leitura prática de uso real, sem linguagem de catálogo.]
-
-**Opção 3 — [nome curto com link](link):**  
-[Parágrafo curto no tom do Frederico, com argumento de compra claro e objetivo.]
+```html
+<div class="seo-vitrine-grid">
+  <a class="seo-vitrine-card" href="[link oficial Obter link]">
+    <img src="[url da imagem]" alt="[alt objetivo]">
+    <strong class="seo-vitrine-title">[título curto da recomendação]</strong>
+    <p class="seo-vitrine-copy">[parágrafo no tom do Frederico explicando para quem é e por que vale]</p>
+  </a>
+</div>
+```
 
 ### Opções de compra (cenário Global)
 

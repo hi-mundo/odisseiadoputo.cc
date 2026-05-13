@@ -56,33 +56,25 @@ Por isso painel, uniformidade e ergonomia pesam mais que marketing de "setup gam
 
 ## Opções recomendadas
 
-### Vitrine rápida
+### Produtos recomendados (imagem + análise)
 
 <div class="seo-vitrine-grid">
   <a class="seo-vitrine-card" href="https://amzn.to/4ty4u1K">
     <img src="https://images.weserv.nl/?url=https://m.media-amazon.com/images/I/81wfdDTIjHS._AC_UL640_QL65_.jpg&w=640" alt="Monitor ultrawide gamer para multitarefa">
-    <span>Modelo focado em fluidez para multitarefa pesada</span>
+    <strong class="seo-vitrine-title">Multitarefa pesada com mais fluidez</strong>
+    <p class="seo-vitrine-copy">Se você trabalha com várias janelas abertas e vive trocando contexto, essa recomendação reduz fricção no fluxo. Menos troca de tela, mais foco e menos microatrito no dia.</p>
   </a>
   <a class="seo-vitrine-card" href="https://amzn.to/48T827i">
     <img src="https://images.weserv.nl/?url=https://m.media-amazon.com/images/I/616NYrEQ6QL._AC_UL640_QL65_.jpg&w=640" alt="Monitor ultrawide para produtividade e home office">
-    <span>Faixa equilibrada para produtividade e conforto visual</span>
+    <strong class="seo-vitrine-title">Conforto visual com preço mais racional</strong>
+    <p class="seo-vitrine-copy">Para quem quer produtividade séria sem cair na faixa premium de cara, essa costuma ser a zona inteligente. Painel amplo e experiência de leitura mais confortável no home office.</p>
   </a>
   <a class="seo-vitrine-card" href="https://amzn.to/4uLUmDu">
     <img src="https://images.weserv.nl/?url=https://m.media-amazon.com/images/I/51xR6N9v4oL._AC_UL640_QL65_.jpg&w=640" alt="Monitor ultrawide curvo para setup de trabalho">
-    <span>Alternativa curvada para quem abre muitas janelas</span>
+    <strong class="seo-vitrine-title">Curvatura para continuidade de contexto</strong>
+    <p class="seo-vitrine-copy">Indicado para quem passa horas entre código, documentação e dashboard e prefere visão mais contínua. Bem ajustado na mesa certa, melhora bastante o conforto de longo uso.</p>
   </a>
 </div>
-
-### Recomendações diretas (para produtividade de verdade)
-
-**Opção 1 — [ultrawide para multitarefa pesada](https://amzn.to/4ty4u1K):**  
-Se você trabalha com várias janelas abertas e vive trocando contexto, essa é a recomendação para reduzir fricção no fluxo. A lógica é simples: menos troca de tela, mais foco e menos tempo perdido reposicionando janela igual estagiário em dia de fechamento.
-
-**Opção 2 — [equilíbrio entre conforto visual e preço](https://amzn.to/48T827i):**  
-Aqui entra o perfil que quer produtividade séria sem entrar na faixa premium logo de cara. Costuma ser a zona mais inteligente para quem quer painel amplo, boa experiência de leitura e ergonomia minimamente honesta no home office.
-
-**Opção 3 — [curvatura para imersão e continuidade](https://amzn.to/4uLUmDu):**  
-Recomendado para quem passa horas entre código, documentação e dashboard e prefere visão mais contínua. Quando bem ajustado na mesa certa, ajuda bastante no conforto de longo uso e evita aquele efeito “duas telas brigando por atenção”.
 
 ### Amazon (opções de busca)
 

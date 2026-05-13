@@ -50,33 +50,25 @@ Notebook que cai desempenho sob carga vira gargalo invisível no meio da sprint.
 
 ## Opções recomendadas
 
-### Vitrine rápida
+### Produtos recomendados (imagem + análise)
 
 <div class="seo-vitrine-grid">
   <a class="seo-vitrine-card" href="https://amzn.to/4wihQ4C">
     <img src="https://images.weserv.nl/?url=https://m.media-amazon.com/images/I/71XsKNBgSeL._AC_UL640_QL65_.jpg&w=640" alt="Notebook para programação com foco em estabilidade térmica">
-    <span>Perfil equilibrado para trabalho diário de dev</span>
+    <strong class="seo-vitrine-title">Perfil equilibrado para trabalho diário</strong>
+    <p class="seo-vitrine-copy">Se você quer máquina para codar todo dia sem entrar no teatro do benchmark, essa é a linha mais segura. Aguenta IDE, browser pesado e container sem transformar sua tarde em travamento.</p>
   </a>
   <a class="seo-vitrine-card" href="https://amzn.to/3QXpUI5">
     <img src="https://images.weserv.nl/?url=https://m.media-amazon.com/images/I/71dlu8CRgdL._AC_UL640_QL65_.jpg&w=640" alt="Notebook para programação com 16 GB e SSD">
-    <span>Faixa que costuma entregar melhor custo-benefício</span>
+    <strong class="seo-vitrine-title">Custo-benefício para dev profissional</strong>
+    <p class="seo-vitrine-copy">Aqui entra o cenário clássico de quem trabalha e estuda ao mesmo tempo: precisa desempenho constante sem pagar luxo inútil. Quando RAM e SSD vêm redondos, vira compra racional.</p>
   </a>
   <a class="seo-vitrine-card" href="https://amzn.to/42tMWZB">
     <img src="https://images.weserv.nl/?url=https://m.media-amazon.com/images/I/61aGuISAoML._AC_UL640_QL65_.jpg&w=640" alt="Notebook para projetos pesados e multitarefa">
-    <span>Opção para carga mais pesada sem sofrer em multitarefa</span>
+    <strong class="seo-vitrine-title">Carga pesada e multitarefa agressiva</strong>
+    <p class="seo-vitrine-copy">Se o fluxo inclui build pesado, Docker, banco local, call e mais meia dúzia de ferramentas abertas, essa alternativa tende a sofrer menos no mundo real. É para cortar gargalo operacional.</p>
   </a>
 </div>
-
-### Recomendações diretas (sem enrolação)
-
-**Opção 1 — [perfil equilibrado para trabalho diário](https://amzn.to/4wihQ4C):**  
-Se você quer máquina para codar todo dia sem entrar no teatro do benchmark, essa é a linha mais segura. É o tipo de notebook que aguenta IDE, browser com 40 abas e container rodando sem transformar sua tarde num festival de ventoinha e travamento.
-
-**Opção 2 — [custo-benefício para dev profissional](https://amzn.to/3QXpUI5):**  
-Aqui entra o cenário clássico de quem trabalha e estuda ao mesmo tempo: precisa de desempenho constante, mas não quer vender o Celta para pagar grife de hardware. Quando a configuração vem redonda em RAM e SSD, vira compra racional de verdade.
-
-**Opção 3 — [carga mais pesada e multitarefa agressiva](https://amzn.to/42tMWZB):**  
-Se seu fluxo inclui build pesado, Docker, banco local, chamada em vídeo e mais meia dúzia de ferramentas abertas, essa alternativa tende a sofrer menos no mundo real. É para quem quer reduzir gargalo operacional, não para colecionar número bonito em ficha técnica.
 
 ### Amazon (opções de busca)
 
