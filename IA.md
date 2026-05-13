@@ -166,6 +166,8 @@ Quando o post é *review de produto* (livros, laptops, gadget), o formato muda l
   ```
 - O corpo de cada item tem **um único parágrafo curto** descrevendo o produto com ácido. Não vira catálogo.
 - Número de itens: mínimo 5, máximo 10. Sete ou nove costumam funcionar melhor.
+- Mesmo em SEO page, a voz continua sendo do **Frederico**: opinião de trincheira, sem burocratês, sem texto de comparador genérico.
+- Regra de ouro para review: menos "ficha técnica", mais **leitura de padrão de reviews** (elogio recorrente, reclamação recorrente, limite real do produto).
 
 ### 5.1 Método operacional (wildcards + média de reviews)
 

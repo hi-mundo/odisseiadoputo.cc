@@ -13,8 +13,6 @@ affiliate:
   amazon: ""
 ---
 
-> Disclosure: este conteúdo pode conter links de afiliado. Se você comprar por eles, o blog pode receber comissão sem custo extra.
-
 ## Resposta curta
 
 Para quem quer **[resultado específico]**, [produto/categoria] vale a pena **se** [condição].
@@ -32,17 +30,11 @@ Não vale para [perfil que não serve].
 2. **[Critério 2]**: limite técnico que quase ninguém fala.
 3. **[Critério 3]**: custo total (não só preço inicial).
 
-## Pontos fortes
+## O que os reviews repetem (sinal bom e sinal ruim)
 
-- [força prática 1]
-- [força prática 2]
-- [força prática 3]
-
-## Limitações que você precisa saber
-
-- [limitação 1]
-- [limitação 2]
-- [limitação 3]
+- **Elogio recorrente**: [padrão positivo que aparece com frequência].
+- **Reclamação recorrente**: [padrão de dor que aparece em várias avaliações].
+- **Ponto de atenção**: [limitação estrutural para o leitor decidir melhor].
 
 ## Comparação rápida com alternativas
 
