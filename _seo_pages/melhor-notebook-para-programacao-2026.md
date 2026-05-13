@@ -53,15 +53,15 @@ Notebook que cai desempenho sob carga vira gargalo invisível no meio da sprint.
 ### Vitrine rápida
 
 <div class="seo-vitrine-grid">
-  <a class="seo-vitrine-card" href="https://www.amazon.com.br/dp/B0FCW79ZM3?tag=rpessoa04-20">
+  <a class="seo-vitrine-card" href="https://amzn.to/4wihQ4C">
     <img src="https://images.weserv.nl/?url=https://m.media-amazon.com/images/I/71XsKNBgSeL._AC_UL640_QL65_.jpg&w=640" alt="Notebook para programação com foco em estabilidade térmica">
     <span>Perfil equilibrado para trabalho diário de dev</span>
   </a>
-  <a class="seo-vitrine-card" href="https://www.amazon.com.br/dp/B0DSXH4Z18?tag=rpessoa04-20">
+  <a class="seo-vitrine-card" href="https://amzn.to/3QXpUI5">
     <img src="https://images.weserv.nl/?url=https://m.media-amazon.com/images/I/71dlu8CRgdL._AC_UL640_QL65_.jpg&w=640" alt="Notebook para programação com 16 GB e SSD">
     <span>Faixa que costuma entregar melhor custo-benefício</span>
   </a>
-  <a class="seo-vitrine-card" href="https://www.amazon.com.br/dp/B0DWBSBTLB?tag=rpessoa04-20">
+  <a class="seo-vitrine-card" href="https://amzn.to/42tMWZB">
     <img src="https://images.weserv.nl/?url=https://m.media-amazon.com/images/I/61aGuISAoML._AC_UL640_QL65_.jpg&w=640" alt="Notebook para projetos pesados e multitarefa">
     <span>Opção para carga mais pesada sem sofrer em multitarefa</span>
   </a>
@@ -77,7 +77,7 @@ Notebook que cai desempenho sob carga vira gargalo invisível no meio da sprint.
 
 ### Produto em destaque
 
-- [Abrir notebook específico para análise detalhada](https://www.amazon.com.br/dp/B0FCW79ZM3?tag=rpessoa04-20)
+- [Abrir notebook específico para análise detalhada](https://amzn.to/4wihQ4C)
 
 ### Outras lojas recomendadas
 

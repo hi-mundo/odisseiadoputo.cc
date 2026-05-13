@@ -59,15 +59,15 @@ Por isso painel, uniformidade e ergonomia pesam mais que marketing de "setup gam
 ### Vitrine rápida
 
 <div class="seo-vitrine-grid">
-  <a class="seo-vitrine-card" href="https://www.amazon.com.br/dp/B0DWQNS8TN?tag=rpessoa04-20">
+  <a class="seo-vitrine-card" href="https://amzn.to/4ty4u1K">
     <img src="https://images.weserv.nl/?url=https://m.media-amazon.com/images/I/81wfdDTIjHS._AC_UL640_QL65_.jpg&w=640" alt="Monitor ultrawide gamer para multitarefa">
     <span>Modelo focado em fluidez para multitarefa pesada</span>
   </a>
-  <a class="seo-vitrine-card" href="https://www.amazon.com.br/dp/B0D15RM3P1?tag=rpessoa04-20">
+  <a class="seo-vitrine-card" href="https://amzn.to/48T827i">
     <img src="https://images.weserv.nl/?url=https://m.media-amazon.com/images/I/616NYrEQ6QL._AC_UL640_QL65_.jpg&w=640" alt="Monitor ultrawide para produtividade e home office">
     <span>Faixa equilibrada para produtividade e conforto visual</span>
   </a>
-  <a class="seo-vitrine-card" href="https://www.amazon.com.br/dp/B09XTNY742?tag=rpessoa04-20">
+  <a class="seo-vitrine-card" href="https://amzn.to/4uLUmDu">
     <img src="https://images.weserv.nl/?url=https://m.media-amazon.com/images/I/51xR6N9v4oL._AC_UL640_QL65_.jpg&w=640" alt="Monitor ultrawide curvo para setup de trabalho">
     <span>Alternativa curvada para quem abre muitas janelas</span>
   </a>
@@ -83,7 +83,7 @@ Por isso painel, uniformidade e ergonomia pesam mais que marketing de "setup gam
 
 ### Produto em destaque
 
-- [Abrir linha Odyssey para análise detalhada](https://www.amazon.com.br/dp/B0DWQNS8TN?tag=rpessoa04-20)
+- [Abrir linha Odyssey para análise detalhada](https://amzn.to/4ty4u1K)
 
 ### Outras lojas recomendadas
 

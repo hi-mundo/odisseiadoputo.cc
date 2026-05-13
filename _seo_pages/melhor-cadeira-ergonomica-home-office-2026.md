@@ -51,15 +51,15 @@ Para 2h de uso eventual, quase qualquer uma passa. Para 8h por dia, a verdade ap
 ### Vitrine rápida
 
 <div class="seo-vitrine-grid">
-  <a class="seo-vitrine-card" href="https://www.amazon.com.br/dp/B07XM8KGBB?tag=rpessoa04-20">
+  <a class="seo-vitrine-card" href="https://amzn.to/3PnpM43">
     <img src="https://images.weserv.nl/?url=https://m.media-amazon.com/images/I/61H3dhK2+BL._AC_UL640_QL65_.jpg&w=640" alt="Cadeira ergonômica para rotina intensa de home office">
     <span>Opção para rotina longa com foco em ajuste real</span>
   </a>
-  <a class="seo-vitrine-card" href="https://www.amazon.com.br/dp/B07XYKL5BF?tag=rpessoa04-20">
+  <a class="seo-vitrine-card" href="https://amzn.to/4dlXwGZ">
     <img src="https://images.weserv.nl/?url=https://m.media-amazon.com/images/I/61-QlZ8vTkL._AC_UL640_QL65_.jpg&w=640" alt="Cadeira ergonômica com encosto em mesh">
     <span>Perfil intermediário para quem quer conforto sem exagero</span>
   </a>
-  <a class="seo-vitrine-card" href="https://www.amazon.com.br/dp/B07XYL2N5J?tag=rpessoa04-20">
+  <a class="seo-vitrine-card" href="https://amzn.to/3R3p2BG">
     <img src="https://images.weserv.nl/?url=https://m.media-amazon.com/images/I/61lP1QrnWGL._AC_UL640_QL65_.jpg&w=640" alt="Cadeira ergonômica com apoio lombar e braços ajustáveis">
     <span>Alternativa para uso diário com ajustes essenciais</span>
   </a>
@@ -75,7 +75,7 @@ Para 2h de uso eventual, quase qualquer uma passa. Para 8h por dia, a verdade ap
 
 ### Produto em destaque
 
-- [Abrir produto específico para análise detalhada](https://www.amazon.com.br/dp/B07XM8KGBB?tag=rpessoa04-20)
+- [Abrir produto específico para análise detalhada](https://amzn.to/3PnpM43)
 
 ### Outras lojas recomendadas
 
