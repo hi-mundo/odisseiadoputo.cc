@@ -33,6 +33,9 @@ Não vale quando uso é básico, mesa é curta ou o hardware já sofre para empu
 - **Reclamação recorrente**: modelos de entrada podem ter brilho irregular e ghosting perceptível.
 - **Ponto sensível**: sem braço articulado ou base decente, monitor grande vira trambolho de mesa.
 
+O consenso mais útil é simples: ultrawide bom acelera contexto, ultrawide ruim só aumenta frustração em tela grande.  
+Por isso painel, uniformidade e ergonomia pesam mais que marketing de "setup gamer".
+
 ## Ultrawide x dois monitores, na vida real
 
 **Ultrawide**:
@@ -55,9 +58,20 @@ Não vale quando uso é básico, mesa é curta ou o hardware já sofre para empu
 
 ### Vitrine rápida
 
-[![Monitor ultrawide opção 1](https://images-na.ssl-images-amazon.com/images/P/B0DWQNS8TN.01.LZZZZZZZ.jpg)](https://www.amazon.com.br/dp/B0DWQNS8TN?tag=rpessoa04-20)
-[![Monitor ultrawide opção 2](https://images-na.ssl-images-amazon.com/images/P/B0D15RM3P1.01.LZZZZZZZ.jpg)](https://www.amazon.com.br/dp/B0D15RM3P1?tag=rpessoa04-20)
-[![Monitor ultrawide opção 3](https://images-na.ssl-images-amazon.com/images/P/B09XTNY742.01.LZZZZZZZ.jpg)](https://www.amazon.com.br/dp/B09XTNY742?tag=rpessoa04-20)
+<div class="seo-vitrine-grid">
+  <a class="seo-vitrine-card" href="https://www.amazon.com.br/dp/B0DWQNS8TN?tag=rpessoa04-20">
+    <img src="https://images.weserv.nl/?url=https://m.media-amazon.com/images/I/81wfdDTIjHS._AC_UL640_QL65_.jpg&w=640" alt="Monitor ultrawide gamer para multitarefa">
+    <span>Modelo focado em fluidez para multitarefa pesada</span>
+  </a>
+  <a class="seo-vitrine-card" href="https://www.amazon.com.br/dp/B0D15RM3P1?tag=rpessoa04-20">
+    <img src="https://images.weserv.nl/?url=https://m.media-amazon.com/images/I/616NYrEQ6QL._AC_UL640_QL65_.jpg&w=640" alt="Monitor ultrawide para produtividade e home office">
+    <span>Faixa equilibrada para produtividade e conforto visual</span>
+  </a>
+  <a class="seo-vitrine-card" href="https://www.amazon.com.br/dp/B09XTNY742?tag=rpessoa04-20">
+    <img src="https://images.weserv.nl/?url=https://m.media-amazon.com/images/I/51xR6N9v4oL._AC_UL640_QL65_.jpg&w=640" alt="Monitor ultrawide curvo para setup de trabalho">
+    <span>Alternativa curvada para quem abre muitas janelas</span>
+  </a>
+</div>
 
 ### Amazon (opções de busca)
 

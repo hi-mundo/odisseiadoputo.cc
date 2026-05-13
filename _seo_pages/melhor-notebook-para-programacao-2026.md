@@ -33,6 +33,9 @@ O mínimo honesto segue em 16 GB + SSD NVMe; para Docker, Android Studio e stack
 - **Dor recorrente**: notebook fino demais esquenta e derruba clock em carga longa.
 - **Ponto de atrito clássico**: tela fraca e teclado raso viram desgaste diário, mesmo com CPU boa.
 
+Em resumo: o review bom não é o que grita benchmark, é o que confirma estabilidade depois de semanas de uso.  
+Notebook que cai desempenho sob carga vira gargalo invisível no meio da sprint.
+
 ## Erros comuns na compra
 
 - Pagar GPU dedicada sem workload gráfico real.
@@ -49,9 +52,20 @@ O mínimo honesto segue em 16 GB + SSD NVMe; para Docker, Android Studio e stack
 
 ### Vitrine rápida
 
-[![Notebook para programação opção 1](https://images-na.ssl-images-amazon.com/images/P/B0FCW79ZM3.01.LZZZZZZZ.jpg)](https://www.amazon.com.br/dp/B0FCW79ZM3?tag=rpessoa04-20)
-[![Notebook para programação opção 2](https://images-na.ssl-images-amazon.com/images/P/B0DSXH4Z18.01.LZZZZZZZ.jpg)](https://www.amazon.com.br/dp/B0DSXH4Z18?tag=rpessoa04-20)
-[![Notebook para programação opção 3](https://images-na.ssl-images-amazon.com/images/P/B0DWBSBTLB.01.LZZZZZZZ.jpg)](https://www.amazon.com.br/dp/B0DWBSBTLB?tag=rpessoa04-20)
+<div class="seo-vitrine-grid">
+  <a class="seo-vitrine-card" href="https://www.amazon.com.br/dp/B0FCW79ZM3?tag=rpessoa04-20">
+    <img src="https://images.weserv.nl/?url=https://m.media-amazon.com/images/I/71XsKNBgSeL._AC_UL640_QL65_.jpg&w=640" alt="Notebook para programação com foco em estabilidade térmica">
+    <span>Perfil equilibrado para trabalho diário de dev</span>
+  </a>
+  <a class="seo-vitrine-card" href="https://www.amazon.com.br/dp/B0DSXH4Z18?tag=rpessoa04-20">
+    <img src="https://images.weserv.nl/?url=https://m.media-amazon.com/images/I/71dlu8CRgdL._AC_UL640_QL65_.jpg&w=640" alt="Notebook para programação com 16 GB e SSD">
+    <span>Faixa que costuma entregar melhor custo-benefício</span>
+  </a>
+  <a class="seo-vitrine-card" href="https://www.amazon.com.br/dp/B0DWBSBTLB?tag=rpessoa04-20">
+    <img src="https://images.weserv.nl/?url=https://m.media-amazon.com/images/I/61aGuISAoML._AC_UL640_QL65_.jpg&w=640" alt="Notebook para projetos pesados e multitarefa">
+    <span>Opção para carga mais pesada sem sofrer em multitarefa</span>
+  </a>
+</div>
 
 ### Amazon (opções de busca)
 

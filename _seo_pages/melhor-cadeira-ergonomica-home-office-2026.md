@@ -32,6 +32,9 @@ Vale quando tem ajuste de verdade em lombar, braços e assento; não vale quando
 - **Reclamação recorrente**: braços com folga e espuma fraca envelhecem rápido.
 - **Ponto crítico**: montagem mal explicada e acabamento inconsistente irritam mais do que deveriam.
 
+Quando você cruza muitos reviews, o padrão fica óbvio: conforto de verdade aparece depois de horas, não nos 10 minutos iniciais.  
+Cadeira boa é a que não te lembra dela no meio do expediente.
+
 ## Cadeira gamer x ergonômica: sem teatro
 
 Cadeira gamer costuma vender visual; ergonômica boa vende permanência de uso.  
@@ -47,9 +50,20 @@ Para 2h de uso eventual, quase qualquer uma passa. Para 8h por dia, a verdade ap
 
 ### Vitrine rápida
 
-[![Cadeira ergonômica opção 1](https://images-na.ssl-images-amazon.com/images/P/B07XM8KGBB.01.LZZZZZZZ.jpg)](https://www.amazon.com.br/dp/B07XM8KGBB?tag=rpessoa04-20)
-[![Cadeira ergonômica opção 2](https://images-na.ssl-images-amazon.com/images/P/B07XYKL5BF.01.LZZZZZZZ.jpg)](https://www.amazon.com.br/dp/B07XYKL5BF?tag=rpessoa04-20)
-[![Cadeira ergonômica opção 3](https://images-na.ssl-images-amazon.com/images/P/B07XYL2N5J.01.LZZZZZZZ.jpg)](https://www.amazon.com.br/dp/B07XYL2N5J?tag=rpessoa04-20)
+<div class="seo-vitrine-grid">
+  <a class="seo-vitrine-card" href="https://www.amazon.com.br/dp/B07XM8KGBB?tag=rpessoa04-20">
+    <img src="https://images.weserv.nl/?url=https://m.media-amazon.com/images/I/61H3dhK2+BL._AC_UL640_QL65_.jpg&w=640" alt="Cadeira ergonômica para rotina intensa de home office">
+    <span>Opção para rotina longa com foco em ajuste real</span>
+  </a>
+  <a class="seo-vitrine-card" href="https://www.amazon.com.br/dp/B07XYKL5BF?tag=rpessoa04-20">
+    <img src="https://images.weserv.nl/?url=https://m.media-amazon.com/images/I/61-QlZ8vTkL._AC_UL640_QL65_.jpg&w=640" alt="Cadeira ergonômica com encosto em mesh">
+    <span>Perfil intermediário para quem quer conforto sem exagero</span>
+  </a>
+  <a class="seo-vitrine-card" href="https://www.amazon.com.br/dp/B07XYL2N5J?tag=rpessoa04-20">
+    <img src="https://images.weserv.nl/?url=https://m.media-amazon.com/images/I/61lP1QrnWGL._AC_UL640_QL65_.jpg&w=640" alt="Cadeira ergonômica com apoio lombar e braços ajustáveis">
+    <span>Alternativa para uso diário com ajustes essenciais</span>
+  </a>
+</div>
 
 ### Amazon (opções de busca)
 
