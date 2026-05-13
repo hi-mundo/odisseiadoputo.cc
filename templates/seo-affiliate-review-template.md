@@ -62,12 +62,18 @@ Não vale para [perfil que não serve].
 - Opção 1 (Amazon BR): [link]
 - Opção 2 (Awin parceiro BR): [link]
 - Opção 3 (Awin parceiro BR): [link]
+- Opção 4 (Amazon BR wildcard): [link]
+- Opção 5 (Amazon BR wildcard): [link]
+- Link específico (review pontual/lancamento): [link]
 
 ### Opções de compra (cenário Global)
 
 - Option 1 (global marketplace): [link]
 - Option 2 (global affiliate partner): [link]
 - Option 3 (global affiliate partner): [link]
+- Option 4 (global wildcard query): [link]
+- Option 5 (global wildcard query): [link]
+- Specific product review link: [link]
 
 ## Veredito direto
 

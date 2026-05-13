@@ -48,6 +48,12 @@ Se você trabalha 8h por dia, a diferença pesa no corpo e no bolso.
 - Opção 1: https://www.amazon.com.br/s?k=cadeira+ergonomica+home+office&tag=rpessoa04-20
 - Opção 2: https://www.amazon.com.br/s?k=cadeira+escritorio+ergonomica&tag=rpessoa04-20
 - Opção 3: https://www.amazon.com.br/s?k=cadeira+ergonomica+apoio+pes&tag=rpessoa04-20
+- Opção 4: https://www.amazon.com.br/s?k=cadeira+ergonomica+mesh+suporte+lombar&tag=rpessoa04-20
+- Opção 5: https://www.amazon.com.br/s?k=cadeira+presidente+ergonomica+reclinavel&tag=rpessoa04-20
+
+**Link específico (review de produto pontual)**
+
+- Cadeira específica: https://www.amazon.com.br/dp/B0GT2945QW?tag=rpessoa04-20
 
 **Awin**
 

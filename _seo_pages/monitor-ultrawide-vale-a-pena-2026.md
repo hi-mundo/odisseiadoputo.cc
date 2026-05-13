@@ -52,6 +52,12 @@ Não vale quando seu uso é simples, sua mesa é pequena ou seu hardware sofre p
 - Opção 1: https://www.amazon.com.br/s?k=monitor+ultrawide&tag=rpessoa04-20
 - Opção 2: https://www.amazon.com.br/s?k=monitor+ultrawide+34+polegadas&tag=rpessoa04-20
 - Opção 3: https://www.amazon.com.br/s?k=monitor+gamer+ultrawide+165hz&tag=rpessoa04-20
+- Opção 4: https://www.amazon.com.br/s?k=monitor+ultrawide+ips+usb-c&tag=rpessoa04-20
+- Opção 5: https://www.amazon.com.br/s?k=monitor+curvo+ultrawide+34+qhd&tag=rpessoa04-20
+
+**Link específico (review de produto pontual)**
+
+- Monitor específico (linha Odyssey): https://www.amazon.com.br/s?k=samsung+odyssey+g5+32&tag=rpessoa04-20
 
 **Awin**
 

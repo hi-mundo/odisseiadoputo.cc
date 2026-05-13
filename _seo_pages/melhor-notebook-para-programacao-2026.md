@@ -52,6 +52,12 @@ Se você roda Docker, Android Studio ou projetos grandes, 32 GB começa a fazer 
 - Opção 1: https://www.amazon.com.br/s?k=notebook+lenovo+ideapad+slim+3&tag=rpessoa04-20
 - Opção 2: https://www.amazon.com.br/s?k=notebook+programacao+16gb+ssd&tag=rpessoa04-20
 - Opção 3: https://www.amazon.com.br/s?k=notebook+i7+16gb+ssd&tag=rpessoa04-20
+- Opção 4: https://www.amazon.com.br/s?k=notebook+ryzen+7+16gb+ssd&tag=rpessoa04-20
+- Opção 5: https://www.amazon.com.br/s?k=notebook+32gb+ssd+1tb&tag=rpessoa04-20
+
+**Link específico (review de lançamento/produto)**
+
+- Notebook específico: https://www.amazon.com.br/dp/B0FCW79ZM3?tag=rpessoa04-20
 
 **Awin**
 

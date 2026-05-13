@@ -159,12 +159,27 @@ Quando o post é *review de produto* (livros, laptops, gadget), o formato muda l
 - `category: [review, tech]` ou `[review, <área>]`
 - Cada item vira uma seção `### N. Nome do Produto (epíteto)`
 - Epíteto curto e irônico: *"The Heir's Choice"*, *"The Portable Heater"*, *"The Brazilian Reality"*
+- Um post de comparação/lista precisa ter **mínimo 5 opções de produto** (menos que isso vira rascunho, não review).
 - CTA ao final de cada item = **link de afiliado Amazon** com frase de isca:
   ```markdown
   [Olha o absurdo. Clica e chora](https://amzn.to/xxxxx).
   ```
 - O corpo de cada item tem **um único parágrafo curto** descrevendo o produto com ácido. Não vira catálogo.
 - Número de itens: mínimo 5, máximo 10. Sete ou nove costumam funcionar melhor.
+
+### 5.1 Método operacional (wildcards + média de reviews)
+
+Para evitar post frágil e dependente de um SKU só:
+
+- Use **wildcards de busca** por categoria e atributo (`+16gb+ssd`, `+ultrawide+34`, `+ergonomica+lombar`).
+- Sempre incluir:
+  - links de busca (comparação ampla),
+  - e pelo menos 1 link de produto específico (review pontual, ex: lançamento).
+- Sintetizar opinião por consenso:
+  - nota média,
+  - volume de avaliações,
+  - padrões recorrentes nos comentários (pontos fortes e dor repetida).
+- Nunca concluir por 3 reviews isolados.
 
 **Disclosure**: mencionar afiliação não é obrigatório (ninguém faz), mas se o contexto pedir, use uma linha no fim: *"Links de afiliado. Se você comprar, o Frederico come."*
 
