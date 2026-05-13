@@ -1,10 +1,13 @@
 ---
 title: "Melhor webcam para home office em 2026: imagem limpa sem dor de cabeça"
 subtitle: "Review direto para quem trabalha em call o dia inteiro e quer parar de parecer câmera de segurança."
+description: "Melhor webcam para home office em 2026 com comparativo real de imagem, microfone e custo-beneficio para reunioes."
 date: 2026-05-13 14:15:00
 author: "Frederico"
 search_intent: "commercial"
 keywords: "melhor webcam home office, webcam 1080p, webcam para reunião, webcam custo benefício 2026"
+tags: [webcam, home office, reuniao, videochamada, produtividade]
+permalink: /seo/reviews/webcam/2026/05/13/melhor-webcam-home-office/
 categories: [seo, review, hardware, produtividade]
 ---
 

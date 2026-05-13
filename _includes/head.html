@@ -88,6 +88,13 @@
 {%- else -%}
   {%- assign og_type = 'website' -%}
 {%- endif -%}
+{%- assign primary_section = nil -%}
+{%- if page.categories and page.categories.size > 0 -%}
+  {%- assign primary_section = page.categories | first -%}
+  {%- if primary_section == 'seo' and page.categories.size > 1 -%}
+    {%- assign primary_section = page.categories[1] -%}
+  {%- endif -%}
+{%- endif -%}
 
 <head>
     <meta charset="utf-8">
@@ -193,7 +200,7 @@
         }
       },
       "inLanguage": "pt-BR"
-      {%- if page.categories and page.categories.size > 0 -%},"articleSection": {{ page.categories | first | jsonify }}{%- endif -%}
+      {%- if primary_section -%},"articleSection": {{ primary_section | jsonify }}{%- endif -%}
       {%- if seo_keywords and seo_keywords != "" -%},"keywords": {{ seo_keywords | jsonify }}{%- endif -%}
     }
     </script>

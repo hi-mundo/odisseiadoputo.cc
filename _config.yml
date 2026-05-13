@@ -16,7 +16,7 @@ plugins: [jekyll-paginate, jekyll-feed, jekyll-sitemap]
 collections:
   seo_pages:
     output: true
-    permalink: /seo/:name/
+    permalink: /seo/reviews/:name/
 
 defaults:
   - scope:

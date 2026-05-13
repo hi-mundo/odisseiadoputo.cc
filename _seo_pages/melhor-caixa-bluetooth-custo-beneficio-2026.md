@@ -1,10 +1,13 @@
 ---
 title: "Melhor caixa bluetooth custo-benefício em 2026: som bom sem pagar grife"
 subtitle: "Review para quem quer caixa portátil decente para trabalhar, relaxar e usar sem passar raiva."
+description: "Melhor caixa bluetooth custo-beneficio em 2026 com comparativo real de som, bateria, portabilidade e preco."
 date: 2026-05-13 14:30:00
 author: "Frederico"
 search_intent: "commercial"
 keywords: "melhor caixa bluetooth, caixa bluetooth custo beneficio, caixa de som portátil, melhor caixa de som 2026"
+tags: [caixa bluetooth, audio, portatil, bateria, custo-beneficio]
+permalink: /seo/reviews/caixa-bluetooth/2026/05/13/melhor-caixa-bluetooth-custo-beneficio/
 categories: [seo, review, hardware, tech]
 ---
 

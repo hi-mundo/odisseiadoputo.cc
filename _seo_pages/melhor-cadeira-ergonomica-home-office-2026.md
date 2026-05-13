@@ -1,10 +1,13 @@
 ---
 title: "Melhor cadeira ergonômica para home office em 2026: vale investir agora?"
 subtitle: "Review direto para quem trabalha sentado o dia inteiro e quer reduzir dor sem comprar marketing caro."
+description: "Review da melhor cadeira ergonomica para home office em 2026 com foco em ajuste real, conforto e custo-beneficio."
 date: 2026-05-13 12:25:00
 author: "Frederico"
 search_intent: "commercial"
 keywords: "melhor cadeira ergonômica, cadeira ergonômica home office, cadeira para dor nas costas, cadeira escritório 2026"
+tags: [cadeira ergonomica, home office, ergonomia, postura, custo-beneficio]
+permalink: /seo/reviews/cadeira-ergonomica/2026/05/13/melhor-cadeira-home-office/
 categories: [seo, review, hardware, carreira]
 ---
 

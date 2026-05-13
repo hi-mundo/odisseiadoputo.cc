@@ -1,10 +1,13 @@
 ---
 title: "Melhor roteador Wi-Fi 6 em 2026: internet estável sem reza braba"
 subtitle: "Review para quem trabalha de casa, joga, faz call e não quer rede caindo no pior momento."
+description: "Melhor roteador Wi-Fi 6 em 2026 com foco em estabilidade, cobertura, desempenho e custo-beneficio no uso real."
 date: 2026-05-13 14:25:00
 author: "Frederico"
 search_intent: "commercial"
 keywords: "melhor roteador wifi 6, roteador wifi 6 custo beneficio, roteador para casa grande, melhor roteador 2026"
+tags: [roteador wifi 6, internet, rede, home office, custo-beneficio]
+permalink: /seo/reviews/roteador-wifi-6/2026/05/13/melhor-roteador-wifi-6/
 categories: [seo, review, tech, hardware]
 ---
 

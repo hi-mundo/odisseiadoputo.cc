@@ -299,6 +299,19 @@ Todo post com afiliado precisa declarar o cenário primeiro:
 Se misturar mercado BR com texto global (ou o contrário), está errado.
 Escolha **um cenário por post** e mantenha consistência em título, corpo e links.
 
+### 9.2 Estrutura de URL SEO (obrigatório)
+
+SEO page não deve ficar com slug solto.  
+Use permalink com classificação + data + tema:
+
+`/seo/reviews/<cluster>/<yyyy>/<mm>/<dd>/<slug-principal>/`
+
+Exemplo:
+
+`/seo/reviews/notebook/2026/05/13/melhor-notebook-para-programacao/`
+
+Isso melhora legibilidade, contexto semântico e organização para crawler.
+
 ---
 
 ## 10. Título, subtítulo, SEO

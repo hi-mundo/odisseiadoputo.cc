@@ -2,12 +2,15 @@
 collection: seo_pages
 title: "[KW principal] vale a pena em 2026?"
 subtitle: "Review direto para quem busca [intenção], com critérios práticos, limites reais e recomendação sem enrolação."
+description: "[KW principal] em 2026 com análise prática, custo-benefício e recomendação por perfil."
 date: 2026-05-13 12:30:00
 author: "Frederico"
 scenario: "br" # br | global
 content_language: "pt-BR" # pt-BR | en
 search_intent: "commercial"
 keywords: "[kw principal], [kw variação 1], [kw variação 2]"
+tags: [kw-principal, review, hardware, custo-beneficio, 2026]
+permalink: /seo/reviews/[cluster]/[yyyy]/[mm]/[dd]/[slug-principal]/
 affiliate:
   awin: ""
   amazon: ""
