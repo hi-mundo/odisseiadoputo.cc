@@ -1,0 +1,51 @@
+---
+layout: default
+title: "SEO pages"
+description: "Análises e reviews orientados por intenção de busca, com foco em utilidade real e monetização limpa por afiliados."
+permalink: /seo/
+---
+
+<section class="seo-hub-hero">
+  <div class="seo-hub-inner">
+    <p class="seo-hub-kicker">SEO HUB</p>
+    <h1 class="seo-hub-title">SEO pages</h1>
+    <p class="seo-hub-lede">
+      Conteúdo separado do feed editorial normal. Aqui entram análises e reviews feitos para responder buscas específicas,
+      resolver dúvidas reais e conectar leitor com links de afiliado de forma transparente.
+    </p>
+  </div>
+</section>
+
+<section class="seo-hub-list" aria-labelledby="seo-hub-list-title">
+  <div class="seo-hub-inner">
+    <h2 id="seo-hub-list-title" class="seo-hub-section-title">Guias e reviews publicados</h2>
+
+    {% assign seo_items = site.seo_pages | sort: "date" | reverse %}
+    {% if seo_items.size > 0 %}
+      <div class="seo-grid">
+      {% for item in seo_items %}
+        <article class="seo-card">
+          <a class="seo-card-link" href="{{ item.url | prepend: site.baseurl }}">
+            <p class="seo-card-meta">
+              <time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: site.date_format }}</time>
+              {% if item.search_intent %}
+                <span aria-hidden="true">·</span>
+                <span>{{ item.search_intent }}</span>
+              {% endif %}
+            </p>
+            <h3 class="seo-card-title">{{ item.title }}</h3>
+            {% if item.subtitle %}
+              <p class="seo-card-deck">{{ item.subtitle }}</p>
+            {% endif %}
+            <span class="seo-card-cta">Ler análise →</span>
+          </a>
+        </article>
+      {% endfor %}
+      </div>
+    {% else %}
+      <p class="seo-empty">
+        Ainda sem SEO pages publicadas. Próximo passo: começar por keywords de alta intenção de compra e baixa dificuldade.
+      </p>
+    {% endif %}
+  </div>
+</section>

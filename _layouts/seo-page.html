@@ -1,0 +1,51 @@
+---
+layout: default
+---
+{%- assign word_count = content | strip_html | number_of_words -%}
+{%- assign read_minutes = word_count | divided_by: 220 | plus: 1 -%}
+{%- assign intent = page.search_intent | default: "commercial" -%}
+
+<article class="seo-article" itemscope itemtype="https://schema.org/Article">
+  <meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">
+  <meta itemprop="mainEntityOfPage" content="{{ page.url | prepend: site.baseurl | prepend: site.url }}">
+
+  <header class="seo-hero">
+    <div class="seo-hero-inner">
+      <nav class="breadcrumb" aria-label="Trilha">
+        <a href="{{ site.baseurl }}/" data-pt="Início" data-en="Home">Início</a>
+        <span class="breadcrumb-sep" aria-hidden="true">/</span>
+        <a href="{{ site.baseurl }}/seo/" data-pt="SEO pages" data-en="SEO pages">SEO pages</a>
+        <span class="breadcrumb-sep" aria-hidden="true">/</span>
+        <span class="breadcrumb-current">{{ page.title }}</span>
+      </nav>
+
+      <p class="seo-kicker">
+        <span class="lang-pt">Guia de análise para busca orgânica</span>
+        <span class="lang-en">Search-focused analysis guide</span>
+      </p>
+
+      <h1 class="seo-title" itemprop="headline">{{ page.title }}</h1>
+      {% if page.subtitle %}
+      <p class="seo-deck" itemprop="description">{{ page.subtitle }}</p>
+      {% endif %}
+
+      <div class="seo-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: site.date_format }}</time>
+        <span aria-hidden="true">·</span>
+        <span>{{ read_minutes }} min</span>
+        <span aria-hidden="true">·</span>
+        <span>intent: {{ intent }}</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="seo-body-wrap">
+    <aside class="seo-disclosure" aria-label="Disclosure">
+      <strong>Disclosure:</strong> esta página pode conter links de afiliado. Se você comprar por eles, o blog pode receber comissão sem custo extra.
+    </aside>
+
+    <div class="seo-body" itemprop="articleBody">
+      {{ content }}
+    </div>
+  </div>
+</article>

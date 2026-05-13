@@ -235,6 +235,25 @@ O blog alterna PT/EN via toggle no nav. Todo post novo **precisa** ter `en_title
 - Nunca use URL shortener de terceiros (bit.ly, tinyurl) — apodrecem.
 - Nunca insira UTM tracking em link interno.
 
+### 9.1 Regra de cenário (obrigatório)
+
+Todo post com afiliado precisa declarar o cenário primeiro:
+
+- **Cenário BR**: foco em Brasil.
+  - Idioma principal do corpo: **PT-BR**.
+  - Produtos: vendidos no mercado BR, preço em BRL, disponibilidade local.
+  - Parceiros afiliados: priorizar **empresas brasileiras** ou operações BR de marcas globais.
+  - Exemplos válidos: Amazon BR, iPlace BR, Fastshop BR, Casas Bahia BR, LG BR, Samsung BR.
+
+- **Cenário Global**: foco internacional.
+  - Idioma principal do corpo: **inglês** (post em EN).
+  - Produtos: universais e disponíveis em múltiplos mercados.
+  - Parceiros afiliados: redes/lojas globais e produtos sem viés local.
+  - Evitar gíria/localismo brasileiro no texto principal.
+
+Se misturar mercado BR com texto global (ou o contrário), está errado.
+Escolha **um cenário por post** e mantenha consistência em título, corpo e links.
+
 ---
 
 ## 10. Título, subtítulo, SEO
@@ -270,6 +289,7 @@ Antes de entregar o markdown, role este checklist:
 - [ ] `en_content: |` com indentação 2-espaço consistente, sem tab, sem espaço final
 - [ ] Rodou `bundle exec jekyll build` e não deu erro de Liquid/YAML
 - [ ] Abriu o post no browser (`jekyll serve`) — visual, quebra de linha, code block, share bar tudo renderizando certo
+- [ ] Cenário definido e consistente: BR (PT-BR + parceiros/produtos BR) ou Global (EN + produtos universais)
 
 Se passar nos 15 itens, publica.
 
@@ -373,6 +393,32 @@ Parágrafo final de knockout.
 - [Fonte 1](https://url)
 - [Fonte 2](https://url)
 ```
+
+---
+
+## 15. Anti-cadência de IA (obrigatório)
+
+Se o texto soar como bloco de relatório robótico, está errado.
+
+### Proibições diretas
+
+- Não usar estrutura dura tipo: `FATO / INFERÊNCIA / OPINIÃO` em cabeçalhos separados (a menos que o Raimundo peça explicitamente).
+- Não repetir o mesmo ritmo de frase 5 vezes seguidas.
+- Não abrir parágrafo sempre com o mesmo padrão ("A empresa...", "A empresa...", "A empresa...").
+
+### Como fazer certo
+
+- Integrar fato com atribuição no fluxo do texto: *"Segundo a Instructure..."*.
+- Marcar inferência com linguagem natural: *"isso sugere..."*, *"indica..."*, *"ainda sem confirmação pública..."*.
+- Deixar opinião editorial em tom humano e contínuo, não em bloco burocrático.
+- Variar tamanho de frase e parágrafo para quebrar a batida mecânica.
+
+### Checklist de naturalidade (antes de entregar)
+
+- [ ] Troquei pelo menos 2 abstrações por ação concreta.
+- [ ] Removi rótulos rígidos de seção.
+- [ ] Mantive atribuição de fonte sem quebrar o ritmo narrativo.
+- [ ] O texto parece alguém explicando, não um template preenchido.
 
 ---
 
