@@ -88,6 +88,8 @@ Se você é [perfil oposto], pule e olhe [categoria alternativa].
 
 ## Checklist rápido de publicação
 
+- [ ] Revisor passou no post e aprovou estrutura/conteúdo/formatação
 - [ ] Links clicáveis e válidos
 - [ ] Produto específico disponível no momento da publicação
 - [ ] Link específico gerado via "Obter link" (SiteStripe)
+- [ ] Nenhum link específico com aviso "Não disponível" ou "Não temos previsão..."

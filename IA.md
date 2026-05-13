@@ -191,6 +191,26 @@ Para evitar post frágil e dependente de um SKU só:
   - confirmar disponibilidade (comprável),
   - regenerar "Obter link" se o SKU mudou status.
 
+### 5.2 Revisor obrigatório (gate final)
+
+Todo post SEO com afiliado precisa passar por um revisor final antes de publicar.
+Esse revisor deve criticar sem dó:
+
+- estrutura do post (ordem, clareza, escaneabilidade),
+- formatação (cards, links, imagens, espaçamento),
+- conteúdo (argumento de recomendação fraco, genérico ou pouco convincente),
+- e principalmente status de link/produto.
+
+Checklist do revisor para links de produto:
+
+1. Abrir cada link específico.
+2. Confirmar que está comprável agora.
+3. Procurar sinais de indisponibilidade, incluindo frases como:
+   - "Não disponível."
+   - "Não temos previsão de quando este produto estará disponível novamente."
+4. Se qualquer frase dessas aparecer, trocar o SKU e regenerar "Obter link".
+5. Só aprovar quando todos os links específicos estiverem ativos.
+
 **Disclosure**: mencionar afiliação não é obrigatório (ninguém faz), mas se o contexto pedir, use uma linha no fim: *"Links de afiliado. Se você comprar, o Frederico come."*
 
 ---
