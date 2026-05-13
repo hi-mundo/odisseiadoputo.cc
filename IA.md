@@ -168,6 +168,8 @@ Quando o post é *review de produto* (livros, laptops, gadget), o formato muda l
 - Número de itens: mínimo 5, máximo 10. Sete ou nove costumam funcionar melhor.
 - Mesmo em SEO page, a voz continua sendo do **Frederico**: opinião de trincheira, sem burocratês, sem texto de comparador genérico.
 - Regra de ouro para review: menos "ficha técnica", mais **leitura de padrão de reviews** (elogio recorrente, reclamação recorrente, limite real do produto).
+- **Disponibilidade é obrigatória**: não usar SKU indisponível, sem estoque ou "não sabemos se/ quando estará de volta".
+- Link de produto específico só entra depois de validar status ativo na página do produto (comprável agora).
 
 ### 5.1 Método operacional (wildcards + média de reviews)
 
@@ -182,6 +184,10 @@ Para evitar post frágil e dependente de um SKU só:
   - volume de avaliações,
   - padrões recorrentes nos comentários (pontos fortes e dor repetida).
 - Nunca concluir por 3 reviews isolados.
+- Antes de fechar o post, revalidar os links específicos:
+  - abrir de novo cada produto,
+  - confirmar disponibilidade (comprável),
+  - regenerar "Obter link" se o SKU mudou status.
 
 **Disclosure**: mencionar afiliação não é obrigatório (ninguém faz), mas se o contexto pedir, use uma linha no fim: *"Links de afiliado. Se você comprar, o Frederico come."*
 
@@ -307,6 +313,7 @@ Antes de entregar o markdown, role este checklist:
 - [ ] Rodou `bundle exec jekyll build` e não deu erro de Liquid/YAML
 - [ ] Abriu o post no browser (`jekyll serve`) — visual, quebra de linha, code block, share bar tudo renderizando certo
 - [ ] Cenário definido e consistente: BR (PT-BR + parceiros/produtos BR) ou Global (EN + produtos universais)
+- [ ] Produtos específicos com disponibilidade ativa no momento da publicação (sem SKU indisponível)
 
 Se passar nos 15 itens, publica.
 

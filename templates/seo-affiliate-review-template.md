@@ -58,6 +58,8 @@ Não vale para [perfil que não serve].
 - Opção 5 (Amazon BR wildcard): [link]
 - Link específico (review pontual/lancamento): [link]
 
+> Regra operacional: link específico só entra se o produto estiver disponível no momento da revisão final.
+
 ### Opções de compra (cenário Global)
 
 - Option 1 (global marketplace): [link]
@@ -71,3 +73,9 @@ Não vale para [perfil que não serve].
 
 Se você é [perfil], vá de [recomendação].
 Se você é [perfil oposto], pule e olhe [categoria alternativa].
+
+## Checklist rápido de publicação
+
+- [ ] Links clicáveis e válidos
+- [ ] Produto específico disponível no momento da publicação
+- [ ] Link específico gerado via "Obter link" (SiteStripe)
