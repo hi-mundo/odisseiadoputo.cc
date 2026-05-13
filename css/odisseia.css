@@ -1086,6 +1086,9 @@ a .lang-pt, a .lang-en,
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   gap: 16px;
 }
+.seo-feed-ad {
+  grid-column: 1 / -1;
+}
 .seo-card {
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -1136,9 +1139,15 @@ a .lang-pt, a .lang-en,
 }
 .seo-hero-inner,
 .seo-body-wrap {
-  max-width: 860px;
+  max-width: 1120px;
   margin: 0 auto;
   padding: 0 20px;
+}
+.seo-body-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 74ch) minmax(240px, 320px);
+  gap: clamp(18px, 2.8vw, 34px);
+  align-items: start;
 }
 .seo-kicker {
   font-family: var(--font-mono);
@@ -1211,6 +1220,62 @@ a .lang-pt, a .lang-en,
 .seo-body a {
   color: var(--accent);
   border-bottom: 1px solid rgba(0, 221, 112, 0.36);
+}
+.seo-right-rail {
+  position: sticky;
+  top: calc(var(--nav-h) + 18px);
+}
+.seo-ad-slot {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: linear-gradient(180deg, #111218, #0d0f14);
+  padding: 12px;
+  min-height: 190px;
+}
+.seo-adsense {
+  min-height: 170px;
+}
+.seo-ad-placeholder {
+  display: none;
+}
+.seo-ad-slot.is-placeholder .seo-adsense {
+  display: none !important;
+}
+.seo-ad-slot.is-placeholder .seo-ad-placeholder {
+  display: block;
+}
+.seo-ad-placeholder-title {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-lo);
+  margin-bottom: 10px;
+}
+.seo-ad-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+}
+.seo-ad-logo-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.03);
+  padding: 3px;
+}
+
+@media (max-width: 980px) {
+  .seo-body-grid {
+    grid-template-columns: 1fr;
+  }
+  .seo-right-rail {
+    position: static;
+  }
+  .seo-ad-logo-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
 }
 
 /* -------- Print --------------------------------------------- */

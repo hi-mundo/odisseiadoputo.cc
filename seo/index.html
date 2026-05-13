@@ -4,6 +4,8 @@ title: "SEO pages"
 description: "Análises e reviews orientados por intenção de busca, com foco em utilidade real e monetização limpa por afiliados."
 permalink: /seo/
 ---
+{%- assign adsense_client = site.adsense_client | default: "ca-pub-3228626608941163" -%}
+{%- assign seo_feed_slot = site.adsense_slot_seo_feed | default: "" -%}
 
 <section class="seo-hub-hero">
   <div class="seo-hub-inner">
@@ -40,6 +42,29 @@ permalink: /seo/
             <span class="seo-card-cta">Ler análise →</span>
           </a>
         </article>
+        {% assign between_index = forloop.index0 | plus: 1 %}
+        {% assign between_mod = between_index | modulo: 2 %}
+        {% if forloop.index < seo_items.size and between_mod == 0 %}
+        <div class="seo-feed-ad seo-ad-slot js-seo-ad{% if seo_feed_slot == '' %} is-placeholder{% endif %}" data-ad-slot-id="seo-feed-{{ forloop.index }}">
+          {% if seo_feed_slot != '' %}
+          <ins class="adsbygoogle seo-adsense"
+               style="display:block"
+               data-ad-client="{{ adsense_client }}"
+               data-ad-slot="{{ seo_feed_slot }}"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          {% endif %}
+
+          <div class="seo-ad-placeholder" aria-hidden="true">
+            <p class="seo-ad-placeholder-title">Espaco editorial</p>
+            <div class="seo-ad-logo-grid">
+              {% for i in (1..10) %}
+              <img src="{{ site.baseurl }}/img/logo.png" alt="" loading="lazy" width="38" height="38">
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        {% endif %}
       {% endfor %}
       </div>
     {% else %}
@@ -49,3 +74,75 @@ permalink: /seo/
     {% endif %}
   </div>
 </section>
+
+<script>
+  (function () {
+    var slots = Array.prototype.slice.call(document.querySelectorAll('.js-seo-ad'));
+    if (!slots.length) return;
+
+    function showPlaceholder(slot) {
+      slot.classList.add('is-placeholder');
+    }
+
+    function hidePlaceholder(slot) {
+      slot.classList.remove('is-placeholder');
+    }
+
+    function watchSlot(slot) {
+      var ad = slot.querySelector('.adsbygoogle');
+      if (!ad) return showPlaceholder(slot);
+
+      var tries = 0;
+      var maxTries = 10;
+      var timer = window.setInterval(function () {
+        tries += 1;
+        var status = ad.getAttribute('data-ad-status');
+
+        if (status === 'filled') {
+          hidePlaceholder(slot);
+          window.clearInterval(timer);
+          return;
+        }
+
+        if (status === 'unfilled' || tries >= maxTries) {
+          showPlaceholder(slot);
+          window.clearInterval(timer);
+        }
+      }, 400);
+    }
+
+    function initAds() {
+      slots.forEach(function (slot) {
+        var ad = slot.querySelector('.adsbygoogle');
+        if (!ad) return showPlaceholder(slot);
+        try {
+          (window.adsbygoogle = window.adsbygoogle || []).push({});
+          watchSlot(slot);
+        } catch (e) {
+          showPlaceholder(slot);
+        }
+      });
+    }
+
+    if (window.adsbygoogle && window.adsbygoogle.push) {
+      initAds();
+      return;
+    }
+
+    var existing = document.querySelector('script[data-seo-adsense-loader="true"]');
+    if (existing) {
+      existing.addEventListener('load', initAds, { once: true });
+      existing.addEventListener('error', function () { slots.forEach(showPlaceholder); }, { once: true });
+      return;
+    }
+
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense_client }}';
+    script.crossOrigin = 'anonymous';
+    script.setAttribute('data-seo-adsense-loader', 'true');
+    script.onload = initAds;
+    script.onerror = function () { slots.forEach(showPlaceholder); };
+    document.head.appendChild(script);
+  })();
+</script>
