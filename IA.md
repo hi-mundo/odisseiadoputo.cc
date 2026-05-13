@@ -170,6 +170,8 @@ Quando o post é *review de produto* (livros, laptops, gadget), o formato muda l
 - Regra de ouro para review: menos "ficha técnica", mais **leitura de padrão de reviews** (elogio recorrente, reclamação recorrente, limite real do produto).
 - **Disponibilidade é obrigatória**: não usar SKU indisponível, sem estoque ou "não sabemos se/ quando estará de volta".
 - Link de produto específico só entra depois de validar status ativo na página do produto (comprável agora).
+- Não basta listar produto: em posts SEO de afiliado, cada recomendação principal precisa aparecer em **parágrafo próprio no corpo**, explicando para quem é, por que vale e qual dor resolve.
+- Vender faz parte do formato: CTA e link devem estar integrados ao texto editorial, não apenas em bloco de links no final.
 
 ### 5.1 Método operacional (wildcards + média de reviews)
 

@@ -73,6 +73,17 @@ Por isso painel, uniformidade e ergonomia pesam mais que marketing de "setup gam
   </a>
 </div>
 
+### Recomendações diretas (para produtividade de verdade)
+
+**Opção 1 — [ultrawide para multitarefa pesada](https://amzn.to/4ty4u1K):**  
+Se você trabalha com várias janelas abertas e vive trocando contexto, essa é a recomendação para reduzir fricção no fluxo. A lógica é simples: menos troca de tela, mais foco e menos tempo perdido reposicionando janela igual estagiário em dia de fechamento.
+
+**Opção 2 — [equilíbrio entre conforto visual e preço](https://amzn.to/48T827i):**  
+Aqui entra o perfil que quer produtividade séria sem entrar na faixa premium logo de cara. Costuma ser a zona mais inteligente para quem quer painel amplo, boa experiência de leitura e ergonomia minimamente honesta no home office.
+
+**Opção 3 — [curvatura para imersão e continuidade](https://amzn.to/4uLUmDu):**  
+Recomendado para quem passa horas entre código, documentação e dashboard e prefere visão mais contínua. Quando bem ajustado na mesa certa, ajuda bastante no conforto de longo uso e evita aquele efeito “duas telas brigando por atenção”.
+
 ### Amazon (opções de busca)
 
 - [Ver opções gerais de monitor ultrawide](https://www.amazon.com.br/s?k=monitor+ultrawide&tag=rpessoa04-20)

@@ -65,6 +65,17 @@ Para 2h de uso eventual, quase qualquer uma passa. Para 8h por dia, a verdade ap
   </a>
 </div>
 
+### Recomendações diretas (com critério de uso)
+
+**Opção 1 — [ajuste real para rotina longa](https://amzn.to/3PnpM43):**  
+Essa é para quem trabalha sentado o dia inteiro e já percebeu que cadeira ruim cobra juros no corpo. O ganho aqui vem de ajuste consistente e suporte para uso contínuo, não de estética gamer para foto de setup.
+
+**Opção 2 — [equilíbrio para home office diário](https://amzn.to/4dlXwGZ):**  
+Se você quer sair da cadeira improvisada sem pular direto para faixa premium, essa opção costuma fazer sentido. É a compra “adulta”: melhora conforto, reduz dor acumulada e não te joga num preço absurdo sem necessidade.
+
+**Opção 3 — [foco em ergonomia funcional](https://amzn.to/3R3p2BG):**  
+Boa escolha para quem prioriza apoio lombar e ajustes que realmente mudam a postura ao longo do dia. Não é sobre mil recursos no papel; é sobre terminar o expediente sem parecer que brigou com a própria coluna.
+
 ### Amazon (opções de busca)
 
 - [Ver opções de cadeira ergonômica home office](https://www.amazon.com.br/s?k=cadeira+ergonomica+home+office&tag=rpessoa04-20)

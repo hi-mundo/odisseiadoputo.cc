@@ -67,6 +67,17 @@ Notebook que cai desempenho sob carga vira gargalo invisível no meio da sprint.
   </a>
 </div>
 
+### Recomendações diretas (sem enrolação)
+
+**Opção 1 — [perfil equilibrado para trabalho diário](https://amzn.to/4wihQ4C):**  
+Se você quer máquina para codar todo dia sem entrar no teatro do benchmark, essa é a linha mais segura. É o tipo de notebook que aguenta IDE, browser com 40 abas e container rodando sem transformar sua tarde num festival de ventoinha e travamento.
+
+**Opção 2 — [custo-benefício para dev profissional](https://amzn.to/3QXpUI5):**  
+Aqui entra o cenário clássico de quem trabalha e estuda ao mesmo tempo: precisa de desempenho constante, mas não quer vender o Celta para pagar grife de hardware. Quando a configuração vem redonda em RAM e SSD, vira compra racional de verdade.
+
+**Opção 3 — [carga mais pesada e multitarefa agressiva](https://amzn.to/42tMWZB):**  
+Se seu fluxo inclui build pesado, Docker, banco local, chamada em vídeo e mais meia dúzia de ferramentas abertas, essa alternativa tende a sofrer menos no mundo real. É para quem quer reduzir gargalo operacional, não para colecionar número bonito em ficha técnica.
+
 ### Amazon (opções de busca)
 
 - [Ver notebooks IdeaPad para programação](https://www.amazon.com.br/s?k=notebook+lenovo+ideapad+slim+3&tag=rpessoa04-20)

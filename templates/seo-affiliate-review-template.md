@@ -60,6 +60,17 @@ Não vale para [perfil que não serve].
 
 > Regra operacional: link específico só entra se o produto estiver disponível no momento da revisão final.
 
+### Recomendações diretas no texto (obrigatório)
+
+**Opção 1 — [nome curto com link](link):**  
+[Parágrafo curto explicando por que essa recomendação existe, para qual perfil e qual problema ela resolve.]
+
+**Opção 2 — [nome curto com link](link):**  
+[Parágrafo curto com leitura prática de uso real, sem linguagem de catálogo.]
+
+**Opção 3 — [nome curto com link](link):**  
+[Parágrafo curto no tom do Frederico, com argumento de compra claro e objetivo.]
+
 ### Opções de compra (cenário Global)
 
 - Option 1 (global marketplace): [link]
