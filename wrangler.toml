@@ -2,6 +2,7 @@
 # Ajusta `name` se o Worker na Cloudflare tiver outro slug.
 name = "odisseiadoputo"
 compatibility_date = "2026-04-29"
+main = "./worker.js"
 
 [build]
 command = "bundle exec jekyll build"
