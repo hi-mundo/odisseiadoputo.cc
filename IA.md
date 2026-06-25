@@ -152,66 +152,30 @@ No `en_content` equivale a `### Sources` ou `### Trenches references`. Use o que
 
 ---
 
-## 5. Posts de review (com afiliados Amazon)
+## 5. Monetização, notificação e distribuição
 
-Quando o post é *review de produto* (livros, laptops, gadget), o formato muda levemente:
+O Odisseia fica limpo: zero posts pagos, zero publieditorial, zero afiliado,
+zero vitrine de produto e zero página fabricada para crawler.
 
-- `category: [review, tech]` ou `[review, <área>]`
-- Cada item vira uma seção `### N. Nome do Produto (epíteto)`
-- Epíteto curto e irônico: *"The Heir's Choice"*, *"The Portable Heater"*, *"The Brazilian Reality"*
-- Um post de comparação/lista precisa ter **mínimo 5 opções de produto** (menos que isso vira rascunho, não review).
-- CTA ao final de cada item = **link de afiliado Amazon** com frase de isca:
-  ```markdown
-  [Olha o absurdo. Clica e chora](https://amzn.to/xxxxx).
-  ```
-- O corpo de cada item tem **um único parágrafo curto** descrevendo o produto com ácido. Não vira catálogo.
-- Número de itens: mínimo 5, máximo 10. Sete ou nove costumam funcionar melhor.
-- Mesmo em SEO page, a voz continua sendo do **Frederico**: opinião de trincheira, sem burocratês, sem texto de comparador genérico.
-- Regra de ouro para review: menos "ficha técnica", mais **leitura de padrão de reviews** (elogio recorrente, reclamação recorrente, limite real do produto).
-- **Disponibilidade é obrigatória**: não usar SKU indisponível, sem estoque ou "não sabemos se/ quando estará de volta".
-- Link de produto específico só entra depois de validar status ativo na página do produto (comprável agora).
-- Não basta listar produto: em posts SEO de afiliado, cada recomendação principal precisa aparecer em **parágrafo próprio no corpo**, explicando para quem é, por que vale e qual dor resolve.
-- Vender faz parte do formato: CTA e link devem estar integrados ao texto editorial, não apenas em bloco de links no final.
+O que pode existir:
 
-### 5.1 Método operacional (wildcards + média de reviews)
+- aviso gratuito de post novo;
+- cópia gratuita do post por e-mail;
+- feed RSS/Atom;
+- link para seguir o autor em canais externos.
 
-Para evitar post frágil e dependente de um SKU só:
+O que não pode existir:
 
-- Use **wildcards de busca** por categoria e atributo (`+16gb+ssd`, `+ultrawide+34`, `+ergonomica+lombar`).
-- Sempre incluir:
-  - links de busca (comparação ampla),
-  - e pelo menos 1 link de produto específico (review pontual, ex: lançamento).
-- Sintetizar opinião por consenso:
-  - nota média,
-  - volume de avaliações,
-  - padrões recorrentes nos comentários (pontos fortes e dor repetida).
-- Nunca concluir por 3 reviews isolados.
-- Antes de fechar o post, revalidar os links específicos:
-  - abrir de novo cada produto,
-  - confirmar disponibilidade (comprável),
-  - regenerar "Obter link" se o SKU mudou status.
+- CTA de compra;
+- link de afiliado;
+- review patrocinado;
+- comparativo de produto escrito para conversão;
+- página SEO paralela;
+- copy que finja opinião editorial para vender.
 
-### 5.2 Revisor obrigatório (gate final)
-
-Todo post SEO com afiliado precisa passar por um revisor final antes de publicar.
-Esse revisor deve criticar sem dó:
-
-- estrutura do post (ordem, clareza, escaneabilidade),
-- formatação (cards, links, imagens, espaçamento),
-- conteúdo (argumento de recomendação fraco, genérico ou pouco convincente),
-- e principalmente status de link/produto.
-
-Checklist do revisor para links de produto:
-
-1. Abrir cada link específico.
-2. Confirmar que está comprável agora.
-3. Procurar sinais de indisponibilidade, incluindo frases como:
-   - "Não disponível."
-   - "Não temos previsão de quando este produto estará disponível novamente."
-4. Se qualquer frase dessas aparecer, trocar o SKU e regenerar "Obter link".
-5. Só aprovar quando todos os links específicos estiverem ativos.
-
-**Disclosure**: mencionar afiliação não é obrigatório (ninguém faz), mas se o contexto pedir, use uma linha no fim: *"Links de afiliado. Se você comprar, o Frederico come."*
+Se houver e-mail no futuro, o texto precisa ser simples: "receba uma cópia do
+post quando sair". Sem escassez falsa, sem funil, sem promessa de comunidade
+premium. No 0800.
 
 ---
 
@@ -272,45 +236,13 @@ O blog alterna PT/EN via toggle no nav. Todo post novo **precisa** ter `en_title
 
 ---
 
-## 9. Links e afiliações
+## 9. Links
 
 - Links internos: relativos (`/2026/04/20/slug/`) — não URL absoluta.
 - Links externos: `[texto](url)` direto. Não precisa `target="_blank"` no markdown — o renderizador não adiciona de qualquer forma, e isso é uma decisão de UX da casa (links abrem na mesma aba; voltar é botão do browser).
-- Afiliados Amazon: sempre shortlink `amzn.to/xxxxx`.
-- Nunca use URL shortener de terceiros (bit.ly, tinyurl) — apodrecem.
+- Nunca use link de afiliado.
+- Nunca use URL shortener de terceiros (bit.ly, tinyurl, amzn.to) — apodrecem e escondem destino.
 - Nunca insira UTM tracking em link interno.
-
-### 9.1 Regra de cenário (obrigatório)
-
-Todo post com afiliado precisa declarar o cenário primeiro:
-
-- **Cenário BR**: foco em Brasil.
-  - Idioma principal do corpo: **PT-BR**.
-  - Produtos: vendidos no mercado BR, preço em BRL, disponibilidade local.
-  - Parceiros afiliados: priorizar **empresas brasileiras** ou operações BR de marcas globais.
-  - Exemplos válidos: Amazon BR, iPlace BR, Fastshop BR, Casas Bahia BR, LG BR, Samsung BR.
-
-- **Cenário Global**: foco internacional.
-  - Idioma principal do corpo: **inglês** (post em EN).
-  - Produtos: universais e disponíveis em múltiplos mercados.
-  - Parceiros afiliados: redes/lojas globais e produtos sem viés local.
-  - Evitar gíria/localismo brasileiro no texto principal.
-
-Se misturar mercado BR com texto global (ou o contrário), está errado.
-Escolha **um cenário por post** e mantenha consistência em título, corpo e links.
-
-### 9.2 Estrutura de URL SEO (obrigatório)
-
-SEO page não deve ficar com slug solto.  
-Use permalink com classificação + data + tema:
-
-`/seo/reviews/<cluster>/<yyyy>/<mm>/<dd>/<slug-principal>/`
-
-Exemplo:
-
-`/seo/reviews/notebook/2026/05/13/melhor-notebook-para-programacao/`
-
-Isso melhora legibilidade, contexto semântico e organização para crawler.
 
 ---
 
@@ -347,8 +279,7 @@ Antes de entregar o markdown, role este checklist:
 - [ ] `en_content: |` com indentação 2-espaço consistente, sem tab, sem espaço final
 - [ ] Rodou `bundle exec jekyll build` e não deu erro de Liquid/YAML
 - [ ] Abriu o post no browser (`jekyll serve`) — visual, quebra de linha, code block, share bar tudo renderizando certo
-- [ ] Cenário definido e consistente: BR (PT-BR + parceiros/produtos BR) ou Global (EN + produtos universais)
-- [ ] Produtos específicos com disponibilidade ativa no momento da publicação (sem SKU indisponível)
+- [ ] Nao ha CTA de compra, afiliado, publieditorial ou promessa de conteudo pago
 
 Se passar nos 15 itens, publica.
 

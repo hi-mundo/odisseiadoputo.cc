@@ -111,8 +111,6 @@ comments: true
     </section>
     {% endif %}
 
-    {% include newsletter.html %}
-
     <nav class="post-pager" aria-label="Navegação entre posts">
       {% if page.previous.url %}
       <a class="post-pager-item post-pager-prev" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" rel="prev">
@@ -129,5 +127,3 @@ comments: true
     </nav>
   </div>
 </article>
-
-<script src="{{ '/js/newsletter.js' | prepend: site.baseurl }}" defer></script>

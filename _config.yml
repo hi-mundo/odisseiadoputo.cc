@@ -12,16 +12,3 @@ markdown: kramdown
 paginate: 50
 highlighter: rouge
 plugins: [jekyll-paginate, jekyll-feed, jekyll-sitemap]
-
-collections:
-  seo_pages:
-    output: true
-    permalink: /seo/reviews/:name/
-
-defaults:
-  - scope:
-      path: ""
-      type: seo_pages
-    values:
-      layout: seo-page
-      categories: [seo]
